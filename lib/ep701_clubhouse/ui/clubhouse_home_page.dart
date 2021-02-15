@@ -12,11 +12,20 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
     return Scaffold(
       backgroundColor: ClubhouseStyle.appBackgroundColor,
       body: SafeArea(
-        child: Column(
+        child: Stack(
           children: [
-            
+            Positioned(
+                left: 0,
+                top: 0,
+                right: 0,
+                child: Row(
+              children: [
+                IconButton(icon: Icon(Icons.search),)
+              ],
+            ))
+
           ],
-        ),
+        )
       ),
     );
   }
