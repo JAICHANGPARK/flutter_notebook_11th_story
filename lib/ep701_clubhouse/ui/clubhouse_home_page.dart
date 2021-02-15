@@ -1,3 +1,4 @@
+import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
 
 import 'clubhouse_style.dart';
@@ -29,7 +30,13 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                   Spacer(),
                   IconButton(icon: Icon(Icons.mail_outline), onPressed: () {}),
                   IconButton(icon: Icon(Icons.calendar_today_outlined), onPressed: () {}),
-                  IconButton(icon: Icon(Icons.mail_outline), onPressed: () {}),
+                  Badge(
+                    child: Icon(Icons.notifications_none),
+                    badgeColor: Colors.red,
+                  ),
+                  CircleAvatar(
+
+                  )
                 ],
               ))
         ],
