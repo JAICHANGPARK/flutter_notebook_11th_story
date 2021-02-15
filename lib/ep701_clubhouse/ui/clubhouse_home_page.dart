@@ -82,6 +82,10 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
              children: [
                Spacer(),
               Container(
+                height: 24,
+                decoration: BoxDecoration(
+                  color: Colors.green
+                ),
                 child: Row(
                   children: [
                     Icon(Icons.add),
