@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_notebook_11th_story/ep701_clubhouse/ui/clubhouse_style.dart';
+
+import 'clubhouse_style.dart';
+
 
 class ClubhouseHomePage extends StatefulWidget {
   @override
@@ -12,23 +14,26 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
     return Scaffold(
       backgroundColor: ClubhouseStyle.appBackgroundColor,
       body: SafeArea(
-        child: Stack(
-          children: [
-            Positioned(
-                left: 0,
-                top: 0,
-                right: 0,
-                child: Row(
-              children: [
-                IconButton(icon: Icon(Icons.search), onPressed: () {  },),
-                Spacer(),
-                IconButton(icon: Icon(Icons.mail_outline), onPressed: () {  }),
-              ],
-            ))
-
-          ],
-        )
-      ),
+          child: Stack(
+        children: [
+          Positioned(
+              left: 0,
+              top: 0,
+              right: 0,
+              child: Row(
+                children: [
+                  IconButton(
+                    icon: Icon(Icons.search),
+                    onPressed: () {},
+                  ),
+                  Spacer(),
+                  IconButton(icon: Icon(Icons.mail_outline), onPressed: () {}),
+                  IconButton(icon: Icon(Icons.calendar_today_outlined), onPressed: () {}),
+                  IconButton(icon: Icon(Icons.mail_outline), onPressed: () {}),
+                ],
+              ))
+        ],
+      )),
     );
   }
 }
