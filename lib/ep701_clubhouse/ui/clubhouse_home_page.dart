@@ -51,6 +51,7 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
             top: 48,
             right: 8,
           ),
+
           Positioned(
             child: Container(
               height: 52,
@@ -75,6 +76,20 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
             bottom: 0,
             left: 0,
             right: 0,
+          ),
+          Positioned(
+           child: Row(
+             children: [
+               Spacer(),
+               Container(
+
+               ),
+               IconButton(icon: Icon(Icons.apps), onPressed: (){})
+             ],
+           ),
+            bottom: 54,
+            left: 16,
+            right: 16,
           )
         ],
       )),
