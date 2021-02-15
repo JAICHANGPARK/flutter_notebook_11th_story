@@ -11,6 +11,13 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: ClubhouseStyle.appBackgroundColor,
+      body: SafeArea(
+        child: Column(
+          children: [
+            
+          ],
+        ),
+      ),
     );
   }
 }
