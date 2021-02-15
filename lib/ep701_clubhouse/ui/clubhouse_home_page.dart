@@ -81,9 +81,16 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
            child: Row(
              children: [
                Spacer(),
-               Container(
+              Container(
+                child: Row(
+                  children: [
+                    Icon(Icons.add),
+                    Text("Start a room")
+                  ],
+                ),
 
-               ),
+              ),
+               Spacer(),
                IconButton(icon: Icon(Icons.apps), onPressed: (){})
              ],
            ),
