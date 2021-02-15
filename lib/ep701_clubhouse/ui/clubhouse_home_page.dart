@@ -84,9 +84,10 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                Spacer(),
               Container(
                 height: 36,
-                width: 120,
+                width: 140,
                 decoration: BoxDecoration(
-                  color: Colors.green
+                  color: Colors.green,
+                  borderRadius: BorderRadius.circular(24)
                 ),
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -94,18 +95,21 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                   children: [
                     Icon(Icons.add, size: 16,
                     color: Colors.white,),
-                    Text("Start a room",
-                    style: TextStyle(
-                      fontSize: 16,
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold
-                    ),)
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text("Start a room",
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold
+                      ),),
+                    )
                   ],
                 ),
 
               ),
                Spacer(),
-               IconButton(icon: Icon(Icons.apps), onPressed: (){})
+               IconButton(icon: Icon(Icons.apps), onPressed: (){}, iconSize: 32,)
              ],
            ),
             bottom: 54,
