@@ -8,6 +8,8 @@ class ClubhouseHomePage extends StatefulWidget {
 class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+
+    );
   }
 }
