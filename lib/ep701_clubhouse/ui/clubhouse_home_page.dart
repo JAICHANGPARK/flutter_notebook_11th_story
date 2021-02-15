@@ -1,4 +1,5 @@
 import 'package:badges/badges.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'clubhouse_style.dart';
@@ -82,11 +83,14 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
              children: [
                Spacer(),
               Container(
-                height: 24,
+                height: 36,
+                width: 120,
                 decoration: BoxDecoration(
                   color: Colors.green
                 ),
                 child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Icon(Icons.add),
                     Text("Start a room")
@@ -99,7 +103,7 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
              ],
            ),
             bottom: 54,
-            left: 16,
+            left: 64,
             right: 16,
           )
         ],
