@@ -92,8 +92,14 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Icon(Icons.add),
-                    Text("Start a room")
+                    Icon(Icons.add, size: 16,
+                    color: Colors.white,),
+                    Text("Start a room",
+                    style: TextStyle(
+                      fontSize: 16,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold
+                    ),)
                   ],
                 ),
 
