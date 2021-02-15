@@ -44,11 +44,25 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                   )
                 ],
               )),
-          Positioned(child: Placeholder(),
-          bottom: 100,
-          left: 8,
-          top: 48,
-          right: 8,)
+          Positioned(
+            child: Placeholder(),
+            bottom: 100,
+            left: 8,
+            top: 48,
+            right: 8,
+          ),
+          Positioned(
+            child: Container(
+              height: 24,
+
+              decoration: BoxDecoration(
+                color: Colors.white,
+              ),
+            ),
+            bottom: 0,
+            left: 0,
+            right: 0,
+          )
         ],
       )),
     );
