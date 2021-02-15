@@ -20,7 +20,9 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                 right: 0,
                 child: Row(
               children: [
-                IconButton(icon: Icon(Icons.search),)
+                IconButton(icon: Icon(Icons.search), onPressed: () {  },),
+                Spacer(),
+                IconButton(icon: Icon(Icons.mail_outline), onPressed: () {  }),
               ],
             ))
 
