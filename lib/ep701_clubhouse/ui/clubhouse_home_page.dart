@@ -52,11 +52,14 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
             right: 8,
           ),
           Positioned(
-            child: Container(
-              height: 24,
-
-              decoration: BoxDecoration(
-                color: Colors.white,
+            child: PhysicalModel(
+              color: Colors.black,
+              elevation: 5,
+              child: Container(
+                height: 52,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                ),
               ),
             ),
             bottom: 0,
