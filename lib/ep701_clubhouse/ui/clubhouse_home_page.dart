@@ -52,66 +52,65 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
             top: 48,
             right: 8,
           ),
-
           Positioned(
             child: Container(
               height: 52,
               decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.only(
-                  topRight: Radius.circular(24),
-                  topLeft: Radius.circular(24),
-                ),
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.black.withOpacity(0.1),
-                    offset: Offset(
-                      0, -2,
-                    ),
-                    blurRadius: 3,
-                    spreadRadius: 3
-                  )
-                ]
-              ),
+                  color: Colors.white,
+                  borderRadius: BorderRadius.only(
+                    topRight: Radius.circular(24),
+                    topLeft: Radius.circular(24),
+                  ),
+                  boxShadow: [
+                    BoxShadow(
+                        color: Colors.black.withOpacity(0.1),
+                        offset: Offset(
+                          0,
+                          -2,
+                        ),
+                        blurRadius: 3,
+                        spreadRadius: 3)
+                  ]),
             ),
             bottom: 0,
             left: 0,
             right: 0,
           ),
           Positioned(
-           child: Row(
-             children: [
-               Spacer(),
-              Container(
-                height: 36,
-                width: 140,
-                decoration: BoxDecoration(
-                  color: Colors.green,
-                  borderRadius: BorderRadius.circular(24)
-                ),
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(Icons.add, size: 16,
-                    color: Colors.white,),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Text("Start a room",
-                      style: TextStyle(
-                        fontSize: 16,
+            child: Row(
+              children: [
+                Spacer(),
+                Container(
+                  height: 36,
+                  width: 140,
+                  decoration: BoxDecoration(color: Colors.green, borderRadius: BorderRadius.circular(24)),
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(
+                        Icons.add,
+                        size: 16,
                         color: Colors.white,
-                        fontWeight: FontWeight.bold
-                      ),),
-                    )
-                  ],
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text(
+                          "Start a room",
+                          style: TextStyle(fontSize: 16, color: Colors.white, fontWeight: FontWeight.bold),
+                        ),
+                      )
+                    ],
+                  ),
                 ),
-
-              ),
-               Spacer(),
-               IconButton(icon: Icon(Icons.apps), onPressed: (){}, iconSize: 32,)
-             ],
-           ),
+                Spacer(),
+                IconButton(
+                  icon: Icon(Icons.apps),
+                  onPressed: () {},
+                  iconSize: 32,
+                )
+              ],
+            ),
             bottom: 54,
             left: 64,
             right: 16,
