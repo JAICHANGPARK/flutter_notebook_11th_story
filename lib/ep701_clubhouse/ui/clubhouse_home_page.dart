@@ -60,8 +60,22 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                   Expanded(
                       flex: 2,
                       child: Container(
+                        margin: EdgeInsets.all(8),
+                        decoration: BoxDecoration(
+                            color: Color(0xffe6e4d6) // 230 228 214  e6 e4 d6,
+                            ,
+                            borderRadius: BorderRadius.circular(16)),
+                        padding: EdgeInsets.all(16),
                         child: Column(
-                          children: [],
+                          children: [
+                            Row(
+                              children: [
+                                Expanded(flex: 3, child: Text("9:30 PM")),
+                                Expanded(flex: 8, child: Text("[Flutter] Dreamwalker Live talking show",
+                                overflow: TextOverflow.ellipsis,))
+                              ],
+                            )
+                          ],
                         ),
                       )),
                   Expanded(flex: 8, child: Placeholder())
