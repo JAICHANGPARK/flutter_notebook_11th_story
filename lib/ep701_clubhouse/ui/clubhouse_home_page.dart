@@ -13,9 +13,7 @@ class ClubhouseHomePage extends StatefulWidget {
 class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
   @override
   Widget build(BuildContext context) {
-
-
-     return Scaffold(
+    return Scaffold(
       backgroundColor: ClubhouseStyle.appBackgroundColor,
       body: SafeArea(
           child: Stack(
@@ -51,19 +49,27 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
           Positioned(
             child: Container(
               decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  colors: [
-                    ClubhouseStyle.appBackgroundColor,
-                    ClubhouseStyle.appBackgroundColor.withOpacity(0.5),
-                    
-                  ]
-                )
+                gradient: LinearGradient(colors: [
+                  ClubhouseStyle.appBackgroundColor,
+                  ClubhouseStyle.appBackgroundColor.withOpacity(0.5),
+                  Colors.white.withOpacity(0.2),
+                ], begin: Alignment.bottomCenter, end: Alignment.topCenter),
+              ),
+              child: Column(
+                children: [
+                  Expanded(
+                      child: Container(
+                    child: Column(
+                      children: [],
+                    ),
+                  ))
+                ],
               ),
             ),
             bottom: 100,
-            left: 8,
+            left: 0,
             top: 48,
-            right: 8,
+            right: 0,
           ),
           Positioned(
             child: Container(
