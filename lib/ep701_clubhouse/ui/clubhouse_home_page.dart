@@ -53,6 +53,8 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   colors: [
+                    ClubhouseStyle.appBackgroundColor,
+                    ClubhouseStyle.appBackgroundColor.withOpacity(0.5),
                     
                   ]
                 )
