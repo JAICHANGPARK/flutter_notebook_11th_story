@@ -58,11 +58,13 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
               child: Column(
                 children: [
                   Expanded(
+                      flex: 2,
                       child: Container(
-                    child: Column(
-                      children: [],
-                    ),
-                  ))
+                        child: Column(
+                          children: [],
+                        ),
+                      )),
+                  Expanded(flex: 8, child: Placeholder())
                 ],
               ),
             ),
