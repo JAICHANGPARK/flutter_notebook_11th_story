@@ -12,6 +12,8 @@ dependencies:
   cupertino_icons: ^1.0.2
   badges: any
   backdrop: ^0.4.7
+  flutter_inner_drawer: ^0.5.7+2
+  google_fonts: any
 
 dev_dependencies:
   flutter_test:
