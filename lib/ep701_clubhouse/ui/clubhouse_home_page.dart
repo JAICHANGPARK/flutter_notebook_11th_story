@@ -1,3 +1,4 @@
+import 'package:backdrop/backdrop.dart';
 import 'package:badges/badges.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -12,7 +13,9 @@ class ClubhouseHomePage extends StatefulWidget {
 class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+
+
+     return Scaffold(
       backgroundColor: ClubhouseStyle.appBackgroundColor,
       body: SafeArea(
           child: Stack(
@@ -46,7 +49,15 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                 ],
               )),
           Positioned(
-            child: Placeholder(),
+            child: Container(
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  colors: [
+                    
+                  ]
+                )
+              ),
+            ),
             bottom: 100,
             left: 8,
             top: 48,
