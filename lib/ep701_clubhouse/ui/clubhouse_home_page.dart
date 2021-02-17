@@ -135,7 +135,16 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                           ],
                         ),
                       )),
-                  Expanded(flex: 8, child: Placeholder())
+                  Expanded(
+                    flex: 8,
+                    child: ListView.builder(itemBuilder: (context, index) {
+                      return Card(
+                        child: Column(
+                          children: [Text("Flutter Club")],
+                        ),
+                      );
+                    }),
+                  )
                 ],
               ),
             ),
