@@ -175,34 +175,30 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                                         child: Padding(
                                           padding: const EdgeInsets.symmetric(horizontal: 8),
                                           child: Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
                                             children: [
-                                              ListView(
-                                                shrinkWrap: true,
-                                                children: [
-                                                  Padding(
-                                                    padding: const EdgeInsets.symmetric(vertical: 4),
-                                                    child: Text(
-                                                      "Dreamwalker 💬",
-                                                      style: GoogleFonts.montserrat(),
-                                                    ),
-                                                  ),
-                                                  Padding(
-                                                    padding: const EdgeInsets.symmetric(vertical: 4),
-                                                    child: Text("Dreamwalker 💬"),
-                                                  ),
-                                                  Padding(
-                                                    padding: const EdgeInsets.symmetric(vertical: 4),
-                                                    child: Text("Dreamwalker 💬"),
-                                                  ),
-                                                  Padding(
-                                                    padding: const EdgeInsets.symmetric(vertical: 4),
-                                                    child: Text("Dreamwalker 💬"),
-                                                  ),
-                                                  Padding(
-                                                    padding: const EdgeInsets.symmetric(vertical: 4),
-                                                    child: Text("Dreamwalker 💬"),
-                                                  ),
-                                                ],
+                                              Padding(
+                                                padding: const EdgeInsets.symmetric(vertical: 4),
+                                                child: Text(
+                                                  "Dreamwalker 💬",
+                                                  style: GoogleFonts.montserrat(),
+                                                ),
+                                              ),
+                                              Padding(
+                                                padding: const EdgeInsets.symmetric(vertical: 4),
+                                                child: Text("Dreamwalker 💬"),
+                                              ),
+                                              Padding(
+                                                padding: const EdgeInsets.symmetric(vertical: 4),
+                                                child: Text("Dreamwalker 💬"),
+                                              ),
+                                              Padding(
+                                                padding: const EdgeInsets.symmetric(vertical: 4),
+                                                child: Text("Dreamwalker 💬"),
+                                              ),
+                                              Padding(
+                                                padding: const EdgeInsets.symmetric(vertical: 4),
+                                                child: Text("Dreamwalker 💬"),
                                               )
                                             ],
                                           ),
