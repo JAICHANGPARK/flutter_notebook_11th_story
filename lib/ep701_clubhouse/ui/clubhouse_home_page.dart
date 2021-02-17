@@ -70,9 +70,18 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                           children: [
                             Row(
                               children: [
-                                Expanded(flex: 3, child: Text("9:30 PM")),
-                                Expanded(flex: 8, child: Text("[Flutter] Dreamwalker Live talking show",
-                                overflow: TextOverflow.ellipsis,))
+                                Expanded(
+                                    flex: 3, child: Align(alignment: Alignment.centerRight, child: Text("9:30 PM",
+                                style: TextStyle(
+                                  color:
+                                ),))),
+                                SizedBox(width: 8,),
+                                Expanded(
+                                    flex: 8,
+                                    child: Text(
+                                      "[Flutter] Dreamwalker Live talking show",
+                                      overflow: TextOverflow.ellipsis,
+                                    ))
                               ],
                             )
                           ],
