@@ -2,6 +2,7 @@ import 'package:backdrop/backdrop.dart';
 import 'package:badges/badges.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_inner_drawer/inner_drawer.dart';
 
 import 'clubhouse_style.dart';
 
@@ -11,6 +12,8 @@ class ClubhouseHomePage extends StatefulWidget {
 }
 
 class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
+
+  final GlobalKey<InnerDrawerState> _innerDrawerKey = GlobalKey<InnerDrawerState>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -149,14 +152,26 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                               children: [Text("Flutter Club"),
                               Row(
                                 children: [
+                                  SizedBox(
+                                    height: 72,
+                                    width: 64,
+                                    child: Placeholder(),
+                                  ),
                                   Expanded(
-                                      flex: 2, child: Stack(
+                                      flex : 3,child: Column(
                                     children: [
-
+                                      ListView(
+                                        shrinkWrap: true,
+                                        children: [
+                                          Text("Dreamwalker 💬"),
+                                          Text("Dreamwalker 💬"),
+                                          Text("Dreamwalker 💬"),
+                                          Text("Dreamwalker 💬"),
+                                          Text("Dreamwalker 💬"),
+                                        ],
+                                      )
                                     ],
                                   )),
-                                  Expanded(
-                                      flex : 4,child: Placeholder()),
                                 ],
                               )],
                             ),
