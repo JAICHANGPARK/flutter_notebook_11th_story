@@ -158,20 +158,38 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                                     child: Placeholder(),
                                   ),
                                   Expanded(
-                                      flex : 3,child: Column(
+                                      flex : 3,child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
                                     children: [
-                                      ListView(
-                                        shrinkWrap: true,
-                                        children: [
-                                          Text("Dreamwalker 💬"),
-                                          Text("Dreamwalker 💬"),
-                                          Text("Dreamwalker 💬"),
-                                          Text("Dreamwalker 💬"),
-                                          Text("Dreamwalker 💬"),
-                                        ],
-                                      )
+                                        ListView(
+                                          shrinkWrap: true,
+                                          children: [
+                                            Padding(
+                                              padding: const EdgeInsets.symmetric(vertical: 4),
+                                              child: Text("Dreamwalker 💬"),
+                                            ),
+                                            Padding(
+                                              padding: const EdgeInsets.symmetric(vertical: 4),
+                                              child: Text("Dreamwalker 💬"),
+                                            ),
+                                            Padding(
+                                              padding: const EdgeInsets.symmetric(vertical: 4),
+                                              child: Text("Dreamwalker 💬"),
+                                            ),
+                                            Padding(
+                                              padding: const EdgeInsets.symmetric(vertical: 4),
+                                              child: Text("Dreamwalker 💬"),
+                                            ),
+                                            Padding(
+                                              padding: const EdgeInsets.symmetric(vertical: 4),
+                                              child: Text("Dreamwalker 💬"),
+                                            ),
+                                          ],
+                                        )
                                     ],
-                                  )),
+                                  ),
+                                      )),
                                 ],
                               )],
                             ),
