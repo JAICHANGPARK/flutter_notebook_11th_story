@@ -149,17 +149,27 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                             child: Column(
                               mainAxisSize: MainAxisSize.min,
                               crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [Text("Flutter Club"),
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              children: [
+
+                                Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Text("Flutter Club"),
+                                ),
                               Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  SizedBox(
-                                    height: 72,
-                                    width: 64,
-                                    child: Placeholder(),
+                                  Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: SizedBox(
+                                      height: 72,
+                                      width: 64,
+                                      child: Placeholder(),
+                                    ),
                                   ),
                                   Expanded(
                                       flex : 3,child: Padding(
-                                        padding: const EdgeInsets.all(8.0),
+                                        padding: const EdgeInsets.symmetric(horizontal: 8),
                                         child: Column(
                                     children: [
                                         ListView(
