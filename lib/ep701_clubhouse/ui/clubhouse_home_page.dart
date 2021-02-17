@@ -3,6 +3,7 @@ import 'package:badges/badges.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_inner_drawer/inner_drawer.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import 'clubhouse_style.dart';
 
@@ -154,7 +155,7 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
 
                                 Padding(
                                   padding: const EdgeInsets.all(8.0),
-                                  child: Text("Flutter Club"),
+                                  child: Text("Flutter Club", style: GoogleFonts.montaga(),),
                                 ),
                               Row(
                                 crossAxisAlignment: CrossAxisAlignment.start,
