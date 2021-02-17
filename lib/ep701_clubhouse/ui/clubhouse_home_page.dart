@@ -144,6 +144,7 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                           child: Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: Column(
+                              mainAxisSize: MainAxisSize.min,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [Text("Flutter Club"),
                               Row(
