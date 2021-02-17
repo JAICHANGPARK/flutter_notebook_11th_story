@@ -73,7 +73,7 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                                 Expanded(
                                     flex: 3, child: Align(alignment: Alignment.centerRight, child: Text("9:30 PM",
                                 style: TextStyle(
-                                  color:
+                                  color: Colors.brown[200]
                                 ),))),
                                 SizedBox(width: 8,),
                                 Expanded(
