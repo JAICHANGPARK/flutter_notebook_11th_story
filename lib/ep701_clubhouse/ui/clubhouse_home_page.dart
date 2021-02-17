@@ -72,7 +72,7 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                             Row(
                               children: [
                                 Expanded(
-                                    flex: 3, child: Align(alignment: Alignment.centerRight, child: Text("9:30 PM",
+                                    flex: 2, child: Align(alignment: Alignment.centerRight, child: Text("9:30 PM",
                                 style: TextStyle(
                                   color: Colors.brown[200]
                                 ),))),
@@ -88,7 +88,7 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                             Row(
                               children: [
                                 Expanded(
-                                    flex: 3, child: Align(alignment: Alignment.centerRight, child: Text("9:30 PM",
+                                    flex: 2, child: Align(alignment: Alignment.centerRight, child: Text("9:30 PM",
                                   style: TextStyle(
                                       color: Colors.brown[200]
                                   ),))),
@@ -104,11 +104,11 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                             Row(
                               children: [
                                 Expanded(
-                                    flex: 3, child: Align(alignment: Alignment.centerRight, child: Text("9:30 PM",
+                                    flex: 2, child: Align(alignment: Alignment.centerRight, child: Text("9:30 PM",
                                   style: TextStyle(
                                       color: Colors.brown[200]
                                   ),))),
-                                SizedBox(width: 8,),
+                                SizedBox(width: 16,),
                                 Expanded(
                                     flex: 8,
                                     child: Text(
