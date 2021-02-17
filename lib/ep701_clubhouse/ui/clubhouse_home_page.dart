@@ -269,14 +269,14 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                     children: [
                       Icon(
                         Icons.add,
-                        size: 16,
+                        size: 20,
                         color: Colors.white,
                       ),
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Text(
                           "Start a room",
-                          style: TextStyle(fontSize: 16, color: Colors.white, fontWeight: FontWeight.bold),
+                          style: GoogleFonts.montserrat(fontSize: 16, color: Colors.white)
                         ),
                       )
                     ],
