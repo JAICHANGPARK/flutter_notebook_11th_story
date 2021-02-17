@@ -59,15 +59,14 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                   Colors.white.withOpacity(0.2),
                 ], begin: Alignment.bottomCenter, end: Alignment.topCenter),
               ),
-              child: Column(
-                children: [
-                  Expanded(
-                      flex: 2,
-                      child: Container(
+              child: ListView.builder(
+                  shrinkWrap: true,
+                  itemBuilder: (context, index) {
+                    if (index == 0) {
+                      return Container(
                         margin: EdgeInsets.all(8),
                         decoration: BoxDecoration(
-                            color: Color(0xffe6e4d6) // 230 228 214  e6 e4 d6,
-                            ,
+                            color: Color(0xffe6e4d6), // 230 228 214  e6 e4 d6,
                             borderRadius: BorderRadius.circular(16)),
                         padding: EdgeInsets.all(8),
                         child: Column(
@@ -138,94 +137,89 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                             )
                           ],
                         ),
-                      )),
-                  Expanded(
-                    flex: 8,
-                    child: ListView.builder(itemBuilder: (context, index) {
-                      return Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                        child: Card(
-                          child: Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: Column(
-                              mainAxisSize: MainAxisSize.min,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              children: [
-                                Padding(
-                                  padding: const EdgeInsets.all(8.0),
-                                  child: Text(
-                                    "Flutter Club",
-                                    style: GoogleFonts.montserrat(fontWeight: FontWeight.bold),
-                                  ),
+                      );
+                    }
+                    return Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                      child: Card(
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.min,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Text(
+                                  "Flutter Club",
+                                  style: GoogleFonts.montserrat(fontWeight: FontWeight.bold),
                                 ),
-                                Row(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Padding(
-                                      padding: const EdgeInsets.all(8.0),
-                                      child: SizedBox(
-                                        height: 72,
-                                        width: 64,
-                                        child: Placeholder(),
-                                      ),
+                              ),
+                              Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: SizedBox(
+                                      height: 72,
+                                      width: 64,
+                                      child: Placeholder(),
                                     ),
-                                    Expanded(
-                                        flex: 3,
-                                        child: Padding(
-                                          padding: const EdgeInsets.symmetric(horizontal: 8),
-                                          child: Column(
-                                            crossAxisAlignment: CrossAxisAlignment.start,
-                                            children: [
-                                              Padding(
-                                                padding: const EdgeInsets.symmetric(vertical: 4),
-                                                child: Text(
-                                                  "Dreamwalker 💬",
-                                                  style: GoogleFonts.montserrat(),
-                                                ),
+                                  ),
+                                  Expanded(
+                                      flex: 3,
+                                      child: Padding(
+                                        padding: const EdgeInsets.symmetric(horizontal: 8),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: [
+                                            Padding(
+                                              padding: const EdgeInsets.symmetric(vertical: 4),
+                                              child: Text(
+                                                "Dreamwalker 💬",
+                                                style: GoogleFonts.montserrat(),
                                               ),
-                                              Padding(
-                                                padding: const EdgeInsets.symmetric(vertical: 4),
-                                                child: Text(
-                                                  "Dreamwalker 💬",
-                                                  style: GoogleFonts.montserrat(),
-                                                ),
+                                            ),
+                                            Padding(
+                                              padding: const EdgeInsets.symmetric(vertical: 4),
+                                              child: Text(
+                                                "Dreamwalker 💬",
+                                                style: GoogleFonts.montserrat(),
                                               ),
-                                              Padding(
-                                                padding: const EdgeInsets.symmetric(vertical: 4),
-                                                child: Text(
-                                                  "Dreamwalker 💬",
-                                                  style: GoogleFonts.montserrat(),
-                                                ),
+                                            ),
+                                            Padding(
+                                              padding: const EdgeInsets.symmetric(vertical: 4),
+                                              child: Text(
+                                                "Dreamwalker 💬",
+                                                style: GoogleFonts.montserrat(),
                                               ),
-                                              Padding(
-                                                padding: const EdgeInsets.symmetric(vertical: 4),
-                                                child: Text(
-                                                  "Dreamwalker 💬",
-                                                  style: GoogleFonts.montserrat(),
-                                                ),
+                                            ),
+                                            Padding(
+                                              padding: const EdgeInsets.symmetric(vertical: 4),
+                                              child: Text(
+                                                "Dreamwalker 💬",
+                                                style: GoogleFonts.montserrat(),
                                               ),
-                                              Padding(
-                                                padding: const EdgeInsets.symmetric(vertical: 4),
-                                                child: Text(
-                                                  "Dreamwalker 💬",
-                                                  style: GoogleFonts.montserrat(),
-                                                ),
-                                              )
-                                            ],
-                                          ),
-                                        )),
-                                  ],
-                                )
-                              ],
-                            ),
+                                            ),
+                                            Padding(
+                                              padding: const EdgeInsets.symmetric(vertical: 4),
+                                              child: Text(
+                                                "Dreamwalker 💬",
+                                                style: GoogleFonts.montserrat(),
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      )),
+                                ],
+                              )
+                            ],
                           ),
                         ),
-                      );
-                    }),
-                  )
-                ],
-              ),
+                      ),
+                    );
+                  }),
             ),
             bottom: 100,
             left: 0,
@@ -274,10 +268,7 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                       ),
                       Padding(
                         padding: const EdgeInsets.all(8.0),
-                        child: Text(
-                          "Start a room",
-                          style: GoogleFonts.montserrat(fontSize: 16, color: Colors.white)
-                        ),
+                        child: Text("Start a room", style: GoogleFonts.montserrat(fontSize: 16, color: Colors.white)),
                       )
                     ],
                   ),
