@@ -72,11 +72,16 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                             Row(
                               children: [
                                 Expanded(
-                                    flex: 2, child: Align(alignment: Alignment.centerRight, child: Text("9:30 PM",
-                                style: TextStyle(
-                                  color: Colors.brown[200]
-                                ),))),
-                                SizedBox(width: 16,),
+                                    flex: 2,
+                                    child: Align(
+                                        alignment: Alignment.centerRight,
+                                        child: Text(
+                                          "9:30 PM",
+                                          style: TextStyle(color: Colors.brown[200]),
+                                        ))),
+                                SizedBox(
+                                  width: 16,
+                                ),
                                 Expanded(
                                     flex: 8,
                                     child: Text(
@@ -88,11 +93,16 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                             Row(
                               children: [
                                 Expanded(
-                                    flex: 2, child: Align(alignment: Alignment.centerRight, child: Text("9:30 PM",
-                                  style: TextStyle(
-                                      color: Colors.brown[200]
-                                  ),))),
-                                SizedBox(width: 16,),
+                                    flex: 2,
+                                    child: Align(
+                                        alignment: Alignment.centerRight,
+                                        child: Text(
+                                          "9:30 PM",
+                                          style: TextStyle(color: Colors.brown[200]),
+                                        ))),
+                                SizedBox(
+                                  width: 16,
+                                ),
                                 Expanded(
                                     flex: 8,
                                     child: Text(
@@ -104,11 +114,16 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                             Row(
                               children: [
                                 Expanded(
-                                    flex: 2, child: Align(alignment: Alignment.centerRight, child: Text("9:30 PM",
-                                  style: TextStyle(
-                                      color: Colors.brown[200]
-                                  ),))),
-                                SizedBox(width: 16,),
+                                    flex: 2,
+                                    child: Align(
+                                        alignment: Alignment.centerRight,
+                                        child: Text(
+                                          "9:30 PM",
+                                          style: TextStyle(color: Colors.brown[200]),
+                                        ))),
+                                SizedBox(
+                                  width: 16,
+                                ),
                                 Expanded(
                                     flex: 8,
                                     child: Text(
@@ -140,13 +155,11 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                   ),
                   boxShadow: [
                     BoxShadow(
-                        color: Colors.black.withOpacity(0.1),
-                        offset: Offset(
-                          0,
-                          -2,
-                        ),
-                        blurRadius: 3,
-                        spreadRadius: 3)
+                      color: Colors.black.withOpacity(0.1),
+                      offset: Offset(0, -2),
+                      blurRadius: 3,
+                      spreadRadius: 3,
+                    )
                   ]),
             ),
             bottom: 0,
