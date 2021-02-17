@@ -65,7 +65,7 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                             color: Color(0xffe6e4d6) // 230 228 214  e6 e4 d6,
                             ,
                             borderRadius: BorderRadius.circular(16)),
-                        padding: EdgeInsets.all(16),
+                        padding: EdgeInsets.all(8),
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
