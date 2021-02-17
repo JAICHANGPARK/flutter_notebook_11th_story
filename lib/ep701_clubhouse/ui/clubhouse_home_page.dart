@@ -319,7 +319,7 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                 Spacer(),
                 Container(
                   height: 36,
-                  width: 140,
+                  width: 154,
                   //TODO: Thank you @Furkan _
                   decoration: ShapeDecoration(color: Colors.green, shape: StadiumBorder()),
                   child: Row(
