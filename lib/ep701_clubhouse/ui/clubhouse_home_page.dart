@@ -127,7 +127,7 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                 Container(
                   height: 36,
                   width: 140,
-                  decoration: BoxDecoration(color: Colors.green, borderRadius: BorderRadius.circular(24)),
+                  decoration: ShapeDecoration(color: Colors.green,  shape: StadiumBorder()),
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.center,
