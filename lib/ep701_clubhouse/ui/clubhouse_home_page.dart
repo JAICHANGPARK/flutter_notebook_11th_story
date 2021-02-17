@@ -56,13 +56,6 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
             top: 48,
             right: 0,
             child: Container(
-              decoration: BoxDecoration(
-                gradient: LinearGradient(colors: [
-                  ClubhouseStyle.appBackgroundColor,
-                  ClubhouseStyle.appBackgroundColor.withOpacity(0.5),
-                  Colors.white.withOpacity(0.2),
-                ], begin: Alignment.bottomCenter, end: Alignment.topCenter),
-              ),
               child: ListView.builder(
                   shrinkWrap: true,
                   itemBuilder: (context, index) {
@@ -155,6 +148,7 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                     return Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                       child: Card(
+                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: Column(
@@ -253,6 +247,21 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                       ),
                     );
                   }),
+            ),
+          ),
+          Positioned(
+            bottom: 64,
+            left: 0,
+            right: 0,
+            child: Container(
+              height: 64,
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  colors: [Colors.red[50], Colors.black],
+                  begin: Alignment.bottomCenter,
+                  end: Alignment.topCenter,
+                ),
+              ),
             ),
           ),
           Positioned(
