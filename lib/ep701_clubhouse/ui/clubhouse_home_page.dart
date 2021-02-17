@@ -186,19 +186,31 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                                               ),
                                               Padding(
                                                 padding: const EdgeInsets.symmetric(vertical: 4),
-                                                child: Text("Dreamwalker 💬"),
+                                                child: Text(
+                                                  "Dreamwalker 💬",
+                                                  style: GoogleFonts.montserrat(),
+                                                ),
                                               ),
                                               Padding(
                                                 padding: const EdgeInsets.symmetric(vertical: 4),
-                                                child: Text("Dreamwalker 💬"),
+                                                child: Text(
+                                                  "Dreamwalker 💬",
+                                                  style: GoogleFonts.montserrat(),
+                                                ),
                                               ),
                                               Padding(
                                                 padding: const EdgeInsets.symmetric(vertical: 4),
-                                                child: Text("Dreamwalker 💬"),
+                                                child: Text(
+                                                  "Dreamwalker 💬",
+                                                  style: GoogleFonts.montserrat(),
+                                                ),
                                               ),
                                               Padding(
                                                 padding: const EdgeInsets.symmetric(vertical: 4),
-                                                child: Text("Dreamwalker 💬"),
+                                                child: Text(
+                                                  "Dreamwalker 💬",
+                                                  style: GoogleFonts.montserrat(),
+                                                ),
                                               )
                                             ],
                                           ),
