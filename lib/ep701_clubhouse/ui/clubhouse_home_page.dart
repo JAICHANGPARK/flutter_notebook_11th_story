@@ -51,6 +51,10 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                 ],
               )),
           Positioned(
+            bottom: 64,
+            left: 0,
+            top: 48,
+            right: 0,
             child: Container(
               decoration: BoxDecoration(
                 gradient: LinearGradient(colors: [
@@ -72,69 +76,78 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
-                            Row(
-                              children: [
-                                Expanded(
-                                    flex: 2,
-                                    child: Align(
-                                        alignment: Alignment.centerRight,
-                                        child: Text(
-                                          "9:30 PM",
-                                          style: TextStyle(color: Colors.brown[200]),
-                                        ))),
-                                SizedBox(
-                                  width: 16,
-                                ),
-                                Expanded(
-                                    flex: 8,
-                                    child: Text(
-                                      "[Flutter] Dreamwalker Live talking show",
-                                      overflow: TextOverflow.ellipsis,
-                                    ))
-                              ],
+                            Padding(
+                              padding: const EdgeInsets.symmetric(vertical: 4),
+                              child: Row(
+                                children: [
+                                  Expanded(
+                                      flex: 2,
+                                      child: Align(
+                                          alignment: Alignment.centerRight,
+                                          child: Text(
+                                            "9:30 PM",
+                                            style: TextStyle(color: Colors.brown[200]),
+                                          ))),
+                                  SizedBox(
+                                    width: 16,
+                                  ),
+                                  Expanded(
+                                      flex: 8,
+                                      child: Text(
+                                        "[Flutter] Dreamwalker Live talking show",
+                                        overflow: TextOverflow.ellipsis,
+                                      ))
+                                ],
+                              ),
                             ),
-                            Row(
-                              children: [
-                                Expanded(
-                                    flex: 2,
-                                    child: Align(
-                                        alignment: Alignment.centerRight,
-                                        child: Text(
-                                          "9:30 PM",
-                                          style: TextStyle(color: Colors.brown[200]),
-                                        ))),
-                                SizedBox(
-                                  width: 16,
-                                ),
-                                Expanded(
-                                    flex: 8,
-                                    child: Text(
-                                      "[Flutter] Dreamwalker Live talking show",
-                                      overflow: TextOverflow.ellipsis,
-                                    ))
-                              ],
+                            Padding(
+                              padding: const EdgeInsets.symmetric(vertical: 4),
+                              child: Row(
+                                children: [
+                                  Expanded(
+                                      flex: 2,
+                                      child: Align(
+                                          alignment: Alignment.centerRight,
+                                          child: Text(
+                                            "10:00 PM",
+                                            style: TextStyle(color: Colors.brown[200]),
+                                          ))),
+                                  SizedBox(
+                                    width: 16,
+                                  ),
+                                  Expanded(
+                                      flex: 8,
+                                      child: Text(
+                                        "[Flutter] Dreamwalker Live talking show",
+                                        overflow: TextOverflow.ellipsis,
+                                      ))
+                                ],
+                              ),
                             ),
-                            Row(
-                              children: [
-                                Expanded(
-                                    flex: 2,
-                                    child: Align(
-                                        alignment: Alignment.centerRight,
-                                        child: Text(
-                                          "9:30 PM",
-                                          style: TextStyle(color: Colors.brown[200]),
-                                        ))),
-                                SizedBox(
-                                  width: 16,
-                                ),
-                                Expanded(
-                                    flex: 8,
-                                    child: Text(
-                                      "[Flutter] Dreamwalker Live talking show",
-                                      overflow: TextOverflow.ellipsis,
-                                    ))
-                              ],
-                            )
+                            Padding(
+                              padding: const EdgeInsets.symmetric(vertical: 4),
+                              child: Row(
+                                children: [
+                                  Expanded(
+                                      flex: 2,
+                                      child: Align(
+                                          alignment: Alignment.centerRight,
+                                          child: Text(
+                                            "10:30 PM",
+                                            style: TextStyle(color: Colors.brown[200]),
+                                          ))),
+                                  SizedBox(
+                                    width: 16,
+                                  ),
+                                  Expanded(
+                                      flex: 8,
+                                      child: Text(
+                                        "[Flutter] Dreamwalker Live talking show",
+                                        overflow: TextOverflow.ellipsis,
+                                      ))
+                                ],
+                              ),
+                            ),
                           ],
                         ),
                       );
@@ -208,7 +221,27 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                                                 "Dreamwalker 💬",
                                                 style: GoogleFonts.montserrat(),
                                               ),
-                                            )
+                                            ),
+                                            Padding(
+                                              padding: const EdgeInsets.symmetric(vertical: 4),
+                                              child: Row(
+                                                children: [
+                                                  Text(
+                                                    "1.2k",
+                                                    style: GoogleFonts.montserrat(color: Colors.grey),
+                                                  ),
+                                                  Icon(Icons.person, size: 16, color: Colors.grey),
+                                                  SizedBox(
+                                                    width: 8,
+                                                  ),
+                                                  Text(
+                                                    "/   10",
+                                                    style: GoogleFonts.montserrat(color: Colors.grey),
+                                                  ),
+                                                  Icon(Icons.chat_bubble, size: 16, color: Colors.grey)
+                                                ],
+                                              ),
+                                            ),
                                           ],
                                         ),
                                       )),
@@ -221,10 +254,6 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                     );
                   }),
             ),
-            bottom: 100,
-            left: 0,
-            top: 48,
-            right: 0,
           ),
           Positioned(
             child: Container(
