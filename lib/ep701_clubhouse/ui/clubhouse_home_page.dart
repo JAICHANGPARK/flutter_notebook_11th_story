@@ -138,9 +138,28 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                   Expanded(
                     flex: 8,
                     child: ListView.builder(itemBuilder: (context, index) {
-                      return Card(
-                        child: Column(
-                          children: [Text("Flutter Club")],
+                      return Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                        child: Card(
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [Text("Flutter Club"),
+                              Row(
+                                children: [
+                                  Expanded(
+                                      flex: 2, child: Stack(
+                                    children: [
+
+                                    ],
+                                  )),
+                                  Expanded(
+                                      flex : 4,child: Placeholder()),
+                                ],
+                              )],
+                            ),
+                          ),
                         ),
                       );
                     }),
