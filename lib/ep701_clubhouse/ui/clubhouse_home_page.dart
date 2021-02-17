@@ -174,8 +174,25 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                                       child: Stack(
                                         children: [
                                           Positioned(
-                                            
-                                            child: Container(),),
+                                            top: 16,
+                                            left: 16,
+                                            child: Container(
+                                              height: 36,
+                                              width: 36,
+                                              decoration: BoxDecoration(
+                                                  color: Colors.red, borderRadius: BorderRadius.circular(8)),
+                                            ),
+                                          ),
+                                          Positioned(
+                                            top: 0,
+                                            left: 0,
+                                            child: Container(
+                                              height: 36,
+                                              width: 36,
+                                              decoration: BoxDecoration(
+                                                  color: Colors.brown, borderRadius: BorderRadius.circular(8)),
+                                            ),
+                                          ),
                                         ],
                                       ),
                                     ),
@@ -264,10 +281,10 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   colors: [
-
-                  ClubhouseStyle.appBackgroundColor,
+                    ClubhouseStyle.appBackgroundColor,
                     ClubhouseStyle.appBackgroundColor.withOpacity(0.5),
-                    Colors.white.withOpacity(0.2),],
+                    Colors.white.withOpacity(0.2),
+                  ],
                   begin: Alignment.bottomCenter,
                   end: Alignment.topCenter,
                 ),
