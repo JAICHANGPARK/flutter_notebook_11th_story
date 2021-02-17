@@ -13,8 +13,8 @@ class ClubhouseHomePage extends StatefulWidget {
 }
 
 class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
-
   final GlobalKey<InnerDrawerState> _innerDrawerKey = GlobalKey<InnerDrawerState>();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -152,57 +152,64 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisAlignment: MainAxisAlignment.start,
                               children: [
-
                                 Padding(
                                   padding: const EdgeInsets.all(8.0),
-                                  child: Text("Flutter Club", style: GoogleFonts.montaga(),),
+                                  child: Text(
+                                    "Flutter Club",
+                                    style: GoogleFonts.montserrat(fontWeight: FontWeight.bold),
+                                  ),
                                 ),
-                              Row(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Padding(
-                                    padding: const EdgeInsets.all(8.0),
-                                    child: SizedBox(
-                                      height: 72,
-                                      width: 64,
-                                      child: Placeholder(),
+                                Row(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: SizedBox(
+                                        height: 72,
+                                        width: 64,
+                                        child: Placeholder(),
+                                      ),
                                     ),
-                                  ),
-                                  Expanded(
-                                      flex : 3,child: Padding(
-                                        padding: const EdgeInsets.symmetric(horizontal: 8),
-                                        child: Column(
-                                    children: [
-                                        ListView(
-                                          shrinkWrap: true,
-                                          children: [
-                                            Padding(
-                                              padding: const EdgeInsets.symmetric(vertical: 4),
-                                              child: Text("Dreamwalker 💬"),
-                                            ),
-                                            Padding(
-                                              padding: const EdgeInsets.symmetric(vertical: 4),
-                                              child: Text("Dreamwalker 💬"),
-                                            ),
-                                            Padding(
-                                              padding: const EdgeInsets.symmetric(vertical: 4),
-                                              child: Text("Dreamwalker 💬"),
-                                            ),
-                                            Padding(
-                                              padding: const EdgeInsets.symmetric(vertical: 4),
-                                              child: Text("Dreamwalker 💬"),
-                                            ),
-                                            Padding(
-                                              padding: const EdgeInsets.symmetric(vertical: 4),
-                                              child: Text("Dreamwalker 💬"),
-                                            ),
-                                          ],
-                                        )
-                                    ],
-                                  ),
-                                      )),
-                                ],
-                              )],
+                                    Expanded(
+                                        flex: 3,
+                                        child: Padding(
+                                          padding: const EdgeInsets.symmetric(horizontal: 8),
+                                          child: Column(
+                                            children: [
+                                              ListView(
+                                                shrinkWrap: true,
+                                                children: [
+                                                  Padding(
+                                                    padding: const EdgeInsets.symmetric(vertical: 4),
+                                                    child: Text(
+                                                      "Dreamwalker 💬",
+                                                      style: GoogleFonts.montserrat(),
+                                                    ),
+                                                  ),
+                                                  Padding(
+                                                    padding: const EdgeInsets.symmetric(vertical: 4),
+                                                    child: Text("Dreamwalker 💬"),
+                                                  ),
+                                                  Padding(
+                                                    padding: const EdgeInsets.symmetric(vertical: 4),
+                                                    child: Text("Dreamwalker 💬"),
+                                                  ),
+                                                  Padding(
+                                                    padding: const EdgeInsets.symmetric(vertical: 4),
+                                                    child: Text("Dreamwalker 💬"),
+                                                  ),
+                                                  Padding(
+                                                    padding: const EdgeInsets.symmetric(vertical: 4),
+                                                    child: Text("Dreamwalker 💬"),
+                                                  ),
+                                                ],
+                                              )
+                                            ],
+                                          ),
+                                        )),
+                                  ],
+                                )
+                              ],
                             ),
                           ),
                         ),
