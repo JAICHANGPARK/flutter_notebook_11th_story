@@ -51,7 +51,7 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                 ],
               )),
           Positioned(
-            bottom: 64,
+            bottom: 54,
             left: 0,
             top: 48,
             right: 0,
@@ -171,7 +171,13 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                                     child: SizedBox(
                                       height: 72,
                                       width: 64,
-                                      child: Placeholder(),
+                                      child: Stack(
+                                        children: [
+                                          Positioned(
+                                            
+                                            child: Container(),),
+                                        ],
+                                      ),
                                     ),
                                   ),
                                   Expanded(
@@ -250,14 +256,18 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
             ),
           ),
           Positioned(
-            bottom: 64,
+            bottom: 54,
             left: 0,
             right: 0,
             child: Container(
-              height: 64,
+              height: 48,
               decoration: BoxDecoration(
                 gradient: LinearGradient(
-                  colors: [Colors.red[50], Colors.black],
+                  colors: [
+
+                  ClubhouseStyle.appBackgroundColor,
+                    ClubhouseStyle.appBackgroundColor.withOpacity(0.5),
+                    Colors.white.withOpacity(0.2),],
                   begin: Alignment.bottomCenter,
                   end: Alignment.topCenter,
                 ),
