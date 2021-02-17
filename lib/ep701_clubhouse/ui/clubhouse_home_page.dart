@@ -67,6 +67,7 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                             borderRadius: BorderRadius.circular(16)),
                         padding: EdgeInsets.all(16),
                         child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
                             Row(
                               children: [
@@ -75,6 +76,38 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                                 style: TextStyle(
                                   color: Colors.brown[200]
                                 ),))),
+                                SizedBox(width: 16,),
+                                Expanded(
+                                    flex: 8,
+                                    child: Text(
+                                      "[Flutter] Dreamwalker Live talking show",
+                                      overflow: TextOverflow.ellipsis,
+                                    ))
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Expanded(
+                                    flex: 3, child: Align(alignment: Alignment.centerRight, child: Text("9:30 PM",
+                                  style: TextStyle(
+                                      color: Colors.brown[200]
+                                  ),))),
+                                SizedBox(width: 16,),
+                                Expanded(
+                                    flex: 8,
+                                    child: Text(
+                                      "[Flutter] Dreamwalker Live talking show",
+                                      overflow: TextOverflow.ellipsis,
+                                    ))
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Expanded(
+                                    flex: 3, child: Align(alignment: Alignment.centerRight, child: Text("9:30 PM",
+                                  style: TextStyle(
+                                      color: Colors.brown[200]
+                                  ),))),
                                 SizedBox(width: 8,),
                                 Expanded(
                                     flex: 8,
