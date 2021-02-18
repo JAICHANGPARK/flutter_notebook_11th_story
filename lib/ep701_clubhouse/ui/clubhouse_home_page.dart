@@ -75,7 +75,22 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                       children: [
                         Expanded(
                             flex: 1,
-                            child: Placeholder()),
+                            child: Row(
+                              crossAxisAlignment: CrossAxisAlignment.end,
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Text("AVAILABLE TO CHAT"),
+                                ),
+                                Expanded(child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Divider(
+                                    height: 0,
+                                    thickness: 1.2,
+                                  ),
+                                )),
+                              ],
+                            )),
                         Expanded(
                             flex: 15,
                             child: Placeholder()),
