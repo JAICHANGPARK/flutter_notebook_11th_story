@@ -80,7 +80,10 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                               children: [
                                 Padding(
                                   padding: const EdgeInsets.all(8.0),
-                                  child: Text("AVAILABLE TO CHAT"),
+                                  child: Text("AVAILABLE TO CHAT", style: GoogleFonts.montserrat(
+                                    fontSize: 12,
+                                    color: Colors.brown[200]
+                                  ))
                                 ),
                                 Expanded(child: Padding(
                                   padding: const EdgeInsets.all(8.0),
