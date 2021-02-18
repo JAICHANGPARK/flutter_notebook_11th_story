@@ -114,8 +114,7 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                                             right: 0,
                                             child: Container(
                                               decoration: BoxDecoration(
-                                                  color: Colors.brown[400],
-                                                  borderRadius: BorderRadius.circular(12)),
+                                                  color: Colors.brown[400], borderRadius: BorderRadius.circular(12)),
                                             ),
                                           ),
                                           Positioned(
@@ -151,29 +150,37 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                                         ),
                                       )),
                                   Expanded(
-                                      flex: 3,
-                                      child: Container(
-                                        margin: EdgeInsets.symmetric(vertical: 8),
-                                        decoration: BoxDecoration(
-                                            color: Colors.green[100],
-                                            borderRadius: BorderRadius.circular(12)),
-                                        child: Padding(
-                                          padding: const EdgeInsets.all(2.0),
-                                          child: Center(
-                                            child: Row(
-                                              children: [
-                                                Icon(Icons.add, color: Colors.green, size: 12,),
-                                                Text("Room",style: GoogleFonts.montserrat(
-                                                  fontSize: 10
-                                                ),),
-                                                Icon(Icons.lock_rounded, color: Colors.green, size: 12,),
-                                              ],
-                                            ),
+                                    flex: 3,
+                                    child: Container(
+                                      margin: EdgeInsets.symmetric(vertical: 8),
+                                      decoration: BoxDecoration(
+                                          color: Colors.green[100], borderRadius: BorderRadius.circular(12)),
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(2.0),
+                                        child: Center(
+                                          child: Row(
+                                            children: [
+                                              Icon(
+                                                Icons.add,
+                                                color: Colors.green,
+                                                size: 12,
+                                              ),
+                                              Text(
+                                                "Room",
+                                                style: GoogleFonts.montserrat(fontSize: 10,
+                                                    color: Colors.green,
+                                                fontWeight: FontWeight.bold),
+                                              ),
+                                              Icon(
+                                                Icons.lock_rounded,
+                                                color: Colors.green,
+                                                size: 12,
+                                              ),
+                                            ],
                                           ),
                                         ),
-
                                       ),
-
+                                    ),
                                   ),
                                 ],
                               ),
