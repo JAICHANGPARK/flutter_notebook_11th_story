@@ -204,6 +204,11 @@ bool isToggle = false;
               backgroundDecoration: BoxDecoration(
                 color: ClubhouseStyle.appBackgroundColor,
               ),
+              innerDrawerCallback: (b){
+                setState(() {
+                  isToggle = b;
+                });
+              },
               scaffold: Scaffold(
                 backgroundColor: ClubhouseStyle.appBackgroundColor,
                 body: Stack(
