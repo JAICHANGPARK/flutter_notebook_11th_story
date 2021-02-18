@@ -489,7 +489,10 @@ bool isToggle = false;
                               _toggle();
                             },
                             iconSize: 32,
-                          ):Container(),
+                          ):Container(
+                            height: 32,
+                            width: 32,
+                          ),
                         ],
                       ),
                     ),
