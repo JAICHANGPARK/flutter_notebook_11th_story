@@ -295,6 +295,9 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                     ),
                     //TODO: button Start room and icon
                     Positioned(
+                      bottom: 0,
+                      left: 64,
+                      right: 16,
                       child: Row(
                         children: [
                           Spacer(),
@@ -328,9 +331,7 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                           )
                         ],
                       ),
-                      bottom: 54,
-                      left: 64,
-                      right: 16,
+
                     ),
                   ],
                 ),
