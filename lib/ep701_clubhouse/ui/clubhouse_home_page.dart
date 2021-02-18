@@ -63,11 +63,25 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                 child: InnerDrawer(
                   key: _innerDrawerKey,
                   rightAnimationType: InnerDrawerAnimation.linear,
-                  rightChild: Column(
-                    children: [
-                      Expanded(child: Placeholder()),
-                      Expanded(child: Placeholder()),
-                    ],
+                  rightChild: Padding(
+                    padding: const EdgeInsets.fromLTRB(8,8,8,0),
+                    child: RefreshIndicator(
+                      onRefresh: () {
+                        setState(() {
+
+                        });
+                      },
+                      child: Column(
+                        children: [
+                          Expanded(
+                              flex: 1,
+                              child: Placeholder()),
+                          Expanded(
+                              flex: 15,
+                              child: Placeholder()),
+                        ],
+                      ),
+                    ),
                   ),
                   colorTransitionChild: Colors.transparent,
                   colorTransitionScaffold: Colors.transparent,
