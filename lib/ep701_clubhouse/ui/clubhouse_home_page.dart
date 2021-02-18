@@ -293,7 +293,7 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                   ),
                 ),
               ),
-              //TODO: Bottom sheet or back drop 
+              //TODO: Bottom sheet or back drop
               Positioned(
                 child: Container(
                   height: 52,
@@ -316,6 +316,7 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                 left: 0,
                 right: 0,
               ),
+              //TODO: Start room and button 
               Positioned(
                 child: Row(
                   children: [
