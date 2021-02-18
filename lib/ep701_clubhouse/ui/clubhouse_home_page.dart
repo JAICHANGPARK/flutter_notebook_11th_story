@@ -105,10 +105,26 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                               ),
                               child: Row(
                                 children: [
-                                  Expanded(child: Placeholder()),
-                                  Expanded(child: Placeholder()),
-                                  Expanded(child: Placeholder()),
-                                  
+                                  Expanded(
+                                      flex: 2,
+                                      child: Stack(
+                                        children: [
+                                          Positioned(
+                                            left: 0,
+                                            top: 0,
+                                            bottom: 0,
+                                            right: 0,
+                                            
+                                          )
+                                        ],
+                                      )),
+                                  Expanded(
+                                      flex: 6,
+                                      child: Placeholder()),
+                                  Expanded(
+                                      flex: 3,
+                                      child: Placeholder()),
+
                                 ],
                               ),
                             ),
