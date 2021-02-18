@@ -101,7 +101,7 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                             child: Container(
                               height: 42,
                               decoration: BoxDecoration(
-                                color: Colors.red,
+
                               ),
                               child: Row(
                                 children: [
@@ -143,7 +143,11 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                                       )),
                                   Expanded(
                                       flex: 8,
-                                      child: Placeholder()),
+                                      child: Column(
+                                        children: [
+                                          Text("Dreamwalker", style: GoogleFonts.montserrat(),)
+                                        ],
+                                      )),
                                   Expanded(
                                       flex: 3,
                                       child: Placeholder()),
