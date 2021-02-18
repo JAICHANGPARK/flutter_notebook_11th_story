@@ -483,7 +483,7 @@ bool isToggle = false;
                             ),
                           ),
                           Spacer(),
-                          isToggle ? IconButton(
+                          !isToggle ? IconButton(
                             icon: Icon(Icons.apps),
                             onPressed: () {
                               _toggle();
