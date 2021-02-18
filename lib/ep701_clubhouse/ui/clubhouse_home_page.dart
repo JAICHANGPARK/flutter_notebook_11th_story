@@ -68,6 +68,9 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                   swipe: true,
                   onTapClose: true,
                   boxShadow: [],
+                  backgroundDecoration: BoxDecoration(
+                    color: ClubhouseStyle.appBackgroundColor,
+                  ),
                   scaffold: Scaffold(
                     backgroundColor: ClubhouseStyle.appBackgroundColor,
                     body: Stack(
