@@ -19,6 +19,12 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
       direction: InnerDrawerDirection.end
     );
   }
+  Future onRefreshDrawerList()async{
+
+  }
+  Future onRefreshRoomList()async{
+    await Future.delayed(Duration(seconds: 1));
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -63,24 +69,17 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                 child: InnerDrawer(
                   key: _innerDrawerKey,
                   rightAnimationType: InnerDrawerAnimation.linear,
-                  rightChild: Padding(
-                    padding: const EdgeInsets.fromLTRB(8,8,8,0),
-                    child: RefreshIndicator(
-                      onRefresh: () {
-                        setState(() {
-
-                        });
-                      },
-                      child: Column(
-                        children: [
-                          Expanded(
-                              flex: 1,
-                              child: Placeholder()),
-                          Expanded(
-                              flex: 15,
-                              child: Placeholder()),
-                        ],
-                      ),
+                  rightChild: RefreshIndicator(
+                    onRefresh: onRefreshDrawerList,
+                    child: Column(
+                      children: [
+                        Expanded(
+                            flex: 1,
+                            child: Placeholder()),
+                        Expanded(
+                            flex: 15,
+                            child: Placeholder()),
+                      ],
                     ),
                   ),
                   colorTransitionChild: Colors.transparent,
@@ -97,220 +96,223 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                     body: Stack(
                       children: [
                         Container(
-                          child: ListView.builder(
-                              shrinkWrap: true,
-                              itemBuilder: (context, index) {
-                                if (index == 0) {
-                                  return Container(
-                                    margin: EdgeInsets.all(8),
-                                    decoration: BoxDecoration(
-                                        color: Color(0xffe6e4d6), // 230 228 214  e6 e4 d6,
-                                        borderRadius: BorderRadius.circular(16)),
-                                    padding: EdgeInsets.all(8),
-                                    child: Column(
-                                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                      children: [
-                                        Padding(
-                                          padding: const EdgeInsets.symmetric(vertical: 4),
-                                          child: Row(
-                                            children: [
-                                              Expanded(
-                                                  flex: 2,
-                                                  child: Align(
-                                                      alignment: Alignment.centerRight,
-                                                      child: Text(
-                                                        "9:30 PM",
-                                                        style: TextStyle(color: Colors.brown[200]),
-                                                      ))),
-                                              SizedBox(
-                                                width: 16,
-                                              ),
-                                              Expanded(
-                                                  flex: 8,
-                                                  child: Text(
-                                                    "[Flutter] Dreamwalker Live talking show",
-                                                    overflow: TextOverflow.ellipsis,
-                                                  ))
-                                            ],
-                                          ),
-                                        ),
-                                        Padding(
-                                          padding: const EdgeInsets.symmetric(vertical: 4),
-                                          child: Row(
-                                            children: [
-                                              Expanded(
-                                                  flex: 2,
-                                                  child: Align(
-                                                      alignment: Alignment.centerRight,
-                                                      child: Text(
-                                                        "10:00 PM",
-                                                        style: TextStyle(color: Colors.brown[200]),
-                                                      ))),
-                                              SizedBox(
-                                                width: 16,
-                                              ),
-                                              Expanded(
-                                                  flex: 8,
-                                                  child: Text(
-                                                    "[Flutter] Dreamwalker Live talking show",
-                                                    overflow: TextOverflow.ellipsis,
-                                                  ))
-                                            ],
-                                          ),
-                                        ),
-                                        Padding(
-                                          padding: const EdgeInsets.symmetric(vertical: 4),
-                                          child: Row(
-                                            children: [
-                                              Expanded(
-                                                  flex: 2,
-                                                  child: Align(
-                                                      alignment: Alignment.centerRight,
-                                                      child: Text(
-                                                        "10:30 PM",
-                                                        style: TextStyle(color: Colors.brown[200]),
-                                                      ))),
-                                              SizedBox(
-                                                width: 16,
-                                              ),
-                                              Expanded(
-                                                  flex: 8,
-                                                  child: Text(
-                                                    "[Flutter] Dreamwalker Live talking show",
-                                                    overflow: TextOverflow.ellipsis,
-                                                  ))
-                                            ],
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  );
-                                }
-                                return Padding(
-                                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                                  child: Card(
-                                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-                                    child: Padding(
-                                      padding: const EdgeInsets.all(8.0),
+                          child: RefreshIndicator(
+                            onRefresh: onRefreshRoomList,
+                            child: ListView.builder(
+                                shrinkWrap: true,
+                                itemBuilder: (context, index) {
+                                  if (index == 0) {
+                                    return Container(
+                                      margin: EdgeInsets.all(8),
+                                      decoration: BoxDecoration(
+                                          color: Color(0xffe6e4d6), // 230 228 214  e6 e4 d6,
+                                          borderRadius: BorderRadius.circular(16)),
+                                      padding: EdgeInsets.all(8),
                                       child: Column(
-                                        mainAxisSize: MainAxisSize.min,
-                                        crossAxisAlignment: CrossAxisAlignment.start,
-                                        mainAxisAlignment: MainAxisAlignment.start,
+                                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                         children: [
                                           Padding(
-                                            padding: const EdgeInsets.all(8.0),
-                                            child: Text(
-                                              "Flutter Club",
-                                              style: GoogleFonts.montserrat(fontWeight: FontWeight.bold),
+                                            padding: const EdgeInsets.symmetric(vertical: 4),
+                                            child: Row(
+                                              children: [
+                                                Expanded(
+                                                    flex: 2,
+                                                    child: Align(
+                                                        alignment: Alignment.centerRight,
+                                                        child: Text(
+                                                          "9:30 PM",
+                                                          style: TextStyle(color: Colors.brown[200]),
+                                                        ))),
+                                                SizedBox(
+                                                  width: 16,
+                                                ),
+                                                Expanded(
+                                                    flex: 8,
+                                                    child: Text(
+                                                      "[Flutter] Dreamwalker Live talking show",
+                                                      overflow: TextOverflow.ellipsis,
+                                                    ))
+                                              ],
                                             ),
                                           ),
-                                          Row(
-                                            crossAxisAlignment: CrossAxisAlignment.start,
-                                            children: [
-                                              Padding(
-                                                padding: const EdgeInsets.all(8.0),
-                                                child: SizedBox(
-                                                  height: 72,
-                                                  width: 64,
-                                                  child: Stack(
-                                                    children: [
-                                                      Positioned(
-                                                        top: 16,
-                                                        left: 16,
-                                                        child: Container(
-                                                          height: 36,
-                                                          width: 36,
-                                                          decoration: BoxDecoration(
-                                                              color: Colors.red, borderRadius: BorderRadius.circular(8)),
-                                                        ),
-                                                      ),
-                                                      Positioned(
-                                                        top: 0,
-                                                        left: 0,
-                                                        child: Container(
-                                                          height: 36,
-                                                          width: 36,
-                                                          decoration: BoxDecoration(
-                                                              color: Colors.brown, borderRadius: BorderRadius.circular(8)),
-                                                        ),
-                                                      ),
-                                                    ],
-                                                  ),
+                                          Padding(
+                                            padding: const EdgeInsets.symmetric(vertical: 4),
+                                            child: Row(
+                                              children: [
+                                                Expanded(
+                                                    flex: 2,
+                                                    child: Align(
+                                                        alignment: Alignment.centerRight,
+                                                        child: Text(
+                                                          "10:00 PM",
+                                                          style: TextStyle(color: Colors.brown[200]),
+                                                        ))),
+                                                SizedBox(
+                                                  width: 16,
                                                 ),
+                                                Expanded(
+                                                    flex: 8,
+                                                    child: Text(
+                                                      "[Flutter] Dreamwalker Live talking show",
+                                                      overflow: TextOverflow.ellipsis,
+                                                    ))
+                                              ],
+                                            ),
+                                          ),
+                                          Padding(
+                                            padding: const EdgeInsets.symmetric(vertical: 4),
+                                            child: Row(
+                                              children: [
+                                                Expanded(
+                                                    flex: 2,
+                                                    child: Align(
+                                                        alignment: Alignment.centerRight,
+                                                        child: Text(
+                                                          "10:30 PM",
+                                                          style: TextStyle(color: Colors.brown[200]),
+                                                        ))),
+                                                SizedBox(
+                                                  width: 16,
+                                                ),
+                                                Expanded(
+                                                    flex: 8,
+                                                    child: Text(
+                                                      "[Flutter] Dreamwalker Live talking show",
+                                                      overflow: TextOverflow.ellipsis,
+                                                    ))
+                                              ],
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    );
+                                  }
+                                  return Padding(
+                                    padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                    child: Card(
+                                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
+                                          mainAxisSize: MainAxisSize.min,
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          mainAxisAlignment: MainAxisAlignment.start,
+                                          children: [
+                                            Padding(
+                                              padding: const EdgeInsets.all(8.0),
+                                              child: Text(
+                                                "Flutter Club",
+                                                style: GoogleFonts.montserrat(fontWeight: FontWeight.bold),
                                               ),
-                                              Expanded(
-                                                  flex: 3,
-                                                  child: Padding(
-                                                    padding: const EdgeInsets.symmetric(horizontal: 8),
-                                                    child: Column(
-                                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                            ),
+                                            Row(
+                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                              children: [
+                                                Padding(
+                                                  padding: const EdgeInsets.all(8.0),
+                                                  child: SizedBox(
+                                                    height: 72,
+                                                    width: 64,
+                                                    child: Stack(
                                                       children: [
-                                                        Padding(
-                                                          padding: const EdgeInsets.symmetric(vertical: 4),
-                                                          child: Text(
-                                                            "Dreamwalker 💬",
-                                                            style: GoogleFonts.montserrat(),
+                                                        Positioned(
+                                                          top: 16,
+                                                          left: 16,
+                                                          child: Container(
+                                                            height: 36,
+                                                            width: 36,
+                                                            decoration: BoxDecoration(
+                                                                color: Colors.red, borderRadius: BorderRadius.circular(8)),
                                                           ),
                                                         ),
-                                                        Padding(
-                                                          padding: const EdgeInsets.symmetric(vertical: 4),
-                                                          child: Text(
-                                                            "Dreamwalker 💬",
-                                                            style: GoogleFonts.montserrat(),
-                                                          ),
-                                                        ),
-                                                        Padding(
-                                                          padding: const EdgeInsets.symmetric(vertical: 4),
-                                                          child: Text(
-                                                            "Dreamwalker 💬",
-                                                            style: GoogleFonts.montserrat(),
-                                                          ),
-                                                        ),
-                                                        Padding(
-                                                          padding: const EdgeInsets.symmetric(vertical: 4),
-                                                          child: Text(
-                                                            "Dreamwalker 💬",
-                                                            style: GoogleFonts.montserrat(),
-                                                          ),
-                                                        ),
-                                                        Padding(
-                                                          padding: const EdgeInsets.symmetric(vertical: 4),
-                                                          child: Text(
-                                                            "Dreamwalker 💬",
-                                                            style: GoogleFonts.montserrat(),
-                                                          ),
-                                                        ),
-                                                        Padding(
-                                                          padding: const EdgeInsets.symmetric(vertical: 4),
-                                                          child: Row(
-                                                            children: [
-                                                              Text(
-                                                                "1.2k",
-                                                                style: GoogleFonts.montserrat(color: Colors.grey),
-                                                              ),
-                                                              Icon(Icons.person, size: 16, color: Colors.grey),
-                                                              SizedBox(
-                                                                width: 8,
-                                                              ),
-                                                              Text(
-                                                                "/   10",
-                                                                style: GoogleFonts.montserrat(color: Colors.grey),
-                                                              ),
-                                                              Icon(Icons.chat_bubble, size: 16, color: Colors.grey)
-                                                            ],
+                                                        Positioned(
+                                                          top: 0,
+                                                          left: 0,
+                                                          child: Container(
+                                                            height: 36,
+                                                            width: 36,
+                                                            decoration: BoxDecoration(
+                                                                color: Colors.brown, borderRadius: BorderRadius.circular(8)),
                                                           ),
                                                         ),
                                                       ],
                                                     ),
-                                                  )),
-                                            ],
-                                          )
-                                        ],
+                                                  ),
+                                                ),
+                                                Expanded(
+                                                    flex: 3,
+                                                    child: Padding(
+                                                      padding: const EdgeInsets.symmetric(horizontal: 8),
+                                                      child: Column(
+                                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                                        children: [
+                                                          Padding(
+                                                            padding: const EdgeInsets.symmetric(vertical: 4),
+                                                            child: Text(
+                                                              "Dreamwalker 💬",
+                                                              style: GoogleFonts.montserrat(),
+                                                            ),
+                                                          ),
+                                                          Padding(
+                                                            padding: const EdgeInsets.symmetric(vertical: 4),
+                                                            child: Text(
+                                                              "Dreamwalker 💬",
+                                                              style: GoogleFonts.montserrat(),
+                                                            ),
+                                                          ),
+                                                          Padding(
+                                                            padding: const EdgeInsets.symmetric(vertical: 4),
+                                                            child: Text(
+                                                              "Dreamwalker 💬",
+                                                              style: GoogleFonts.montserrat(),
+                                                            ),
+                                                          ),
+                                                          Padding(
+                                                            padding: const EdgeInsets.symmetric(vertical: 4),
+                                                            child: Text(
+                                                              "Dreamwalker 💬",
+                                                              style: GoogleFonts.montserrat(),
+                                                            ),
+                                                          ),
+                                                          Padding(
+                                                            padding: const EdgeInsets.symmetric(vertical: 4),
+                                                            child: Text(
+                                                              "Dreamwalker 💬",
+                                                              style: GoogleFonts.montserrat(),
+                                                            ),
+                                                          ),
+                                                          Padding(
+                                                            padding: const EdgeInsets.symmetric(vertical: 4),
+                                                            child: Row(
+                                                              children: [
+                                                                Text(
+                                                                  "1.2k",
+                                                                  style: GoogleFonts.montserrat(color: Colors.grey),
+                                                                ),
+                                                                Icon(Icons.person, size: 16, color: Colors.grey),
+                                                                SizedBox(
+                                                                  width: 8,
+                                                                ),
+                                                                Text(
+                                                                  "/   10",
+                                                                  style: GoogleFonts.montserrat(color: Colors.grey),
+                                                                ),
+                                                                Icon(Icons.chat_bubble, size: 16, color: Colors.grey)
+                                                              ],
+                                                            ),
+                                                          ),
+                                                        ],
+                                                      ),
+                                                    )),
+                                              ],
+                                            )
+                                          ],
+                                        ),
                                       ),
                                     ),
-                                  ),
-                                );
-                              }),
+                                  );
+                                }),
+                          ),
                         ),
                         Positioned(
                           bottom: 0,
