@@ -99,7 +99,7 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                           return Padding(
                             padding: const EdgeInsets.only(left: 8, bottom: 8, right: 8),
                             child: Container(
-                              height: 48,
+                              height: 42,
                               decoration: BoxDecoration(
                                 color: Colors.red,
                               ),
@@ -114,12 +114,35 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                                             top: 0,
                                             bottom: 0,
                                             right: 0,
-                                            
+                                            child: Container(
+                                              decoration: BoxDecoration(
+                                                color: Colors.brown[400],
+                                                borderRadius: BorderRadius.circular(8)
+                                              ),
+                                            ),
+                                          ),
+                                          Positioned(
+
+
+                                            bottom: 0,
+                                            right: 0,
+                                            child: Container(
+                                              height: 12,
+                                              width: 12,
+                                              decoration: BoxDecoration(
+                                                  color: Colors.green[400],
+                                                  border: Border.all(
+                                                    color: Colors.white,
+                                                    width: 1.5
+                                                  ),
+                                                  borderRadius: BorderRadius.circular(8)
+                                              ),
+                                            ),
                                           )
                                         ],
                                       )),
                                   Expanded(
-                                      flex: 6,
+                                      flex: 8,
                                       child: Placeholder()),
                                   Expanded(
                                       flex: 3,
