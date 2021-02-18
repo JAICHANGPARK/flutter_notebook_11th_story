@@ -478,13 +478,13 @@ bool isToggle = false;
                             ),
                           ),
                           Spacer(),
-                          IconButton(
+                          isToggle ? IconButton(
                             icon: Icon(Icons.apps),
                             onPressed: () {
                               _toggle();
                             },
                             iconSize: 32,
-                          )
+                          ):Container(),
                         ],
                       ),
                     ),
