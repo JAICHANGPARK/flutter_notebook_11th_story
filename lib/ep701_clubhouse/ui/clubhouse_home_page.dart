@@ -63,11 +63,17 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                 child: InnerDrawer(
                   key: _innerDrawerKey,
                   rightAnimationType: InnerDrawerAnimation.linear,
-                  rightChild: Placeholder(),
+                  rightChild: Column(
+                    children: [
+                      Expanded(child: Placeholder()),
+                      Expanded(child: Placeholder()),
+                    ],
+                  ),
                   colorTransitionChild: Colors.transparent,
                   colorTransitionScaffold: Colors.transparent,
                   swipe: true,
                   swipeChild: false,
+                  offset: IDOffset.horizontal(0.5),
                   boxShadow: [],
                   backgroundDecoration: BoxDecoration(
                     color: ClubhouseStyle.appBackgroundColor,
