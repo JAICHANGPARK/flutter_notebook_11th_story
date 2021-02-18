@@ -14,7 +14,11 @@ class ClubhouseHomePage extends StatefulWidget {
 
 class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
   final GlobalKey<InnerDrawerState> _innerDrawerKey = GlobalKey<InnerDrawerState>();
-
+  void _toggle(){
+    _innerDrawerKey.currentState.toggle(
+      direction: InnerDrawerDirection.end
+    );
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -295,7 +299,7 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                     ),
                     //TODO: button Start room and icon
                     Positioned(
-                      bottom: 0,
+                      bottom: 8,
                       left: 64,
                       right: 16,
                       child: Row(
