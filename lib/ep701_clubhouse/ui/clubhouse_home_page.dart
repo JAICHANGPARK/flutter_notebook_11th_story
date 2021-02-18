@@ -50,6 +50,7 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                       )
                     ],
                   )),
+              //TODO: ROOM LIST
               Positioned(
                 bottom: 54,
                 left: 0,
@@ -272,6 +273,7 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                       }),
                 ),
               ),
+              //TODO: Gradient
               Positioned(
                 bottom: 54,
                 left: 0,
@@ -291,6 +293,7 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                   ),
                 ),
               ),
+              //TODO: Bottom sheet or back drop 
               Positioned(
                 child: Container(
                   height: 52,
