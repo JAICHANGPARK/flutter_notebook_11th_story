@@ -143,10 +143,20 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                                       )),
                                   Expanded(
                                       flex: 8,
-                                      child: Column(
-                                        children: [
-                                          Text("Dreamwalker", style: GoogleFonts.montserrat(),)
-                                        ],
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(4.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: [
+                                            Text("Dreamwalker", style: GoogleFonts.montserrat(
+                                              fontSize: 13
+                                            ),),
+                                            Text("Flutter Live Coding", style: GoogleFonts.montserrat(
+                                                fontSize: 12,
+                                              color: Colors.grey
+                                            ),),
+                                          ],
+                                        ),
                                       )),
                                   Expanded(
                                       flex: 3,
