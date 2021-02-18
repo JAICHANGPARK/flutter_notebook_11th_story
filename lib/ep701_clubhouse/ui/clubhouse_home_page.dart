@@ -62,13 +62,12 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                 right: 0,
                 child: InnerDrawer(
                   key: _innerDrawerKey,
+                  rightAnimationType: InnerDrawerAnimation.linear,
                   rightChild: Placeholder(),
                   colorTransitionChild: Colors.transparent,
                   colorTransitionScaffold: Colors.transparent,
-                  swipe: false,
+                  swipe: true,
                   swipeChild: false,
-
-                  onTapClose: true,
                   boxShadow: [],
                   backgroundDecoration: BoxDecoration(
                     color: ClubhouseStyle.appBackgroundColor,
@@ -345,7 +344,9 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                               Spacer(),
                               IconButton(
                                 icon: Icon(Icons.apps),
-                                onPressed: () {},
+                                onPressed: () {
+                                  _toggle();
+                                },
                                 iconSize: 32,
                               )
                             ],
