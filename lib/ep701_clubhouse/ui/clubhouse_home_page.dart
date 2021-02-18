@@ -97,11 +97,19 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                         flex: 15,
                         child: ListView.builder(itemBuilder: (context, index) {
                           return Padding(
-                            padding: const EdgeInsets.only(bottom: 8),
+                            padding: const EdgeInsets.only(left: 8, bottom: 8, right: 8),
                             child: Container(
-                              height: 64,
+                              height: 48,
                               decoration: BoxDecoration(
                                 color: Colors.red,
+                              ),
+                              child: Row(
+                                children: [
+                                  Expanded(child: Placeholder()),
+                                  Expanded(child: Placeholder()),
+                                  Expanded(child: Placeholder()),
+                                  
+                                ],
                               ),
                             ),
                           );
