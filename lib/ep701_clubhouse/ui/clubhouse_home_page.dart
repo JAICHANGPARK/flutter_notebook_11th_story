@@ -167,9 +167,8 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                                               ),
                                               Text(
                                                 "Room",
-                                                style: GoogleFonts.montserrat(fontSize: 10,
-                                                    color: Colors.green,
-                                                fontWeight: FontWeight.bold),
+                                                style: GoogleFonts.montserrat(
+                                                    fontSize: 10, color: Colors.green, fontWeight: FontWeight.bold),
                                               ),
                                               Icon(
                                                 Icons.lock_rounded,
