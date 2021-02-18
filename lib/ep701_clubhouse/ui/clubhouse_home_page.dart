@@ -14,10 +14,16 @@ class ClubhouseHomePage extends StatefulWidget {
 
 class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
   final GlobalKey<InnerDrawerState> _innerDrawerKey = GlobalKey<InnerDrawerState>();
-
+bool isToggle = false;
   void _toggle() {
+
     _innerDrawerKey.currentState.toggle(direction: InnerDrawerDirection.end);
+    setState(() {
+      isToggle = !isToggle;
+    });
+
   }
+
 
   Future onRefreshDrawerList() async {}
 
