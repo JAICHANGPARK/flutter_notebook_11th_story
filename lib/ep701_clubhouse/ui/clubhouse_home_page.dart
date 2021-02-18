@@ -99,10 +99,8 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                           return Padding(
                             padding: const EdgeInsets.only(left: 8, bottom: 8, right: 8),
                             child: Container(
-                              height: 42,
-                              decoration: BoxDecoration(
-
-                              ),
+                              height: 38,
+                              decoration: BoxDecoration(),
                               child: Row(
                                 children: [
                                   Expanded(
@@ -116,14 +114,11 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                                             right: 0,
                                             child: Container(
                                               decoration: BoxDecoration(
-                                                color: Colors.brown[400],
-                                                borderRadius: BorderRadius.circular(8)
-                                              ),
+                                                  color: Colors.brown[400],
+                                                  borderRadius: BorderRadius.circular(8)),
                                             ),
                                           ),
                                           Positioned(
-
-
                                             bottom: 0,
                                             right: 0,
                                             child: Container(
@@ -131,37 +126,37 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                                               width: 12,
                                               decoration: BoxDecoration(
                                                   color: Colors.green[400],
-                                                  border: Border.all(
-                                                    color: Colors.white,
-                                                    width: 1.5
-                                                  ),
-                                                  borderRadius: BorderRadius.circular(8)
-                                              ),
+                                                  border: Border.all(color: Colors.white, width: 1.5),
+                                                  borderRadius: BorderRadius.circular(8)),
                                             ),
                                           )
                                         ],
                                       )),
                                   Expanded(
-                                      flex: 8,
+                                      flex: 9,
                                       child: Padding(
                                         padding: const EdgeInsets.all(4.0),
                                         child: Column(
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
-                                            Text("Dreamwalker", style: GoogleFonts.montserrat(
-                                              fontSize: 13
-                                            ),),
-                                            Text("Flutter Live Coding", style: GoogleFonts.montserrat(
-                                                fontSize: 12,
-                                              color: Colors.grey
-                                            ),),
+                                            Text(
+                                              "Dreamwalker",
+                                              style: GoogleFonts.montserrat(fontSize: 13),
+                                            ),
+                                            Text(
+                                              "Flutter Live Coding",
+                                              style: GoogleFonts.montserrat(fontSize: 11, color: Colors.grey),
+                                            ),
                                           ],
                                         ),
                                       )),
                                   Expanded(
                                       flex: 3,
-                                      child: Placeholder()),
-
+                                      child: Container(
+                                        margin: EdgeInsets.symmetric(vertical: 8),
+                                        decoration: BoxDecoration(
+                                            color: Colors.green[100], borderRadius: BorderRadius.circular(12)),
+                                      )),
                                 ],
                               ),
                             ),
