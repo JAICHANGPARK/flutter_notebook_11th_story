@@ -63,6 +63,8 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                 child: InnerDrawer(
                   key: _innerDrawerKey,
                   rightChild: Placeholder(),
+                  colorTransitionChild: Colors.transparent,
+                  colorTransitionScaffold: Colors.transparent,
                   scaffold: Scaffold(
                     body: Stack(
                       children: [
