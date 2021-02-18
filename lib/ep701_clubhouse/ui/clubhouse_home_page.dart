@@ -65,7 +65,11 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                   rightChild: Placeholder(),
                   colorTransitionChild: Colors.transparent,
                   colorTransitionScaffold: Colors.transparent,
+                  swipe: true,
+                  
                   scaffold: Scaffold(
+
+                    backgroundColor: ClubhouseStyle.appBackgroundColor,
                     body: Stack(
                       children: [
                         Container(
