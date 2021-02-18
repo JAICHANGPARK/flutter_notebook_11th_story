@@ -66,9 +66,9 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                   colorTransitionChild: Colors.transparent,
                   colorTransitionScaffold: Colors.transparent,
                   swipe: true,
-                  
+                  onTapClose: true,
+                  boxShadow: [],
                   scaffold: Scaffold(
-
                     backgroundColor: ClubhouseStyle.appBackgroundColor,
                     body: Stack(
                       children: [
