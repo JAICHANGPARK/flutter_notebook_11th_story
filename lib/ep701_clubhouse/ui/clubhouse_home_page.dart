@@ -505,6 +505,9 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
 
           //TODO: Bottom sheet or back drop
           Positioned(
+            bottom: 0,
+            left: 0,
+            right: 0,
             child: Container(
               height: 52,
               decoration: BoxDecoration(
@@ -522,9 +525,7 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                     )
                   ]),
             ),
-            bottom: 0,
-            left: 0,
-            right: 0,
+
           ),
         ],
       )),
