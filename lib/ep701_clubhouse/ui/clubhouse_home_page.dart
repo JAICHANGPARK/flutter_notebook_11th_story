@@ -312,8 +312,9 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                                   actionPane: SlidableBehindActionPane(),
                                   actions: [
                                     IconSlideAction(
-                                      caption: 'Archive',
-                                      icon: Icons.archive,
+                                      caption: 'Hide',
+                                      foregroundColor: Colors.black,
+                                      iconWidget: Icon(Icons.remove_circle,),
                                       color: Colors.transparent,
                                       onTap: () {}
 
