@@ -3,6 +3,7 @@ import 'package:badges/badges.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_inner_drawer/inner_drawer.dart';
+import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'clubhouse_style.dart';
@@ -305,17 +306,19 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                               }
                               return Padding(
                                 padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                                child: Dismissible(
-                                  crossAxisEndOffset: 2,
-                                  dismissThresholds: {
-                                    DismissDirection.startToEnd : 4
-                                  },
-                                  direction:DismissDirection.startToEnd ,
-                                  onDismissed: (direction){
-                                    setState(() {
-                                    });
-                                  },
+                                child: Slidable(
+                                 
                                   key: Key("${index+1}"),
+                                  actionPane: SlidableBehindActionPane(),
+                                  actions: [
+                                    IconSlideAction(
+                                      caption: 'Archive',
+                                      icon: Icons.archive,
+                                      color: Colors.transparent,
+                                      onTap: () {}
+
+                                    ),
+                                  ],
                                   child: Card(
                                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
                                     child: Padding(
