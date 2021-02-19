@@ -527,7 +527,16 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
               padding: EdgeInsets.symmetric(horizontal: 16),
               child: Row(
                 children: [
-                  Expanded(child: Stack()),
+                  Expanded(child: Stack(
+                    children: [
+                      Positioned(
+                        left: 0,
+                          child: CircleAvatar()),
+                      Positioned(
+                          left: 16,
+                          child: CircleAvatar())
+                    ],
+                  )),
                   Padding(
                     padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
                     child: CircleAvatar(
