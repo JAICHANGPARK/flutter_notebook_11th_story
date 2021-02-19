@@ -526,7 +526,10 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                   ]),
               child: Row(
                 children: [
-                  Expanded(child: Stack())
+                  Expanded(child: Stack()),
+                  CircleAvatar(),
+                  CircleAvatar(),
+                  CircleAvatar(),
                 ],
               ),
             ),
