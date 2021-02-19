@@ -524,6 +524,11 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                       spreadRadius: 3,
                     )
                   ]),
+              child: Row(
+                children: [
+                  Expanded(child: Stack())
+                ],
+              ),
             ),
 
           ),
