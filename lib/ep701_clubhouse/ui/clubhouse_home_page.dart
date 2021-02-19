@@ -536,7 +536,12 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                           child: CircleAvatar()),
                       Positioned(
                         top: 0,
-                          left: 16,
+                          left: 18,
+                          bottom: 0,
+                          child: CircleAvatar()),
+                      Positioned(
+                          top: 0,
+                          left: 18,
                           bottom: 0,
                           child: CircleAvatar())
                     ],
