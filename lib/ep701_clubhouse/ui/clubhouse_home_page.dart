@@ -529,26 +529,32 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                 children: [
                   Expanded(child: Stack(
                     children: [
-                      Positioned(
-                        top: 0,
-                        left: 0,
-                          bottom: 0,
-                          child: CircleAvatar()),
-                      Positioned(
-                        top: 0,
-                          left: 18,
-                          bottom: 0,
-                          child: CircleAvatar()),
+
                       Positioned(
                           top: 0,
-                          left: 36,
+                          left: 52,
                           bottom: 0,
                           child: CircleAvatar(
+                            foregroundColor: Colors.black,
                             backgroundColor: Colors.grey,
                             child: Text("+632",style: TextStyle(
-                              fontSize: 12
+                              fontSize: 11
                             ),),
-                          ))
+                          )),
+                      Positioned(
+                          top: 0,
+                          left: 24,
+                          bottom: 0,
+                          child: CircleAvatar()),
+
+                      Positioned(
+                          top: 0,
+                          left: 0,
+                          bottom: 0,
+                          child: CircleAvatar(
+                            foregroundColor: Colors.brown,
+                          )),
+
                     ],
                   )),
                   Padding(
