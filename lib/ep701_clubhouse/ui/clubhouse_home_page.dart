@@ -572,18 +572,21 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                     padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
                     child: CircleAvatar(
                       backgroundColor: Colors.grey[200],
+                      child: Text("✌🏼"),
                     ),
                   ),
                   Padding(
                     padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
                     child: CircleAvatar(
                       backgroundColor: Colors.grey[200],
+                      child: Icon(Icons.add, color: Colors.blueGrey,),
                     ),
                   ),
                   Padding(
                     padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
                     child: CircleAvatar(
                       backgroundColor: Colors.grey[200],
+                      child: Text("✋🏼"),
                     ),
                   ),
                 ],
