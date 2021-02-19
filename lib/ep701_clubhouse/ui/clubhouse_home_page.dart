@@ -524,7 +524,7 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                       spreadRadius: 3,
                     )
                   ]),
-              padding: EdgeInsets.symmetric(horizontal: 8),
+              padding: EdgeInsets.symmetric(horizontal: 16),
               child: Row(
                 children: [
                   Expanded(child: Stack()),
