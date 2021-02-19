@@ -530,10 +530,14 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                   Expanded(child: Stack(
                     children: [
                       Positioned(
+                        top: 0,
                         left: 0,
+                          bottom: 0,
                           child: CircleAvatar()),
                       Positioned(
+                        top: 0,
                           left: 16,
+                          bottom: 0,
                           child: CircleAvatar())
                     ],
                   )),
