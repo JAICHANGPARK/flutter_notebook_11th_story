@@ -530,15 +530,21 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                   Expanded(child: Stack()),
                   Padding(
                     padding: EdgeInsets.symmetric(vertical: 8),
-                    child: CircleAvatar(),
+                    child: CircleAvatar(
+                      backgroundColor: Colors.grey[200],
+                    ),
                   ),
                   Padding(
                     padding: EdgeInsets.symmetric(vertical: 8),
-                    child: CircleAvatar(),
+                    child: CircleAvatar(
+                      backgroundColor: Colors.grey[200],
+                    ),
                   ),
                   Padding(
                     padding: EdgeInsets.symmetric(vertical: 8),
-                    child: CircleAvatar(),
+                    child: CircleAvatar(
+                      backgroundColor: Colors.grey[200],
+                    ),
                   ),
                 ],
               ),
