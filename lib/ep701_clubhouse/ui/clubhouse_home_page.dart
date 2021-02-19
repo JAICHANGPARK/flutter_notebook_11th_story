@@ -305,125 +305,128 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                               }
                               return Padding(
                                 padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                                child: Card(
-                                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-                                  child: Padding(
-                                    padding: const EdgeInsets.all(8.0),
-                                    child: Column(
-                                      mainAxisSize: MainAxisSize.min,
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      mainAxisAlignment: MainAxisAlignment.start,
-                                      children: [
-                                        Padding(
-                                          padding: const EdgeInsets.all(8.0),
-                                          child: Text(
-                                            "Flutter Club",
-                                            style: GoogleFonts.montserrat(fontWeight: FontWeight.bold),
-                                          ),
-                                        ),
-                                        Row(
-                                          crossAxisAlignment: CrossAxisAlignment.start,
-                                          children: [
-                                            Padding(
-                                              padding: const EdgeInsets.all(8.0),
-                                              child: SizedBox(
-                                                height: 72,
-                                                width: 64,
-                                                child: Stack(
-                                                  children: [
-                                                    Positioned(
-                                                      top: 16,
-                                                      left: 16,
-                                                      child: Container(
-                                                        height: 36,
-                                                        width: 36,
-                                                        decoration: BoxDecoration(
-                                                            color: Colors.red, borderRadius: BorderRadius.circular(8)),
-                                                      ),
-                                                    ),
-                                                    Positioned(
-                                                      top: 0,
-                                                      left: 0,
-                                                      child: Container(
-                                                        height: 36,
-                                                        width: 36,
-                                                        decoration: BoxDecoration(
-                                                            color: Colors.brown,
-                                                            borderRadius: BorderRadius.circular(8)),
-                                                      ),
-                                                    ),
-                                                  ],
-                                                ),
-                                              ),
+                                child: Dismissible(
+                                  key: ,
+                                  child: Card(
+                                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Column(
+                                        mainAxisSize: MainAxisSize.min,
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        mainAxisAlignment: MainAxisAlignment.start,
+                                        children: [
+                                          Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: Text(
+                                              "Flutter Club",
+                                              style: GoogleFonts.montserrat(fontWeight: FontWeight.bold),
                                             ),
-                                            Expanded(
-                                                flex: 3,
-                                                child: Padding(
-                                                  padding: const EdgeInsets.symmetric(horizontal: 8),
-                                                  child: Column(
-                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                          ),
+                                          Row(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              Padding(
+                                                padding: const EdgeInsets.all(8.0),
+                                                child: SizedBox(
+                                                  height: 72,
+                                                  width: 64,
+                                                  child: Stack(
                                                     children: [
-                                                      Padding(
-                                                        padding: const EdgeInsets.symmetric(vertical: 4),
-                                                        child: Text(
-                                                          "Dreamwalker 💬",
-                                                          style: GoogleFonts.montserrat(),
+                                                      Positioned(
+                                                        top: 16,
+                                                        left: 16,
+                                                        child: Container(
+                                                          height: 36,
+                                                          width: 36,
+                                                          decoration: BoxDecoration(
+                                                              color: Colors.red, borderRadius: BorderRadius.circular(8)),
                                                         ),
                                                       ),
-                                                      Padding(
-                                                        padding: const EdgeInsets.symmetric(vertical: 4),
-                                                        child: Text(
-                                                          "Dreamwalker 💬",
-                                                          style: GoogleFonts.montserrat(),
-                                                        ),
-                                                      ),
-                                                      Padding(
-                                                        padding: const EdgeInsets.symmetric(vertical: 4),
-                                                        child: Text(
-                                                          "Dreamwalker 💬",
-                                                          style: GoogleFonts.montserrat(),
-                                                        ),
-                                                      ),
-                                                      Padding(
-                                                        padding: const EdgeInsets.symmetric(vertical: 4),
-                                                        child: Text(
-                                                          "Dreamwalker 💬",
-                                                          style: GoogleFonts.montserrat(),
-                                                        ),
-                                                      ),
-                                                      Padding(
-                                                        padding: const EdgeInsets.symmetric(vertical: 4),
-                                                        child: Text(
-                                                          "Dreamwalker 💬",
-                                                          style: GoogleFonts.montserrat(),
-                                                        ),
-                                                      ),
-                                                      Padding(
-                                                        padding: const EdgeInsets.symmetric(vertical: 4),
-                                                        child: Row(
-                                                          children: [
-                                                            Text(
-                                                              "1.2k",
-                                                              style: GoogleFonts.montserrat(color: Colors.grey),
-                                                            ),
-                                                            Icon(Icons.person, size: 16, color: Colors.grey),
-                                                            SizedBox(
-                                                              width: 8,
-                                                            ),
-                                                            Text(
-                                                              "/   10",
-                                                              style: GoogleFonts.montserrat(color: Colors.grey),
-                                                            ),
-                                                            Icon(Icons.chat_bubble, size: 16, color: Colors.grey)
-                                                          ],
+                                                      Positioned(
+                                                        top: 0,
+                                                        left: 0,
+                                                        child: Container(
+                                                          height: 36,
+                                                          width: 36,
+                                                          decoration: BoxDecoration(
+                                                              color: Colors.brown,
+                                                              borderRadius: BorderRadius.circular(8)),
                                                         ),
                                                       ),
                                                     ],
                                                   ),
-                                                )),
-                                          ],
-                                        )
-                                      ],
+                                                ),
+                                              ),
+                                              Expanded(
+                                                  flex: 3,
+                                                  child: Padding(
+                                                    padding: const EdgeInsets.symmetric(horizontal: 8),
+                                                    child: Column(
+                                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                                      children: [
+                                                        Padding(
+                                                          padding: const EdgeInsets.symmetric(vertical: 4),
+                                                          child: Text(
+                                                            "Dreamwalker 💬",
+                                                            style: GoogleFonts.montserrat(),
+                                                          ),
+                                                        ),
+                                                        Padding(
+                                                          padding: const EdgeInsets.symmetric(vertical: 4),
+                                                          child: Text(
+                                                            "Dreamwalker 💬",
+                                                            style: GoogleFonts.montserrat(),
+                                                          ),
+                                                        ),
+                                                        Padding(
+                                                          padding: const EdgeInsets.symmetric(vertical: 4),
+                                                          child: Text(
+                                                            "Dreamwalker 💬",
+                                                            style: GoogleFonts.montserrat(),
+                                                          ),
+                                                        ),
+                                                        Padding(
+                                                          padding: const EdgeInsets.symmetric(vertical: 4),
+                                                          child: Text(
+                                                            "Dreamwalker 💬",
+                                                            style: GoogleFonts.montserrat(),
+                                                          ),
+                                                        ),
+                                                        Padding(
+                                                          padding: const EdgeInsets.symmetric(vertical: 4),
+                                                          child: Text(
+                                                            "Dreamwalker 💬",
+                                                            style: GoogleFonts.montserrat(),
+                                                          ),
+                                                        ),
+                                                        Padding(
+                                                          padding: const EdgeInsets.symmetric(vertical: 4),
+                                                          child: Row(
+                                                            children: [
+                                                              Text(
+                                                                "1.2k",
+                                                                style: GoogleFonts.montserrat(color: Colors.grey),
+                                                              ),
+                                                              Icon(Icons.person, size: 16, color: Colors.grey),
+                                                              SizedBox(
+                                                                width: 8,
+                                                              ),
+                                                              Text(
+                                                                "/   10",
+                                                                style: GoogleFonts.montserrat(color: Colors.grey),
+                                                              ),
+                                                              Icon(Icons.chat_bubble, size: 16, color: Colors.grey)
+                                                            ],
+                                                          ),
+                                                        ),
+                                                      ],
+                                                    ),
+                                                  )),
+                                            ],
+                                          )
+                                        ],
+                                      ),
                                     ),
                                   ),
                                 ),
