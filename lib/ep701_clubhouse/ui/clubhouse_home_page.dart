@@ -306,8 +306,9 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                               return Padding(
                                 padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                                 child: Dismissible(
+                                  crossAxisEndOffset: 2,
                                   dismissThresholds: {
-                                    DismissDirection.startToEnd : 0.5
+                                    DismissDirection.startToEnd : 4
                                   },
                                   direction:DismissDirection.startToEnd ,
                                   onDismissed: (direction){
