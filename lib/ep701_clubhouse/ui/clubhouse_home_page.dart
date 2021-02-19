@@ -306,7 +306,15 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                               return Padding(
                                 padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                                 child: Dismissible(
-                                  key: ,
+                                  dismissThresholds: {
+                                    DismissDirection.startToEnd : 0.5
+                                  },
+                                  direction:DismissDirection.startToEnd ,
+                                  onDismissed: (direction){
+                                    setState(() {
+                                    });
+                                  },
+                                  key: Key("${index+1}"),
                                   child: Card(
                                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
                                     child: Padding(
