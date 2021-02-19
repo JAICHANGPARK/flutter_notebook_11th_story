@@ -528,9 +528,18 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
               child: Row(
                 children: [
                   Expanded(child: Stack()),
-                  CircleAvatar(),
-                  CircleAvatar(),
-                  CircleAvatar(),
+                  Padding(
+                    padding: EdgeInsets.symmetric(vertical: 8),
+                    child: CircleAvatar(),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.symmetric(vertical: 8),
+                    child: CircleAvatar(),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.symmetric(vertical: 8),
+                    child: CircleAvatar(),
+                  ),
                 ],
               ),
             ),
