@@ -527,9 +527,9 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
               padding: EdgeInsets.symmetric(horizontal: 16),
               child: Row(
                 children: [
-                  Expanded(child: Stack(
+                  Expanded(
+                      child: Stack(
                     children: [
-
                       Positioned(
                           top: 0,
                           left: 52,
@@ -537,16 +537,12 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                           child: CircleAvatar(
                             foregroundColor: Colors.black,
                             backgroundColor: Colors.grey,
-                            child: Text("+632",style: TextStyle(
-                              fontSize: 11
-                            ),),
+                            child: Text(
+                              "+632",
+                              style: TextStyle(fontSize: 11),
+                            ),
                           )),
-                      Positioned(
-                          top: 0,
-                          left: 24,
-                          bottom: 0,
-                          child: CircleAvatar()),
-
+                      Positioned(top: 0, left: 24, bottom: 0, child: CircleAvatar()),
                       Positioned(
                           top: 0,
                           left: 0,
@@ -554,7 +550,6 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                           child: CircleAvatar(
                             foregroundColor: Colors.brown,
                           )),
-
                     ],
                   )),
                   Padding(
@@ -578,7 +573,6 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                 ],
               ),
             ),
-
           ),
         ],
       )),
