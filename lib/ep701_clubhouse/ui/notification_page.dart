@@ -29,9 +29,9 @@ class _NotificationPageState extends State<NotificationPage> {
             child: ListView(
               children: [
                 SizedBox(
-                  height: 72,
+                  height: 82,
                   child: Container(
-                    color: Colors.grey,
+
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -45,42 +45,54 @@ class _NotificationPageState extends State<NotificationPage> {
                               child: Column(
                                 children: [
                                   Expanded(
-                                    child: Placeholder(),
+                                    child: Text.rich(TextSpan(
+                                      children: [
+                                        TextSpan(
+                                          text: "Dreamwalker",
+                                        ),
+                                        TextSpan(
+                                          text: " just signed up for clubhouse Follow theme?"
+                                        )
+                                      ]
+                                    )),
                                   ),
                                   Expanded(
-                                    child: Row(
-                                      children: [
-                                        Expanded(child: Container(
-                                          decoration: ShapeDecoration(
-                                            shape: StadiumBorder(),
-                                            color: Colors.blue,
+                                    child: Padding(
+                                      padding: const EdgeInsets.symmetric(vertical: 2),
+                                      child: Row(
+                                        children: [
+                                          Expanded(child: Container(
+                                            decoration: ShapeDecoration(
+                                              shape: StadiumBorder(),
+                                              color: Colors.blue,
+                                            ),
+                                            child: Center(
+                                              child: Text("Follow",
+                                                style: GoogleFonts.montserrat(
+                                                  color: Colors.white,
+                                                    letterSpacing: 1.3,
+                                                    fontWeight: FontWeight.bold
+                                                ),),
+                                            ),
                                           ),
-                                          child: Center(
-                                            child: Text("Follow",
-                                              style: GoogleFonts.montserrat(
-                                                color: Colors.white,
-                                                  letterSpacing: 1.3,
-                                                  fontWeight: FontWeight.bold
-                                              ),),
-                                          ),
-                                        ),
 
-                                        ),
-                                        SizedBox(width: 16,),
-                                        Expanded(child: Container(
-                                          decoration: ShapeDecoration(
-                                            shape: StadiumBorder(),
-                                            color: Colors.white,
                                           ),
-                                          child: Center(
-                                            child: Text("Not yet, thx!",
-                                            style: GoogleFonts.montserrat(
-                                              
-                                              fontWeight: FontWeight.bold
-                                            ),),
-                                          ),
-                                        )),
-                                      ],
+                                          SizedBox(width: 16,),
+                                          Expanded(child: Container(
+                                            decoration: ShapeDecoration(
+                                              shape: StadiumBorder(),
+                                              color: Colors.white,
+                                            ),
+                                            child: Center(
+                                              child: Text("Not yet, thx!",
+                                              style: GoogleFonts.montserrat(
+
+                                                fontWeight: FontWeight.bold
+                                              ),),
+                                            ),
+                                          )),
+                                        ],
+                                      ),
                                     ),
                                   )
                                 ],
