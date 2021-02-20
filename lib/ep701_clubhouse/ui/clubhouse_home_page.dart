@@ -3,6 +3,7 @@ import 'package:badges/badges.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_inner_drawer/inner_drawer.dart';
+import 'package:flutter_notebook_11th_story/ep701_clubhouse/ui/notification_page.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -53,9 +54,15 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                   SizedBox(
                     width: 8,
                   ),
-                  Badge(
-                    child: Icon(Icons.notifications_none),
-                    badgeColor: Colors.red,
+                  GestureDetector(
+                    onTap: (){
+                      Navigator.of(context).push(MaterialPageRoute(builder: (context)=>
+                      NotificationPage()));
+                    },
+                    child: Badge(
+                      child: Icon(Icons.notifications_none),
+                      badgeColor: Colors.red,
+                    ),
                   ),
                   SizedBox(
                     width: 16,
