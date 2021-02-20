@@ -56,6 +56,7 @@ class _NotificationPageState extends State<NotificationPage> {
                                             color: Colors.blue,
                                           ),
                                         )),
+                                        SizedBox(width: 16,),
                                         Expanded(child: Container(
                                           decoration: ShapeDecoration(
                                             shape: StadiumBorder(),
