@@ -24,8 +24,45 @@ class _NotificationPageState extends State<NotificationPage> {
         )),
       ),
         body: SafeArea(
-          child: Row(),
+          child: ListView(
+            children: [
+              SizedBox(
+                height: 160,
+                child: Container(
+                  color: Colors.grey,
+                  child: Row(
+                    children: [
+                      Expanded(child: CircleAvatar()),
+                      Expanded(child: Placeholder())
+                    ],
+                  ),
+                ),
+              )
+            ],
+          ),
         ),
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
