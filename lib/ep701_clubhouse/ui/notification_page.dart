@@ -40,15 +40,23 @@ class _NotificationPageState extends State<NotificationPage> {
                             child: CircleAvatar()),
                         Expanded(
                             flex:10,
-                            child: Column(
-                              children: [
-                                Expanded(
-                                  child: Placeholder(),
-                                ),
-                                Expanded(
-                                  child: Placeholder(),
-                                )
-                              ],
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                                children: [
+                                  Expanded(
+                                    child: Placeholder(),
+                                  ),
+                                  Expanded(
+                                    child: Row(
+                                      children: [
+                                        Expanded(child: Placeholder()),
+                                        Expanded(child: Placeholder()),
+                                      ],
+                                    ),
+                                  )
+                                ],
+                              ),
                             ))
                       ],
                     ),
