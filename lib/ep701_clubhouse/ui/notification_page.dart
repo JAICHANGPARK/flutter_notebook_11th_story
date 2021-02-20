@@ -44,8 +44,10 @@ class _NotificationPageState extends State<NotificationPage> {
                               children: [
                                 Expanded(
                                   child: Row(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       Expanded(
+                                        flex:10,
                                         child: Text.rich(TextSpan(
                                           children: [
                                             TextSpan(
@@ -64,7 +66,9 @@ class _NotificationPageState extends State<NotificationPage> {
                                           ]
                                         )),
                                       ),
-                                      Expanded(child: Text("36m ago",style: TextStyle(
+                                      Expanded(
+                                          flex: 2,
+                                          child: Text("36m ago",style: TextStyle(
                                         fontSize: 10
                                       ),))
                                     ],
