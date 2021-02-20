@@ -56,7 +56,18 @@ class _NotificationPageState extends State<NotificationPage> {
                                             color: Colors.blue,
                                           ),
                                         )),
-                                        Expanded(child: Placeholder()),
+                                        Expanded(child: Container(
+                                          decoration: ShapeDecoration(
+                                            shape: StadiumBorder(),
+                                            color: Colors.white,
+                                          ),
+                                          child: Center(
+                                            child: Text("Not yet, thx!",
+                                            style: GoogleFonts.montserrat(
+                                              fontWeight: FontWeight.bold
+                                            ),),
+                                          ),
+                                        )),
                                       ],
                                     ),
                                   )
