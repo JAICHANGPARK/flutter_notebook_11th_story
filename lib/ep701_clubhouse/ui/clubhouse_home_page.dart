@@ -18,7 +18,7 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
   bool isToggle = false;
 
   void _toggle() {
-    _innerDrawerKey.currentState.toggle(direction: InnerDrawerDirection.end);
+    _innerDrawerKey.currentState!.toggle(direction: InnerDrawerDirection.end);
     setState(() {
       isToggle = !isToggle;
     });
