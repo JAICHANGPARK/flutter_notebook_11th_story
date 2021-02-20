@@ -49,6 +49,10 @@ class _NotificationPageState extends State<NotificationPage> {
                                       children: [
                                         TextSpan(
                                           text: "Dreamwalker",
+                                          style: TextStyle(
+                                            fontSize: 12,
+                                            fontWeight: FontWeight.bold
+                                          )
                                         ),
                                         TextSpan(
                                           text: " just signed up for clubhouse Follow theme?"
