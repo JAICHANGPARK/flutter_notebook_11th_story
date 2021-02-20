@@ -231,7 +231,7 @@ class _NotificationPageState extends State<NotificationPage> {
                       ),
                       Expanded(
                         child: Padding(
-                          padding: const EdgeInsets.all(8.0),
+                          padding: const EdgeInsets.fromLTRB(8.0, 0, 8, 0),
                           child: Text.rich(TextSpan(
                               children: [
                                 TextSpan(
