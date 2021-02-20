@@ -9,6 +9,7 @@ class NotificationPage extends StatefulWidget {
 }
 
 class _NotificationPageState extends State<NotificationPage> {
+  bool isEnterRoom = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
