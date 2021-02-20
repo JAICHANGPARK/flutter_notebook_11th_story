@@ -18,7 +18,8 @@ class _NotificationPageState extends State<NotificationPage> {
         centerTitle: true,
         iconTheme: IconThemeData(color: Colors.black),
         title: Text("ACTIVITY",style: GoogleFonts.montserrat(
-          fontSize: 12,
+          fontSize: 14,
+          fontWeight: FontWeight.bold,
           color: Colors.black
         )),
       ),
