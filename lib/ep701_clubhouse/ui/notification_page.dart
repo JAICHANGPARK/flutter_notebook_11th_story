@@ -55,7 +55,16 @@ class _NotificationPageState extends State<NotificationPage> {
                                             shape: StadiumBorder(),
                                             color: Colors.blue,
                                           ),
-                                        )),
+                                          child: Center(
+                                            child: Text("Follow",
+                                              style: GoogleFonts.montserrat(
+                                                color: Colors.white,
+                                                  fontWeight: FontWeight.bold
+                                              ),),
+                                          ),
+                                        ),
+
+                                        ),
                                         SizedBox(width: 16,),
                                         Expanded(child: Container(
                                           decoration: ShapeDecoration(
