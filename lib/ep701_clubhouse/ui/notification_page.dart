@@ -221,6 +221,38 @@ class _NotificationPageState extends State<NotificationPage> {
                   color: Colors.grey,
                   indent: 48,
                 ),
+                Row(
+                  children: [
+                    CircleAvatar(
+                      radius: 16,
+                    ),
+                    Expanded(
+                      child: Text.rich(TextSpan(
+                          children: [
+                            TextSpan(
+                                text: "Dreamwalker",
+                                style: TextStyle(
+                                    fontSize: 13,
+                                    fontWeight: FontWeight.bold
+                                )
+                            ),
+                            TextSpan(
+                                text: " just signed up for clubhouse Follow theme?",
+                                style: TextStyle(
+                                  fontSize: 13,
+                                )
+                            )
+                          ]
+                      )),
+                    ),
+                    Align(
+                      alignment: Alignment.topRight,
+                      child: Text("36m ago",style: TextStyle(
+                          fontSize: 10
+                      ),),
+                    )
+                  ],
+                )
 
 
 
