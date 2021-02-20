@@ -108,82 +108,80 @@ class _NotificationPageState extends State<NotificationPage> {
                 ),
                 SizedBox(
                   height: 82,
-                  child: Container(
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Expanded(
-                            flex: 1,
-                            child: CircleAvatar()),
-                        Expanded(
-                            flex:10,
-                            child: Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: Column(
-                                children: [
-                                  Expanded(
-                                    child: Text.rich(TextSpan(
-                                        children: [
-                                          TextSpan(
-                                              text: "Dreamwalker",
-                                              style: TextStyle(
-                                                  fontSize: 13,
-                                                  fontWeight: FontWeight.bold
-                                              )
-                                          ),
-                                          TextSpan(
-                                              text: " just signed up for clubhouse Follow theme?",
-                                              style: TextStyle(
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Expanded(
+                          flex: 1,
+                          child: CircleAvatar()),
+                      Expanded(
+                          flex:10,
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Column(
+                              children: [
+                                Expanded(
+                                  child: Text.rich(TextSpan(
+                                      children: [
+                                        TextSpan(
+                                            text: "Dreamwalker",
+                                            style: TextStyle(
                                                 fontSize: 13,
-                                              )
-                                          )
-                                        ]
-                                    )),
-                                  ),
-                                  Expanded(
-                                    child: Padding(
-                                      padding: const EdgeInsets.symmetric(vertical: 2),
-                                      child: Row(
-                                        children: [
-                                          Expanded(child: Container(
-                                            decoration: ShapeDecoration(
-                                              shape: StadiumBorder(),
-                                              color: Colors.blue,
-                                            ),
-                                            child: Center(
-                                              child: Text("Follow",
-                                                style: GoogleFonts.montserrat(
-                                                    color: Colors.white,
-                                                    letterSpacing: 1.3,
-                                                    fontWeight: FontWeight.bold
-                                                ),),
-                                            ),
+                                                fontWeight: FontWeight.bold
+                                            )
+                                        ),
+                                        TextSpan(
+                                            text: " just signed up for clubhouse Follow theme?",
+                                            style: TextStyle(
+                                              fontSize: 13,
+                                            )
+                                        )
+                                      ]
+                                  )),
+                                ),
+                                Expanded(
+                                  child: Padding(
+                                    padding: const EdgeInsets.symmetric(vertical: 2),
+                                    child: Row(
+                                      children: [
+                                        Expanded(child: Container(
+                                          decoration: ShapeDecoration(
+                                            shape: StadiumBorder(),
+                                            color: Colors.blue,
                                           ),
-
+                                          child: Center(
+                                            child: Text("Follow",
+                                              style: GoogleFonts.montserrat(
+                                                  color: Colors.white,
+                                                  letterSpacing: 1.3,
+                                                  fontWeight: FontWeight.bold
+                                              ),),
                                           ),
-                                          SizedBox(width: 16,),
-                                          Expanded(child: Container(
-                                            decoration: ShapeDecoration(
-                                              shape: StadiumBorder(),
-                                              color: Colors.white,
-                                            ),
-                                            child: Center(
-                                              child: Text("Not yet, thx!",
-                                                style: GoogleFonts.montserrat(
+                                        ),
 
-                                                    fontWeight: FontWeight.bold
-                                                ),),
-                                            ),
-                                          )),
-                                        ],
-                                      ),
+                                        ),
+                                        SizedBox(width: 16,),
+                                        Expanded(child: Container(
+                                          decoration: ShapeDecoration(
+                                            shape: StadiumBorder(),
+                                            color: Colors.white,
+                                          ),
+                                          child: Center(
+                                            child: Text("Not yet, thx!",
+                                              style: GoogleFonts.montserrat(
+
+                                                  fontWeight: FontWeight.bold
+                                              ),),
+                                          ),
+                                        )),
+                                      ],
                                     ),
-                                  )
-                                ],
-                              ),
-                            ))
-                      ],
-                    ),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ))
+                    ],
                   ),
                 )
               ],
