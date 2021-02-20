@@ -49,28 +49,31 @@ class _NotificationPageState extends State<NotificationPage> {
                                       Expanded(
                                         flex:10,
                                         child: Text.rich(TextSpan(
-                                          children: [
-                                            TextSpan(
-                                              text: "Dreamwalker",
-                                              style: TextStyle(
-                                                fontSize: 13,
-                                                fontWeight: FontWeight.bold
-                                              )
-                                            ),
-                                            TextSpan(
-                                              text: " just signed up for clubhouse Follow theme?",
-                                                style: TextStyle(
+                                            children: [
+                                              TextSpan(
+                                                  text: "Dreamwalker",
+                                                  style: TextStyle(
+                                                      fontSize: 13,
+                                                      fontWeight: FontWeight.bold
+                                                  )
+                                              ),
+                                              TextSpan(
+                                                  text: " just signed up for clubhouse Follow theme?",
+                                                  style: TextStyle(
                                                     fontSize: 13,
-                                                )
-                                            )
-                                          ]
+                                                  )
+                                              )
+                                            ]
                                         )),
                                       ),
                                       Expanded(
                                           flex: 2,
-                                          child: Text("36m ago",style: TextStyle(
-                                        fontSize: 10
-                                      ),))
+                                          child: Align(
+                                            alignment: Alignment.topRight,
+                                            child: Text("36m ago",style: TextStyle(
+                                                fontSize: 10
+                                            ),),
+                                          ))
                                     ],
                                   ),
                                 ),
@@ -87,7 +90,7 @@ class _NotificationPageState extends State<NotificationPage> {
                                           child: Center(
                                             child: Text("Follow",
                                               style: GoogleFonts.montserrat(
-                                                color: Colors.white,
+                                                  color: Colors.white,
                                                   letterSpacing: 1.3,
                                                   fontWeight: FontWeight.bold
                                               ),),
@@ -103,10 +106,10 @@ class _NotificationPageState extends State<NotificationPage> {
                                           ),
                                           child: Center(
                                             child: Text("Not yet, thx!",
-                                            style: GoogleFonts.montserrat(
+                                              style: GoogleFonts.montserrat(
 
-                                              fontWeight: FontWeight.bold
-                                            ),),
+                                                  fontWeight: FontWeight.bold
+                                              ),),
                                           ),
                                         )),
                                       ],
@@ -159,9 +162,12 @@ class _NotificationPageState extends State<NotificationPage> {
                                       ),
                                       Expanded(
                                           flex: 2,
-                                          child: Text("36m ago",style: TextStyle(
-                                              fontSize: 10
-                                          ),))
+                                          child: Align(
+                                            alignment: Alignment.topRight,
+                                            child: Text("36m ago",style: TextStyle(
+                                                fontSize: 10
+                                            ),),
+                                          ))
                                     ],
                                   ),
                                 ),
