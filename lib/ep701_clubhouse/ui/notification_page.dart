@@ -134,23 +134,36 @@ class _NotificationPageState extends State<NotificationPage> {
                             child: Column(
                               children: [
                                 Expanded(
-                                  child: Text.rich(TextSpan(
-                                      children: [
-                                        TextSpan(
-                                            text: "Dreamwalker",
-                                            style: TextStyle(
-                                                fontSize: 13,
-                                                fontWeight: FontWeight.bold
-                                            )
-                                        ),
-                                        TextSpan(
-                                            text: " just signed up for clubhouse Follow theme?",
-                                            style: TextStyle(
-                                              fontSize: 13,
-                                            )
-                                        )
-                                      ]
-                                  )),
+                                  child: Row(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Expanded(
+                                        flex:10,
+                                        child: Text.rich(TextSpan(
+                                            children: [
+                                              TextSpan(
+                                                  text: "Dreamwalker",
+                                                  style: TextStyle(
+                                                      fontSize: 13,
+                                                      fontWeight: FontWeight.bold
+                                                  )
+                                              ),
+                                              TextSpan(
+                                                  text: " just signed up for clubhouse Follow theme?",
+                                                  style: TextStyle(
+                                                    fontSize: 13,
+                                                  )
+                                              )
+                                            ]
+                                        )),
+                                      ),
+                                      Expanded(
+                                          flex: 2,
+                                          child: Text("36m ago",style: TextStyle(
+                                              fontSize: 10
+                                          ),))
+                                    ],
+                                  ),
                                 ),
                                 Expanded(
                                   child: Padding(
