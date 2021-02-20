@@ -309,6 +309,7 @@ class _NotificationPageState extends State<NotificationPage> {
                         radius: 16,
                       ),
                       Expanded(
+                        flex: 10,
                         child: Padding(
                           padding: const EdgeInsets.fromLTRB(8.0, 0, 8, 0),
                           child: Text.rich(TextSpan(
@@ -321,7 +322,8 @@ class _NotificationPageState extends State<NotificationPage> {
                                     )
                                 ),
                                 TextSpan(
-                                    text: " followed you",
+                                    text: " scheduled \"[Live] Flutter Light talking\" for"
+                                        "Sunday, February 21 at 12:00 am",
                                     style: TextStyle(
                                       fontSize: 13,
                                     )
@@ -330,11 +332,14 @@ class _NotificationPageState extends State<NotificationPage> {
                           )),
                         ),
                       ),
-                      Align(
-                        alignment: Alignment.topRight,
-                        child: Text("36m ago",style: TextStyle(
-                            fontSize: 10
-                        ),),
+                      Expanded(
+                        flex: 2,
+                        child: Align(
+                          alignment: Alignment.topRight,
+                          child: Text("5h ago",style: TextStyle(
+                              fontSize: 10
+                          ),),
+                        ),
                       )
                     ],
                   ),
