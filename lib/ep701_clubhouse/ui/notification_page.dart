@@ -50,7 +50,12 @@ class _NotificationPageState extends State<NotificationPage> {
                                   Expanded(
                                     child: Row(
                                       children: [
-                                        Expanded(child: Placeholder()),
+                                        Expanded(child: Container(
+                                          decoration: ShapeDecoration(
+                                            shape: StadiumBorder(),
+                                            color: Colors.blue,
+                                          ),
+                                        )),
                                         Expanded(child: Placeholder()),
                                       ],
                                     ),
