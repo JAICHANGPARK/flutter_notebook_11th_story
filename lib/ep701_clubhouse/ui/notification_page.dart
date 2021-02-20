@@ -59,6 +59,7 @@ class _NotificationPageState extends State<NotificationPage> {
                                             child: Text("Follow",
                                               style: GoogleFonts.montserrat(
                                                 color: Colors.white,
+                                                  letterSpacing: 1.3,
                                                   fontWeight: FontWeight.bold
                                               ),),
                                           ),
@@ -74,6 +75,7 @@ class _NotificationPageState extends State<NotificationPage> {
                                           child: Center(
                                             child: Text("Not yet, thx!",
                                             style: GoogleFonts.montserrat(
+                                              
                                               fontWeight: FontWeight.bold
                                             ),),
                                           ),
