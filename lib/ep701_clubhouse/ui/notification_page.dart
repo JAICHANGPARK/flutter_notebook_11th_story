@@ -300,7 +300,45 @@ class _NotificationPageState extends State<NotificationPage> {
                   ),
                 ),
                 ...buildFollowUserList(),
-
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 8),
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      CircleAvatar(
+                        radius: 16,
+                      ),
+                      Expanded(
+                        child: Padding(
+                          padding: const EdgeInsets.fromLTRB(8.0, 0, 8, 0),
+                          child: Text.rich(TextSpan(
+                              children: [
+                                TextSpan(
+                                    text: "Dreamwalker",
+                                    style: TextStyle(
+                                        fontSize: 13,
+                                        fontWeight: FontWeight.bold
+                                    )
+                                ),
+                                TextSpan(
+                                    text: " followed you",
+                                    style: TextStyle(
+                                      fontSize: 13,
+                                    )
+                                )
+                              ]
+                          )),
+                        ),
+                      ),
+                      Align(
+                        alignment: Alignment.topRight,
+                        child: Text("36m ago",style: TextStyle(
+                            fontSize: 10
+                        ),),
+                      )
+                    ],
+                  ),
+                ),
               ],
             ),
           ),
@@ -309,7 +347,7 @@ class _NotificationPageState extends State<NotificationPage> {
   }
 
   List<Widget> buildFollowUserList(){
-    return List.generate(10, (index) =>  Padding(
+    return List.generate(5, (index) =>  Padding(
       padding: const EdgeInsets.symmetric(vertical: 8),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
