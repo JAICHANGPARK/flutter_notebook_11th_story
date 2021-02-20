@@ -267,7 +267,7 @@ class _NotificationPageState extends State<NotificationPage> {
                   ],
                 ),
               ),
-              ...buildFollowUserList(),
+              ...buildFollowUserList(3),
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 8),
                 child: Row(
@@ -304,6 +304,7 @@ class _NotificationPageState extends State<NotificationPage> {
                   ],
                 ),
               ),
+              ...buildFollowUserList(6),
             ],
           ),
         ),
@@ -311,9 +312,9 @@ class _NotificationPageState extends State<NotificationPage> {
     );
   }
 
-  List<Widget> buildFollowUserList() {
+  List<Widget> buildFollowUserList(int length) {
     return List.generate(
-      5,
+      length,
       (index) => Padding(
         padding: const EdgeInsets.symmetric(vertical: 8),
         child: Row(
