@@ -43,23 +43,32 @@ class _NotificationPageState extends State<NotificationPage> {
                             child: Column(
                               children: [
                                 Expanded(
-                                  child: Text.rich(TextSpan(
+                                  child: Row(
                                     children: [
-                                      TextSpan(
-                                        text: "Dreamwalker",
-                                        style: TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.bold
-                                        )
+                                      Expanded(
+                                        child: Text.rich(TextSpan(
+                                          children: [
+                                            TextSpan(
+                                              text: "Dreamwalker",
+                                              style: TextStyle(
+                                                fontSize: 13,
+                                                fontWeight: FontWeight.bold
+                                              )
+                                            ),
+                                            TextSpan(
+                                              text: " just signed up for clubhouse Follow theme?",
+                                                style: TextStyle(
+                                                    fontSize: 13,
+                                                )
+                                            )
+                                          ]
+                                        )),
                                       ),
-                                      TextSpan(
-                                        text: " just signed up for clubhouse Follow theme?",
-                                          style: TextStyle(
-                                              fontSize: 13,
-                                          )
-                                      )
-                                    ]
-                                  )),
+                                      Expanded(child: Text("36m ago",style: TextStyle(
+                                        fontSize: 10
+                                      ),))
+                                    ],
+                                  ),
                                 ),
                                 Expanded(
                                   child: Padding(
@@ -183,7 +192,14 @@ class _NotificationPageState extends State<NotificationPage> {
                           ))
                     ],
                   ),
-                )
+                ),
+                Divider(
+                  color: Colors.grey,
+                  indent: 48,
+                ),
+
+
+
               ],
             ),
           ),
