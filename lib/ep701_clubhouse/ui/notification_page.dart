@@ -24,21 +24,38 @@ class _NotificationPageState extends State<NotificationPage> {
         )),
       ),
         body: SafeArea(
-          child: ListView(
-            children: [
-              SizedBox(
-                height: 160,
-                child: Container(
-                  color: Colors.grey,
-                  child: Row(
-                    children: [
-                      Expanded(child: CircleAvatar()),
-                      Expanded(child: Placeholder())
-                    ],
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: ListView(
+              children: [
+                SizedBox(
+                  height: 72,
+                  child: Container(
+                    color: Colors.grey,
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Expanded(
+                            flex: 1,
+                            child: CircleAvatar()),
+                        Expanded(
+                            flex:10,
+                            child: Column(
+                              children: [
+                                Expanded(
+                                  child: Placeholder(),
+                                ),
+                                Expanded(
+                                  child: Placeholder(),
+                                )
+                              ],
+                            ))
+                      ],
+                    ),
                   ),
-                ),
-              )
-            ],
+                )
+              ],
+            ),
           ),
         ),
     );
