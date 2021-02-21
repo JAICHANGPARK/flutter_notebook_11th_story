@@ -113,19 +113,24 @@ class _ProfilePageState extends State<ProfilePage> {
                                   ),
                                 ),
                               ),
-                              Container(
-                                height: 42,
-                                width: 180,
-                                decoration: ShapeDecoration(
-                                  shape: StadiumBorder(),
-                                  color: Colors.blue
-                                ),
-                                child: Center(
-                                  child: Text("Done", style: GoogleFonts.montserrat(
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 16
-                                  ),),
+                              GestureDetector(
+                                onTap: (){
+                                  Navigator.of(context).pop();
+                                },
+                                child: Container(
+                                  height: 42,
+                                  width: 180,
+                                  decoration: ShapeDecoration(
+                                    shape: StadiumBorder(),
+                                    color: Colors.blue
+                                  ),
+                                  child: Center(
+                                    child: Text("Done", style: GoogleFonts.montserrat(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 16
+                                    ),),
+                                  ),
                                 ),
                               )
                             ],
