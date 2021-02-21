@@ -55,9 +55,8 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                     width: 8,
                   ),
                   GestureDetector(
-                    onTap: (){
-                      Navigator.of(context).push(MaterialPageRoute(builder: (context)=>
-                      NotificationPage()));
+                    onTap: () {
+                      Navigator.of(context).push(MaterialPageRoute(builder: (context) => NotificationPage()));
                     },
                     child: Badge(
                       child: Icon(Icons.notifications_none),
@@ -314,18 +313,17 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                               return Padding(
                                 padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                                 child: Slidable(
-                                 
-                                  key: Key("${index+1}"),
+                                  key: Key("${index + 1}"),
                                   actionPane: SlidableBehindActionPane(),
                                   actions: [
                                     IconSlideAction(
-                                      caption: 'Hide',
-                                      foregroundColor: Colors.black,
-                                      iconWidget: Icon(Icons.remove_circle,),
-                                      color: Colors.transparent,
-                                      onTap: () {}
-
-                                    ),
+                                        caption: 'Hide',
+                                        foregroundColor: Colors.black,
+                                        iconWidget: Icon(
+                                          Icons.remove_circle,
+                                        ),
+                                        color: Colors.transparent,
+                                        onTap: () {}),
                                   ],
                                   child: Card(
                                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
@@ -360,7 +358,8 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                                                           height: 36,
                                                           width: 36,
                                                           decoration: BoxDecoration(
-                                                              color: Colors.red, borderRadius: BorderRadius.circular(8)),
+                                                              color: Colors.red,
+                                                              borderRadius: BorderRadius.circular(8)),
                                                         ),
                                                       ),
                                                       Positioned(
@@ -586,7 +585,10 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                     padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
                     child: CircleAvatar(
                       backgroundColor: Colors.grey[200],
-                      child: Icon(Icons.add, color: Colors.blueGrey,),
+                      child: Icon(
+                        Icons.add,
+                        color: Colors.blueGrey,
+                      ),
                     ),
                   ),
                   Padding(
