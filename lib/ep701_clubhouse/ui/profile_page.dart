@@ -69,11 +69,15 @@ class _ProfilePageState extends State<ProfilePage> {
                 ],
               ),
               Flexible(child: GestureDetector(
-
                   onTap: (){
-                    showModalBottomSheet(context: context, builder: (context){
+                    showModalBottomSheet(
+                        isScrollControlled: true,
+                        context: context, builder: (context){
                       return Container(
-                        height: MediaQuery.of(context).size.height,
+                        height: MediaQuery.of(context).size.height / 1.1,
+                        decoration: BoxDecoration(
+                          color: ClubhouseStyle.appBackgroundColor
+                        ),
                         child: Center(
                           child: Column(
                             children: [
@@ -84,7 +88,7 @@ class _ProfilePageState extends State<ProfilePage> {
                       );
                     });
                   },
-                  child: Text(""))),
+                  child: Text("Add to bio"))),
 
               Row(
                 children: [
