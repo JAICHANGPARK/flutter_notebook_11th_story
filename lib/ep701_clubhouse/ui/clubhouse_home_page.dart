@@ -66,8 +66,13 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                   SizedBox(
                     width: 16,
                   ),
-                  CircleAvatar(
-                    radius: 14,
+                  GestureDetector(
+                    onTap: () {
+                      
+                    },
+                    child: CircleAvatar(
+                      radius: 14,
+                    ),
                   )
                 ],
               )),
