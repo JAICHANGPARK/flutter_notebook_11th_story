@@ -101,14 +101,31 @@ class _ProfilePageState extends State<ProfilePage> {
                                     color: Colors.white,
                                     borderRadius: BorderRadius.circular(8)
                                   ),
+                                  padding: EdgeInsets.all(8),
                                   child: TextField(
                                     controller: bioTextEditingController,
                                     maxLines: null,
                                     keyboardType: TextInputType.multiline,
+                                    style: GoogleFonts.montserrat(),
                                     decoration: InputDecoration(
                                       border: InputBorder.none
                                     ),
                                   ),
+                                ),
+                              ),
+                              Container(
+                                height: 42,
+                                width: 180,
+                                decoration: ShapeDecoration(
+                                  shape: StadiumBorder(),
+                                  color: Colors.blue
+                                ),
+                                child: Center(
+                                  child: Text("Done", style: GoogleFonts.montserrat(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 16
+                                  ),),
                                 ),
                               )
                             ],
