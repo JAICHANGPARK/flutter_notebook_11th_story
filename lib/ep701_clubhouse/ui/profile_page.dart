@@ -70,7 +70,8 @@ class _ProfilePageState extends State<ProfilePage> {
                   Text("following"),
                 ],
               ),
-              Flexible(child: GestureDetector(
+              Flexible(
+                  child: GestureDetector(
                   onTap: (){
                     showModalBottomSheet(
                       backgroundColor: Colors.transparent,
@@ -139,7 +140,14 @@ class _ProfilePageState extends State<ProfilePage> {
                       );
                     });
                   },
-                  child: Text("Add to bio"))),
+                  child: SingleChildScrollView(
+                    child: TextField(
+                      controller: bioTextEditingController,
+                      maxLines: null,
+                      keyboardType: TextInputType.multiline,
+                      enabled: false,
+                    ),
+                  ))),
 
               Row(
                 children: [
