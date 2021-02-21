@@ -141,33 +141,42 @@ class _ProfilePageState extends State<ProfilePage> {
                     });
                   },
                   child: SingleChildScrollView(
-                    child: TextField(
-                      controller: bioTextEditingController,
-                      maxLines: null,
-                      keyboardType: TextInputType.multiline,
-                      enabled: false,
+                    child: Column(
+                      children: [
+                        TextField(
+                          decoration: InputDecoration(
+                            border: InputBorder.none
+                          ),
+                          controller: bioTextEditingController,
+                          maxLines: null,
+                          keyboardType: TextInputType.multiline,
+                          enabled: false,
+                        ),
+                        Row(
+                          children: [
+                            Text("Add to Instagram"),
+                            Text("Add to Twitter"),
+                          ],
+                        ),
+                        Row(
+                          children: [
+                            CircleAvatar(
+                              radius: 16,
+                            ),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text("Joined Feb 1, 2021"),
+                                Text("Nominated by Unknown")
+                              ],
+                            )
+                          ],
+                        )
+                      ],
                     ),
                   ))),
 
-              Row(
-                children: [
-                  Text("Add to Instagram"),
-                  Text("Add to Twitter"),
-                ],
-              ),
-              Row(
-                children: [
-                  CircleAvatar(
-                    radius: 16,
-                  ),
-                  Column(
-                    children: [
-                      Text("Joined Feb 1, 2021"),
-                      Text("Nominated by Unknown")
-                    ],
-                  )
-                ],
-              )
+
 
             ],
           ),
