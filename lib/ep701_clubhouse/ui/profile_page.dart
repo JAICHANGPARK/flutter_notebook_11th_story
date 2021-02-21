@@ -52,7 +52,38 @@ class _ProfilePageState extends State<ProfilePage> {
                   color: Colors.blue[100],
                   borderRadius: BorderRadius.circular(32)
                 ),
+              ),
+              Row(
+                children: [
+                  Text("Dreamwalker"),
+                  Text("(Flutter)")
+                ],
+              ),
+              Text("@iamdreamwalker"),
+              Row(
+                children: [
+                  Text("1.2k"),
+                  Text("followers"),
+                  Text("1.2k"),
+                  Text("following"),
+                ],
+              ),
+              Flexible(child: Text("")),
+
+              Row(
+                children: [
+                  Text("Add to Instagram"),
+                  Text("Add to Twitter"),
+                ],
+              ),
+              Row(
+                children: [
+                  CircleAvatar(
+                    radius: 16,
+                  )
+                ],
               )
+
             ],
           ),
         ),
