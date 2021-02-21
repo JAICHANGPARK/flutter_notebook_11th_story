@@ -12,7 +12,13 @@ class _ProfilePageState extends State<ProfilePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        iconTheme: IconThemeData(color: Colors.black),
+      ),
+        body: SafeArea(
 
+          child: Column(),
+        ),
     );
   }
 }
