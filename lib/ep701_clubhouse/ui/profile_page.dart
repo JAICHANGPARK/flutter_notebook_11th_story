@@ -78,8 +78,8 @@ class _ProfilePageState extends State<ProfilePage> {
               ),
               Flexible(
                   child: GestureDetector(
-                      onTap: () {
-                        showModalBottomSheet(
+                      onTap: () async{
+                       await showModalBottomSheet(
                             backgroundColor: Colors.transparent,
                             isScrollControlled: true,
                             context: context,
@@ -139,18 +139,24 @@ class _ProfilePageState extends State<ProfilePage> {
                                 ),
                               );
                             });
+
+                       setState(() {
+
+                       });
                       },
                       child: SingleChildScrollView(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            bioTextEditingController.text.length > 0? TextField(
-                              decoration: InputDecoration(border: InputBorder.none),
-                              controller: bioTextEditingController,
-                              maxLines: null,
-                              keyboardType: TextInputType.multiline,
-                              enabled: false,
-                            ) : Text("Add your bio"),
+                            bioTextEditingController.text.length > 0
+                                ? TextField(
+                                    decoration: InputDecoration(border: InputBorder.none),
+                                    controller: bioTextEditingController,
+                                    maxLines: null,
+                                    keyboardType: TextInputType.multiline,
+                                    enabled: false,
+                                  )
+                                : Text("Add your bio"),
                             Row(
                               children: [
                                 Text("Add to Instagram"),
