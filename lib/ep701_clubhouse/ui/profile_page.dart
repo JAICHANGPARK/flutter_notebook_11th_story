@@ -40,17 +40,20 @@ class _ProfilePageState extends State<ProfilePage> {
         ],
       ),
       body: SafeArea(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Container(
-              height: 84,
-              width: 84,
-              decoration: BoxDecoration(
-                color: Colors.blue[100]
-              ),
-            )
-          ],
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Container(
+                height: 84,
+                width: 84,
+                decoration: BoxDecoration(
+                  color: Colors.blue[100]
+                ),
+              )
+            ],
+          ),
         ),
       ),
     );
