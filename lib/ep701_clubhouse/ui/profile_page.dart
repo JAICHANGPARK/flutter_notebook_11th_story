@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_11th_story/ep701_clubhouse/ui/clubhouse_style.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class ProfilePage extends StatefulWidget {
   @override
@@ -13,6 +14,7 @@ class _ProfilePageState extends State<ProfilePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       appBar: AppBar(
         iconTheme: IconThemeData(color: Colors.black),
         backgroundColor: Colors.transparent,
@@ -71,17 +73,38 @@ class _ProfilePageState extends State<ProfilePage> {
               Flexible(child: GestureDetector(
                   onTap: (){
                     showModalBottomSheet(
+                      backgroundColor: Colors.transparent,
                         isScrollControlled: true,
                         context: context, builder: (context){
                       return Container(
                         height: MediaQuery.of(context).size.height / 1.1,
                         decoration: BoxDecoration(
-                          color: ClubhouseStyle.appBackgroundColor
+                          color: ClubhouseStyle.appBackgroundColor,
+                          borderRadius: BorderRadius.only(
+                            topRight: Radius.circular(16),
+                            topLeft: Radius.circular(16),
+                          )
                         ),
                         child: Center(
                           child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-
+                              Text("Update your bio", style: GoogleFonts.montserrat(
+                                fontSize: 16
+                              ),),
+                              Padding(
+                                padding: const EdgeInsets.all(16.0),
+                                child: Container(
+                                  height: 160,
+                                  decoration: BoxDecoration(
+                                    color: Colors.white
+                                  ),
+                                  child: TextField(
+                                    controller: bioTextEditingController,
+                                  ),
+                                ),
+                              )
                             ],
                           ),
                         ),
