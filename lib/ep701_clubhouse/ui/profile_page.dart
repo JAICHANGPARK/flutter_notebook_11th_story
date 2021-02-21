@@ -40,8 +40,37 @@ class _ProfilePageState extends State<ProfilePage> {
         ],
       ),
       body: SafeArea(
-        child: Column(),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Container(
+              height: 84,
+              width: 84,
+              decoration: BoxDecoration(
+                color: Colors.blue[100]
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
