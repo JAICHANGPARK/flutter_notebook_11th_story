@@ -78,8 +78,8 @@ class _ProfilePageState extends State<ProfilePage> {
               ),
               Flexible(
                   child: GestureDetector(
-                      onTap: () async{
-                       await showModalBottomSheet(
+                      onTap: () async {
+                        await showModalBottomSheet(
                             backgroundColor: Colors.transparent,
                             isScrollControlled: true,
                             context: context,
@@ -140,9 +140,7 @@ class _ProfilePageState extends State<ProfilePage> {
                               );
                             });
 
-                       setState(() {
-
-                       });
+                        setState(() {});
                       },
                       child: SingleChildScrollView(
                         child: Column(
