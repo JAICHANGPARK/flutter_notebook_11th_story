@@ -98,10 +98,16 @@ class _ProfilePageState extends State<ProfilePage> {
                                 child: Container(
                                   height: 160,
                                   decoration: BoxDecoration(
-                                    color: Colors.white
+                                    color: Colors.white,
+                                    borderRadius: BorderRadius.circular(8)
                                   ),
                                   child: TextField(
                                     controller: bioTextEditingController,
+                                    maxLines: null,
+                                    keyboardType: TextInputType.multiline,
+                                    decoration: InputDecoration(
+                                      border: InputBorder.none
+                                    ),
                                   ),
                                 ),
                               )
