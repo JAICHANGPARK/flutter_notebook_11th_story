@@ -16,6 +16,21 @@ class _ProfilePageState extends State<ProfilePage> {
         iconTheme: IconThemeData(color: Colors.black),
         backgroundColor: Colors.transparent,
         elevation: 0,
+        
+        actions: [
+          IconButton(icon: Icon(Icons.settings_outlined), onPressed: (){
+            showModalBottomSheet(
+              context: context,
+              isScrollControlled: true,
+              builder: (BuildContext context) {
+                return Container(
+                  height: MediaQuery.of(context).size.height / 1.2,
+                );
+            },
+
+            );
+          })
+        ],
       ),
 
         body: SafeArea(
