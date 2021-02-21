@@ -4,6 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_inner_drawer/inner_drawer.dart';
 import 'package:flutter_notebook_11th_story/ep701_clubhouse/ui/notification_page.dart';
+import 'package:flutter_notebook_11th_story/ep701_clubhouse/ui/profile_page.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -68,7 +69,7 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                   ),
                   GestureDetector(
                     onTap: () {
-                      
+                      Navigator.of(context).push(MaterialPageRoute(builder: (context) => ProfilePage()));
                     },
                     child: CircleAvatar(
                       radius: 14,
