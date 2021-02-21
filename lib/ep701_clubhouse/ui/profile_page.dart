@@ -68,7 +68,23 @@ class _ProfilePageState extends State<ProfilePage> {
                   Text("following"),
                 ],
               ),
-              Flexible(child: Text("")),
+              Flexible(child: GestureDetector(
+
+                  onTap: (){
+                    showModalBottomSheet(context: context, builder: (context){
+                      return Container(
+                        height: MediaQuery.of(context).size.height,
+                        child: Center(
+                          child: Column(
+                            children: [
+
+                            ],
+                          ),
+                        ),
+                      );
+                    });
+                  },
+                  child: Text(""))),
 
               Row(
                 children: [
@@ -80,6 +96,12 @@ class _ProfilePageState extends State<ProfilePage> {
                 children: [
                   CircleAvatar(
                     radius: 16,
+                  ),
+                  Column(
+                    children: [
+                      Text("Joined Feb 1, 2021"),
+                      Text("Nominated by Unknown")
+                    ],
                   )
                 ],
               )
