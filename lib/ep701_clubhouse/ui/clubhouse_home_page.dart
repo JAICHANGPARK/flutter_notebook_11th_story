@@ -537,75 +537,80 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
             left: 0,
             right: 0,
             duration: Duration(milliseconds: 300),
-            child: Container(
-              height: 52,
-              decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.only(
-                    topRight: Radius.circular(24),
-                    topLeft: Radius.circular(24),
-                  ),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.black.withOpacity(0.1),
-                      offset: Offset(0, -2),
-                      blurRadius: 3,
-                      spreadRadius: 3,
-                    )
-                  ]),
-              padding: EdgeInsets.symmetric(horizontal: 16),
-              child: Row(
-                children: [
-                  Expanded(
-                      child: Stack(
-                        children: [
-                          Positioned(
-                              top: 0,
-                              left: 52,
-                              bottom: 0,
-                              child: CircleAvatar(
-                                foregroundColor: Colors.black,
-                                backgroundColor: Colors.grey,
-                                child: Text(
-                                  "+632",
-                                  style: TextStyle(fontSize: 11),
-                                ),
-                              )),
-                          Positioned(top: 0, left: 24, bottom: 0, child: CircleAvatar()),
-                          Positioned(
-                              top: 0,
-                              left: 0,
-                              bottom: 0,
-                              child: CircleAvatar(
-                                foregroundColor: Colors.brown,
-                              )),
-                        ],
-                      )),
-                  Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
-                    child: CircleAvatar(
-                      backgroundColor: Colors.grey[200],
-                      child: Text("✌🏼"),
+            child: GestureDetector(
+              onTap: (){
+
+              },
+              child: Container(
+                height: 52,
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.only(
+                      topRight: Radius.circular(24),
+                      topLeft: Radius.circular(24),
                     ),
-                  ),
-                  Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
-                    child: CircleAvatar(
-                      backgroundColor: Colors.grey[200],
-                      child: Icon(
-                        Icons.add,
-                        color: Colors.blueGrey,
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withOpacity(0.1),
+                        offset: Offset(0, -2),
+                        blurRadius: 3,
+                        spreadRadius: 3,
+                      )
+                    ]),
+                padding: EdgeInsets.symmetric(horizontal: 16),
+                child: Row(
+                  children: [
+                    Expanded(
+                        child: Stack(
+                          children: [
+                            Positioned(
+                                top: 0,
+                                left: 52,
+                                bottom: 0,
+                                child: CircleAvatar(
+                                  foregroundColor: Colors.black,
+                                  backgroundColor: Colors.grey,
+                                  child: Text(
+                                    "+632",
+                                    style: TextStyle(fontSize: 11),
+                                  ),
+                                )),
+                            Positioned(top: 0, left: 24, bottom: 0, child: CircleAvatar()),
+                            Positioned(
+                                top: 0,
+                                left: 0,
+                                bottom: 0,
+                                child: CircleAvatar(
+                                  foregroundColor: Colors.brown,
+                                )),
+                          ],
+                        )),
+                    Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
+                      child: CircleAvatar(
+                        backgroundColor: Colors.grey[200],
+                        child: Text("✌🏼"),
                       ),
                     ),
-                  ),
-                  Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
-                    child: CircleAvatar(
-                      backgroundColor: Colors.grey[200],
-                      child: Text("✋🏼"),
+                    Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
+                      child: CircleAvatar(
+                        backgroundColor: Colors.grey[200],
+                        child: Icon(
+                          Icons.add,
+                          color: Colors.blueGrey,
+                        ),
+                      ),
                     ),
-                  ),
-                ],
+                    Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
+                      child: CircleAvatar(
+                        backgroundColor: Colors.grey[200],
+                        child: Text("✋🏼"),
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
           ),
