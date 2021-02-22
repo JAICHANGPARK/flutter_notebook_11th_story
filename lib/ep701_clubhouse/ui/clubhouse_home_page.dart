@@ -546,7 +546,7 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                               child: Row(
                                 children: [
                                   Container(
-                                    width: 160,
+                                    width: 140,
                                     margin: EdgeInsets.symmetric(vertical: 12),
                                     decoration: BoxDecoration(
                                       color: Colors.grey[200],
@@ -556,7 +556,13 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                                       child: Row(
                                         mainAxisAlignment: MainAxisAlignment.center,
                                         children: [
-                                          Text("✌🏼 Leave quietly"),
+                                          Text("✌🏼 Leave quietly",
+                                          style: GoogleFonts.montserrat(
+                                            color: Colors.red
+                                          ),),
+                                          Spacer(),
+                                          CircleAvatar(),
+                                          CircleAvatar(),
                                         ],
                                       ),
                                     ),
