@@ -18,6 +18,8 @@ class ClubhouseHomePage extends StatefulWidget {
 class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
   final GlobalKey<InnerDrawerState> _innerDrawerKey = GlobalKey<InnerDrawerState>();
   bool isToggle = false;
+  bool isEnter = false;
+  bool isOpen = true;
 
   void _toggle() {
     _innerDrawerKey.currentState.toggle(direction: InnerDrawerDirection.end);
@@ -532,16 +534,16 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
           //TODO: Gradient
 
           //TODO: Bottom sheet or back drop
-          AnimatedPositioned(
+         Positioned(
             bottom: 0,
             left: 0,
             right: 0,
-            duration: Duration(milliseconds: 300),
+           
             child: GestureDetector(
               onTap: (){
 
               },
-              child: Container(
+              child: AnimatedContainer(
                 height: 52,
                 decoration: BoxDecoration(
                     color: Colors.white,
@@ -558,6 +560,7 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                       )
                     ]),
                 padding: EdgeInsets.symmetric(horizontal: 16),
+                duration: Duration(milliseconds: 250),
                 child: Row(
                   children: [
                     Expanded(
