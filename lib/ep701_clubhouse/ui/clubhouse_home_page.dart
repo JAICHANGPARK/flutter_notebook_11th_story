@@ -53,8 +53,7 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                     onPressed: () {},
                   ),
                   Spacer(),
-                  IconButton(icon: Icon(Icons.mail_outline), onPressed: () {}),
-                  IconButton(icon: Icon(Icons.docu), onPressed: () {}),
+                  IconButton(icon: Icon(Icons.description_outlined), onPressed: () {}),
                   SizedBox(
                     width: 8,
                   ),
