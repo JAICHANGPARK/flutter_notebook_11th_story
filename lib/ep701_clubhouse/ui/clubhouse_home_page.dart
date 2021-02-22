@@ -20,6 +20,7 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
   bool isToggle = false;
   bool isEnter = false;
   bool isOpen = true;
+  double roomBottomSheetHeight = 52.0;
 
   void _toggle() {
     _innerDrawerKey.currentState.toggle(direction: InnerDrawerDirection.end);
