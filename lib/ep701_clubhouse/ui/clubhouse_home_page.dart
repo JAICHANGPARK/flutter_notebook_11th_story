@@ -513,8 +513,8 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                   isOpen = true;
                   roomBottomSheetHeight = MediaQuery.of(context).size.height / 1.16;
                 } else {
-                  isOpen = false;
-                  roomBottomSheetHeight = 52.0;
+                  // isOpen = false;
+                  // roomBottomSheetHeight = 52.0;
                 }
                 setState(() {});
               },
