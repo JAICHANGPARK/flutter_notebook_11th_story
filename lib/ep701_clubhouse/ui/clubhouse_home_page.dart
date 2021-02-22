@@ -50,8 +50,19 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                 children: [
                   IconButton(
                     icon: Icon(Icons.keyboard_arrow_down),
-                    onPressed: () {},
+                    onPressed: () {
+                      if(isOpen) {
+                        isOpen = false;
+                      }
+                      setState(() {
+
+                      });
+                    },
                   ),
+                  Text("All rooms", style: TextStyle(
+                    fontSize: 14,
+
+                  ),),
                   Spacer(),
                   IconButton(icon: Icon(Icons.description_outlined), onPressed: () {}),
                   SizedBox(
