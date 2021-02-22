@@ -509,10 +509,11 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
             right: 0,
             child: GestureDetector(
               onTap: () {
-                isOpen = !isOpen;
-                if (isOpen) {
+                if (!isOpen) {
+                  isOpen = true;
                   roomBottomSheetHeight = MediaQuery.of(context).size.height / 1.16;
                 } else {
+                  isOpen = false;
                   roomBottomSheetHeight = 52.0;
                 }
                 setState(() {});
@@ -560,13 +561,22 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                                           style: GoogleFonts.montserrat(
                                             color: Colors.red
                                           ),),
-                                          Spacer(),
-                                          CircleAvatar(),
-                                          CircleAvatar(),
+
                                         ],
                                       ),
                                     ),
-                                  )
+                                  ),
+                                  Spacer(),
+                                  CircleAvatar(
+                                    backgroundColor: Colors.grey[200],
+                                    foregroundColor: Colors.black87,
+                                    child: Icon(Icons.add),
+                                  ),
+                                  SizedBox(width: 12,),
+                                  CircleAvatar(
+                                    backgroundColor: Colors.grey[200],
+                                    child: Text("✋🏼"),
+                                  ),
                                 ],
                               )),
                         ],
