@@ -19,7 +19,7 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
   final GlobalKey<InnerDrawerState> _innerDrawerKey = GlobalKey<InnerDrawerState>();
   bool isToggle = false;
   bool isEnter = false;
-  bool isOpen = true;
+  bool isOpen = false;
   double roomBottomSheetHeight = 52.0;
 
   void _toggle() {
@@ -46,7 +46,29 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
               left: 8,
               top: 0,
               right: 8,
-              child: Row(
+              child: isOpen ? Row(
+                children: [
+                  IconButton(
+                    icon: Icon(Icons.keyboard_arrow_down),
+                    onPressed: () {},
+                  ),
+                  Spacer(),
+                  IconButton(icon: Icon(Icons.mail_outline), onPressed: () {}),
+                  IconButton(icon: Icon(Icons.docu), onPressed: () {}),
+                  SizedBox(
+                    width: 8,
+                  ),
+
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.of(context).push(MaterialPageRoute(builder: (context) => ProfilePage()));
+                    },
+                    child: CircleAvatar(
+                      radius: 14,
+                    ),
+                  )
+                ],
+              ): Row(
                 children: [
                   IconButton(
                     icon: Icon(Icons.search),
@@ -535,17 +557,22 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
           //TODO: Gradient
 
           //TODO: Bottom sheet or back drop
-         Positioned(
+          Positioned(
             bottom: 0,
             left: 0,
             right: 0,
-           
             child: GestureDetector(
-              onTap: (){
-
+              onTap: () {
+                isOpen = !isOpen;
+                if (isOpen) {
+                  roomBottomSheetHeight = MediaQuery.of(context).size.height / 1.16;
+                } else {
+                  roomBottomSheetHeight = 52.0;
+                }
+                setState(() {});
               },
               child: AnimatedContainer(
-                height: 52,
+                height: roomBottomSheetHeight,
                 decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.only(
@@ -562,59 +589,63 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                     ]),
                 padding: EdgeInsets.symmetric(horizontal: 16),
                 duration: Duration(milliseconds: 250),
-                child: Row(
-                  children: [
-                    Expanded(
-                        child: Stack(
-                          children: [
-                            Positioned(
-                                top: 0,
-                                left: 52,
-                                bottom: 0,
-                                child: CircleAvatar(
-                                  foregroundColor: Colors.black,
-                                  backgroundColor: Colors.grey,
-                                  child: Text(
-                                    "+632",
-                                    style: TextStyle(fontSize: 11),
-                                  ),
-                                )),
-                            Positioned(top: 0, left: 24, bottom: 0, child: CircleAvatar()),
-                            Positioned(
-                                top: 0,
-                                left: 0,
-                                bottom: 0,
-                                child: CircleAvatar(
-                                  foregroundColor: Colors.brown,
-                                )),
-                          ],
-                        )),
-                    Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
-                      child: CircleAvatar(
-                        backgroundColor: Colors.grey[200],
-                        child: Text("✌🏼"),
+                child: isOpen
+                    ? ListView(
+                        children: [],
+                      )
+                    : Row(
+                        children: [
+                          Expanded(
+                              child: Stack(
+                            children: [
+                              Positioned(
+                                  top: 0,
+                                  left: 52,
+                                  bottom: 0,
+                                  child: CircleAvatar(
+                                    foregroundColor: Colors.black,
+                                    backgroundColor: Colors.grey,
+                                    child: Text(
+                                      "+632",
+                                      style: TextStyle(fontSize: 11),
+                                    ),
+                                  )),
+                              Positioned(top: 0, left: 24, bottom: 0, child: CircleAvatar()),
+                              Positioned(
+                                  top: 0,
+                                  left: 0,
+                                  bottom: 0,
+                                  child: CircleAvatar(
+                                    foregroundColor: Colors.brown,
+                                  )),
+                            ],
+                          )),
+                          Padding(
+                            padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
+                            child: CircleAvatar(
+                              backgroundColor: Colors.grey[200],
+                              child: Text("✌🏼"),
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
+                            child: CircleAvatar(
+                              backgroundColor: Colors.grey[200],
+                              child: Icon(
+                                Icons.add,
+                                color: Colors.blueGrey,
+                              ),
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
+                            child: CircleAvatar(
+                              backgroundColor: Colors.grey[200],
+                              child: Text("✋🏼"),
+                            ),
+                          ),
+                        ],
                       ),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
-                      child: CircleAvatar(
-                        backgroundColor: Colors.grey[200],
-                        child: Icon(
-                          Icons.add,
-                          color: Colors.blueGrey,
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
-                      child: CircleAvatar(
-                        backgroundColor: Colors.grey[200],
-                        child: Text("✋🏼"),
-                      ),
-                    ),
-                  ],
-                ),
               ),
             ),
           ),
