@@ -536,62 +536,36 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                 padding: EdgeInsets.symmetric(horizontal: 16),
                 duration: Duration(milliseconds: 250),
                 child: isOpen
-                    ? ListView(
-                        children: [],
-                      )
-                    : Row(
+                    ? Column(
                         children: [
                           Expanded(
-                              child: Stack(
-                            children: [
-                              Positioned(
-                                  top: 0,
-                                  left: 52,
-                                  bottom: 0,
-                                  child: CircleAvatar(
-                                    foregroundColor: Colors.black,
-                                    backgroundColor: Colors.grey,
-                                    child: Text(
-                                      "+632",
-                                      style: TextStyle(fontSize: 11),
+                              flex: 12,
+                              child: Placeholder()),
+                          Expanded(
+                              flex: 1,
+                              child: Row(
+                                children: [
+                                  Container(
+                                    width: 160,
+                                    margin: EdgeInsets.symmetric(vertical: 12),
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey[200],
+                                      borderRadius: BorderRadius.circular(24)
                                     ),
-                                  )),
-                              Positioned(top: 0, left: 24, bottom: 0, child: CircleAvatar()),
-                              Positioned(
-                                  top: 0,
-                                  left: 0,
-                                  bottom: 0,
-                                  child: CircleAvatar(
-                                    foregroundColor: Colors.brown,
-                                  )),
-                            ],
-                          )),
-                          Padding(
-                            padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
-                            child: CircleAvatar(
-                              backgroundColor: Colors.grey[200],
-                              child: Text("✌🏼"),
-                            ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
-                            child: CircleAvatar(
-                              backgroundColor: Colors.grey[200],
-                              child: Icon(
-                                Icons.add,
-                                color: Colors.blueGrey,
-                              ),
-                            ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
-                            child: CircleAvatar(
-                              backgroundColor: Colors.grey[200],
-                              child: Text("✋🏼"),
-                            ),
-                          ),
+                                    child: Center(
+                                      child: Row(
+                                        mainAxisAlignment: MainAxisAlignment.center,
+                                        children: [
+                                          Text("✌🏼 Leave quietly"),
+                                        ],
+                                      ),
+                                    ),
+                                  )
+                                ],
+                              )),
                         ],
-                      ),
+                      )
+                    : buildHomeListWidget(),
               ),
             ),
           ),
@@ -668,6 +642,61 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
             radius: 14,
           ),
         )
+      ],
+    );
+  }
+  Widget buildHomeListWidget(){
+    return Row(
+      children: [
+        Expanded(
+            child: Stack(
+              children: [
+                Positioned(
+                    top: 0,
+                    left: 52,
+                    bottom: 0,
+                    child: CircleAvatar(
+                      foregroundColor: Colors.black,
+                      backgroundColor: Colors.grey,
+                      child: Text(
+                        "+632",
+                        style: TextStyle(fontSize: 11),
+                      ),
+                    )),
+                Positioned(top: 0, left: 24, bottom: 0, child: CircleAvatar()),
+                Positioned(
+                    top: 0,
+                    left: 0,
+                    bottom: 0,
+                    child: CircleAvatar(
+                      foregroundColor: Colors.brown,
+                    )),
+              ],
+            )),
+        Padding(
+          padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
+          child: CircleAvatar(
+            backgroundColor: Colors.grey[200],
+            child: Text("✌🏼"),
+          ),
+        ),
+        Padding(
+          padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
+          child: CircleAvatar(
+            backgroundColor: Colors.grey[200],
+            child: Icon(
+              Icons.add,
+              color: Colors.blueGrey,
+            ),
+          ),
+        ),
+        Padding(
+          padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
+          child: CircleAvatar(
+            backgroundColor: Colors.grey[200],
+            child: Text("✋🏼"),
+          ),
+        ),
       ],
     );
   }
