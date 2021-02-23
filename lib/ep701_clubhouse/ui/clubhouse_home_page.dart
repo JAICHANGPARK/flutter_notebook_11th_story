@@ -111,9 +111,9 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                         children: [
                           Expanded(
                               flex: 12,
-                              child: Padding(
-                                padding: const EdgeInsets.only(top: 16,left: 16, right: 16),
-                                child: SingleChildScrollView(
+                              child: SingleChildScrollView(
+                                child: Padding(
+                                  padding: const EdgeInsets.only(top: 16,left: 8, right: 8),
                                   child: Column(
                                     children: [
                                       Row(
@@ -128,6 +128,7 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                                         ],
                                       ),
                                       GridView.count(
+                                        shrinkWrap: true,
                                         crossAxisCount: 3,
                                         mainAxisSpacing: 8,
                                         crossAxisSpacing: 8,
