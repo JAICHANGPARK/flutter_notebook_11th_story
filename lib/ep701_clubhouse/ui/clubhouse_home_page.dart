@@ -131,8 +131,8 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                                       GridView.count(
                                           shrinkWrap: true,
                                           crossAxisCount: 3,
-                                          mainAxisSpacing: 8,
-                                          crossAxisSpacing: 8,
+                                          mainAxisSpacing: 16,
+                                          crossAxisSpacing: 16,
                                           children: List.generate(
                                             10,
                                             (index) => Container(
@@ -203,8 +203,8 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                                       GridView.count(
                                           shrinkWrap: true,
                                           crossAxisCount: 4,
-                                          mainAxisSpacing: 8,
-                                          crossAxisSpacing: 8,
+                                          mainAxisSpacing: 12,
+                                          crossAxisSpacing: 12,
                                           children: List.generate(
                                             16,
                                             (index) =>Container(
@@ -263,8 +263,8 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                                       GridView.count(
                                           shrinkWrap: true,
                                           crossAxisCount: 4,
-                                          mainAxisSpacing: 8,
-                                          crossAxisSpacing: 8,
+                                          mainAxisSpacing: 12,
+                                          crossAxisSpacing: 12,
                                           children: List.generate(
                                             36,
                                                 (index) =>Container(
