@@ -158,7 +158,10 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                                                               child: CircleAvatar(
                                                                 radius: 14,
                                                                 backgroundColor: Colors.white,
-                                                                child: Text(""),
+                                                                child: Text("🎉",
+                                                                style: TextStyle(
+                                                                  fontSize: 12
+                                                                ),),
                                                               ),
                                                             ),
                                                             Positioned(
@@ -167,7 +170,8 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                                                               child: CircleAvatar(
                                                                 radius: 14,
                                                                 backgroundColor: Colors.white,
-                                                                child: Text(""),
+                                                                child: Icon(Icons.mic_off,
+                                                                size: 16,),
                                                               ),
                                                             )
                                                           ],
