@@ -42,12 +42,7 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
       body: SafeArea(
           child: Stack(
         children: [
-          Positioned(
-              left: 8,
-              top: 0,
-              right: 8,
-              child: isOpen ?
-              buildOpenTopBarWidget():buildIdleTopBarWidget()),
+          Positioned(left: 8, top: 0, right: 8, child: isOpen ? buildOpenTopBarWidget() : buildIdleTopBarWidget()),
           //TODO: ROOM LIST
           Positioned(
             bottom: 54,
@@ -539,9 +534,7 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                 child: isOpen
                     ? Column(
                         children: [
-                          Expanded(
-                              flex: 12,
-                              child: Placeholder()),
+                          Expanded(flex: 12, child: Placeholder()),
                           Expanded(
                               flex: 1,
                               child: Row(
@@ -549,19 +542,16 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                                   Container(
                                     width: 140,
                                     margin: EdgeInsets.symmetric(vertical: 12),
-                                    decoration: BoxDecoration(
-                                      color: Colors.grey[200],
-                                      borderRadius: BorderRadius.circular(24)
-                                    ),
+                                    decoration:
+                                        BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(24)),
                                     child: Center(
                                       child: Row(
                                         mainAxisAlignment: MainAxisAlignment.center,
                                         children: [
-                                          Text("✌🏼 Leave quietly",
-                                          style: GoogleFonts.montserrat(
-                                            color: Colors.red
-                                          ),),
-
+                                          Text(
+                                            "✌🏼 Leave quietly",
+                                            style: GoogleFonts.montserrat(color: Colors.red),
+                                          ),
                                         ],
                                       ),
                                     ),
@@ -572,7 +562,9 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                                     foregroundColor: Colors.black87,
                                     child: Icon(Icons.add),
                                   ),
-                                  SizedBox(width: 12,),
+                                  SizedBox(
+                                    width: 12,
+                                  ),
                                   CircleAvatar(
                                     backgroundColor: Colors.grey[200],
                                     child: Text("✋🏼"),
@@ -590,13 +582,13 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
     );
   }
 
-  Widget buildOpenTopBarWidget(){
+  Widget buildOpenTopBarWidget() {
     return Row(
       children: [
         IconButton(
           icon: Icon(Icons.keyboard_arrow_down),
           onPressed: () {
-            if(isOpen) {
+            if (isOpen) {
               isOpen = false;
             }
             setState(() {
@@ -604,16 +596,17 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
             });
           },
         ),
-        Text("All rooms", style: TextStyle(
-          fontSize: 14,
-
-        ),),
+        Text(
+          "All rooms",
+          style: TextStyle(
+            fontSize: 14,
+          ),
+        ),
         Spacer(),
         IconButton(icon: Icon(Icons.description_outlined), onPressed: () {}),
         SizedBox(
           width: 8,
         ),
-
         GestureDetector(
           onTap: () {
             Navigator.of(context).push(MaterialPageRoute(builder: (context) => ProfilePage()));
@@ -625,8 +618,9 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
       ],
     );
   }
-  Widget buildIdleTopBarWidget(){
-    return  Row(
+
+  Widget buildIdleTopBarWidget() {
+    return Row(
       children: [
         IconButton(
           icon: Icon(Icons.search),
@@ -661,34 +655,35 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
       ],
     );
   }
-  Widget buildHomeListWidget(){
+
+  Widget buildHomeListWidget() {
     return Row(
       children: [
         Expanded(
             child: Stack(
-              children: [
-                Positioned(
-                    top: 0,
-                    left: 52,
-                    bottom: 0,
-                    child: CircleAvatar(
-                      foregroundColor: Colors.black,
-                      backgroundColor: Colors.grey,
-                      child: Text(
-                        "+632",
-                        style: TextStyle(fontSize: 11),
-                      ),
-                    )),
-                Positioned(top: 0, left: 24, bottom: 0, child: CircleAvatar()),
-                Positioned(
-                    top: 0,
-                    left: 0,
-                    bottom: 0,
-                    child: CircleAvatar(
-                      foregroundColor: Colors.brown,
-                    )),
-              ],
-            )),
+          children: [
+            Positioned(
+                top: 0,
+                left: 52,
+                bottom: 0,
+                child: CircleAvatar(
+                  foregroundColor: Colors.black,
+                  backgroundColor: Colors.grey,
+                  child: Text(
+                    "+632",
+                    style: TextStyle(fontSize: 11),
+                  ),
+                )),
+            Positioned(top: 0, left: 24, bottom: 0, child: CircleAvatar()),
+            Positioned(
+                top: 0,
+                left: 0,
+                bottom: 0,
+                child: CircleAvatar(
+                  foregroundColor: Colors.brown,
+                )),
+          ],
+        )),
         Padding(
           padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
           child: CircleAvatar(
