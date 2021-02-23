@@ -129,11 +129,20 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                                     GridView.count(
                                       shrinkWrap: true,
                                       crossAxisCount: 3,
+                                      mainAxisSpacing: 8,
+                                      crossAxisSpacing: 8,
                                       children: List.generate(10, (index) => Container(
                                         decoration: BoxDecoration(
                                           color: Colors.grey
                                         ),
-                                      ))
+                                        child: Stack(
+                                          children: [
+                                            
+                                          ],
+                                        ),
+                                      ),
+
+                                      )
                                     ),
                                     Text("Followed byt the speakers", style: TextStyle(
                                       color: Colors.grey[300]
