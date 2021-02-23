@@ -113,90 +113,95 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                               flex: 12,
                               child: SingleChildScrollView(
                                 child: Padding(
-                                  padding: const EdgeInsets.only(top: 16,left: 8, right: 8),
+                                  padding: const EdgeInsets.only(top: 16, left: 8, right: 8),
                                   child: Column(
                                     children: [
                                       Row(
                                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                         children: [
-                                          Text("[Flutter] Dreamwalker Flutter Live Vibe",
-                                          style: TextStyle(
-                                            fontSize: 16,
-                                            fontWeight: FontWeight.bold
-                                          ),),
-                                          IconButton(icon: Icon(Icons.more_horiz), onPressed: (){})
-                                        ],
-                                      ),
-                                      GridView.count(
-                                        shrinkWrap: true,
-                                        crossAxisCount: 3,
-                                        mainAxisSpacing: 8,
-                                        crossAxisSpacing: 8,
-                                        children: List.generate(10, (index) => Container(
-                                          decoration: BoxDecoration(
-                                            color: Colors.grey[300]
+                                          Text(
+                                            "[Flutter] Dreamwalker Flutter Live Vibe",
+                                            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                                           ),
-                                          child: Column(
-                                            children: [
-                                              Expanded(
-                                                flex: 8,
-                                                  child: Stack(
-                                                    children: [
-                                                      Positioned(child: Container(
-                                                        decoration: BoxDecoration(
-                                                          color: Colors.blue,
-                                                          borderRadius: BorderRadius.circular(28)
-                                                        ),
-                                                      ),
-                                                      left: 12,
-                                                      top: 4,
-                                                      right: 12,
-                                                      bottom: 4,),
-                                                      Positioned(
-                                                          bottom: 0,
-                                                          left: 12,
-                                                          child: CircleAvatar(
-                                                            radius: 14,
-                                                        backgroundColor: Colors.white,
-                                                        child: Text(""),
-                                                      ))
-                                                    ],
-                                                  )),
-                                              Expanded(
-                                                  flex: 2,
-                                                  child: Text("Dreamwalker", style: TextStyle(
-                                                    fontWeight: FontWeight.bold
-                                                  ),)),
-                                            ],
-                                          )
-                                        ),
-
-                                        )
-                                      ),
-                                      Padding(
-                                        padding: const EdgeInsets.symmetric(vertical: 16),
-                                        child: Text("Followed byt the speakers", style: TextStyle(
-                                          color: Colors.grey[300]
-                                        ),),
+                                          IconButton(icon: Icon(Icons.more_horiz), onPressed: () {})
+                                        ],
                                       ),
                                       GridView.count(
                                           shrinkWrap: true,
                                           crossAxisCount: 3,
                                           mainAxisSpacing: 8,
                                           crossAxisSpacing: 8,
-                                          children: List.generate(64, (index) => Container(
-                                            decoration: BoxDecoration(
-                                                color: Colors.grey
-                                            ),
-                                            child: Stack(
-                                              children: [
-
-                                              ],
-                                            ),
-                                          ),
-
-                                          )
+                                          children: List.generate(
+                                            10,
+                                            (index) => Container(
+                                                decoration: BoxDecoration(color: Colors.grey[300]),
+                                                child: Column(
+                                                  children: [
+                                                    Expanded(
+                                                        flex: 8,
+                                                        child: Stack(
+                                                          children: [
+                                                            Positioned(
+                                                              child: Container(
+                                                                decoration: BoxDecoration(
+                                                                    color: Colors.blue,
+                                                                    borderRadius: BorderRadius.circular(28)),
+                                                              ),
+                                                              left: 12,
+                                                              top: 4,
+                                                              right: 12,
+                                                              bottom: 4,
+                                                            ),
+                                                            Positioned(
+                                                              bottom: 0,
+                                                              left: 12,
+                                                              child: CircleAvatar(
+                                                                radius: 14,
+                                                                backgroundColor: Colors.white,
+                                                                child: Text(""),
+                                                              ),
+                                                            ),
+                                                            Positioned(
+                                                              bottom: 0,
+                                                              right: 12,
+                                                              child: CircleAvatar(
+                                                                radius: 14,
+                                                                backgroundColor: Colors.white,
+                                                                child: Text(""),
+                                                              ),
+                                                            )
+                                                          ],
+                                                        )),
+                                                    Expanded(
+                                                        flex: 2,
+                                                        child: Text(
+                                                          "Dreamwalker",
+                                                          style: TextStyle(fontWeight: FontWeight.bold),
+                                                        )),
+                                                  ],
+                                                )),
+                                          )),
+                                      Padding(
+                                        padding: const EdgeInsets.symmetric(vertical: 16),
+                                        child: Text(
+                                          "Followed byt the speakers",
+                                          style: TextStyle(color: Colors.grey[300]),
+                                        ),
                                       ),
+                                      GridView.count(
+                                          shrinkWrap: true,
+                                          crossAxisCount: 3,
+                                          mainAxisSpacing: 8,
+                                          crossAxisSpacing: 8,
+                                          children: List.generate(
+                                            64,
+                                            (index) => Container(
+                                              decoration: BoxDecoration(color: Colors.grey),
+                                              child: Stack(
+                                                children: [],
+                                              ),
+                                            ),
+                                          )),
                                     ],
                                   ),
                                 ),
