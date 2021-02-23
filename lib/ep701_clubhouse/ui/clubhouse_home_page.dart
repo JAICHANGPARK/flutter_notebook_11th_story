@@ -116,6 +116,7 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                                 child: Padding(
                                   padding: const EdgeInsets.only(top: 16, left: 8, right: 8),
                                   child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       Row(
                                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -202,7 +203,7 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                                       ),
                                       GridView.count(
                                           shrinkWrap: true,
-                                          crossAxisCount: 3,
+                                          crossAxisCount: 4,
                                           mainAxisSpacing: 8,
                                           crossAxisSpacing: 8,
                                           children: List.generate(
