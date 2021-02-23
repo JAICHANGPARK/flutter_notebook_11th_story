@@ -656,6 +656,9 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
     );
   }
 
+  Widget buildHomeRoomListWidget(){
+    
+  }
   Widget buildHomeListWidget() {
     return Row(
       children: [
