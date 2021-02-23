@@ -54,7 +54,7 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
               rightAnimationType: InnerDrawerAnimation.linear,
               rightChild: RefreshIndicator(
                 onRefresh: onRefreshDrawerList,
-                child:buildAppDrawerWidget(),
+                child: buildAppDrawerWidget(),
               ),
               colorTransitionChild: Colors.transparent,
               colorTransitionScaffold: Colors.transparent,
@@ -84,10 +84,7 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
               onTap: () {
                 if (!isOpen) {
                   isOpen = true;
-                  roomBottomSheetHeight = MediaQuery
-                      .of(context)
-                      .size
-                      .height / 1.16;
+                  roomBottomSheetHeight = MediaQuery.of(context).size.height / 1.16;
                 }
                 setState(() {});
               },
@@ -112,28 +109,26 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                 child: isOpen
                     ? Column(
                         children: [
-                          Expanded(flex: 12, child: Padding(
-                            padding: const EdgeInsets.only(top: 16),
-                            child: ListView(
-                              children: [
-                                Text("[Flutter] Dreamwalker Flutter Live Vibe"),
-                                GridView.count(
-                                  shrinkWrap: true,
-                                  crossAxisCount: 3,
-                                children: [
-                                  Container(
-                                    color: Colors.red,
-                                  ),
-                                  Container(
-                                    color: Colors.red,
-                                  ),
-                                  Container(
-                                    color: Colors.red,
-                                  )
-                                ],),
-                              ],
-                            ),
-                          )),
+                          Expanded(
+                              flex: 12,
+                              child: Padding(
+                                padding: const EdgeInsets.only(top: 16),
+                                child: ListView(
+                                  children: [
+                                    Text("[Flutter] Dreamwalker Flutter Live Vibe"),
+                                    GridView.count(
+                                      shrinkWrap: true,
+                                      crossAxisCount: 3,
+                                      children: List.generate(10, (index) => Container(
+                                        decoration: BoxDecoration(
+                                          color: Colors.grey
+                                        ),
+                                      ))
+                                    ),
+                                    Text("Followed byt the speakers", style: TextStyle(),)
+                                  ],
+                                ),
+                              )),
                           Expanded(
                               flex: 1,
                               child: Row(
@@ -618,7 +613,7 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
     );
   }
 
-  Widget buildAppDrawerWidget(){
+  Widget buildAppDrawerWidget() {
     return Column(
       children: [
         Expanded(
@@ -633,12 +628,12 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                             fontSize: 12, color: Colors.brown[200], fontWeight: FontWeight.bold))),
                 Expanded(
                     child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Divider(
-                        height: 0,
-                        thickness: 1.2,
-                      ),
-                    )),
+                  padding: const EdgeInsets.all(8.0),
+                  child: Divider(
+                    height: 0,
+                    thickness: 1.2,
+                  ),
+                )),
               ],
             )),
         Expanded(
@@ -661,8 +656,8 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                                 bottom: 0,
                                 right: 0,
                                 child: Container(
-                                  decoration: BoxDecoration(
-                                      color: Colors.brown[400], borderRadius: BorderRadius.circular(12)),
+                                  decoration:
+                                      BoxDecoration(color: Colors.brown[400], borderRadius: BorderRadius.circular(12)),
                                 ),
                               ),
                               Positioned(
@@ -701,8 +696,7 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                         flex: 3,
                         child: Container(
                           margin: EdgeInsets.symmetric(vertical: 8),
-                          decoration: BoxDecoration(
-                              color: Colors.green[100], borderRadius: BorderRadius.circular(12)),
+                          decoration: BoxDecoration(color: Colors.green[100], borderRadius: BorderRadius.circular(12)),
                           child: Padding(
                             padding: const EdgeInsets.all(2.0),
                             child: Center(
