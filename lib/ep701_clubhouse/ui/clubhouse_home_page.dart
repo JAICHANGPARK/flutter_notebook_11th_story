@@ -144,12 +144,13 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                                                     children: [
                                                       Positioned(child: Container(
                                                         decoration: BoxDecoration(
-                                                          color: Colors.blue
+                                                          color: Colors.blue,
+                                                          borderRadius: BorderRadius.circular(12)
                                                         ),
                                                       ),
-                                                      left: 4,
+                                                      left: 12,
                                                       top: 4,
-                                                      right: 4,
+                                                      right: 12,
                                                       bottom: 4,)
                                                     ],
                                                   )),
