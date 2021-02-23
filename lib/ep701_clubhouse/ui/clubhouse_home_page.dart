@@ -54,7 +54,7 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
               rightAnimationType: InnerDrawerAnimation.linear,
               rightChild: RefreshIndicator(
                 onRefresh: onRefreshDrawerList,
-                child:
+                child:buildAppDrawerWidget(),
               ),
               colorTransitionChild: Colors.transparent,
               colorTransitionScaffold: Colors.transparent,
@@ -84,10 +84,10 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
               onTap: () {
                 if (!isOpen) {
                   isOpen = true;
-                  roomBottomSheetHeight = MediaQuery.of(context).size.height / 1.16;
-                } else {
-                  // isOpen = false;
-                  // roomBottomSheetHeight = 52.0;
+                  roomBottomSheetHeight = MediaQuery
+                      .of(context)
+                      .size
+                      .height / 1.16;
                 }
                 setState(() {});
               },
