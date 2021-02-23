@@ -2,6 +2,7 @@ import 'package:backdrop/backdrop.dart';
 import 'package:badges/badges.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
 import 'package:flutter_inner_drawer/inner_drawer.dart';
 import 'package:flutter_notebook_11th_story/ep701_clubhouse/ui/notification_page.dart';
 import 'package:flutter_notebook_11th_story/ep701_clubhouse/ui/profile_page.dart';
@@ -134,7 +135,6 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                                           children: List.generate(
                                             10,
                                             (index) => Container(
-                                                decoration: BoxDecoration(color: Colors.grey[300]),
                                                 child: Column(
                                                   children: [
                                                     Expanded(
@@ -145,7 +145,14 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                                                               child: Container(
                                                                 decoration: BoxDecoration(
                                                                     color: Colors.blue,
+                                                                    image: DecorationImage(
+                                                                      image: NetworkImage(
+                                                                        "https://thispersondoesnotexist.com/image"
+                                                                      ),
+                                                                      fit: BoxFit.cover
+                                                                    ),
                                                                     borderRadius: BorderRadius.circular(28)),
+
                                                               ),
                                                               left: 12,
                                                               top: 4,
@@ -170,6 +177,7 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                                                               child: CircleAvatar(
                                                                 radius: 14,
                                                                 backgroundColor: Colors.white,
+                                                                foregroundColor: Colors.black,
                                                                 child: Icon(Icons.mic_off,
                                                                 size: 16,),
                                                               ),
