@@ -54,123 +54,7 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
               rightAnimationType: InnerDrawerAnimation.linear,
               rightChild: RefreshIndicator(
                 onRefresh: onRefreshDrawerList,
-                child: Column(
-                  children: [
-                    Expanded(
-                        flex: 1,
-                        child: Row(
-                          crossAxisAlignment: CrossAxisAlignment.end,
-                          children: [
-                            Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Text("AVAILABLE TO CHAT",
-                                    style: GoogleFonts.montserrat(
-                                        fontSize: 12, color: Colors.brown[200], fontWeight: FontWeight.bold))),
-                            Expanded(
-                                child: Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: Divider(
-                                height: 0,
-                                thickness: 1.2,
-                              ),
-                            )),
-                          ],
-                        )),
-                    Expanded(
-                        flex: 15,
-                        child: ListView.builder(itemBuilder: (context, index) {
-                          return Padding(
-                            padding: const EdgeInsets.only(left: 8, bottom: 8, right: 8),
-                            child: Container(
-                              height: 38,
-                              decoration: BoxDecoration(),
-                              child: Row(
-                                children: [
-                                  Expanded(
-                                      flex: 2,
-                                      child: Stack(
-                                        children: [
-                                          Positioned(
-                                            left: 0,
-                                            top: 0,
-                                            bottom: 0,
-                                            right: 0,
-                                            child: Container(
-                                              decoration: BoxDecoration(
-                                                  color: Colors.brown[400], borderRadius: BorderRadius.circular(12)),
-                                            ),
-                                          ),
-                                          Positioned(
-                                            bottom: 0,
-                                            right: 0,
-                                            child: Container(
-                                              height: 12,
-                                              width: 12,
-                                              decoration: BoxDecoration(
-                                                  color: Colors.green[400],
-                                                  border: Border.all(color: Colors.white, width: 1.5),
-                                                  borderRadius: BorderRadius.circular(8)),
-                                            ),
-                                          )
-                                        ],
-                                      )),
-                                  Expanded(
-                                      flex: 9,
-                                      child: Padding(
-                                        padding: const EdgeInsets.only(left: 8, top: 4, bottom: 4),
-                                        child: Column(
-                                          crossAxisAlignment: CrossAxisAlignment.start,
-                                          children: [
-                                            Text(
-                                              "Dreamwalker",
-                                              style: GoogleFonts.montserrat(fontSize: 13),
-                                            ),
-                                            Text(
-                                              "Flutter Live Coding",
-                                              style: GoogleFonts.montserrat(fontSize: 11, color: Colors.grey),
-                                            ),
-                                          ],
-                                        ),
-                                      )),
-                                  Expanded(
-                                    flex: 3,
-                                    child: Container(
-                                      margin: EdgeInsets.symmetric(vertical: 8),
-                                      decoration: BoxDecoration(
-                                          color: Colors.green[100], borderRadius: BorderRadius.circular(12)),
-                                      child: Padding(
-                                        padding: const EdgeInsets.all(2.0),
-                                        child: Center(
-                                          child: Row(
-                                            children: [
-                                              Icon(
-                                                Icons.add,
-                                                color: Colors.green,
-                                                size: 12,
-                                              ),
-                                              Text(
-                                                "Room",
-                                                style: GoogleFonts.montserrat(
-                                                    fontSize: 10, color: Colors.green, fontWeight: FontWeight.bold),
-                                              ),
-                                              Icon(
-                                                Icons.lock_rounded,
-                                                color: Colors.green,
-                                                size: 12,
-                                              ),
-                                            ],
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          );
-                        })),
-                  ],
-                ),
+                child:
               ),
               colorTransitionChild: Colors.transparent,
               colorTransitionScaffold: Colors.transparent,
@@ -710,6 +594,126 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
           ),
         ],
       ),
+    );
+  }
+
+  Widget buildAppDrawerWidget(){
+    return Column(
+      children: [
+        Expanded(
+            flex: 1,
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text("AVAILABLE TO CHAT",
+                        style: GoogleFonts.montserrat(
+                            fontSize: 12, color: Colors.brown[200], fontWeight: FontWeight.bold))),
+                Expanded(
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Divider(
+                        height: 0,
+                        thickness: 1.2,
+                      ),
+                    )),
+              ],
+            )),
+        Expanded(
+            flex: 15,
+            child: ListView.builder(itemBuilder: (context, index) {
+              return Padding(
+                padding: const EdgeInsets.only(left: 8, bottom: 8, right: 8),
+                child: Container(
+                  height: 38,
+                  decoration: BoxDecoration(),
+                  child: Row(
+                    children: [
+                      Expanded(
+                          flex: 2,
+                          child: Stack(
+                            children: [
+                              Positioned(
+                                left: 0,
+                                top: 0,
+                                bottom: 0,
+                                right: 0,
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                      color: Colors.brown[400], borderRadius: BorderRadius.circular(12)),
+                                ),
+                              ),
+                              Positioned(
+                                bottom: 0,
+                                right: 0,
+                                child: Container(
+                                  height: 12,
+                                  width: 12,
+                                  decoration: BoxDecoration(
+                                      color: Colors.green[400],
+                                      border: Border.all(color: Colors.white, width: 1.5),
+                                      borderRadius: BorderRadius.circular(8)),
+                                ),
+                              )
+                            ],
+                          )),
+                      Expanded(
+                          flex: 9,
+                          child: Padding(
+                            padding: const EdgeInsets.only(left: 8, top: 4, bottom: 4),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "Dreamwalker",
+                                  style: GoogleFonts.montserrat(fontSize: 13),
+                                ),
+                                Text(
+                                  "Flutter Live Coding",
+                                  style: GoogleFonts.montserrat(fontSize: 11, color: Colors.grey),
+                                ),
+                              ],
+                            ),
+                          )),
+                      Expanded(
+                        flex: 3,
+                        child: Container(
+                          margin: EdgeInsets.symmetric(vertical: 8),
+                          decoration: BoxDecoration(
+                              color: Colors.green[100], borderRadius: BorderRadius.circular(12)),
+                          child: Padding(
+                            padding: const EdgeInsets.all(2.0),
+                            child: Center(
+                              child: Row(
+                                children: [
+                                  Icon(
+                                    Icons.add,
+                                    color: Colors.green,
+                                    size: 12,
+                                  ),
+                                  Text(
+                                    "Room",
+                                    style: GoogleFonts.montserrat(
+                                        fontSize: 10, color: Colors.green, fontWeight: FontWeight.bold),
+                                  ),
+                                  Icon(
+                                    Icons.lock_rounded,
+                                    color: Colors.green,
+                                    size: 12,
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              );
+            })),
+      ],
     );
   }
 }
