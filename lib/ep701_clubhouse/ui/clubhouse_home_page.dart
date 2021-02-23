@@ -112,52 +112,28 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                           Expanded(
                               flex: 12,
                               child: Padding(
-                                padding: const EdgeInsets.only(top: 16),
-                                child: ListView(
-                                  children: [
-                                    Row(
-                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                      children: [
-                                        Text("[Flutter] Dreamwalker Flutter Live Vibe",
-                                        style: TextStyle(
-                                          fontSize: 16,
-                                          fontWeight: FontWeight.bold
-                                        ),),
-                                        IconButton(icon: Icon(Icons.more_horiz), onPressed: (){})
-                                      ],
-                                    ),
-                                    GridView.count(
-                                      shrinkWrap: true,
-                                      crossAxisCount: 3,
-                                      mainAxisSpacing: 8,
-                                      crossAxisSpacing: 8,
-                                      children: List.generate(10, (index) => Container(
-                                        decoration: BoxDecoration(
-                                          color: Colors.grey
-                                        ),
-                                        child: Stack(
-                                          children: [
-
-                                          ],
-                                        ),
+                                padding: const EdgeInsets.only(top: 16,left: 16, right: 16),
+                                child: SingleChildScrollView(
+                                  child: Column(
+                                    children: [
+                                      Row(
+                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          Text("[Flutter] Dreamwalker Flutter Live Vibe",
+                                          style: TextStyle(
+                                            fontSize: 16,
+                                            fontWeight: FontWeight.bold
+                                          ),),
+                                          IconButton(icon: Icon(Icons.more_horiz), onPressed: (){})
+                                        ],
                                       ),
-
-                                      )
-                                    ),
-                                    Padding(
-                                      padding: const EdgeInsets.symmetric(vertical: 16),
-                                      child: Text("Followed byt the speakers", style: TextStyle(
-                                        color: Colors.grey[300]
-                                      ),),
-                                    ),
-                                    GridView.count(
-                                        shrinkWrap: true,
+                                      GridView.count(
                                         crossAxisCount: 3,
                                         mainAxisSpacing: 8,
                                         crossAxisSpacing: 8,
-                                        children: List.generate(64, (index) => Container(
+                                        children: List.generate(10, (index) => Container(
                                           decoration: BoxDecoration(
-                                              color: Colors.grey
+                                            color: Colors.grey
                                           ),
                                           child: Stack(
                                             children: [
@@ -167,8 +143,33 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                                         ),
 
                                         )
-                                    ),
-                                  ],
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.symmetric(vertical: 16),
+                                        child: Text("Followed byt the speakers", style: TextStyle(
+                                          color: Colors.grey[300]
+                                        ),),
+                                      ),
+                                      GridView.count(
+                                          shrinkWrap: true,
+                                          crossAxisCount: 3,
+                                          mainAxisSpacing: 8,
+                                          crossAxisSpacing: 8,
+                                          children: List.generate(64, (index) => Container(
+                                            decoration: BoxDecoration(
+                                                color: Colors.grey
+                                            ),
+                                            child: Stack(
+                                              children: [
+
+                                              ],
+                                            ),
+                                          ),
+
+                                          )
+                                      ),
+                                    ],
+                                  ),
                                 ),
                               )),
                           Expanded(
