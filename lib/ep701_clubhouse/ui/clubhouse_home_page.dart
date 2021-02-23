@@ -137,62 +137,61 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                                             10,
                                             (index) => Container(
                                                 child: Column(
-                                                  children: [
-                                                    Expanded(
-                                                        flex: 8,
-                                                        child: Stack(
-                                                          children: [
-                                                            Positioned(
-                                                              child: Container(
-                                                                decoration: BoxDecoration(
-                                                                    color: Colors.blue,
-                                                                    image: DecorationImage(
-                                                                      image: NetworkImage(
-                                                                        "https://thispersondoesnotexist.com/image"
-                                                                      ),
-                                                                      fit: BoxFit.cover
-                                                                    ),
-                                                                    borderRadius: BorderRadius.circular(28)),
-
-                                                              ),
-                                                              left: 12,
-                                                              top: 4,
-                                                              right: 12,
-                                                              bottom: 4,
+                                              children: [
+                                                Expanded(
+                                                    flex: 8,
+                                                    child: Stack(
+                                                      children: [
+                                                        Positioned(
+                                                          child: Container(
+                                                            decoration: BoxDecoration(
+                                                                color: Colors.blue,
+                                                                image: DecorationImage(
+                                                                    image: NetworkImage(
+                                                                        "https://thispersondoesnotexist.com/image"),
+                                                                    fit: BoxFit.cover),
+                                                                borderRadius: BorderRadius.circular(28)),
+                                                          ),
+                                                          left: 12,
+                                                          top: 4,
+                                                          right: 12,
+                                                          bottom: 4,
+                                                        ),
+                                                        Positioned(
+                                                          bottom: 0,
+                                                          left: 12,
+                                                          child: CircleAvatar(
+                                                            radius: 14,
+                                                            backgroundColor: Colors.white,
+                                                            child: Text(
+                                                              "🎉",
+                                                              style: TextStyle(fontSize: 12),
                                                             ),
-                                                            Positioned(
-                                                              bottom: 0,
-                                                              left: 12,
-                                                              child: CircleAvatar(
-                                                                radius: 14,
-                                                                backgroundColor: Colors.white,
-                                                                child: Text("🎉",
-                                                                style: TextStyle(
-                                                                  fontSize: 12
-                                                                ),),
-                                                              ),
+                                                          ),
+                                                        ),
+                                                        Positioned(
+                                                          bottom: 0,
+                                                          right: 12,
+                                                          child: CircleAvatar(
+                                                            radius: 14,
+                                                            backgroundColor: Colors.white,
+                                                            foregroundColor: Colors.black,
+                                                            child: Icon(
+                                                              Icons.mic_off,
+                                                              size: 16,
                                                             ),
-                                                            Positioned(
-                                                              bottom: 0,
-                                                              right: 12,
-                                                              child: CircleAvatar(
-                                                                radius: 14,
-                                                                backgroundColor: Colors.white,
-                                                                foregroundColor: Colors.black,
-                                                                child: Icon(Icons.mic_off,
-                                                                size: 16,),
-                                                              ),
-                                                            )
-                                                          ],
-                                                        )),
-                                                    Expanded(
-                                                        flex: 2,
-                                                        child: Text(
-                                                          "Dreamwalker",
-                                                          style: TextStyle(fontWeight: FontWeight.bold),
-                                                        )),
-                                                  ],
-                                                )),
+                                                          ),
+                                                        )
+                                                      ],
+                                                    )),
+                                                Expanded(
+                                                    flex: 2,
+                                                    child: Text(
+                                                      "Dreamwalker",
+                                                      style: TextStyle(fontWeight: FontWeight.bold),
+                                                    )),
+                                              ],
+                                            )),
                                           )),
                                       Padding(
                                         padding: const EdgeInsets.symmetric(vertical: 16),
