@@ -112,7 +112,19 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                 child: isOpen
                     ? Column(
                         children: [
-                          Expanded(flex: 12, child: Placeholder()),
+                          Expanded(flex: 12, child: ListView(
+                            children: [
+                              Text("[Flutter] Dreamwalker Flutter Live Vibe"),
+                              GridView.count(
+                                shrinkWrap: true,
+                                crossAxisCount: 3,
+                              children: [
+                                Container(
+                                  color: Colors.red,
+                                )
+                              ],),
+                            ],
+                          )),
                           Expanded(
                               flex: 1,
                               child: Row(
