@@ -115,7 +115,11 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                                 padding: const EdgeInsets.only(top: 16),
                                 child: ListView(
                                   children: [
-                                    Text("[Flutter] Dreamwalker Flutter Live Vibe"),
+                                    Text("[Flutter] Dreamwalker Flutter Live Vibe",
+                                    style: TextStyle(
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.bold
+                                    ),),
                                     GridView.count(
                                       shrinkWrap: true,
                                       crossAxisCount: 3,
