@@ -136,11 +136,12 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                                           decoration: BoxDecoration(
                                             color: Colors.grey
                                           ),
-                                          child: Stack(
+                                          child: Column(
                                             children: [
-
+                                              Expanded(child: Placeholder()),
+                                              Expanded(child: Placeholder()),
                                             ],
-                                          ),
+                                          )
                                         ),
 
                                         )
