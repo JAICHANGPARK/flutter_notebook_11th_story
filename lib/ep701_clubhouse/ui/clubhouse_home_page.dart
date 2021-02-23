@@ -154,9 +154,9 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                                                       bottom: 4,),
                                                       Positioned(
                                                           bottom: 0,
-                                                          left: 0,
+                                                          left: 12,
                                                           child: CircleAvatar(
-                                                            radius: 16,
+                                                            radius: 14,
                                                         backgroundColor: Colors.white,
                                                         child: Text(""),
                                                       ))
