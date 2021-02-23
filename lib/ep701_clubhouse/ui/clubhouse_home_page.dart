@@ -186,7 +186,7 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                   isToggle = b;
                 });
               },
-              scaffold:
+              scaffold: buildHomeRoomListWidget(),
             ),
           ),
           //TODO: Gradient
@@ -405,8 +405,8 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
       ],
     );
   }
-  
-  Widget buildHomeRoomListWidget(){
+
+  Widget buildHomeRoomListWidget() {
     return Scaffold(
       backgroundColor: ClubhouseStyle.appBackgroundColor,
       body: Stack(
@@ -551,8 +551,7 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                                                 height: 36,
                                                 width: 36,
                                                 decoration: BoxDecoration(
-                                                    color: Colors.red,
-                                                    borderRadius: BorderRadius.circular(8)),
+                                                    color: Colors.red, borderRadius: BorderRadius.circular(8)),
                                               ),
                                             ),
                                             Positioned(
@@ -562,8 +561,7 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                                                 height: 36,
                                                 width: 36,
                                                 decoration: BoxDecoration(
-                                                    color: Colors.brown,
-                                                    borderRadius: BorderRadius.circular(8)),
+                                                    color: Colors.brown, borderRadius: BorderRadius.circular(8)),
                                               ),
                                             ),
                                           ],
@@ -689,8 +687,7 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                       ),
                       Padding(
                         padding: const EdgeInsets.all(8.0),
-                        child: Text("Start a room",
-                            style: GoogleFonts.montserrat(fontSize: 16, color: Colors.white)),
+                        child: Text("Start a room", style: GoogleFonts.montserrat(fontSize: 16, color: Colors.white)),
                       )
                     ],
                   ),
@@ -698,16 +695,16 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                 Spacer(),
                 !isToggle
                     ? IconButton(
-                  icon: Icon(Icons.apps),
-                  onPressed: () {
-                    _toggle();
-                  },
-                  iconSize: 32,
-                )
+                        icon: Icon(Icons.apps),
+                        onPressed: () {
+                          _toggle();
+                        },
+                        iconSize: 32,
+                      )
                     : Container(
-                  height: 32,
-                  width: 32,
-                ),
+                        height: 32,
+                        width: 32,
+                      ),
               ],
             ),
           ),
