@@ -125,7 +125,9 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                                         ),
                                       ))
                                     ),
-                                    Text("Followed byt the speakers", style: TextStyle(),)
+                                    Text("Followed byt the speakers", style: TextStyle(
+                                      color: Colors.grey[300]
+                                    ),)
                                   ],
                                 ),
                               )),
