@@ -145,7 +145,7 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                                                       Positioned(child: Container(
                                                         decoration: BoxDecoration(
                                                           color: Colors.blue,
-                                                          borderRadius: BorderRadius.circular(22)
+                                                          borderRadius: BorderRadius.circular(28)
                                                         ),
                                                       ),
                                                       left: 12,
@@ -156,6 +156,7 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                                                           bottom: 0,
                                                           left: 0,
                                                           child: CircleAvatar(
+                                                            radius: 16,
                                                         backgroundColor: Colors.white,
                                                         child: Text(""),
                                                       ))
