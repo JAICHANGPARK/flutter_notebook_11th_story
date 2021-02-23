@@ -134,12 +134,18 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                                         crossAxisSpacing: 8,
                                         children: List.generate(10, (index) => Container(
                                           decoration: BoxDecoration(
-                                            color: Colors.grey
+                                            color: Colors.grey[300]
                                           ),
                                           child: Column(
                                             children: [
-                                              Expanded(child: Placeholder()),
-                                              Expanded(child: Placeholder()),
+                                              Expanded(
+                                                flex: 8,
+                                                  child: Placeholder()),
+                                              Expanded(
+                                                  flex: 2,
+                                                  child: Text("Dreamwalker", style: TextStyle(
+                                                    fontWeight: FontWeight.bold
+                                                  ),)),
                                             ],
                                           )
                                         ),
