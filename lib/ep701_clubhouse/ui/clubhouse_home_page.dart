@@ -206,7 +206,7 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                                           mainAxisSpacing: 8,
                                           crossAxisSpacing: 8,
                                           children: List.generate(
-                                            64,
+                                            16,
                                             (index) =>Container(
                                                 child: Column(
                                                   children: [
@@ -247,7 +247,8 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                                                         flex: 2,
                                                         child: Text(
                                                           "Dreamwalker",
-                                                          style: TextStyle(fontWeight: FontWeight.bold),
+                                                          style: TextStyle(fontWeight: FontWeight.bold,
+                                                          fontSize: 12),
                                                         )),
                                                   ],
                                                 )),
