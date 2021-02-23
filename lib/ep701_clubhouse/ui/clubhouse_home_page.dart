@@ -116,15 +116,16 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                                 child: ListView(
                                   children: [
                                     Row(
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                       children: [
                                         Text("[Flutter] Dreamwalker Flutter Live Vibe",
                                         style: TextStyle(
                                           fontSize: 16,
                                           fontWeight: FontWeight.bold
                                         ),),
+                                        IconButton(icon: Icon(Icons.more_horiz), onPressed: (){})
                                       ],
                                     ),
-                                    SizedBox(height: 8,),
                                     GridView.count(
                                       shrinkWrap: true,
                                       crossAxisCount: 3,
