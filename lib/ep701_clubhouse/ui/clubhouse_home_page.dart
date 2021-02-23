@@ -140,7 +140,19 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                                             children: [
                                               Expanded(
                                                 flex: 8,
-                                                  child: Placeholder()),
+                                                  child: Stack(
+                                                    children: [
+                                                      Positioned(child: Container(
+                                                        decoration: BoxDecoration(
+                                                          color: Colors.blue
+                                                        ),
+                                                      ),
+                                                      left: 4,
+                                                      top: 4,
+                                                      right: 4,
+                                                      bottom: 4,)
+                                                    ],
+                                                  )),
                                               Expanded(
                                                   flex: 2,
                                                   child: Text("Dreamwalker", style: TextStyle(
