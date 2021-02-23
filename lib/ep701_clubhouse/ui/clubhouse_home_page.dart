@@ -137,16 +137,37 @@ class _ClubhouseHomePageState extends State<ClubhouseHomePage> {
                                         ),
                                         child: Stack(
                                           children: [
-                                            
+
                                           ],
                                         ),
                                       ),
 
                                       )
                                     ),
-                                    Text("Followed byt the speakers", style: TextStyle(
-                                      color: Colors.grey[300]
-                                    ),)
+                                    Padding(
+                                      padding: const EdgeInsets.symmetric(vertical: 16),
+                                      child: Text("Followed byt the speakers", style: TextStyle(
+                                        color: Colors.grey[300]
+                                      ),),
+                                    ),
+                                    GridView.count(
+                                        shrinkWrap: true,
+                                        crossAxisCount: 3,
+                                        mainAxisSpacing: 8,
+                                        crossAxisSpacing: 8,
+                                        children: List.generate(64, (index) => Container(
+                                          decoration: BoxDecoration(
+                                              color: Colors.grey
+                                          ),
+                                          child: Stack(
+                                            children: [
+
+                                            ],
+                                          ),
+                                        ),
+
+                                        )
+                                    ),
                                   ],
                                 ),
                               )),
