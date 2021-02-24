@@ -10,7 +10,17 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
-        items: [],
+        items: [
+          BottomNavigationBarItem(icon: Icon(Icons.home),
+          label: "Home"),
+          BottomNavigationBarItem(icon: Icon(Icons.home),
+              label: "Home"),
+          BottomNavigationBarItem(icon: Icon(Icons.home),
+              label: "Home"),
+          BottomNavigationBarItem(icon: Icon(Icons.home),
+              label: "Home"),
+
+        ],
       ),
     );
   }
