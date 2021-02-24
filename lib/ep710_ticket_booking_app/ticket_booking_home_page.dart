@@ -7,11 +7,27 @@ class TicketBookingHomePage extends StatefulWidget {
 
 class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
   int pageIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Container(
+              height: MediaQuery.of(context).size.height / 3,
+              decoration: BoxDecoration(color: Colors.blue),
+            )
+          ],
+        ),
+      ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: pageIndex,
+        onTap: (idx) {
+          setState(() {
+            pageIndex = idx;
+          });
+        },
         type: BottomNavigationBarType.fixed,
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
