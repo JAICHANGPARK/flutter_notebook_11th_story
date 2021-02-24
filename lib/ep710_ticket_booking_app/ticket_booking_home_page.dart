@@ -11,6 +11,7 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[200],
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
@@ -20,8 +21,8 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                 decoration: BoxDecoration(color: Colors.blue),
               ),
               Container(
-                height: MediaQuery.of(context).size.height / 3.5,
-                decoration: BoxDecoration(color: Colors.blue),
+                height: MediaQuery.of(context).size.height / 4,
+                decoration: BoxDecoration(color: Colors.white),
               )
             ],
           ),
