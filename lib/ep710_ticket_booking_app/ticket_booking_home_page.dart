@@ -6,10 +6,12 @@ class TicketBookingHomePage extends StatefulWidget {
 }
 
 class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
+  int pageIndex = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
+        currentIndex: pageIndex,
         type: BottomNavigationBarType.fixed,
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
