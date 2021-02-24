@@ -17,13 +17,24 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
           child: Column(
             children: [
               Container(
-                height: MediaQuery.of(context).size.height / 3.5,
+                height: MediaQuery.of(context).size.height / 4,
                 decoration: BoxDecoration(color: Colors.blue),
               ),
               Container(
+                height: MediaQuery.of(context).size.height / 4.5,
+                decoration: BoxDecoration(color: Colors.white),
+              ),
+              SizedBox(height: 16),
+              Container(
                 height: MediaQuery.of(context).size.height / 4,
                 decoration: BoxDecoration(color: Colors.white),
-              )
+              ),
+              SizedBox(height: 16),
+              Container(
+                height: MediaQuery.of(context).size.height / 4,
+                decoration: BoxDecoration(color: Colors.white),
+              ),
+
             ],
           ),
         ),
