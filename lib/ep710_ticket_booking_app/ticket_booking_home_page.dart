@@ -10,7 +10,7 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
+
     );
   }
 }
