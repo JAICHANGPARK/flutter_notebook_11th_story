@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'ep701_clubhouse/ep701_clubhouse_clone.dart';
+import 'ep710_ticket_booking_app/ticket_booking_app.dart';
 
 void main() {
-  runApp(ClubhouseClone());
+  runApp(TicketBookingApp());
 }
 
