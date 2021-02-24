@@ -13,8 +13,8 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
         type: BottomNavigationBarType.fixed,
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: "My Ticket"),
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Notification"),
+          BottomNavigationBarItem(icon: Icon(Icons.confirmation_num_outlined), label: "My Ticket"),
+          BottomNavigationBarItem(icon: Icon(Icons.notifications_none), label: "Notification"),
           BottomNavigationBarItem(icon: Icon(Icons.settings_outlined), label: "Settings"),
         ],
       ),
