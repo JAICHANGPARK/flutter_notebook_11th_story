@@ -11,15 +11,10 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
         items: [
-          BottomNavigationBarItem(icon: Icon(Icons.home),
-          label: "Home"),
-          BottomNavigationBarItem(icon: Icon(Icons.home),
-              label: "Home"),
-          BottomNavigationBarItem(icon: Icon(Icons.home),
-              label: "Home"),
-          BottomNavigationBarItem(icon: Icon(Icons.home),
-              label: "Home"),
-
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: "My Ticket"),
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Notification"),
+          BottomNavigationBarItem(icon: Icon(Icons.settings_outlined), label: "Settings"),
         ],
       ),
     );
