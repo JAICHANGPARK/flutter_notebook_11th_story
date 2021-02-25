@@ -70,9 +70,85 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                                 child: Icon(Icons.airplanemode_on_sharp, color: Colors.orange,),
                               ),
                             ),
-                            SizedBox(height: 8,),
+                            SizedBox(height: 4,),
                             Text("Plane", style: TextStyle(
                               fontSize: 12
+                            ),),
+                          ],
+                        ),
+                        Column(
+                          children: [
+                            Container(
+                              height: 58,
+                              width: 58,
+                              decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  border: Border.all(color: Colors.grey[200])
+                              ),
+                              child: Center(
+                                child: Icon(Icons.airplanemode_on_sharp, color: Colors.orange,),
+                              ),
+                            ),
+                            SizedBox(height: 4,),
+                            Text("Plane", style: TextStyle(
+                                fontSize: 12
+                            ),),
+                          ],
+                        ),
+                        Column(
+                          children: [
+                            Container(
+                              height: 58,
+                              width: 58,
+                              decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  border: Border.all(color: Colors.grey[200])
+                              ),
+                              child: Center(
+                                child: Icon(Icons.airplanemode_on_sharp, color: Colors.orange,),
+                              ),
+                            ),
+                            SizedBox(height: 4,),
+                            Text("Plane", style: TextStyle(
+                                fontSize: 12
+                            ),),
+                          ],
+                        ),
+                        Column(
+                          children: [
+                            Container(
+                              height: 58,
+                              width: 58,
+                              decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  border: Border.all(color: Colors.grey[200])
+                              ),
+                              child: Center(
+                                child: Icon(Icons.airplanemode_on_sharp, color: Colors.orange,),
+                              ),
+                            ),
+                            SizedBox(height: 4,),
+                            Text("Plane", style: TextStyle(
+                                fontSize: 12
+                            ),),
+                          ],
+                        ),
+                        Column(
+                          children: [
+                            Container(
+                              height: 58,
+                              width: 58,
+                              decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  border: Border.all(color: Colors.grey[200])
+                              ),
+                              child: Center(
+                                child: Icon(Icons.airplanemode_on_sharp, color: Colors.orange,),
+                              ),
+                            ),
+                            SizedBox(height: 4,),
+                            Text("Plane", style: TextStyle(
+                                fontSize: 12
                             ),),
                           ],
                         )
