@@ -55,106 +55,128 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                             ),
                           ),
                         )),
-                    Expanded(flex: 3, child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Column(
+                    Expanded(
+                        flex: 3,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Container(
-                              height: 58,
-                              width: 58,
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                border: Border.all(color: Colors.grey[200])
-                              ),
-                              child: Center(
-                                child: Icon(Icons.airplanemode_on_sharp, color: Colors.orange,),
-                              ),
+                            Column(
+                              children: [
+                                Container(
+                                  height: 58,
+                                  width: 58,
+                                  decoration: BoxDecoration(
+                                      shape: BoxShape.circle, border: Border.all(color: Colors.grey[200])),
+                                  child: Center(
+                                    child: Icon(
+                                      Icons.airplanemode_on_sharp,
+                                      color: Colors.orange,
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  height: 4,
+                                ),
+                                Text(
+                                  "Plane",
+                                  style: TextStyle(fontSize: 12),
+                                ),
+                              ],
                             ),
-                            SizedBox(height: 4,),
-                            Text("Plane", style: TextStyle(
-                              fontSize: 12
-                            ),),
-                          ],
-                        ),
-                        Column(
-                          children: [
-                            Container(
-                              height: 58,
-                              width: 58,
-                              decoration: BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  border: Border.all(color: Colors.grey[200])
-                              ),
-                              child: Center(
-                                child: Icon(Icons.train, color: Colors.orange,),
-                              ),
+                            Column(
+                              children: [
+                                Container(
+                                  height: 58,
+                                  width: 58,
+                                  decoration: BoxDecoration(
+                                      shape: BoxShape.circle, border: Border.all(color: Colors.grey[200])),
+                                  child: Center(
+                                    child: Icon(
+                                      Icons.train,
+                                      color: Colors.orange,
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  height: 4,
+                                ),
+                                Text(
+                                  "Train",
+                                  style: TextStyle(fontSize: 12),
+                                ),
+                              ],
                             ),
-                            SizedBox(height: 4,),
-                            Text("Train", style: TextStyle(
-                                fontSize: 12
-                            ),),
-                          ],
-                        ),
-                        Column(
-                          children: [
-                            Container(
-                              height: 58,
-                              width: 58,
-                              decoration: BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  border: Border.all(color: Colors.grey[200])
-                              ),
-                              child: Center(
-                                child: Icon(Icons.hotel, color: Colors.orange,),
-                              ),
+                            Column(
+                              children: [
+                                Container(
+                                  height: 58,
+                                  width: 58,
+                                  decoration: BoxDecoration(
+                                      shape: BoxShape.circle, border: Border.all(color: Colors.grey[200])),
+                                  child: Center(
+                                    child: Icon(
+                                      Icons.hotel,
+                                      color: Colors.blue,
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  height: 4,
+                                ),
+                                Text(
+                                  "Hotel",
+                                  style: TextStyle(fontSize: 12),
+                                ),
+                              ],
                             ),
-                            SizedBox(height: 4,),
-                            Text("Hotel", style: TextStyle(
-                                fontSize: 12
-                            ),),
-                          ],
-                        ),
-                        Column(
-                          children: [
-                            Container(
-                              height: 58,
-                              width: 58,
-                              decoration: BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  border: Border.all(color: Colors.grey[200])
-                              ),
-                              child: Center(
-                                child: Icon(Icons.bus_alert, color: Colors.orange,),
-                              ),
+                            Column(
+                              children: [
+                                Container(
+                                  height: 58,
+                                  width: 58,
+                                  decoration: BoxDecoration(
+                                      shape: BoxShape.circle, border: Border.all(color: Colors.grey[200])),
+                                  child: Center(
+                                    child: Icon(
+                                      Icons.bus_alert,
+                                      color: Colors.green,
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  height: 4,
+                                ),
+                                Text(
+                                  "Bus",
+                                  style: TextStyle(fontSize: 12),
+                                ),
+                              ],
                             ),
-                            SizedBox(height: 4,),
-                            Text("Bus", style: TextStyle(
-                                fontSize: 12
-                            ),),
+                            Column(
+                              children: [
+                                Container(
+                                  height: 58,
+                                  width: 58,
+                                  decoration: BoxDecoration(
+                                      shape: BoxShape.circle, border: Border.all(color: Colors.grey[200])),
+                                  child: Center(
+                                    child: Icon(
+                                      Icons.apps,
+                                      color: Colors.grey,
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  height: 4,
+                                ),
+                                Text(
+                                  "More",
+                                  style: TextStyle(fontSize: 12),
+                                ),
+                              ],
+                            )
                           ],
-                        ),
-                        Column(
-                          children: [
-                            Container(
-                              height: 58,
-                              width: 58,
-                              decoration: BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  border: Border.all(color: Colors.grey[200])
-                              ),
-                              child: Center(
-                                child: Icon(Icons.apps, color: Colors.orange,),
-                              ),
-                            ),
-                            SizedBox(height: 4,),
-                            Text("More", style: TextStyle(
-                                fontSize: 12
-                            ),),
-                          ],
-                        )
-                      ],
-                    )),
+                        )),
                   ],
                 ),
               ),
@@ -162,6 +184,12 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
               Container(
                 height: MediaQuery.of(context).size.height / 4,
                 decoration: BoxDecoration(color: Colors.white),
+                child: Column(
+                  children: [
+                    Expanded(child: Placeholder()),
+                    Expanded(child: Placeholder()),
+                  ],
+                ),
               ),
               SizedBox(height: 16),
               Container(
