@@ -24,7 +24,7 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
               Container(
                 height: MediaQuery.of(context).size.height / 4.8,
                 decoration: BoxDecoration(color: Colors.white),
-                padding: EdgeInsets.all(16),
+                padding: EdgeInsets.only(left: 16, right: 16, top: 8),
                 child: Column(
                   children: [
                     Expanded(
@@ -56,6 +56,7 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                           ),
                         )),
                     Expanded(flex: 3, child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Column(
                           children: [
