@@ -22,6 +22,7 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
       backgroundColor: Colors.grey[200],
       body: SafeArea(
         child: PageView(
+          controller: pageController,
           children: [
             SingleChildScrollView(
               child: Column(
@@ -209,6 +210,9 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                 ],
               ),
             ),
+            Container(
+              child: Center(),
+            )
           ]
         ),
       ),
@@ -218,6 +222,7 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
           setState(() {
             pageIndex = idx;
           });
+          pageController.jumpToPage(idx);
         },
         type: BottomNavigationBarType.fixed,
         items: [
