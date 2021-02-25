@@ -60,11 +60,14 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                         Column(
                           children: [
                             Container(
-                              height: 64,
-                              width: 64,
+                              height: 58,
+                              width: 58,
                               decoration: BoxDecoration(
                                 shape: BoxShape.circle,
-                                border: Border.all(color: Colors.grey)
+                                border: Border.all(color: Colors.grey[200])
+                              ),
+                              child: Center(
+                                child: Icon(Icons.airplanemode_on_sharp, color: Colors.orange,),
                               ),
                             )
                           ],
