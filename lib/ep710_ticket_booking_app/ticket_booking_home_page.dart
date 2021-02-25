@@ -26,8 +26,12 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                 padding: EdgeInsets.all(16),
                 child: Column(
                   children: [
-                    Expanded(child: Placeholder()),
-                    Expanded(child: Placeholder()),
+                    Expanded(
+                        flex:2,
+                        child: Placeholder()),
+                    Expanded(
+                        flex: 3,
+                        child: Placeholder()),
                   ],
                 ),
               ),
