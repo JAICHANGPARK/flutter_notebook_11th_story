@@ -39,7 +39,7 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                               children: [
                                 CircleAvatar(
                                   radius: 12,
-                                  child: Colors.white,
+                                  backgroundColor: Colors.white,
                                 ),
                                 Text("")
                               ],
