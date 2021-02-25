@@ -211,7 +211,18 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
               ),
             ),
             Container(
-              child: Center(),
+              child: Center(
+                child: Text("Page2"),
+              ),
+            ),
+            Container(
+              child: Center(
+                child: Text("Page3"),
+              ),
+            ),
+            Container(
+              child: Center(
+                child: Text("Page4"),),
             )
           ]
         ),
