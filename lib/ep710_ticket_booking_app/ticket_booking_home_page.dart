@@ -106,7 +106,7 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                                   border: Border.all(color: Colors.grey[200])
                               ),
                               child: Center(
-                                child: Icon(Icons.airplanemode_on_sharp, color: Colors.orange,),
+                                child: Icon(Icons.hotel, color: Colors.orange,),
                               ),
                             ),
                             SizedBox(height: 4,),
@@ -125,11 +125,11 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                                   border: Border.all(color: Colors.grey[200])
                               ),
                               child: Center(
-                                child: Icon(Icons.airplanemode_on_sharp, color: Colors.orange,),
+                                child: Icon(Icons.bus_alert, color: Colors.orange,),
                               ),
                             ),
                             SizedBox(height: 4,),
-                            Text("Plane", style: TextStyle(
+                            Text("Bus", style: TextStyle(
                                 fontSize: 12
                             ),),
                           ],
