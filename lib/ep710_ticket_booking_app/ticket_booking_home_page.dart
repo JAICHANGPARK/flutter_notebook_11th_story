@@ -42,6 +42,7 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                                 CircleAvatar(
                                   radius: 12,
                                   backgroundColor: Colors.white,
+                                  child: Text("😷"),
                                 ),
                                 Padding(
                                   padding: const EdgeInsets.all(8.0),
