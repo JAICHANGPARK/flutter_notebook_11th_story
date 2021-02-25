@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 
 class TicketBookingHomePage extends StatefulWidget {
   @override
@@ -36,12 +37,18 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                               borderRadius: BorderRadius.circular(8),
                             ),
                             child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 CircleAvatar(
                                   radius: 12,
                                   backgroundColor: Colors.white,
                                 ),
-                                Text("")
+                                Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Text("Covid: Our Destination are Open to Travel!", style: TextStyle(
+                                    color: Colors.orange,fontSize: 13
+                                  ),),
+                                )
                               ],
                             ),
                           ),
