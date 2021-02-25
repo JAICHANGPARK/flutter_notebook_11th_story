@@ -28,12 +28,12 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                 child: Column(
                   children: [
                     Expanded(
-                        flex:2,
+                        flex: 2,
                         child: Padding(
                           padding: const EdgeInsets.symmetric(vertical: 8),
                           child: Container(
                             decoration: BoxDecoration(
-                              color: Colors.orange[100],
+                              color: Colors.orange[50],
                               borderRadius: BorderRadius.circular(8),
                             ),
                             child: Row(
@@ -46,17 +46,17 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                                 ),
                                 Padding(
                                   padding: const EdgeInsets.all(8.0),
-                                  child: Text("Covid: Our Destination are Open to Travel!", style: TextStyle(
-                                    color: Colors.orange,fontSize: 13
-                                  ),),
+                                  child: Text(
+                                    "Covid: Our Destination are Open to Travel!",
+                                    style: TextStyle(color: Colors.orange, fontSize: 13,
+                                        fontWeight: FontWeight.bold),
+                                  ),
                                 )
                               ],
                             ),
                           ),
                         )),
-                    Expanded(
-                        flex: 3,
-                        child: Placeholder()),
+                    Expanded(flex: 3, child: Placeholder()),
                   ],
                 ),
               ),
