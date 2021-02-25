@@ -28,7 +28,11 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                   children: [
                     Expanded(
                         flex:2,
-                        child: Placeholder()),
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: Colors.orange[200]
+                          ),
+                        )),
                     Expanded(
                         flex: 3,
                         child: Placeholder()),
