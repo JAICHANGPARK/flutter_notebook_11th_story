@@ -32,7 +32,17 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                           padding: const EdgeInsets.symmetric(vertical: 8),
                           child: Container(
                             decoration: BoxDecoration(
-                              color: Colors.orange[100]
+                              color: Colors.orange[100],
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Row(
+                              children: [
+                                CircleAvatar(
+                                  radius: 12,
+                                  child: Colors.white,
+                                ),
+                                Text("")
+                              ],
                             ),
                           ),
                         )),
