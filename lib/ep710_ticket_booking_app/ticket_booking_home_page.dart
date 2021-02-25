@@ -34,7 +34,6 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                 height: MediaQuery.of(context).size.height / 4,
                 decoration: BoxDecoration(color: Colors.white),
               ),
-
             ],
           ),
         ),
