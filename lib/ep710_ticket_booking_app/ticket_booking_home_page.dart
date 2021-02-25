@@ -69,7 +69,11 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                               child: Center(
                                 child: Icon(Icons.airplanemode_on_sharp, color: Colors.orange,),
                               ),
-                            )
+                            ),
+                            SizedBox(height: 8,),
+                            Text("Plane", style: TextStyle(
+                              fontSize: 12
+                            ),),
                           ],
                         )
                       ],
