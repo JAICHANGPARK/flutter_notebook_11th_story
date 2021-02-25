@@ -48,15 +48,29 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                                   padding: const EdgeInsets.all(8.0),
                                   child: Text(
                                     "Covid: Our Destination are Open to Travel!",
-                                    style: TextStyle(color: Colors.orange, fontSize: 13,
-                                        fontWeight: FontWeight.bold),
+                                    style: TextStyle(color: Colors.orange, fontSize: 13, fontWeight: FontWeight.bold),
                                   ),
                                 )
                               ],
                             ),
                           ),
                         )),
-                    Expanded(flex: 3, child: Placeholder()),
+                    Expanded(flex: 3, child: Row(
+                      children: [
+                        Column(
+                          children: [
+                            Container(
+                              height: 64,
+                              width: 64,
+                              decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                border: Border.all(color: Colors.grey)
+                              ),
+                            )
+                          ],
+                        )
+                      ],
+                    )),
                   ],
                 ),
               ),
