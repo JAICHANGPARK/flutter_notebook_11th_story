@@ -227,7 +227,7 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                             ),
                           )),
                       Expanded(
-                          flex: 4,
+                          flex: 5,
                           child: Placeholder()),
                     ],
                   ),
