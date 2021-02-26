@@ -441,16 +441,18 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                               )
                             ],
                           )),
-                      Expanded(flex: 10, child: ListView(
+                      Expanded(flex: 10, child: ListView.builder(
                         scrollDirection: Axis.horizontal,
-                        children: [
-                            Container(
-                              width: 160,
-                              decoration: BoxDecoration(
+                        itemBuilder: (BuildContext context, int index) {
+                          return  Container(
+                            width: 160,
+                            decoration: BoxDecoration(
                                 color: Colors.blue
-                              ),
-                            )
-                        ],
+                            ),
+                          );
+
+                        },
+
                       )),
                     ],
                   ),
