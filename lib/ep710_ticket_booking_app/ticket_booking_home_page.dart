@@ -250,6 +250,9 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                                         Spacer(),
                                         Text("2 Seats")
                                       ],
+                                    ),
+                                    Divider(
+                                      color: Colors.grey[300],
                                     )
                                   ],
                                 ),
