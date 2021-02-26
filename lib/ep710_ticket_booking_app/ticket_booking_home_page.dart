@@ -424,7 +424,12 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                   decoration: BoxDecoration(color: Colors.white),
                   child: Column(
                     children: [
-                      Expanded(child: Placeholder()),
+                      Expanded(
+                          flex: 3,
+                          child: Placeholder()),
+                      Expanded(
+                          flex: 10,
+                          child: Placeholder()),
                     ],
                   ),
                 ),
