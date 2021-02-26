@@ -195,33 +195,36 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                 Container(
                   height: MediaQuery.of(context).size.height / 4,
                   decoration: BoxDecoration(color: Colors.white),
-                  padding: EdgeInsets.fromLTRB(16, 8, 16, 8),
+                  padding: EdgeInsets.fromLTRB(16, 8, 0, 8),
                   child: Column(
                     children: [
                       Expanded(
                           flex:2,
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                children: [
-                                  Text("Upcoming Trip",style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 16
-                                  ),),
-                                  Text("You have 2 upcomming ticket", style: TextStyle(
-                                    fontSize: 12,
-                                    color: Colors.grey
-                                  ),),
-                                ],
-                              ),
-                              Text("See All", style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                color: Colors.greenAccent
-                              ),)
-                            ],
+                          child: Padding(
+                            padding: const EdgeInsets.only(right: 16),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                  children: [
+                                    Text("Upcoming Trip",style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 16
+                                    ),),
+                                    Text("You have 2 upcomming ticket", style: TextStyle(
+                                      fontSize: 12,
+                                      color: Colors.grey
+                                    ),),
+                                  ],
+                                ),
+                                Text("See All", style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.greenAccent
+                                ),)
+                              ],
+                            ),
                           )),
                       Expanded(
                           flex: 4,
