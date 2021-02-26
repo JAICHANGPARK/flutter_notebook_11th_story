@@ -231,7 +231,9 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                           child: ListView(
                             scrollDirection: Axis.horizontal,
                             children: [
+
                               Container(
+                                width: MediaQuery.of(context).size.width / 1.5,
                                 decoration: BoxDecoration(
                                   border: Border.all(
                                     color: Colors.grey[300]
