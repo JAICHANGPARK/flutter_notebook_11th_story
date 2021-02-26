@@ -297,7 +297,25 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                                         ),
                                         Column(
                                           crossAxisAlignment: CrossAxisAlignment.start,
-                                          children: [Text("MLG"), Text("03:18"), Text("May 10, 2021")],
+                                          children: [
+                                            Text(
+                                              "MLG",
+                                              style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold),
+                                            ),
+                                            Padding(
+                                              padding: const EdgeInsets.symmetric(vertical: 4),
+                                              child: Text(
+                                                "03:18",
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
+                                            ),
+                                            Text(
+                                              "May 10, 2021",
+                                              style: TextStyle(fontSize: 12),
+                                            )
+                                          ],
                                         ),
                                       ],
                                     ),
