@@ -446,8 +446,10 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                         itemBuilder: (BuildContext context, int index) {
                           return  Container(
                             width: 160,
+                            margin: EdgeInsets.only(right: 8),
                             decoration: BoxDecoration(
-                                color: Colors.blue
+                                color: Colors.blue,
+                              borderRadius: BorderRadius.circular(16)
                             ),
                           );
 
