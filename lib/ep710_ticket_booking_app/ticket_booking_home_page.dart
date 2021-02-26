@@ -430,16 +430,28 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                           flex: 3,
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [Text("Top Destinations", style: TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.bold
-                            ),),
-                              Text("Recommended place for you", style: TextStyle(
-                                fontSize: 12,
-                                color: Colors.grey
-                              ),)],
+                            children: [
+                              Text(
+                                "Top Destinations",
+                                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                              ),
+                              Text(
+                                "Recommended place for you",
+                                style: TextStyle(fontSize: 12, color: Colors.grey),
+                              )
+                            ],
                           )),
-                      Expanded(flex: 10, child: Placeholder()),
+                      Expanded(flex: 10, child: ListView(
+                        scrollDirection: Axis.horizontal,
+                        children: [
+                            Container(
+                              width: 160,
+                              decoration: BoxDecoration(
+                                color: Colors.blue
+                              ),
+                            )
+                        ],
+                      )),
                     ],
                   ),
                 ),
