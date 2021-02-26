@@ -228,7 +228,12 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                           )),
                       Expanded(
                           flex: 5,
-                          child: Placeholder()),
+                          child: ListView(
+                            scrollDirection: Axis.horizontal,
+                            children: [
+                                
+                            ],
+                          )),
                     ],
                   ),
                 ),
