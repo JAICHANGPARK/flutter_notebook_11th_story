@@ -424,18 +424,14 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                   decoration: BoxDecoration(color: Colors.white),
                   padding: EdgeInsets.all(16),
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Expanded(
                           flex: 3,
                           child: Column(
-                            children: [
-                              Text("Top Destinations"),
-                              Text("Recommended place for you")
-                            ],
+                            children: [Text("Top Destinations"), Text("Recommended place for you")],
                           )),
-                      Expanded(
-                          flex: 10,
-                          child: Placeholder()),
+                      Expanded(flex: 10, child: Placeholder()),
                     ],
                   ),
                 ),
