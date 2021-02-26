@@ -422,6 +422,11 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                 Container(
                   height: MediaQuery.of(context).size.height / 4,
                   decoration: BoxDecoration(color: Colors.white),
+                  child: Column(
+                    children: [
+                      Expanded(child: Placeholder()),
+                    ],
+                  ),
                 ),
               ],
             ),
