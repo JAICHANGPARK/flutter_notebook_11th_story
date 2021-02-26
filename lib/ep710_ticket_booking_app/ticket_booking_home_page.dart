@@ -434,7 +434,10 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                               fontSize: 16,
                               fontWeight: FontWeight.bold
                             ),),
-                              Text("Recommended place for you")],
+                              Text("Recommended place for you", style: TextStyle(
+                                fontSize: 12,
+                                color: Colors.grey
+                              ),)],
                           )),
                       Expanded(flex: 10, child: Placeholder()),
                     ],
