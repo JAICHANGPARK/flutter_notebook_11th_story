@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
@@ -200,8 +201,11 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                       Expanded(
                           flex:2,
                           child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                 children: [
                                   Text("Upcoming Trip"),
                                   Text("You have 2 upcomming ticket"),
