@@ -231,16 +231,14 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                           child: ListView(
                             scrollDirection: Axis.horizontal,
                             children: [
-
                               Container(
                                 width: MediaQuery.of(context).size.width / 1.5,
                                 margin: EdgeInsets.only(right: 16),
                                 decoration: BoxDecoration(
-                                  border: Border.all(
-                                    color: Colors.grey[300],
-                                  ),
-                                  borderRadius: BorderRadius.circular(9)
-                                ),
+                                    border: Border.all(
+                                      color: Colors.grey[300],
+                                    ),
+                                    borderRadius: BorderRadius.circular(9)),
                                 padding: EdgeInsets.all(12),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -248,10 +246,19 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                                   children: [
                                     Row(
                                       children: [
-                                        Icon(Icons.train),
-                                        Text("Train"),
+                                        Icon(
+                                          Icons.train,
+                                          color: Colors.orange,
+                                        ),
+                                        Text(
+                                          "Train",
+                                          style: TextStyle(color: Colors.orange),
+                                        ),
                                         Spacer(),
-                                        Text("2 Seats")
+                                        Text(
+                                          "2 Seats",
+                                          style: TextStyle(color: Colors.orange),
+                                        )
                                       ],
                                     ),
                                     Divider(
@@ -265,36 +272,37 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                                         Column(
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
-                                            Text("MLG", style: TextStyle(
-                                              color: Colors.grey,
-                                            ),),
+                                            Text(
+                                              "MLG",
+                                              style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold),
+                                            ),
                                             Padding(
                                               padding: const EdgeInsets.symmetric(vertical: 4),
-                                              child: Text("03:18", style: TextStyle(
-                                                fontWeight: FontWeight.bold,
-                                              ),),
+                                              child: Text(
+                                                "03:18",
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
                                             ),
-                                            Text("May 10, 2021",style: TextStyle(
-                                              fontSize: 12
-                                            ),)
+                                            Text(
+                                              "May 10, 2021",
+                                              style: TextStyle(fontSize: 12),
+                                            )
                                           ],
                                         ),
-                                        Icon(Icons.arrow_forward, color: Colors.greenAccent,
+                                        Icon(
+                                          Icons.arrow_forward,
+                                          color: Colors.greenAccent,
                                         ),
                                         Column(
                                           crossAxisAlignment: CrossAxisAlignment.start,
-                                          children: [
-                                            Text("MLG"),
-                                            Text("03:18"),
-                                            Text("May 10, 2021")
-                                          ],
+                                          children: [Text("MLG"), Text("03:18"), Text("May 10, 2021")],
                                         ),
                                       ],
                                     ),
-
                                   ],
                                 ),
-
                               ),
                               Container(
                                 width: MediaQuery.of(context).size.width / 1.5,
@@ -303,8 +311,7 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                                     border: Border.all(
                                       color: Colors.grey[300],
                                     ),
-                                    borderRadius: BorderRadius.circular(9)
-                                ),
+                                    borderRadius: BorderRadius.circular(9)),
                               )
                             ],
                           )),
