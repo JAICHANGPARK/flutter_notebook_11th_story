@@ -243,6 +243,8 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                                 ),
                                 padding: EdgeInsets.all(12),
                                 child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                   children: [
                                     Row(
                                       children: [
@@ -257,8 +259,12 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                                       thickness: 1.5,
                                     ),
                                     Row(
+                                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                      crossAxisAlignment: CrossAxisAlignment.center,
                                       children: [
                                         Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                           children: [
                                             Text("MLG"),
                                             Text("03:18"),
@@ -268,6 +274,7 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                                         Icon(Icons.arrow_forward, color: Colors.greenAccent,
                                         ),
                                         Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
                                             Text("MLG"),
                                             Text("03:18"),
