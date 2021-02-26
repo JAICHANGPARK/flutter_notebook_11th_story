@@ -299,13 +299,13 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
                                             Text(
-                                              "MLG",
+                                              "JKT",
                                               style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold),
                                             ),
                                             Padding(
                                               padding: const EdgeInsets.symmetric(vertical: 4),
                                               child: Text(
-                                                "03:18",
+                                                "08:40",
                                                 style: TextStyle(
                                                   fontWeight: FontWeight.bold,
                                                 ),
@@ -330,7 +330,89 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                                       color: Colors.grey[300],
                                     ),
                                     borderRadius: BorderRadius.circular(9)),
-                              )
+                                padding: EdgeInsets.all(12),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                  children: [
+                                    Row(
+                                      children: [
+                                        Icon(
+                                          Icons.train,
+                                          color: Colors.orange,
+                                        ),
+                                        Text(
+                                          "Train",
+                                          style: TextStyle(color: Colors.orange),
+                                        ),
+                                        Spacer(),
+                                        Text(
+                                          "2 Seats",
+                                          style: TextStyle(color: Colors.orange),
+                                        )
+                                      ],
+                                    ),
+                                    Divider(
+                                      color: Colors.grey[300],
+                                      thickness: 1.5,
+                                    ),
+                                    Row(
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                      children: [
+                                        Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: [
+                                            Text(
+                                              "MLG",
+                                              style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold),
+                                            ),
+                                            Padding(
+                                              padding: const EdgeInsets.symmetric(vertical: 4),
+                                              child: Text(
+                                                "03:18",
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
+                                            ),
+                                            Text(
+                                              "May 10, 2021",
+                                              style: TextStyle(fontSize: 12),
+                                            )
+                                          ],
+                                        ),
+                                        Icon(
+                                          Icons.arrow_forward,
+                                          color: Colors.greenAccent,
+                                        ),
+                                        Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: [
+                                            Text(
+                                              "JKT",
+                                              style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold),
+                                            ),
+                                            Padding(
+                                              padding: const EdgeInsets.symmetric(vertical: 4),
+                                              child: Text(
+                                                "08:40",
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
+                                            ),
+                                            Text(
+                                              "May 10, 2021",
+                                              style: TextStyle(fontSize: 12),
+                                            )
+                                          ],
+                                        ),
+                                      ],
+                                    ),
+                                  ],
+                                ),
+                              ),
                             ],
                           )),
                     ],
