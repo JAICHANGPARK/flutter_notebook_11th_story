@@ -199,7 +199,7 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                   child: Column(
                     children: [
                       Expanded(
-                          flex:2,
+                          flex: 2,
                           child: Padding(
                             padding: const EdgeInsets.only(right: 16),
                             child: Row(
@@ -209,20 +209,20 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                   children: [
-                                    Text("Upcoming Trip",style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 16
-                                    ),),
-                                    Text("You have 2 upcomming ticket", style: TextStyle(
-                                      fontSize: 12,
-                                      color: Colors.grey
-                                    ),),
+                                    Text(
+                                      "Upcoming Trip",
+                                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                                    ),
+                                    Text(
+                                      "You have 2 upcomming ticket",
+                                      style: TextStyle(fontSize: 12, color: Colors.grey),
+                                    ),
                                   ],
                                 ),
-                                Text("See All", style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.greenAccent
-                                ),)
+                                Text(
+                                  "See All",
+                                  style: TextStyle(fontWeight: FontWeight.bold, color: Colors.greenAccent),
+                                )
                               ],
                             ),
                           )),
@@ -231,7 +231,13 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                           child: ListView(
                             scrollDirection: Axis.horizontal,
                             children: [
-                                
+                              Container(
+                                decoration: BoxDecoration(
+                                  border: Border.all(
+                                    color: Colors.grey[300]
+                                  )
+                                ),
+                              )
                             ],
                           )),
                     ],
