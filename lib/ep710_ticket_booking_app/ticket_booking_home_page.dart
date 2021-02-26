@@ -203,9 +203,11 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                             children: [
                               Column(
                                 children: [
-                                  
+                                  Text("Upcoming Trip"),
+                                  Text("You have 2 upcomming ticket"),
                                 ],
-                              )
+                              ),
+                              Text("See All")
                             ],
                           )),
                       Expanded(
