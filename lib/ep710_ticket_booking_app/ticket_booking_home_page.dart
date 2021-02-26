@@ -259,16 +259,24 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                                       thickness: 1.5,
                                     ),
                                     Row(
-                                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                       crossAxisAlignment: CrossAxisAlignment.center,
                                       children: [
                                         Column(
                                           crossAxisAlignment: CrossAxisAlignment.start,
-                                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                           children: [
-                                            Text("MLG"),
-                                            Text("03:18"),
-                                            Text("May 10, 2021")
+                                            Text("MLG", style: TextStyle(
+                                              color: Colors.grey,
+                                            ),),
+                                            Padding(
+                                              padding: const EdgeInsets.symmetric(vertical: 4),
+                                              child: Text("03:18", style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                              ),),
+                                            ),
+                                            Text("May 10, 2021",style: TextStyle(
+                                              fontSize: 12
+                                            ),)
                                           ],
                                         ),
                                         Icon(Icons.arrow_forward, color: Colors.greenAccent,
