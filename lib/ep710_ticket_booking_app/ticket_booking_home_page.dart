@@ -258,11 +258,28 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                                     ),
                                     Row(
                                       children: [
-                                        
+                                        Column(
+                                          children: [
+                                            Text("MLG"),
+                                            Text("03:18"),
+                                            Text("May 10, 2021")
+                                          ],
+                                        ),
+                                        Icon(Icons.arrow_forward, color: Colors.greenAccent,
+                                        ),
+                                        Column(
+                                          children: [
+                                            Text("MLG"),
+                                            Text("03:18"),
+                                            Text("May 10, 2021")
+                                          ],
+                                        ),
                                       ],
-                                    )
+                                    ),
+
                                   ],
                                 ),
+
                               ),
                               Container(
                                 width: MediaQuery.of(context).size.width / 1.5,
