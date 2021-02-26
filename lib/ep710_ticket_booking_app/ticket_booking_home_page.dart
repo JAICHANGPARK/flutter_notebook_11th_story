@@ -449,7 +449,7 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                             margin: EdgeInsets.only(right: 8),
                             decoration: BoxDecoration(
                                 color: Colors.blue,
-                              borderRadius: BorderRadius.circular(16)
+                              borderRadius: BorderRadius.circular(8)
                             ),
                           );
 
