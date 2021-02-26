@@ -429,7 +429,8 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                           flex: 3,
                           child: Column(
                             children: [
-                              
+                              Text("Top Destinations"),
+                              Text("Recommended place for you")
                             ],
                           )),
                       Expanded(
