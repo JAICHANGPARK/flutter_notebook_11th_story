@@ -217,7 +217,10 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                                   ),),
                                 ],
                               ),
-                              Text("See All")
+                              Text("See All", style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.greenAccent
+                              ),)
                             ],
                           )),
                       Expanded(
