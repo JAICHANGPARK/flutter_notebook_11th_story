@@ -234,10 +234,22 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
 
                               Container(
                                 width: MediaQuery.of(context).size.width / 1.5,
+                                margin: EdgeInsets.only(right: 16),
                                 decoration: BoxDecoration(
                                   border: Border.all(
-                                    color: Colors.grey[300]
-                                  )
+                                    color: Colors.grey[300],
+                                  ),
+                                  borderRadius: BorderRadius.circular(9)
+                                ),
+                              ),
+                              Container(
+                                width: MediaQuery.of(context).size.width / 1.5,
+                                margin: EdgeInsets.only(right: 16),
+                                decoration: BoxDecoration(
+                                    border: Border.all(
+                                      color: Colors.grey[300],
+                                    ),
+                                    borderRadius: BorderRadius.circular(9)
                                 ),
                               )
                             ],
