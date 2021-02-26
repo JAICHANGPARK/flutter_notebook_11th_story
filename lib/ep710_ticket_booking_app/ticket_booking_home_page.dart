@@ -207,8 +207,13 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                 children: [
-                                  Text("Upcoming Trip"),
-                                  Text("You have 2 upcomming ticket"),
+                                  Text("Upcoming Trip",style: TextStyle(
+                                    fontWeight: FontWeight.bold
+                                  ),),
+                                  Text("You have 2 upcomming ticket", style: TextStyle(
+                                    fontSize: 12,
+                                    color: Colors.grey
+                                  ),),
                                 ],
                               ),
                               Text("See All")
