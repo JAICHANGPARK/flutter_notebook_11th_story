@@ -241,6 +241,18 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                                   ),
                                   borderRadius: BorderRadius.circular(9)
                                 ),
+                                child: Column(
+                                  children: [
+                                    Row(
+                                      children: [
+                                        Icon(Icons.train),
+                                        Text("Train"),
+                                        Spacer(),
+                                        Text("2 Seats")
+                                      ],
+                                    )
+                                  ],
+                                ),
                               ),
                               Container(
                                 width: MediaQuery.of(context).size.width / 1.5,
