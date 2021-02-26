@@ -241,6 +241,7 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                                   ),
                                   borderRadius: BorderRadius.circular(9)
                                 ),
+                                padding: EdgeInsets.all(12),
                                 child: Column(
                                   children: [
                                     Row(
@@ -253,6 +254,12 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                                     ),
                                     Divider(
                                       color: Colors.grey[300],
+                                      thickness: 1.5,
+                                    ),
+                                    Row(
+                                      children: [
+                                        
+                                      ],
                                     )
                                   ],
                                 ),
