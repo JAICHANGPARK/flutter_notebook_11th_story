@@ -42,7 +42,19 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                     return Container(
                       child:Column(
                         children: [
-                          
+                          Row(
+                            children: [
+                              Container(
+                                child:
+                                Row(
+                                  children: [
+                                    Icon(Icons.monetization_on),
+                                    Text("400 Points")
+                                  ],
+                                ),
+                              )
+                            ],
+                          )
                         ],
                       ),
                     );
