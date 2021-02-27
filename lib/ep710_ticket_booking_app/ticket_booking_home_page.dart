@@ -75,8 +75,14 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                               )
                             ],
                           ),
-                          Text("Get Discount Up To"),
-                          Text("30%"),
+                          Text("Get Discount Up To",style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),),
+                          Text("30%",style: TextStyle(
+                            fontSize: 48,
+                            fontWeight: FontWeight.bold
+                          ),),
                           Text("for local plane trip")
                         ],
                       ),
