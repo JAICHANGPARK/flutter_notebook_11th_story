@@ -60,12 +60,14 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                                 ),
                               ),
                               CircleAvatar(
-                                radius: 16,
                                 backgroundColor: Colors.white,
-                                child: Badge(
-                                  child: Icon(Icons.settings_outlined),
-                                  position: BadgePosition.bottomEnd(),
-                                  padding: EdgeInsets.all(5.0),
+                                child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Badge(
+                                    child: Icon(Icons.settings_outlined),
+                                    position: BadgePosition.bottomEnd(),
+                                    padding: EdgeInsets.all(5.0),
+                                  ),
                                 ),
                               )
                             ],
