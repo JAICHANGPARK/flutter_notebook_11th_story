@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:flutter_swiper/flutter_swiper.dart';
 
 class TicketBookingHomePage extends StatefulWidget {
   @override
@@ -31,6 +32,20 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                 Container(
                   height: MediaQuery.of(context).size.height / 4,
                   decoration: BoxDecoration(color: Colors.blue),
+                  child: Swiper(itemCount: 4,
+                    controller: SwiperController(
+                      
+                    ),
+                    pagination: SwiperPagination(
+
+                    ),
+                    itemBuilder: (context, index){
+                    return Container(
+
+                    );
+                    },
+
+                  ),
                 ),
                 Container(
                   height: MediaQuery.of(context).size.height / 4.8,
