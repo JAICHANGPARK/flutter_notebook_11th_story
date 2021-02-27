@@ -11,11 +11,13 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.2
   badges: any
-  backdrop: ^0.4.7
+  backdrop: ^0.5.2
   flutter_inner_drawer: ^0.5.7+2
   google_fonts: any
   flutter_slidable: ^0.5.7
   path_provider: any
+
+  flutter_swiper: any
 
 dev_dependencies:
   flutter_test:
