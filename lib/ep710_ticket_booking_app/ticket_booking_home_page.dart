@@ -45,6 +45,10 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                           Row(
                             children: [
                               Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.white
+                                ),
+                                padding: EdgeInsets.symmetric(vertical: 8, horizontal: 8),
                                 child:
                                 Row(
                                   children: [
