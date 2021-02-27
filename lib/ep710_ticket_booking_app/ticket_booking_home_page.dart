@@ -43,6 +43,7 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                     return Container(
                       padding: EdgeInsets.all(16),
                       child:Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
