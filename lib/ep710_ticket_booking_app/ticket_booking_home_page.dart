@@ -75,15 +75,20 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                               )
                             ],
                           ),
+                          SizedBox(height: 24,),
                           Text("Get Discount Up To",style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
                           ),),
                           Text("30%",style: TextStyle(
                             fontSize: 48,
-                            fontWeight: FontWeight.bold
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
                           ),),
-                          Text("for local plane trip")
+                          Text("for local plane trip",style: TextStyle(
+                          color: Colors.white,
+                            fontSize: 12
+                          ), )
                         ],
                       ),
                     );
