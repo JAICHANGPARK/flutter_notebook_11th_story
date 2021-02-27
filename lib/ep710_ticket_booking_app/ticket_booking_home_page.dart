@@ -73,7 +73,10 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                                 ),
                               )
                             ],
-                          )
+                          ),
+                          Text("Get Discount Up To"),
+                          Text("30%"),
+                          Text("for local plane trip")
                         ],
                       ),
                     );
