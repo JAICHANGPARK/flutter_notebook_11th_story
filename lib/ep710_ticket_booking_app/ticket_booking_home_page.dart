@@ -41,9 +41,11 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                     ),
                     itemBuilder: (context, index){
                     return Container(
+                      padding: EdgeInsets.all(16),
                       child:Column(
                         children: [
                           Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Container(
                                 decoration: BoxDecoration(
