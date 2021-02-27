@@ -34,14 +34,17 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                   decoration: BoxDecoration(color: Colors.blue),
                   child: Swiper(itemCount: 4,
                     controller: SwiperController(
-                      
+
                     ),
                     pagination: SwiperPagination(
-
                     ),
                     itemBuilder: (context, index){
                     return Container(
-
+                      child:Column(
+                        children: [
+                          
+                        ],
+                      ),
                     );
                     },
 
