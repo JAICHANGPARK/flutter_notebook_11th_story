@@ -1,3 +1,4 @@
+import 'package:badges/badges.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
@@ -56,6 +57,14 @@ class _TicketBookingHomePageState extends State<TicketBookingHomePage> {
                                     Icon(Icons.monetization_on),
                                     Text("400 Points")
                                   ],
+                                ),
+                              ),
+                              CircleAvatar(
+                                backgroundColor: Colors.white,
+                                child: Badge(
+                                  child: Icon(Icons.settings_outlined),
+                                  position: BadgePosition.bottomEnd(),
+
                                 ),
                               )
                             ],
