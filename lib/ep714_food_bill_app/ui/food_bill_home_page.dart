@@ -15,7 +15,16 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
             bottom: 16,
             left: 16,
             right: 16,
-            child: Card(),
+            child: SizedBox(
+                height: 64,
+                child: Card(
+                  elevation: 8,
+                  child: Row(
+                    children: [
+
+                    ],
+                  ),
+                )),
           )
         ],
       ),
