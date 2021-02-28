@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-
-import 'ep710_ticket_booking_app/ticket_booking_app.dart';
+import 'ep714_food_bill_app/food_bill_app.dart';
 
 void main() {
-  runApp(TicketBookingApp());
+  runApp(FoodBillApp());
 }
 
