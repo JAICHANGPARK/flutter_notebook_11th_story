@@ -8,6 +8,12 @@ class FoodBillHomePage extends StatefulWidget {
 class _FoodBillHomePageState extends State<FoodBillHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Stack(
+        children: [
+          
+        ],
+      ),
+    );
   }
 }
