@@ -11,7 +11,11 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
     return Scaffold(
       body: Stack(
         children: [
-          Positioned(child: Card(),
+          Positioned(
+            bottom: 16,
+            left: 16,
+            right: 16,
+            child: Card(),
           )
         ],
       ),
