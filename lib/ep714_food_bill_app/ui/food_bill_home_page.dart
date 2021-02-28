@@ -12,11 +12,15 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
       body: SafeArea(
         child: Stack(
           children: [
+            Positioned(
+              right: 8,
+              top: 0,
+              child: Text("PROFILE"),
+            ),
             Positioned(child: Container(
               width: 48,
               color: Colors.black,
               height: MediaQuery.of(context).size.height / 1.4,
-
             ),
             left: 0,
             top: 0,
