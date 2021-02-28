@@ -14,10 +14,14 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
           children: [
 
             Positioned(child: Container(
-              height: MediaQuery.of(context).size.height / 1.2,
+              height: MediaQuery.of(context).size.height / 1.3,
               color: Colors.grey,
-            )
 
+            )
+            ,
+              left: 64,
+              right: 8,
+              top: 24,
             ),
             Positioned(
               right: 8,
