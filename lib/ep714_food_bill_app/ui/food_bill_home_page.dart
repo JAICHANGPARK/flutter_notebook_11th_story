@@ -9,33 +9,35 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stack(
-        children: [
-          Positioned(child: Container(
-            width: 48,
-            color: Colors.black,
-            height: MediaQuery.of(context).size.height / 1.2,
+      body: SafeArea(
+        child: Stack(
+          children: [
+            Positioned(child: Container(
+              width: 48,
+              color: Colors.black,
+              height: MediaQuery.of(context).size.height / 1.4,
 
-          ),
-          left: 0,
-          top: 16,
-          ),
-          Positioned(
-            bottom: 16,
-            left: 16,
-            right: 16,
-            child: SizedBox(
-                height: 64,
-                child: Card(
-                  elevation: 8,
-                  child: Row(
-                    children: [
+            ),
+            left: 0,
+            top: 0,
+            ),
+            Positioned(
+              bottom: 16,
+              left: 16,
+              right: 16,
+              child: SizedBox(
+                  height: 64,
+                  child: Card(
+                    elevation: 8,
+                    child: Row(
+                      children: [
 
-                    ],
-                  ),
-                )),
-          )
-        ],
+                      ],
+                    ),
+                  )),
+            )
+          ],
+        ),
       ),
     );
   }
