@@ -15,7 +15,9 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
             Positioned(
               right: 8,
               top: 0,
-              child: Text("PROFILE"),
+              child: Text("PROFILE", style: TextStyle(
+                fontWeight: FontWeight.bold
+              ),),
             ),
             Positioned(child: Container(
               width: 48,
