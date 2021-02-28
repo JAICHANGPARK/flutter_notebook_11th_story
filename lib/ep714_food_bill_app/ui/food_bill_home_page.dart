@@ -11,6 +11,15 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
     return Scaffold(
       body: Stack(
         children: [
+          Positioned(child: Container(
+            width: 48,
+            color: Colors.black,
+            height: MediaQuery.of(context).size.height / 1.2,
+
+          ),
+          left: 0,
+          top: 16,
+          ),
           Positioned(
             bottom: 16,
             left: 16,
