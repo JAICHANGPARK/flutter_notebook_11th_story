@@ -43,7 +43,35 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                           setState(() {
                             _navTabIndex = 0;
                           });
-
+                        },
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: _navTabIndex == 0? Colors.black : Colors.white,
+                              border: Border.all(
+                                color: Colors.grey[400],
+                              ),
+                              borderRadius:
+                                  BorderRadius.only(topRight: Radius.circular(16), bottomRight: Radius.circular(16))),
+                          child: Center(
+                            child: RotatedBox(
+                              quarterTurns: 1,
+                              child: Text(
+                                "WE'RE GOING",
+                                style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold,
+                                    color: _navTabIndex == 0?Colors.white: Colors.black
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      child: GestureDetector(
+                        onTap: () {
+                          setState(() {
+                            _navTabIndex = 1;
+                          });
                         },
                         child: Container(
                           decoration: BoxDecoration(
@@ -56,7 +84,7 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                             child: RotatedBox(
                               quarterTurns: 1,
                               child: Text(
-                                "WE'RE GOING",
+                                "FOOD ITEMS",
                                 style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold),
                               ),
                             ),
@@ -65,57 +93,52 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                       ),
                     ),
                     Expanded(
-                      child: Container(
-                        decoration: BoxDecoration(
-                            border: Border.all(
-                              color: Colors.grey[400],
-                            ),
-                            borderRadius:
-                                BorderRadius.only(topRight: Radius.circular(16), bottomRight: Radius.circular(16))),
-                        child: Center(
-                          child: RotatedBox(
-                            quarterTurns: 1,
-                            child: Text(
-                              "FOOD ITEMS",
-                              style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                    Expanded(
-                      child: Container(
-                        decoration: BoxDecoration(
-                            border: Border.all(
-                              color: Colors.grey[400],
-                            ),
-                            borderRadius:
-                                BorderRadius.only(topRight: Radius.circular(16), bottomRight: Radius.circular(16))),
-                        child: Center(
-                          child: RotatedBox(
-                            quarterTurns: 1,
-                            child: Text(
-                              "TOTAL BILLS",
-                              style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold),
+                      child: GestureDetector(
+                        onTap: () {
+                          setState(() {
+                            _navTabIndex = 2;
+                          });
+                        },
+                        child: Container(
+                          decoration: BoxDecoration(
+                              border: Border.all(
+                                color: Colors.grey[400],
+                              ),
+                              borderRadius:
+                                  BorderRadius.only(topRight: Radius.circular(16), bottomRight: Radius.circular(16))),
+                          child: Center(
+                            child: RotatedBox(
+                              quarterTurns: 1,
+                              child: Text(
+                                "TOTAL BILLS",
+                                style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold),
+                              ),
                             ),
                           ),
                         ),
                       ),
                     ),
                     Expanded(
-                      child: Container(
-                        decoration: BoxDecoration(
-                            border: Border.all(
-                              color: Colors.grey[400],
-                            ),
-                            borderRadius:
-                                BorderRadius.only(topRight: Radius.circular(16), bottomRight: Radius.circular(16))),
-                        child: Center(
-                          child: RotatedBox(
-                            quarterTurns: 1,
-                            child: Text(
-                              "FRIENDS",
-                              style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold),
+                      child: GestureDetector(
+                        onTap: () {
+                          setState(() {
+                            _navTabIndex = 3;
+                          });
+                        },
+                        child: Container(
+                          decoration: BoxDecoration(
+                              border: Border.all(
+                                color: Colors.grey[400],
+                              ),
+                              borderRadius:
+                                  BorderRadius.only(topRight: Radius.circular(16), bottomRight: Radius.circular(16))),
+                          child: Center(
+                            child: RotatedBox(
+                              quarterTurns: 1,
+                              child: Text(
+                                "FRIENDS",
+                                style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold),
+                              ),
                             ),
                           ),
                         ),
