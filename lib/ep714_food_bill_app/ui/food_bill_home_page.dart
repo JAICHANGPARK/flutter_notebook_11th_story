@@ -69,7 +69,7 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                       child: Center(
                         child: RotatedBox(
                           quarterTurns: 1,
-                          child: Text("WE'RE GOING",style: TextStyle(
+                          child: Text("FOOD ITEMS",style: TextStyle(
                               fontSize: 13,
                               fontWeight: FontWeight.bold
                           ),),
@@ -89,7 +89,7 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                       child: Center(
                         child: RotatedBox(
                           quarterTurns: 1,
-                          child: Text("WE'RE GOING",style: TextStyle(
+                          child: Text("TOTAL BILLS",style: TextStyle(
                               fontSize: 13,
                               fontWeight: FontWeight.bold
                           ),),
