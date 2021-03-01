@@ -77,6 +77,7 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                         },
                         child: Container(
                           decoration: BoxDecoration(
+                              color: _navTabIndex == 1 ? Colors.black : Colors.white,
                               border: Border.all(
                                 color: Colors.grey[400],
                               ),
@@ -87,7 +88,9 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                               quarterTurns: 1,
                               child: Text(
                                 "FOOD ITEMS",
-                                style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold),
+                                style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold,
+                                  color: _navTabIndex ==1 ? Colors.black : Colors.white,
+                                ),
                               ),
                             ),
                           ),
@@ -103,6 +106,7 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                         },
                         child: Container(
                           decoration: BoxDecoration(
+                              color: _navTabIndex == 2 ? Colors.black : Colors.white,
                               border: Border.all(
                                 color: Colors.grey[400],
                               ),
@@ -113,7 +117,9 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                               quarterTurns: 1,
                               child: Text(
                                 "TOTAL BILLS",
-                                style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold),
+                                style: TextStyle(
+                                    color: _navTabIndex == 2 ? Colors.black : Colors.white,
+                                    fontSize: 13, fontWeight: FontWeight.bold),
                               ),
                             ),
                           ),
