@@ -45,7 +45,6 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
               ),
               left: 0,
               top: 0,
-
             ),
             Positioned(
               bottom: 16,
@@ -54,11 +53,8 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
               child: SizedBox(
                   height: 64,
                   child: Card(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(12)
-                    ),
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
                     elevation: 8,
-
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Row(
@@ -67,26 +63,33 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                             radius: 16,
                             backgroundColor: Colors.white,
                           ),
-                          Text("7 Items added", style: TextStyle(
-                            fontWeight: FontWeight.normal,
-                            fontSize: 16
-                          ),),
+                          Text(
+                            "7 Items added",
+                            style: TextStyle(fontWeight: FontWeight.normal, fontSize: 16),
+                          ),
                           Spacer(),
-                          Text("\$20", style: TextStyle(
+                          Text(
+                            "\$20",
+                            style: TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 16,
-
-                          ),),
-                          SizedBox(width: 7,),
+                            ),
+                          ),
+                          SizedBox(
+                            width: 7,
+                          ),
                           Container(
                             height: 42,
                             width: 42,
-
-                            decoration: BoxDecoration(
-                              color: Colors.grey[300]
+                            child: Center(
+                              child: Icon(Icons.arrow_right),
                             ),
+                            decoration: BoxDecoration(color: Colors.grey[200],
+                                borderRadius: BorderRadius.circular(7),),
                           ),
-                          SizedBox(width: 7,),
+                          SizedBox(
+                            width: 7,
+                          ),
                         ],
                       ),
                     ),
