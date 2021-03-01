@@ -58,19 +58,28 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                       borderRadius: BorderRadius.circular(12)
                     ),
                     elevation: 8,
-                    child: Row(
-                      children: [
-                        CircleAvatar(),
-                        Text("7 Items added"),
-                        Text("\$20"),
-                        Container(
-                          height: 48,
-                          width: 48,
-                          decoration: BoxDecoration(
-                            color: Colors.grey
+
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Row(
+                        children: [
+                          CircleAvatar(
+                            radius: 16,
+                            backgroundColor: Colors.white,
                           ),
-                        ),
-                      ],
+                          Text("7 Items added"),
+                          Spacer(),
+                          Text("\$20"),
+                          Container(
+                            height: 48,
+                            width: 48,
+                            margin: EdgeInsets.all(8),
+                            decoration: BoxDecoration(
+                              color: Colors.grey
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   )),
             )
