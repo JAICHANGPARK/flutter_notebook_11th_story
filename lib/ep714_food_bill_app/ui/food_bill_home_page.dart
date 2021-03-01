@@ -7,6 +7,7 @@ class FoodBillHomePage extends StatefulWidget {
 
 class _FoodBillHomePageState extends State<FoodBillHomePage> {
   int _navTabIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -46,7 +47,7 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                         },
                         child: Container(
                           decoration: BoxDecoration(
-                            color: _navTabIndex == 0? Colors.black : Colors.white,
+                              color: _navTabIndex == 0 ? Colors.black : Colors.white,
                               border: Border.all(
                                 color: Colors.grey[400],
                               ),
@@ -57,9 +58,10 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                               quarterTurns: 1,
                               child: Text(
                                 "WE'RE GOING",
-                                style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold,
-                                    color: _navTabIndex == 0?Colors.white: Colors.black
-                                ),
+                                style: TextStyle(
+                                    fontSize: 13,
+                                    fontWeight: FontWeight.bold,
+                                    color: _navTabIndex == 0 ? Colors.white : Colors.black),
                               ),
                             ),
                           ),
