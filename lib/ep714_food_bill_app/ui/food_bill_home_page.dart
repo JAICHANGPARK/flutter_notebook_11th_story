@@ -39,7 +39,7 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                     Expanded(child: Container(
                       decoration: BoxDecoration(
                         border: Border.all(
-                          color: Colors.grey,
+                          color: Colors.grey[400],
                         ),
                         borderRadius: BorderRadius.only(
                           topRight: Radius.circular(16),
