@@ -55,12 +55,67 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                           ),),
                         ),
                       ),
-                    ),
-
-                    ),
-                    Expanded(child: Placeholder()),
-                    Expanded(child: Placeholder()),
-                    Expanded(child: Placeholder()),
+                    ),),
+                    Expanded(child: Container(
+                      decoration: BoxDecoration(
+                          border: Border.all(
+                            color: Colors.grey[400],
+                          ),
+                          borderRadius: BorderRadius.only(
+                              topRight: Radius.circular(16),
+                              bottomRight:  Radius.circular(16)
+                          )
+                      ),
+                      child: Center(
+                        child: RotatedBox(
+                          quarterTurns: 1,
+                          child: Text("WE'RE GOING",style: TextStyle(
+                              fontSize: 13,
+                              fontWeight: FontWeight.bold
+                          ),),
+                        ),
+                      ),
+                    ),),
+                    Expanded(child: Container(
+                      decoration: BoxDecoration(
+                          border: Border.all(
+                            color: Colors.grey[400],
+                          ),
+                          borderRadius: BorderRadius.only(
+                              topRight: Radius.circular(16),
+                              bottomRight:  Radius.circular(16)
+                          )
+                      ),
+                      child: Center(
+                        child: RotatedBox(
+                          quarterTurns: 1,
+                          child: Text("WE'RE GOING",style: TextStyle(
+                              fontSize: 13,
+                              fontWeight: FontWeight.bold
+                          ),),
+                        ),
+                      ),
+                    ),),
+                    Expanded(child: Container(
+                      decoration: BoxDecoration(
+                          border: Border.all(
+                            color: Colors.grey[400],
+                          ),
+                          borderRadius: BorderRadius.only(
+                              topRight: Radius.circular(16),
+                              bottomRight:  Radius.circular(16)
+                          )
+                      ),
+                      child: Center(
+                        child: RotatedBox(
+                          quarterTurns: 1,
+                          child: Text("WE'RE GOING",style: TextStyle(
+                              fontSize: 13,
+                              fontWeight: FontWeight.bold
+                          ),),
+                        ),
+                      ),
+                    ),),
                   ],
                 ),
               ),
