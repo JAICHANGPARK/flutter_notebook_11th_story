@@ -36,7 +36,16 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   children: [
-                    Expanded(child: Container()),
+                    Expanded(child: Container(
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Colors.grey,
+                        ),
+                        borderRadius: BorderRadius.only(
+                          topRight: Radius.circular(16)
+                        )
+                      ),
+                    )),
                     Expanded(child: Placeholder()),
                     Expanded(child: Placeholder()),
                     Expanded(child: Placeholder()),
