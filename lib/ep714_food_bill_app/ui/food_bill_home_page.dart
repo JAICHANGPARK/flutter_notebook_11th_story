@@ -37,9 +37,9 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                   mainAxisSize: MainAxisSize.max,
                   children: [
                     Expanded(child: Container()),
-                    Expanded(child: Container()),
-                    Expanded(child: Container()),
-                    Expanded(child: Container()),
+                    Expanded(child: Placeholder()),
+                    Expanded(child: Placeholder()),
+                    Expanded(child: Placeholder()),
                   ],
                 ),
               ),
