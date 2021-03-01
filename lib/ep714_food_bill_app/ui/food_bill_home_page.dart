@@ -32,9 +32,9 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
             Positioned(
               child: Container(
                 width: 48,
-                color: Colors.black,
                 height: MediaQuery.of(context).size.height / 1.4,
                 child: Column(
+                  mainAxisSize: MainAxisSize.max,
                   children: [
                     Expanded(child: Container()),
                     Expanded(child: Container()),
@@ -54,6 +54,9 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
               child: SizedBox(
                   height: 64,
                   child: Card(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12)
+                    ),
                     elevation: 8,
                     child: Row(
                       children: [],
