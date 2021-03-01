@@ -6,6 +6,7 @@ class FoodBillHomePage extends StatefulWidget {
 }
 
 class _FoodBillHomePageState extends State<FoodBillHomePage> {
+  int _navTabIndex = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,86 +37,90 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   children: [
-                    Expanded(child: Container(
-                      decoration: BoxDecoration(
-                        border: Border.all(
-                          color: Colors.grey[400],
-                        ),
-                        borderRadius: BorderRadius.only(
-                          topRight: Radius.circular(16),
-                          bottomRight:  Radius.circular(16)
-                        )
-                      ),
-                      child: Center(
-                        child: RotatedBox(
-                          quarterTurns: 1,
-                          child: Text("WE'RE GOING",style: TextStyle(
-                            fontSize: 13,
-                            fontWeight: FontWeight.bold
-                          ),),
-                        ),
-                      ),
-                    ),),
-                    Expanded(child: Container(
-                      decoration: BoxDecoration(
-                          border: Border.all(
-                            color: Colors.grey[400],
+                    Expanded(
+                      child: GestureDetector(
+                        onTap: () {
+                          setState(() {
+                            _navTabIndex = 0;
+                          });
+
+                        },
+                        child: Container(
+                          decoration: BoxDecoration(
+                              border: Border.all(
+                                color: Colors.grey[400],
+                              ),
+                              borderRadius:
+                                  BorderRadius.only(topRight: Radius.circular(16), bottomRight: Radius.circular(16))),
+                          child: Center(
+                            child: RotatedBox(
+                              quarterTurns: 1,
+                              child: Text(
+                                "WE'RE GOING",
+                                style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold),
+                              ),
+                            ),
                           ),
-                          borderRadius: BorderRadius.only(
-                              topRight: Radius.circular(16),
-                              bottomRight:  Radius.circular(16)
-                          )
-                      ),
-                      child: Center(
-                        child: RotatedBox(
-                          quarterTurns: 1,
-                          child: Text("FOOD ITEMS",style: TextStyle(
-                              fontSize: 13,
-                              fontWeight: FontWeight.bold
-                          ),),
                         ),
                       ),
-                    ),),
-                    Expanded(child: Container(
-                      decoration: BoxDecoration(
-                          border: Border.all(
-                            color: Colors.grey[400],
+                    ),
+                    Expanded(
+                      child: Container(
+                        decoration: BoxDecoration(
+                            border: Border.all(
+                              color: Colors.grey[400],
+                            ),
+                            borderRadius:
+                                BorderRadius.only(topRight: Radius.circular(16), bottomRight: Radius.circular(16))),
+                        child: Center(
+                          child: RotatedBox(
+                            quarterTurns: 1,
+                            child: Text(
+                              "FOOD ITEMS",
+                              style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold),
+                            ),
                           ),
-                          borderRadius: BorderRadius.only(
-                              topRight: Radius.circular(16),
-                              bottomRight:  Radius.circular(16)
-                          )
-                      ),
-                      child: Center(
-                        child: RotatedBox(
-                          quarterTurns: 1,
-                          child: Text("TOTAL BILLS",style: TextStyle(
-                              fontSize: 13,
-                              fontWeight: FontWeight.bold
-                          ),),
                         ),
                       ),
-                    ),),
-                    Expanded(child: Container(
-                      decoration: BoxDecoration(
-                          border: Border.all(
-                            color: Colors.grey[400],
+                    ),
+                    Expanded(
+                      child: Container(
+                        decoration: BoxDecoration(
+                            border: Border.all(
+                              color: Colors.grey[400],
+                            ),
+                            borderRadius:
+                                BorderRadius.only(topRight: Radius.circular(16), bottomRight: Radius.circular(16))),
+                        child: Center(
+                          child: RotatedBox(
+                            quarterTurns: 1,
+                            child: Text(
+                              "TOTAL BILLS",
+                              style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold),
+                            ),
                           ),
-                          borderRadius: BorderRadius.only(
-                              topRight: Radius.circular(16),
-                              bottomRight:  Radius.circular(16)
-                          )
-                      ),
-                      child: Center(
-                        child: RotatedBox(
-                          quarterTurns: 1,
-                          child: Text("FRIENDS",style: TextStyle(
-                              fontSize: 13,
-                              fontWeight: FontWeight.bold
-                          ),),
                         ),
                       ),
-                    ),),
+                    ),
+                    Expanded(
+                      child: Container(
+                        decoration: BoxDecoration(
+                            border: Border.all(
+                              color: Colors.grey[400],
+                            ),
+                            borderRadius:
+                                BorderRadius.only(topRight: Radius.circular(16), bottomRight: Radius.circular(16))),
+                        child: Center(
+                          child: RotatedBox(
+                            quarterTurns: 1,
+                            child: Text(
+                              "FRIENDS",
+                              style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ),
@@ -160,8 +165,10 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                             child: Center(
                               child: Icon(Icons.arrow_right),
                             ),
-                            decoration: BoxDecoration(color: Colors.grey[200],
-                                borderRadius: BorderRadius.circular(7),),
+                            decoration: BoxDecoration(
+                              color: Colors.grey[200],
+                              borderRadius: BorderRadius.circular(7),
+                            ),
                           ),
                           SizedBox(
                             width: 7,
