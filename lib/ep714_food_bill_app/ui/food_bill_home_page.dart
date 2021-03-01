@@ -88,8 +88,10 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                               quarterTurns: 1,
                               child: Text(
                                 "FOOD ITEMS",
-                                style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold,
-                                  color: _navTabIndex ==1 ? Colors.black : Colors.white,
+                                style: TextStyle(
+                                  fontSize: 13,
+                                  fontWeight: FontWeight.bold,
+                                  color: _navTabIndex == 1 ? Colors.white : Colors.black,
                                 ),
                               ),
                             ),
@@ -118,8 +120,9 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                               child: Text(
                                 "TOTAL BILLS",
                                 style: TextStyle(
-                                    color: _navTabIndex == 2 ? Colors.black : Colors.white,
-                                    fontSize: 13, fontWeight: FontWeight.bold),
+                                    color: _navTabIndex == 2 ? Colors.white : Colors.black,
+                                    fontSize: 13,
+                                    fontWeight: FontWeight.bold),
                               ),
                             ),
                           ),
