@@ -67,7 +67,10 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                             radius: 16,
                             backgroundColor: Colors.white,
                           ),
-                          Text("7 Items added"),
+                          Text("7 Items added", style: TextStyle(
+                            fontWeight: FontWeight.normal,
+                            fontSize: 16
+                          ),),
                           Spacer(),
                           Text("\$20"),
                           Container(
