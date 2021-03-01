@@ -42,17 +42,26 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                           color: Colors.grey,
                         ),
                         borderRadius: BorderRadius.only(
-                          topRight: Radius.circular(16)
+                          topRight: Radius.circular(16),
+                          bottomRight:  Radius.circular(16)
                         )
                       ),
-                    )),
+                      child: Center(
+                        child: RotatedBox(
+                          quarterTurns: 1,
+                          child: Text("WE'RE GOING"),
+                        ),
+                      ),
+                    ),
+
+                    ),
                     Expanded(child: Placeholder()),
                     Expanded(child: Placeholder()),
                     Expanded(child: Placeholder()),
                   ],
                 ),
               ),
-              left: 0,
+              left: -8,
               top: 0,
             ),
             Positioned(
