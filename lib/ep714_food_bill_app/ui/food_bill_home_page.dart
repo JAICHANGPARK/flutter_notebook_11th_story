@@ -32,132 +32,7 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
               ),
             ),
             Positioned(
-              child: Container(
-                width: 48,
-                height: MediaQuery.of(context).size.height / 1.4,
-                child: Column(
-                  mainAxisSize: MainAxisSize.max,
-                  children: [
-                    Expanded(
-                      child: GestureDetector(
-                        onTap: () {
-                          setState(() {
-                            _navTabIndex = 0;
-                          });
-                        },
-                        child: Container(
-                          decoration: BoxDecoration(
-                              color: _navTabIndex == 0 ? Colors.black : Colors.white,
-                              border: Border.all(
-                                color: Colors.grey[400],
-                              ),
-                              borderRadius:
-                                  BorderRadius.only(topRight: Radius.circular(16), bottomRight: Radius.circular(16))),
-                          child: Center(
-                            child: RotatedBox(
-                              quarterTurns: 1,
-                              child: Text(
-                                "WE'RE GOING",
-                                style: TextStyle(
-                                    fontSize: 13,
-                                    fontWeight: FontWeight.bold,
-                                    color: _navTabIndex == 0 ? Colors.white : Colors.black),
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                    Expanded(
-                      child: GestureDetector(
-                        onTap: () {
-                          setState(() {
-                            _navTabIndex = 1;
-                          });
-                        },
-                        child: Container(
-                          decoration: BoxDecoration(
-                              color: _navTabIndex == 1 ? Colors.black : Colors.white,
-                              border: Border.all(
-                                color: Colors.grey[400],
-                              ),
-                              borderRadius:
-                                  BorderRadius.only(topRight: Radius.circular(16), bottomRight: Radius.circular(16))),
-                          child: Center(
-                            child: RotatedBox(
-                              quarterTurns: 1,
-                              child: Text(
-                                "FOOD ITEMS",
-                                style: TextStyle(
-                                  fontSize: 13,
-                                  fontWeight: FontWeight.bold,
-                                  color: _navTabIndex == 1 ? Colors.white : Colors.black,
-                                ),
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                    Expanded(
-                      child: GestureDetector(
-                        onTap: () {
-                          setState(() {
-                            _navTabIndex = 2;
-                          });
-                        },
-                        child: Container(
-                          decoration: BoxDecoration(
-                              color: _navTabIndex == 2 ? Colors.black : Colors.white,
-                              border: Border.all(
-                                color: Colors.grey[400],
-                              ),
-                              borderRadius:
-                                  BorderRadius.only(topRight: Radius.circular(16), bottomRight: Radius.circular(16))),
-                          child: Center(
-                            child: RotatedBox(
-                              quarterTurns: 1,
-                              child: Text(
-                                "TOTAL BILLS",
-                                style: TextStyle(
-                                    color: _navTabIndex == 2 ? Colors.white : Colors.black,
-                                    fontSize: 13,
-                                    fontWeight: FontWeight.bold),
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                    Expanded(
-                      child: GestureDetector(
-                        onTap: () {
-                          setState(() {
-                            _navTabIndex = 3;
-                          });
-                        },
-                        child: Container(
-                          decoration: BoxDecoration(
-                              border: Border.all(
-                                color: Colors.grey[400],
-                              ),
-                              borderRadius:
-                                  BorderRadius.only(topRight: Radius.circular(16), bottomRight: Radius.circular(16))),
-                          child: Center(
-                            child: RotatedBox(
-                              quarterTurns: 1,
-                              child: Text(
-                                "FRIENDS",
-                                style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold),
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
+              child: buildVerticalNavTabWidget(),
               left: -8,
               top: 0,
             ),
@@ -217,4 +92,138 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
       ),
     );
   }
+
+  Widget buildVerticalNavTabWidget(){
+    return  Container(
+      width: 48,
+      height: MediaQuery.of(context).size.height / 1.4,
+      child: Column(
+        mainAxisSize: MainAxisSize.max,
+        children: [
+          Expanded(
+            child: GestureDetector(
+              onTap: () {
+                setState(() {
+                  _navTabIndex = 0;
+                });
+              },
+              child: Container(
+                decoration: BoxDecoration(
+                    color: _navTabIndex == 0 ? Colors.black : Colors.white,
+                    border: Border.all(
+                      color: Colors.grey[400],
+                    ),
+                    borderRadius:
+                    BorderRadius.only(topRight: Radius.circular(16), bottomRight: Radius.circular(16))),
+                child: Center(
+                  child: RotatedBox(
+                    quarterTurns: 1,
+                    child: Text(
+                      "WE'RE GOING",
+                      style: TextStyle(
+                          fontSize: 13,
+                          fontWeight: FontWeight.bold,
+                          color: _navTabIndex == 0 ? Colors.white : Colors.black),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ),
+          Expanded(
+            child: GestureDetector(
+              onTap: () {
+                setState(() {
+                  _navTabIndex = 1;
+                });
+              },
+              child: Container(
+                decoration: BoxDecoration(
+                    color: _navTabIndex == 1 ? Colors.black : Colors.white,
+                    border: Border.all(
+                      color: Colors.grey[400],
+                    ),
+                    borderRadius:
+                    BorderRadius.only(topRight: Radius.circular(16), bottomRight: Radius.circular(16))),
+                child: Center(
+                  child: RotatedBox(
+                    quarterTurns: 1,
+                    child: Text(
+                      "FOOD ITEMS",
+                      style: TextStyle(
+                        fontSize: 13,
+                        fontWeight: FontWeight.bold,
+                        color: _navTabIndex == 1 ? Colors.white : Colors.black,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ),
+          Expanded(
+            child: GestureDetector(
+              onTap: () {
+                setState(() {
+                  _navTabIndex = 2;
+                });
+              },
+              child: Container(
+                decoration: BoxDecoration(
+                    color: _navTabIndex == 2 ? Colors.black : Colors.white,
+                    border: Border.all(
+                      color: Colors.grey[400],
+                    ),
+                    borderRadius:
+                    BorderRadius.only(topRight: Radius.circular(16), bottomRight: Radius.circular(16))),
+                child: Center(
+                  child: RotatedBox(
+                    quarterTurns: 1,
+                    child: Text(
+                      "TOTAL BILLS",
+                      style: TextStyle(
+                          color: _navTabIndex == 2 ? Colors.white : Colors.black,
+                          fontSize: 13,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ),
+          Expanded(
+            child: GestureDetector(
+              onTap: () {
+                setState(() {
+                  _navTabIndex = 3;
+                });
+              },
+              child: Container(
+                decoration: BoxDecoration(
+                    color: _navTabIndex == 3 ? Colors.black : Colors.white,
+                    border: Border.all(
+                      color: Colors.grey[400],
+                    ),
+                    borderRadius:
+                    BorderRadius.only(topRight: Radius.circular(16), bottomRight: Radius.circular(16))),
+                child: Center(
+                  child: RotatedBox(
+                    quarterTurns: 1,
+                    child: Text(
+                      "FRIENDS",
+                      style: TextStyle(
+                          color: _navTabIndex == 3 ? Colors.white : Colors.black,
+                          fontSize: 13,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
 }
