@@ -59,7 +59,18 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                     ),
                     elevation: 8,
                     child: Row(
-                      children: [],
+                      children: [
+                        CircleAvatar(),
+                        Text("7 Items added"),
+                        Text("\$20"),
+                        Container(
+                          height: 48,
+                          width: 48,
+                          decoration: BoxDecoration(
+                            color: Colors.grey
+                          ),
+                        ),
+                      ],
                     ),
                   )),
             )
