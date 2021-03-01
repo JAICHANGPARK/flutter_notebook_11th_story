@@ -73,9 +73,11 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                           ),),
                           Spacer(),
                           Text("\$20", style: TextStyle(
-                              fontWeight: FontWeight.normal,
-                              fontSize: 16
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16,
+
                           ),),
+                          SizedBox(width: 7,),
                           Container(
                             height: 48,
                             width: 48,
