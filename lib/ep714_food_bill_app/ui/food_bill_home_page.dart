@@ -49,7 +49,10 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                       child: Center(
                         child: RotatedBox(
                           quarterTurns: 1,
-                          child: Text("WE'RE GOING"),
+                          child: Text("WE'RE GOING",style: TextStyle(
+                            fontSize: 13,
+                            fontWeight: FontWeight.bold
+                          ),),
                         ),
                       ),
                     ),
