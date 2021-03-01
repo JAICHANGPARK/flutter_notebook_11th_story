@@ -79,13 +79,14 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                           ),),
                           SizedBox(width: 7,),
                           Container(
-                            height: 48,
-                            width: 48,
+                            height: 42,
+                            width: 42,
 
                             decoration: BoxDecoration(
-                              color: Colors.grey
+                              color: Colors.grey[300]
                             ),
                           ),
+                          SizedBox(width: 7,),
                         ],
                       ),
                     ),
