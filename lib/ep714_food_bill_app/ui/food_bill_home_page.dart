@@ -31,9 +31,15 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                     ),),
                     SizedBox(height: 16,),
                     Container(
-                      height: MediaQuery.of(context).size.height / 5,
+                      height: MediaQuery.of(context).size.height / 4.5,
                       width: double.infinity,
                       color: Colors.grey,
+                      child: Row(
+                        children: [
+                          Expanded(child: Placeholder()),
+                          Expanded(child: Placeholder()),
+                        ],
+                      ),
                     ),
                   ],
                 ),
