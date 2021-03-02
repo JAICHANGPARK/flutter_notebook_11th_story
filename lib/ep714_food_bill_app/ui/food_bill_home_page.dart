@@ -60,10 +60,12 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                                     children: [
                                       Positioned(
                                         child: Container(
-                                          width: 56,
+                                          width: 52,
                                           decoration: BoxDecoration(
                                             color: Colors.white,
+                                            borderRadius: BorderRadius.circular(36),
                                           ),
+                                          
                                         ),
                                         right: 16,
                                         bottom: 16,
@@ -73,6 +75,9 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                                         child:CircleAvatar(
                                           backgroundColor: Colors.grey,
                                           foregroundColor: Colors.white,
+                                          child: Center(
+                                            child: Text("\$8"),
+                                          ),
                                         ),
                                         left: 16,
                                         bottom: 16,
