@@ -17,11 +17,24 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
             Positioned(
               child: Container(
                 height: MediaQuery.of(context).size.height / 1.3,
-                color: Colors.grey,
+
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("Colors Teste"),
-                    Text("1901 Thornridge Cir, Shilo, USA")
+                    Text("Colors Teste", style: TextStyle(
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
+                    ),),
+                    SizedBox(height: 8,),
+                    Text("1901 Thornridge Cir, Shilo, USA", style: TextStyle(
+                      color: Colors.grey
+                    ),),
+                    SizedBox(height: 16,),
+                    Container(
+                      height: MediaQuery.of(context).size.height / 5,
+                      width: double.infinity,
+                      color: Colors.grey,
+                    ),
                   ],
                 ),
               ),
