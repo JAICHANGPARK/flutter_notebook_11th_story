@@ -20,7 +20,8 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                 color: Colors.grey,
                 child: Column(
                   children: [
-                    
+                    Text("Colors Teste"),
+                    Text("1901 Thornridge Cir, Shilo, USA")
                   ],
                 ),
               ),
