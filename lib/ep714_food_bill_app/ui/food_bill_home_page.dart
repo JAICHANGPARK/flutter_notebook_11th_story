@@ -17,26 +17,60 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
             Positioned(
               child: Container(
                 height: MediaQuery.of(context).size.height / 1.3,
-
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("Colors Teste", style: TextStyle(
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold,
-                    ),),
-                    SizedBox(height: 8,),
-                    Text("1901 Thornridge Cir, Shilo, USA", style: TextStyle(
-                      color: Colors.grey
-                    ),),
-                    SizedBox(height: 16,),
+                    Text(
+                      "Colors Teste",
+                      style: TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 8,
+                    ),
+                    Text(
+                      "1901 Thornridge Cir, Shilo, USA",
+                      style: TextStyle(color: Colors.grey),
+                    ),
+                    SizedBox(
+                      height: 16,
+                    ),
                     Container(
-                      height: MediaQuery.of(context).size.height / 4.5,
+                      height: MediaQuery.of(context).size.height / 4.2,
                       width: double.infinity,
-                      color: Colors.grey,
                       child: Row(
                         children: [
-                          Expanded(child: Placeholder()),
+                          Expanded(
+                              child: Column(
+                            children: [
+                              Expanded(
+                                  flex: 8,
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                        color: Colors.grey,
+                                        image: DecorationImage(
+                                          image: NetworkImage(
+                                              "https://cdn.pixabay.com/photo/2015/12/09/17/11/vegetables-1085063_960_720.jpg"),
+                                          fit: BoxFit.cover,
+                                        ),
+                                    borderRadius: BorderRadius.circular(8)
+                                    ),
+                                  )),
+                              Expanded(
+                                  flex: 2,
+                                  child: Center(
+                                    child: Text(
+                                      "Pancakes",
+                                      style: TextStyle(fontSize: 18, color: Colors.grey, fontWeight: FontWeight.bold),
+                                    ),
+                                  )),
+                            ],
+                          )),
+                          SizedBox(
+                            width: 24,
+                          ),
                           Expanded(child: Placeholder()),
                         ],
                       ),
