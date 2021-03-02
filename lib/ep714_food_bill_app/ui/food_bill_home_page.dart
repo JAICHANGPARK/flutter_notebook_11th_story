@@ -60,12 +60,20 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                                     children: [
                                       Positioned(
                                         child: Container(
-                                          width: 52,
+                                          width: 48,
                                           decoration: BoxDecoration(
                                             color: Colors.white,
                                             borderRadius: BorderRadius.circular(36),
                                           ),
-                                          
+                                          child: Column(
+                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                            children: [
+                                              Icon(Icons.add),
+                                              Text("1"),
+                                              Icon(Icons.remove),
+
+                                            ],
+                                          ),
                                         ),
                                         right: 16,
                                         bottom: 16,
