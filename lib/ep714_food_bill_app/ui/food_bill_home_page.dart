@@ -46,18 +46,39 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                               child: Column(
                             children: [
                               Expanded(
-                                  flex: 8,
-                                  child: Container(
-                                    decoration: BoxDecoration(
-                                        color: Colors.grey,
-                                        image: DecorationImage(
-                                          image: NetworkImage(
-                                              "https://cdn.pixabay.com/photo/2015/12/09/17/11/vegetables-1085063_960_720.jpg"),
-                                          fit: BoxFit.cover,
+                                flex: 8,
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                      color: Colors.grey,
+                                      image: DecorationImage(
+                                        image: NetworkImage(
+                                            "https://cdn.pixabay.com/photo/2015/12/09/17/11/vegetables-1085063_960_720.jpg"),
+                                        fit: BoxFit.cover,
+                                      ),
+                                      borderRadius: BorderRadius.circular(16)),
+                                  child: Stack(
+                                    children: [
+                                      Positioned(
+                                        child: Container(
+                                          width: 56,
+                                          decoration: BoxDecoration(
+                                            color: Colors.white,
+                                          ),
                                         ),
-                                    borderRadius: BorderRadius.circular(8)
-                                    ),
-                                  )),
+                                        right: 16,
+                                        bottom: 16,
+                                        top: 36,
+                                      ),
+                                      Positioned(
+                                        child:CircleAvatar(),
+                                        left: 16,
+                                        bottom: 16,
+
+                                      )
+                                    ],
+                                  ),
+                                ),
+                              ),
                               Expanded(
                                   flex: 2,
                                   child: Center(
