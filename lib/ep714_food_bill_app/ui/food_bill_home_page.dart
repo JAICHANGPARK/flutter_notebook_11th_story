@@ -18,6 +18,11 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
               child: Container(
                 height: MediaQuery.of(context).size.height / 1.3,
                 color: Colors.grey,
+                child: Column(
+                  children: [
+                    
+                  ],
+                ),
               ),
               left: 64,
               right: 8,
