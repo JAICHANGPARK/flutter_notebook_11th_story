@@ -70,7 +70,10 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                                         top: 36,
                                       ),
                                       Positioned(
-                                        child:CircleAvatar(),
+                                        child:CircleAvatar(
+                                          backgroundColor: Colors.grey,
+                                          foregroundColor: Colors.white,
+                                        ),
                                         left: 16,
                                         bottom: 16,
 
