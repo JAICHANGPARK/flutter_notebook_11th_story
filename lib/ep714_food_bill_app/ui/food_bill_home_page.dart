@@ -209,6 +209,7 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                       child: ListView.builder(
                         itemBuilder: (BuildContext context, int index) {
                           return Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
