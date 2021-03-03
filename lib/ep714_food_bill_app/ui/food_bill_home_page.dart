@@ -69,7 +69,13 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                                           child: Column(
                                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                             children: [
-                                              Icon(Icons.add),
+                                              GestureDetector(
+                                                  onTap: (){
+                                                    setState(() {
+                                                      _panCount++;
+                                                    });
+                                                  },
+                                                  child: Icon(Icons.add)),
                                               Text("${_panCount}", style: TextStyle(
                                                   fontWeight: FontWeight.bold,
                                                   fontSize: 18
