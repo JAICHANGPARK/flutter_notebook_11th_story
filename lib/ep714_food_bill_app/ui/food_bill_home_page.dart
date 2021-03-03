@@ -210,7 +210,15 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                       child: ListView.builder(
                         itemBuilder: (BuildContext context, int index) {
                           return Row(
-                            children: [],
+                            children: [
+                              Column(
+                                children: [
+                                  Text("Turkish Tea"),
+                                  Text("\$1.50 each")
+                                ],
+                              ),
+                              
+                            ],
                           );
                         },
                       ),
