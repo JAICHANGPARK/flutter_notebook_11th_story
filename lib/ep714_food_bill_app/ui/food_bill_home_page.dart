@@ -207,6 +207,7 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                     Container(
                       height: MediaQuery.of(context).size.height / 2.3,
                       child: ListView.builder(
+                        itemCount: 10,
                         itemBuilder: (BuildContext context, int index) {
                           return Padding(
                             padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
