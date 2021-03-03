@@ -212,7 +212,13 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                             children: [
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [Text("Turkish Tea"), Text("\$1.50 each")],
+                                children: [
+
+                                  Text("Turkish Tea", style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 20
+                                  ),),
+                                  Text("\$1.50 each")],
                               ),
                               Container(
                                 height: 48,
