@@ -230,9 +230,12 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                                 child: Row(
                                   children: [
                                     Icon(Icons.add),
-                                    Text(
-                                      "2",
-                                      style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                                    Padding(
+                                      padding: const EdgeInsets.symmetric(horizontal: 8),
+                                      child: Text(
+                                        "2",
+                                        style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                                      ),
                                     ),
                                     Icon(Icons.remove),
                                   ],
