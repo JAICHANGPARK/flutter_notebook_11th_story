@@ -134,7 +134,8 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                                             children: [
                                               Icon(Icons.add),
                                               Text("1", style: TextStyle(
-                                                fontWeight: FontWeight.bold
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 18
                                               ),),
                                               Icon(Icons.remove),
                                             ],
