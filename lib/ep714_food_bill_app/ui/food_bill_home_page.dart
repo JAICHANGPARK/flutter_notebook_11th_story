@@ -209,7 +209,7 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                       decoration: BoxDecoration(color: Colors.grey),
                       child: ListView(
                         children: [
-                          
+
                         ],
                       ),
                     ),
