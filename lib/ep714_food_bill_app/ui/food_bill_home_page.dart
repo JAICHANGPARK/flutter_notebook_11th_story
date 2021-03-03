@@ -161,14 +161,14 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                                                 "$_soupCount",
                                                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                                               ),
-                                  GestureDetector(
-                                      onTap: () {
-                                        setState(() {
-                                          _soupCount--;
-                                          if (_soupCount <= 0) _soupCount = 0;
-                                        });
-                                      },
-                                      child: Icon(Icons.remove)),
+                                              GestureDetector(
+                                                  onTap: () {
+                                                    setState(() {
+                                                      _soupCount--;
+                                                      if (_soupCount <= 0) _soupCount = 0;
+                                                    });
+                                                  },
+                                                  child: Icon(Icons.remove)),
                                             ],
                                           ),
                                         ),
@@ -207,16 +207,12 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                     Container(
                       height: MediaQuery.of(context).size.height / 2.3,
                       decoration: BoxDecoration(color: Colors.grey),
-                      child: ListView.builder(itemBuilder: (BuildContext context, int index) {
-
-                        return Row(
-                          children: [
-
-                          ],
-                        );
-                      },
-
-
+                      child: ListView.builder(
+                        itemBuilder: (BuildContext context, int index) {
+                          return Row(
+                            children: [],
+                          );
+                        },
                       ),
                     ),
                   ],
