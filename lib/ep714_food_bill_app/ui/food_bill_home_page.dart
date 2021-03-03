@@ -221,7 +221,9 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                                       "Turkish Tea",
                                       style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                                     ),
-                                    SizedBox(height: 4,),
+                                    SizedBox(
+                                      height: 4,
+                                    ),
                                     Text(
                                       "\$1.50 each",
                                       style: TextStyle(color: Colors.grey, fontSize: 14),
@@ -234,7 +236,7 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                                   padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                                   child: Row(
                                     children: [
-                                      Icon(Icons.add),
+                                      Icon(Icons.remove),
                                       Padding(
                                         padding: const EdgeInsets.symmetric(horizontal: 8),
                                         child: Text(
@@ -242,7 +244,7 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                                           style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                                         ),
                                       ),
-                                      Icon(Icons.remove),
+                                      Icon(Icons.add),
                                     ],
                                   ),
                                 )
