@@ -9,6 +9,7 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
   int _navTabIndex = 0;
   int _panCount = 0;
   int _soupCount = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -70,17 +71,24 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                             children: [
                                               GestureDetector(
-                                                  onTap: (){
+                                                  onTap: () {
                                                     setState(() {
                                                       _panCount++;
                                                     });
                                                   },
                                                   child: Icon(Icons.add)),
-                                              Text("${_panCount}", style: TextStyle(
-                                                  fontWeight: FontWeight.bold,
-                                                  fontSize: 18
-                                              ),),
-                                              Icon(Icons.remove),
+                                              Text(
+                                                "$_panCount",
+                                                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                                              ),
+                                              GestureDetector(
+                                                  onTap: () {
+                                                    setState(() {
+                                                      _panCount--;
+                                                      if (_panCount <= 0) _panCount = 0;
+                                                    });
+                                                  },
+                                                  child: Icon(Icons.remove)),
                                             ],
                                           ),
                                         ),
@@ -142,11 +150,17 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                                           child: Column(
                                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                             children: [
-                                              Icon(Icons.add),
-                                              Text("1", style: TextStyle(
-                                                fontWeight: FontWeight.bold,
-                                                fontSize: 18
-                                              ),),
+                                              GestureDetector(
+                                                  onTap: () {
+                                                    setState(() {
+                                                      _panCount++;
+                                                    });
+                                                  },
+                                                  child: Icon(Icons.add)),
+                                              Text(
+                                                "$_soupCount",
+                                                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                                              ),
                                               Icon(Icons.remove),
                                             ],
                                           ),
