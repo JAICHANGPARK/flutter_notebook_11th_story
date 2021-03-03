@@ -208,42 +208,45 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                       height: MediaQuery.of(context).size.height / 2.3,
                       child: ListView.builder(
                         itemBuilder: (BuildContext context, int index) {
-                          return Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    "Turkish Tea",
-                                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-                                  ),
-                                  SizedBox(height: 4,),
-                                  Text(
-                                    "\$1.50 each",
-                                    style: TextStyle(color: Colors.grey, fontSize: 14),
-                                  )
-                                ],
-                              ),
-                              Container(
-                                decoration: BoxDecoration(
-                                    border: Border.all(color: Colors.grey), borderRadius: BorderRadius.circular(24)),
-                                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
-                                child: Row(
+                          return Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Icon(Icons.add),
-                                    Padding(
-                                      padding: const EdgeInsets.symmetric(horizontal: 8),
-                                      child: Text(
-                                        "2",
-                                        style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-                                      ),
+                                    Text(
+                                      "Turkish Tea",
+                                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                                     ),
-                                    Icon(Icons.remove),
+                                    SizedBox(height: 4,),
+                                    Text(
+                                      "\$1.50 each",
+                                      style: TextStyle(color: Colors.grey, fontSize: 14),
+                                    )
                                   ],
                                 ),
-                              )
-                            ],
+                                Container(
+                                  decoration: BoxDecoration(
+                                      border: Border.all(color: Colors.grey), borderRadius: BorderRadius.circular(24)),
+                                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                                  child: Row(
+                                    children: [
+                                      Icon(Icons.add),
+                                      Padding(
+                                        padding: const EdgeInsets.symmetric(horizontal: 8),
+                                        child: Text(
+                                          "2",
+                                          style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                                        ),
+                                      ),
+                                      Icon(Icons.remove),
+                                    ],
+                                  ),
+                                )
+                              ],
+                            ),
                           );
                         },
                       ),
