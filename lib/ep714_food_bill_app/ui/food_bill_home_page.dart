@@ -7,7 +7,8 @@ class FoodBillHomePage extends StatefulWidget {
 
 class _FoodBillHomePageState extends State<FoodBillHomePage> {
   int _navTabIndex = 0;
-
+  int _panCount = 0;
+  int _soupCount = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -69,7 +70,10 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                             children: [
                                               Icon(Icons.add),
-                                              Text("1"),
+                                              Text("${_panCount}", style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                  fontSize: 18
+                                              ),),
                                               Icon(Icons.remove),
                                             ],
                                           ),
