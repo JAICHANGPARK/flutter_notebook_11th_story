@@ -224,14 +224,16 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                                 ],
                               ),
                               Container(
-                                height: 48,
                                 decoration: BoxDecoration(
                                     border: Border.all(color: Colors.grey), borderRadius: BorderRadius.circular(24)),
                                 padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                                 child: Row(
                                   children: [
                                     Icon(Icons.add),
-                                    Text("2"),
+                                    Text(
+                                      "2",
+                                      style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                                    ),
                                     Icon(Icons.remove),
                                   ],
                                 ),
