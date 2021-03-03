@@ -213,18 +213,27 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-
-                                  Text("Turkish Tea", style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 20
-                                  ),),
-                                  Text("\$1.50 each")],
+                                  Text(
+                                    "Turkish Tea",
+                                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                                  ),
+                                  Text(
+                                    "\$1.50 each",
+                                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
+                                  )
+                                ],
                               ),
                               Container(
                                 height: 48,
-                                width: 100,
                                 decoration: BoxDecoration(
-                                  color: Colors.black
+                                    border: Border.all(color: Colors.grey), borderRadius: BorderRadius.circular(24)),
+                                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                                child: Row(
+                                  children: [
+                                    Icon(Icons.add),
+                                    Text("2"),
+                                    Icon(Icons.remove),
+                                  ],
                                 ),
                               )
                             ],
