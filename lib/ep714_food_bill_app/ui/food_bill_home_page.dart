@@ -153,7 +153,7 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                                               GestureDetector(
                                                   onTap: () {
                                                     setState(() {
-                                                      _panCount++;
+                                                      _soupCount++;
                                                     });
                                                   },
                                                   child: Icon(Icons.add)),
@@ -161,7 +161,14 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                                                 "$_soupCount",
                                                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                                               ),
-                                              Icon(Icons.remove),
+                                  GestureDetector(
+                                      onTap: () {
+                                        setState(() {
+                                          _soupCount--;
+                                          if (_soupCount <= 0) _soupCount = 0;
+                                        });
+                                      },
+                                      child: Icon(Icons.remove)),
                                             ],
                                           ),
                                         ),
