@@ -207,10 +207,16 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                     Container(
                       height: MediaQuery.of(context).size.height / 2.3,
                       decoration: BoxDecoration(color: Colors.grey),
-                      child: ListView(
-                        children: [
+                      child: ListView.builder(itemBuilder: (BuildContext context, int index) {
 
-                        ],
+                        return Row(
+                          children: [
+
+                          ],
+                        );
+                      },
+
+
                       ),
                     ),
                   ],
