@@ -133,7 +133,9 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                             children: [
                                               Icon(Icons.add),
-                                              Text("1"),
+                                              Text("1", style: TextStyle(
+                                                fontWeight: FontWeight.bold
+                                              ),),
                                               Icon(Icons.remove),
                                             ],
                                           ),
