@@ -71,7 +71,6 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                                               Icon(Icons.add),
                                               Text("1"),
                                               Icon(Icons.remove),
-
                                             ],
                                           ),
                                         ),
@@ -80,7 +79,7 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                                         top: 36,
                                       ),
                                       Positioned(
-                                        child:CircleAvatar(
+                                        child: CircleAvatar(
                                           backgroundColor: Colors.grey,
                                           foregroundColor: Colors.white,
                                           child: Center(
@@ -89,7 +88,6 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                                         ),
                                         left: 16,
                                         bottom: 16,
-
                                       )
                                     ],
                                   ),
@@ -110,75 +108,71 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                           ),
                           Expanded(
                               child: Column(
-                                children: [
-                                  Expanded(
-                                    flex: 8,
-                                    child: Container(
-                                      decoration: BoxDecoration(
-                                          color: Colors.grey,
-                                          image: DecorationImage(
-                                            image: NetworkImage(
-                                                "https://cdn.pixabay.com/photo/2015/12/09/17/11/vegetables-1085063_960_720.jpg"),
-                                            fit: BoxFit.cover,
-                                          ),
-                                          borderRadius: BorderRadius.circular(16)),
-                                      child: Stack(
-                                        children: [
-                                          Positioned(
-                                            child: Container(
-                                              width: 48,
-                                              decoration: BoxDecoration(
-                                                color: Colors.white,
-                                                borderRadius: BorderRadius.circular(36),
-                                              ),
-                                              child: Column(
-                                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                                children: [
-                                                  Icon(Icons.add),
-                                                  Text("1"),
-                                                  Icon(Icons.remove),
-
-                                                ],
-                                              ),
-                                            ),
-                                            right: 16,
-                                            bottom: 16,
-                                            top: 36,
-                                          ),
-                                          Positioned(
-                                            child:CircleAvatar(
-                                              backgroundColor: Colors.grey,
-                                              foregroundColor: Colors.white,
-                                              child: Center(
-                                                child: Text("\$8"),
-                                              ),
-                                            ),
-                                            left: 16,
-                                            bottom: 16,
-
-                                          )
-                                        ],
+                            children: [
+                              Expanded(
+                                flex: 8,
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                      color: Colors.grey,
+                                      image: DecorationImage(
+                                        image: NetworkImage(
+                                            "https://cdn.pixabay.com/photo/2015/12/09/17/11/vegetables-1085063_960_720.jpg"),
+                                        fit: BoxFit.cover,
                                       ),
-                                    ),
-                                  ),
-                                  Expanded(
-                                      flex: 2,
-                                      child: Center(
-                                        child: Text(
-                                          "Soup",
-                                          style: TextStyle(fontSize: 18, color: Colors.grey, fontWeight: FontWeight.bold),
+                                      borderRadius: BorderRadius.circular(16)),
+                                  child: Stack(
+                                    children: [
+                                      Positioned(
+                                        child: Container(
+                                          width: 48,
+                                          decoration: BoxDecoration(
+                                            color: Colors.white,
+                                            borderRadius: BorderRadius.circular(36),
+                                          ),
+                                          child: Column(
+                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                            children: [
+                                              Icon(Icons.add),
+                                              Text("1"),
+                                              Icon(Icons.remove),
+                                            ],
+                                          ),
                                         ),
-                                      )),
-                                ],
-                              )),
+                                        right: 16,
+                                        bottom: 16,
+                                        top: 36,
+                                      ),
+                                      Positioned(
+                                        child: CircleAvatar(
+                                          backgroundColor: Colors.grey,
+                                          foregroundColor: Colors.white,
+                                          child: Center(
+                                            child: Text("\$8"),
+                                          ),
+                                        ),
+                                        left: 16,
+                                        bottom: 16,
+                                      )
+                                    ],
+                                  ),
+                                ),
+                              ),
+                              Expanded(
+                                  flex: 2,
+                                  child: Center(
+                                    child: Text(
+                                      "Soup",
+                                      style: TextStyle(fontSize: 18, color: Colors.grey, fontWeight: FontWeight.bold),
+                                    ),
+                                  )),
+                            ],
+                          )),
                         ],
                       ),
                     ),
                     Container(
                       height: MediaQuery.of(context).size.height / 2.3,
-                      decoration: BoxDecoration(
-                        color: Colors.grey
-                      ),
+                      decoration: BoxDecoration(color: Colors.grey),
                     ),
                   ],
                 ),
