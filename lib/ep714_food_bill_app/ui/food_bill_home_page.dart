@@ -217,10 +217,10 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
                                     "Turkish Tea",
                                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                                   ),
-                                  SizedBox(height: 8,),
+                                  SizedBox(height: 4,),
                                   Text(
                                     "\$1.50 each",
-                                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
+                                    style: TextStyle(color: Colors.grey, fontSize: 14),
                                   )
                                 ],
                               ),
