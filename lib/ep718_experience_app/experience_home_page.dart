@@ -14,7 +14,11 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
           children: [
             Expanded(
                 flex: 2,
-                child: Placeholder()),
+                child: Column(
+                  children: [
+
+                  ],
+                )),
             Expanded(
                 flex: 2,
                 child: Placeholder()),
