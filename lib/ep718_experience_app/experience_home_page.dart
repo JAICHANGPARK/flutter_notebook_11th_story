@@ -23,7 +23,8 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
                     children: [
                       Text("Friday, Fabruary 19"),
                       Text("Hey there, Amy!",style: TextStyle(
-                        
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold
                       ),),
                     ],
                   ),
