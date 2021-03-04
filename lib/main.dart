@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'ep714_food_bill_app/food_bill_app.dart';
+import 'ep718_experience_app/experience_app.dart';
 
 void main() {
-  runApp(FoodBillApp());
+  runApp(ExperienceApp());
 }
 
