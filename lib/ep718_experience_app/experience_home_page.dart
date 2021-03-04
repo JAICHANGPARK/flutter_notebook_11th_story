@@ -22,7 +22,9 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       Text("Friday, Fabruary 19"),
-                      Text("Hey there, Amy!"),
+                      Text("Hey there, Amy!",style: TextStyle(
+                        
+                      ),),
                     ],
                   ),
                 )),
