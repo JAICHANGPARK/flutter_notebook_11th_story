@@ -10,10 +10,11 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        
+
         child: Column(
           children: [
           Expanded(child: Placeholder()),
+            Expanded(child: Placeholder()),
             Expanded(child: Placeholder()),
             Expanded(child: Placeholder()),
             Expanded(child: Placeholder()),
