@@ -41,8 +41,12 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
                     children: [
                       Expanded(
                           flex: 8,
-                          child: Placeholder()),
-                      SizedBox(width: 8,),
+                          child: Container(
+                            decoration: BoxDecoration(
+                              
+                            ),
+                          )),
+                      SizedBox(width: 16,),
                       Expanded(
                           flex: 2,
                           child: Placeholder()),
