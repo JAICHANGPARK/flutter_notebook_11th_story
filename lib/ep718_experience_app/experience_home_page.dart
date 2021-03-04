@@ -15,6 +15,7 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
             Expanded(
                 flex: 2,
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text("Friday, Fabruary 19"),
                     Text("Hey there, Amy!"),
