@@ -16,21 +16,14 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
                 flex: 2,
                 child: Column(
                   children: [
-
+                    Text("Friday, Fabruary 19"),
+                    Text("Hey there, Amy!"),
                   ],
                 )),
-            Expanded(
-                flex: 2,
-                child: Placeholder()),
-            Expanded(
-                flex: 6,
-                child: Placeholder()),
-            Expanded(
-                flex: 3,
-                child: Placeholder()),
-            Expanded(
-                flex: 2,
-                child: Placeholder()),
+            Expanded(flex: 2, child: Placeholder()),
+            Expanded(flex: 6, child: Placeholder()),
+            Expanded(flex: 3, child: Placeholder()),
+            Expanded(flex: 2, child: Placeholder()),
           ],
         ),
       ),
