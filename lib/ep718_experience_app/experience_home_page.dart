@@ -46,6 +46,11 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
                               border: Border.all(color: Colors.grey[300]),
                               borderRadius: BorderRadius.circular(24),
                             ),
+                            child: TextField(
+                              decoration: InputDecoration(
+                                border: InputBorder.none
+                              ),
+                            ),
                           )),
                       SizedBox(
                         width: 16,
