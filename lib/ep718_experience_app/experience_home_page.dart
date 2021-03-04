@@ -50,10 +50,7 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
                             ),
                             child: TextField(
                               decoration: InputDecoration(
-                                  border: InputBorder.none,
-                                  hintText: "Search anything...",
-                                  icon: Icon(Icons.search)),
-
+                                  border: InputBorder.none, hintText: "Search anything...", icon: Icon(Icons.search)),
                             ),
                           )),
                       SizedBox(
