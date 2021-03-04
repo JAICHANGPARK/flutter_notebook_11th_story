@@ -42,6 +42,7 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
                       Expanded(
                           flex: 8,
                           child: Container(
+                            padding: EdgeInsets.symmetric(horizontal: 16),
                             decoration: BoxDecoration(
                               border: Border.all(color: Colors.grey[300]),
                               borderRadius: BorderRadius.circular(24),
