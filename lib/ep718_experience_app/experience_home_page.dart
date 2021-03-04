@@ -36,7 +36,7 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
             Expanded(
                 flex: 2,
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                   child: Row(
                     children: [
                       Expanded(
@@ -44,13 +44,13 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
                           child: Container(
                             decoration: BoxDecoration(
                               border: Border.all(color: Colors.grey),
-                              borderRadius: BorderRadius.circular(24)
+                              borderRadius: BorderRadius.circular(24),
                             ),
                           )),
-                      SizedBox(width: 16,),
-                      Expanded(
-                          flex: 2,
-                          child: Placeholder()),
+                      SizedBox(
+                        width: 16,
+                      ),
+                      Expanded(flex: 2, child: Placeholder()),
                     ],
                   ),
                 )),
