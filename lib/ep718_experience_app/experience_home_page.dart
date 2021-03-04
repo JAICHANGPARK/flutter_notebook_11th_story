@@ -53,7 +53,11 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
                       Expanded(
                           flex: 2,
                           child: Container(
-                            decoration: BoxDecoration(shape: BoxShape.circle, gradient: LinearGradient(colors: [])),
+                            decoration: BoxDecoration(shape: BoxShape.circle,
+                                gradient: LinearGradient(colors: [
+                                  Colors.black,
+                                  Colors.purple
+                                ])),
                             child: Center(
                               child: Icon(Icons.tune),
                             ),
