@@ -11,7 +11,10 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
     return Scaffold(
       body: Column(
         children: [
-          
+        Expanded(child: Placeholder()),
+          Expanded(child: Placeholder()),
+          Expanded(child: Placeholder()),
+          Expanded(child: Placeholder()),
         ],
       ),
     );
