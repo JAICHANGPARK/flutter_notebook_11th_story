@@ -35,14 +35,22 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
                 )),
             Expanded(
                 flex: 2,
-                child: Row(
-                  children: [
-                    Expanded(child: Placeholder()),
-                    Expanded(child: Placeholder()),
-                  ],
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                  child: Row(
+                    children: [
+                      Expanded(
+                          flex: 8,
+                          child: Placeholder()),
+                      SizedBox(width: 8,),
+                      Expanded(
+                          flex: 2,
+                          child: Placeholder()),
+                    ],
+                  ),
                 )),
-            Expanded(flex: 6, child: Placeholder()),
-            Expanded(flex: 3, child: Placeholder()),
+            Expanded(flex: 8, child: Placeholder()),
+            Expanded(flex: 4, child: Placeholder()),
             Expanded(flex: 2, child: Placeholder()),
           ],
         ),
