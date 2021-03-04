@@ -9,6 +9,7 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -21,7 +22,10 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Text("Friday, Fabruary 19"),
+                      Text("Friday, Fabruary 19", style: TextStyle(
+                        fontSize: 13,
+                        color: Colors.grey
+                      ),),
                       Text("Hey there, Amy!",style: TextStyle(
                         fontSize: 24,
                         fontWeight: FontWeight.bold
@@ -29,7 +33,12 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
                     ],
                   ),
                 )),
-            Expanded(flex: 2, child: Placeholder()),
+            Expanded(flex: 2, child: Row(
+              children: [
+                Expanded(child: Placeholder()),
+                Expanded(child: Placeholder()),
+              ],
+            )),
             Expanded(flex: 6, child: Placeholder()),
             Expanded(flex: 3, child: Placeholder()),
             Expanded(flex: 2, child: Placeholder()),
