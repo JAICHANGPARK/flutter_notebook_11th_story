@@ -43,7 +43,8 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
                           flex: 8,
                           child: Container(
                             decoration: BoxDecoration(
-                              
+                              border: Border.all(color: Colors.grey),
+                              borderRadius: BorderRadius.circular(24)
                             ),
                           )),
                       SizedBox(width: 16,),
