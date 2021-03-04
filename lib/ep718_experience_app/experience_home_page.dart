@@ -9,13 +9,16 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-        Expanded(child: Placeholder()),
+      body: SafeArea(
+        
+        child: Column(
+          children: [
           Expanded(child: Placeholder()),
-          Expanded(child: Placeholder()),
-          Expanded(child: Placeholder()),
-        ],
+            Expanded(child: Placeholder()),
+            Expanded(child: Placeholder()),
+            Expanded(child: Placeholder()),
+          ],
+        ),
       ),
     );
   }
