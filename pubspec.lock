@@ -14,7 +14,7 @@ packages:
       name: backdrop
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.5.2"
+    version: "0.5.3"
   badges:
     dependency: "direct main"
     description:
