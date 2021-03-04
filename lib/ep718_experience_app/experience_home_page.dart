@@ -12,16 +12,19 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
       body: SafeArea(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             Expanded(
                 flex: 2,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text("Friday, Fabruary 19"),
-                    Text("Hey there, Amy!"),
-                  ],
+                child: Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Text("Friday, Fabruary 19"),
+                      Text("Hey there, Amy!"),
+                    ],
+                  ),
                 )),
             Expanded(flex: 2, child: Placeholder()),
             Expanded(flex: 6, child: Placeholder()),
