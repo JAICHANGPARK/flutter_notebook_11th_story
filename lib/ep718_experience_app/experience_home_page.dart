@@ -55,11 +55,10 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
                           child: Container(
                             decoration: BoxDecoration(
                                 shape: BoxShape.circle,
-                                gradient: LinearGradient(colors: [
-                                  Colors.black, Colors.purple],
-                                begin: Alignment.bottomLeft,
-                                  end: Alignment.topRight
-                                )),
+                                gradient: LinearGradient(
+                                    colors: [Colors.black, Colors.purple],
+                                    begin: Alignment.bottomLeft,
+                                    end: Alignment.topRight)),
                             child: Center(
                               child: Icon(
                                 Icons.tune,
