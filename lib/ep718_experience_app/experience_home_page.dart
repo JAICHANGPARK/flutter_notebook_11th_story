@@ -50,11 +50,14 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
                       SizedBox(
                         width: 16,
                       ),
-                      Expanded(flex: 2, child: Container(
-                        child: Center(
-                          child: Icon(Icons.tune),
-                        ),
-                      )),
+                      Expanded(
+                          flex: 2,
+                          child: Container(
+                            decoration: BoxDecoration(gradient: LinearGradient(colors: [])),
+                            child: Center(
+                              child: Icon(Icons.tune),
+                            ),
+                          )),
                     ],
                   ),
                 )),
