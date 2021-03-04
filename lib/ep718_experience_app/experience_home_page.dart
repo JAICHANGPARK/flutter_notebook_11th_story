@@ -11,6 +11,8 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
     return Scaffold(
       body: SafeArea(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             Expanded(
                 flex: 2,
