@@ -22,23 +22,25 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Text("Friday, Fabruary 19", style: TextStyle(
-                        fontSize: 13,
-                        color: Colors.grey
-                      ),),
-                      Text("Hey there, Amy!",style: TextStyle(
-                        fontSize: 24,
-                        fontWeight: FontWeight.bold
-                      ),),
+                      Text(
+                        "Friday, Fabruary 19",
+                        style: TextStyle(fontSize: 13, color: Colors.grey),
+                      ),
+                      Text(
+                        "Hey there, Amy!",
+                        style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                      ),
                     ],
                   ),
                 )),
-            Expanded(flex: 2, child: Row(
-              children: [
-                Expanded(child: Placeholder()),
-                Expanded(child: Placeholder()),
-              ],
-            )),
+            Expanded(
+                flex: 2,
+                child: Row(
+                  children: [
+                    Expanded(child: Placeholder()),
+                    Expanded(child: Placeholder()),
+                  ],
+                )),
             Expanded(flex: 6, child: Placeholder()),
             Expanded(flex: 3, child: Placeholder()),
             Expanded(flex: 2, child: Placeholder()),
