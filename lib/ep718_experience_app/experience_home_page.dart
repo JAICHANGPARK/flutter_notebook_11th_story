@@ -43,14 +43,18 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
                           flex: 8,
                           child: Container(
                             decoration: BoxDecoration(
-                              border: Border.all(color: Colors.grey),
+                              border: Border.all(color: Colors.grey[300]),
                               borderRadius: BorderRadius.circular(24),
                             ),
                           )),
                       SizedBox(
                         width: 16,
                       ),
-                      Expanded(flex: 2, child: Placeholder()),
+                      Expanded(flex: 2, child: Container(
+                        child: Center(
+                          child: Icon(Icons.tune),
+                        ),
+                      )),
                     ],
                   ),
                 )),
