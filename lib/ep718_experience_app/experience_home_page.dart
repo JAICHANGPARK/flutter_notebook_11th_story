@@ -78,7 +78,7 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
               children: [
                   Expanded(
                       flex: 2,
-                      child: Placeholder()),
+                      child: Text("Categories")),
                 Expanded(
                     flex: 6,
                     child: Placeholder()),
