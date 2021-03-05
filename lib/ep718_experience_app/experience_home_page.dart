@@ -90,10 +90,25 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
                               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                             ),
                           )),
-                      Expanded(flex: 6, child: ListView.builder(itemBuilder: (context, index){},
-                      itemCount: 10,
-                        scrollDirection: Axis.horizontal,
-                      ),
+                      Expanded(
+                        flex: 6,
+                        child: ListView.builder(
+                          itemBuilder: (context, index) {
+                            return Padding(
+                              padding: const EdgeInsets.only(right: 16),
+                              child: Container(
+
+                                width: MediaQuery.of(context).size.width / 2,
+                                decoration: BoxDecoration(
+                                  border: Border.all(color: Colors.grey[400])
+                                ),
+                              ),
+                            );
+
+                          },
+                          itemCount: 10,
+                          scrollDirection: Axis.horizontal,
+                        ),
                       ),
                     ],
                   ),
