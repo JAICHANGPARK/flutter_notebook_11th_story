@@ -74,49 +74,44 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
                   ),
                 )),
             Expanded(flex: 8, child: Placeholder()),
-            Expanded(flex: 4, child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                  Expanded(
-                      flex: 2,
-                      child: Align(
-                        alignment: Alignment.centerLeft,
-                        child: Text("Categories", style: TextStyle(
-                          fontSize: 18,
-                          fontWeight: FontWeight.bold
-                        ),),
-                      )),
-                Expanded(
-                    flex: 6,
-                    child: Placeholder()),
-              ],
-            )),
-            Expanded(flex: 2, child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                IconButton(onPressed: (){}, icon: Icon(Icons.apps)),
-                IconButton(onPressed: (){}, icon: Icon(Icons.send)),
-                IconButton(onPressed: (){}, icon: Icon(Icons.settings)),
-                IconButton(onPressed: (){}, icon: Icon(Icons.person)),
-              ],
-            )),
+            Expanded(
+                flex: 4,
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 16),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Expanded(
+                          flex: 2,
+                          child: Align(
+                            alignment: Alignment.centerLeft,
+                            child: Text(
+                              "Categories",
+                              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                            ),
+                          )),
+                      Expanded(flex: 6, child: ListView.builder(itemBuilder: (context, index){},
+                      itemCount: 10,
+                        scrollDirection: Axis.horizontal,
+                      ),
+                      ),
+                    ],
+                  ),
+                )),
+            Expanded(
+                flex: 2,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    IconButton(onPressed: () {}, icon: Icon(Icons.apps)),
+                    IconButton(onPressed: () {}, icon: Icon(Icons.send)),
+                    IconButton(onPressed: () {}, icon: Icon(Icons.settings)),
+                    IconButton(onPressed: () {}, icon: Icon(Icons.person)),
+                  ],
+                )),
           ],
         ),
       ),
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
