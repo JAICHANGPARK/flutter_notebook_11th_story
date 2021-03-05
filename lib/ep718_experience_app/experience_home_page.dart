@@ -75,7 +75,11 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
                 )),
             Expanded(flex: 8, child: Placeholder()),
             Expanded(flex: 4, child: Placeholder()),
-            Expanded(flex: 2, child: Placeholder()),
+            Expanded(flex: 2, child: Row(
+              children: [
+                IconButton(onPressed: (){}, icon: Icon(Icons.apps)),
+              ],
+            )),
           ],
         ),
       ),
