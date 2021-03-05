@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class ExperienceHomePage extends StatefulWidget {
@@ -100,7 +101,21 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
 
                                 width: MediaQuery.of(context).size.width / 2,
                                 decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(16),
                                   border: Border.all(color: Colors.grey[400])
+                                ),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    CircleAvatar(),
+                                    Padding(
+                                      padding: const EdgeInsets.symmetric(vertical: 8),
+                                      child: Text("Camping", style: TextStyle(
+                                        fontWeight: FontWeight.bold
+                                      ),),
+                                    ),
+                                    Text("Meet the nature"),
+                                  ],
                                 ),
                               ),
                             );
