@@ -80,7 +80,7 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
                 IconButton(onPressed: (){}, icon: Icon(Icons.apps)),
                 IconButton(onPressed: (){}, icon: Icon(Icons.send)),
                 IconButton(onPressed: (){}, icon: Icon(Icons.settings)),
-                IconButton(onPressed: (){}, icon: Icon(Icons.apps)),
+                IconButton(onPressed: (){}, icon: Icon(Icons.person)),
               ],
             )),
           ],
