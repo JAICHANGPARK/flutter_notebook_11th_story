@@ -53,9 +53,7 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
                                   border: InputBorder.none, hintText: "Search anything...", icon: Icon(Icons.search)),
                             ),
                           )),
-                      SizedBox(
-                        width: 16,
-                      ),
+                      SizedBox(width: 16),
                       Expanded(
                           flex: 2,
                           child: Container(
