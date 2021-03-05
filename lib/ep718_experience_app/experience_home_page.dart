@@ -80,7 +80,7 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
                       flex: 2,
                       child: Placeholder()),
                 Expanded(
-                    flex: 5,
+                    flex: 6,
                     child: Placeholder()),
               ],
             )),
