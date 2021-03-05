@@ -79,10 +79,13 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
               children: [
                   Expanded(
                       flex: 2,
-                      child: Text("Categories", style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold
-                      ),)),
+                      child: Align(
+                        alignment: Alignment.centerLeft,
+                        child: Text("Categories", style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold
+                        ),),
+                      )),
                 Expanded(
                     flex: 6,
                     child: Placeholder()),
