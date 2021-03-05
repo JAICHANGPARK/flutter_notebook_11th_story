@@ -114,7 +114,10 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
                                         fontWeight: FontWeight.bold
                                       ),),
                                     ),
-                                    Text("Meet the nature"),
+                                    Text("Meet the nature", style: TextStyle(
+                                      fontSize: 12,
+                                      color: Colors.grey
+                                    ),),
                                   ],
                                 ),
                               ),
