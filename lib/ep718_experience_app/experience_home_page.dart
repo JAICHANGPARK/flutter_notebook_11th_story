@@ -74,7 +74,11 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
                   ),
                 )),
             Expanded(flex: 8, child: Placeholder()),
-            Expanded(flex: 4, child: Placeholder()),
+            Expanded(flex: 4, child: Column(
+              children: [
+                
+              ],
+            )),
             Expanded(flex: 2, child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
