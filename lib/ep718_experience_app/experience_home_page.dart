@@ -76,8 +76,12 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
             Expanded(flex: 8, child: Placeholder()),
             Expanded(flex: 4, child: Column(
               children: [
-                  Expanded(child: Placeholder()),
-                Expanded(child: Placeholder()),
+                  Expanded(
+                      flex: 2,
+                      child: Placeholder()),
+                Expanded(
+                    flex: 5,
+                    child: Placeholder()),
               ],
             )),
             Expanded(flex: 2, child: Row(
