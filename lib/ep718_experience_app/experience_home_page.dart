@@ -74,7 +74,11 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
                     ],
                   ),
                 )),
-            Expanded(flex: 8, child: Placeholder()),
+            Expanded(
+                flex: 8,
+                child: Stack(
+                  children: [],
+                )),
             Expanded(
                 flex: 4,
                 child: Padding(
