@@ -84,7 +84,16 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
                           left: 0,
                           right: 0,
                           top: 8,
-                          bottom: 64,
+                          bottom: 84,
+                          child: Container(
+                            decoration: BoxDecoration(color: Colors.purple,
+                                borderRadius: BorderRadius.circular(24)),
+                          )),
+                      Positioned(
+                          left: 0,
+                          right: 0,
+                          top: 8,
+                          bottom: 84,
                           child: Container(
                             decoration: BoxDecoration(color: Colors.purple,
                                 borderRadius: BorderRadius.circular(24)),
@@ -122,7 +131,9 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    CircleAvatar(),
+                                    CircleAvatar(
+                                      backgroundColor: Colors.green,
+                                    ),
                                     Padding(
                                       padding: const EdgeInsets.symmetric(vertical: 8),
                                       child: Text(
