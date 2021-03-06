@@ -98,31 +98,29 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
                             return Padding(
                               padding: const EdgeInsets.only(right: 16),
                               child: Container(
-
                                 width: MediaQuery.of(context).size.width / 2,
                                 decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(16),
-                                  border: Border.all(color: Colors.grey[400])
-                                ),
+                                    borderRadius: BorderRadius.circular(16),
+                                    border: Border.all(color: Colors.grey[400])),
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     CircleAvatar(),
                                     Padding(
                                       padding: const EdgeInsets.symmetric(vertical: 8),
-                                      child: Text("Camping", style: TextStyle(
-                                        fontWeight: FontWeight.bold
-                                      ),),
+                                      child: Text(
+                                        "Camping",
+                                        style: TextStyle(fontWeight: FontWeight.bold),
+                                      ),
                                     ),
-                                    Text("Meet the nature", style: TextStyle(
-                                      fontSize: 12,
-                                      color: Colors.grey
-                                    ),),
+                                    Text(
+                                      "Meet the nature",
+                                      style: TextStyle(fontSize: 12, color: Colors.grey),
+                                    ),
                                   ],
                                 ),
                               ),
                             );
-
                           },
                           itemCount: 10,
                           scrollDirection: Axis.horizontal,
