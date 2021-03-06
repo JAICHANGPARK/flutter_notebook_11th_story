@@ -77,7 +77,13 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
             Expanded(
                 flex: 8,
                 child: Stack(
-                  children: [],
+                  children: [
+                    Positioned(child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.red
+                      ),
+                    ))
+                  ],
                 )),
             Expanded(
                 flex: 4,
