@@ -86,11 +86,9 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
                           top: 8,
                           bottom: 64,
                           child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.red,
-                          borderRadius: BorderRadius.circular(24)
-                        ),
-                      ))
+                            decoration: BoxDecoration(color: Colors.purple,
+                                borderRadius: BorderRadius.circular(24)),
+                          ))
                     ],
                   ),
                 )),
