@@ -121,6 +121,7 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
                                 fontWeight: FontWeight.bold,
                                 fontSize: 24,
                               ),),
+                              SizedBox(height: 8,),
                               Text("5 days - \$999 - April 2021", style: TextStyle(
                                 color: Colors.grey[300],
                                 fontWeight: FontWeight.bold,
