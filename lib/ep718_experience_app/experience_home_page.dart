@@ -106,27 +106,36 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
                         child: Container(
                           decoration: BoxDecoration(
                               image: DecorationImage(
-                                image: NetworkImage(
-                                    "https://cdn.pixabay.com/photo/2018/05/30/15/39/thunderstorm-3441687_960_720.jpg"),
-                                fit: BoxFit.cover,
-                              ),
+                                  image: NetworkImage(
+                                      "https://cdn.pixabay.com/photo/2018/05/30/15/39/thunderstorm-3441687_960_720.jpg"),
+                                  fit: BoxFit.cover,
+                                  colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.5),
+                                      BlendMode.darken)),
                               color: Colors.purple,
                               borderRadius: BorderRadius.circular(24)),
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
-                              Text("Night at the Forest", style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 24,
-                              ),),
-                              SizedBox(height: 8,),
-                              Text("5 days - \$999 - April 2021", style: TextStyle(
-                                color: Colors.grey[300],
-                                fontWeight: FontWeight.bold,
-                                fontSize: 12,
-                              ),)
+                              Text(
+                                "Night at the Forest",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 24,
+                                ),
+                              ),
+                              SizedBox(
+                                height: 8,
+                              ),
+                              Text(
+                                "5 days - \$999 - April 2021",
+                                style: TextStyle(
+                                  color: Colors.grey[300],
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12,
+                                ),
+                              )
                             ],
                           ),
                         ),
