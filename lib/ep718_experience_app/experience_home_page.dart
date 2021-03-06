@@ -84,7 +84,7 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
                           left: 32,
                           right: 32,
                           top: 8,
-                          bottom: 44,
+                          bottom: 32,
                           child: Container(
                             decoration: BoxDecoration(
                                 color: Colors.purple.withOpacity(0.4), borderRadius: BorderRadius.circular(24)),
@@ -93,7 +93,7 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
                           left: 16,
                           right: 16,
                           top: 8,
-                          bottom: 64,
+                          bottom: 48,
                           child: Container(
                             decoration: BoxDecoration(
                                 color: Colors.purple.withOpacity(0.7), borderRadius: BorderRadius.circular(24)),
@@ -102,7 +102,7 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
                         left: 0,
                         right: 0,
                         top: 8,
-                        bottom: 84,
+                        bottom: 64,
                         child: Container(
                           decoration: BoxDecoration(
                               image: DecorationImage(
