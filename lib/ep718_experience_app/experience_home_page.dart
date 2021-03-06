@@ -118,6 +118,11 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
                                 color: Colors.white,
                                 fontWeight: FontWeight.bold,
                                 fontSize: 24,
+                              ),),
+                              Text("5 days - \$999 - April 2021", style: TextStyle(
+                                color: Colors.grey,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 12,
                               ),)
                             ],
                           ),
