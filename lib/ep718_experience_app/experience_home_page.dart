@@ -114,7 +114,11 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
                               borderRadius: BorderRadius.circular(24)),
                           child: Column(
                             children: [
-                              Text("")
+                              Text("Night at the Forest", style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 24,
+                              ),)
                             ],
                           ),
                         ),
