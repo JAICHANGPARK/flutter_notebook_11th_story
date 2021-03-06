@@ -90,12 +90,12 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
                                 borderRadius: BorderRadius.circular(24)),
                           )),
                       Positioned(
-                          left: 0,
-                          right: 0,
+                          left: 16,
+                          right: 16,
                           top: 8,
-                          bottom: 84,
+                          bottom: 64,
                           child: Container(
-                            decoration: BoxDecoration(color: Colors.purple,
+                            decoration: BoxDecoration(color: Colors.purple.withOpacity(0.7),
                                 borderRadius: BorderRadius.circular(24)),
                           ))
                     ],
