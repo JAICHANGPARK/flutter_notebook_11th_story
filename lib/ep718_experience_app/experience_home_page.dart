@@ -80,7 +80,12 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
                   padding: const EdgeInsets.all(16.0),
                   child: Stack(
                     children: [
-                      Positioned(child: Container(
+                      Positioned(
+                          left: 0,
+                          right: 0,
+                          top: 8,
+                          bottom: 64,
+                          child: Container(
                         decoration: BoxDecoration(
                           color: Colors.red,
                         ),
