@@ -113,6 +113,8 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
                               color: Colors.purple,
                               borderRadius: BorderRadius.circular(24)),
                           child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Text("Night at the Forest", style: TextStyle(
                                 color: Colors.white,
@@ -120,7 +122,7 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
                                 fontSize: 24,
                               ),),
                               Text("5 days - \$999 - April 2021", style: TextStyle(
-                                color: Colors.grey[200],
+                                color: Colors.grey[300],
                                 fontWeight: FontWeight.bold,
                                 fontSize: 12,
                               ),)
