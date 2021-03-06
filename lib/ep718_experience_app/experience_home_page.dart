@@ -99,20 +99,26 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
                                 color: Colors.purple.withOpacity(0.7), borderRadius: BorderRadius.circular(24)),
                           )),
                       Positioned(
-                          left: 0,
-                          right: 0,
-                          top: 8,
-                          bottom: 84,
-                          child: Container(
-                            decoration: BoxDecoration(
-                                image: DecorationImage(
-                                  image: NetworkImage(
-                                      "https://cdn.pixabay.com/photo/2018/05/30/15/39/thunderstorm-3441687_960_720.jpg"),
-                                  fit: BoxFit.cover,
-                                ),
-                                color: Colors.purple,
-                                borderRadius: BorderRadius.circular(24)),
-                          )),
+                        left: 0,
+                        right: 0,
+                        top: 8,
+                        bottom: 84,
+                        child: Container(
+                          decoration: BoxDecoration(
+                              image: DecorationImage(
+                                image: NetworkImage(
+                                    "https://cdn.pixabay.com/photo/2018/05/30/15/39/thunderstorm-3441687_960_720.jpg"),
+                                fit: BoxFit.cover,
+                              ),
+                              color: Colors.purple,
+                              borderRadius: BorderRadius.circular(24)),
+                          child: Column(
+                            children: [
+                              Text("")
+                            ],
+                          ),
+                        ),
+                      ),
                     ],
                   ),
                 )),
