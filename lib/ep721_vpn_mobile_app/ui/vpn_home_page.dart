@@ -13,21 +13,54 @@ class _VpnHomePageState extends State<VpnHomePage> {
       body: SafeArea(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          
           children: [
             Expanded(
+              flex: 2,
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16),
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: Align(
+                          
+                          child: Icon(Icons.menu)),
+                    ),
+                    Expanded(
+                      child: Center(
+                        child: Text("SoftVPN", style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.blue,
+                          fontSize: 18
+                        ),),
+                      ),
+                    ),
+                    Expanded(child: Container()),
+                  ],
+                ),
+              ),
+            ),
+            Expanded(
+              flex: 2,
               child: Placeholder(),
             ),
             Expanded(
+              flex: 2,
               child: Placeholder(),
             ),
             Expanded(
+              flex: 5,
               child: Placeholder(),
             ),
             Expanded(
+              flex: 2,
               child: Placeholder(),
             ),
             Expanded(
+              flex: 2,
+              child: Placeholder(),
+            ),
+            Expanded(
+              flex: 2,
               child: Placeholder(),
             ),
 
