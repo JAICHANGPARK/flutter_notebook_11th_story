@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class VpnHomePage extends StatefulWidget {
   @override
   _VpnHomePageState createState() => _VpnHomePageState();
@@ -21,17 +20,15 @@ class _VpnHomePageState extends State<VpnHomePage> {
                 child: Row(
                   children: [
                     Expanded(
-                      child: Align(
-                          alignment: Alignment.centerLeft,
-                          child: Icon(Icons.menu)),
+                      child: Align(alignment: Alignment.centerLeft, child: Icon(Icons.menu)),
                     ),
                     Expanded(
                       child: Center(
-                        child: Text("SoftVPN", style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          color: Colors.blue,
-                          fontSize: 18
-                        ),),
+                        child: Text(
+                          "SoftVPN",
+                          style: TextStyle(fontWeight: FontWeight.bold,
+                              color: Colors.blue, fontSize: 18),
+                        ),
                       ),
                     ),
                     Expanded(child: Container()),
@@ -63,7 +60,6 @@ class _VpnHomePageState extends State<VpnHomePage> {
               flex: 2,
               child: Placeholder(),
             ),
-
           ],
         ),
       ),
