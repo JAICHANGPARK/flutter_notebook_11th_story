@@ -22,7 +22,7 @@ class _VpnHomePageState extends State<VpnHomePage> {
                   children: [
                     Expanded(
                       child: Align(
-                          
+                          alignment: Alignment.centerLeft,
                           child: Icon(Icons.menu)),
                     ),
                     Expanded(
@@ -48,7 +48,7 @@ class _VpnHomePageState extends State<VpnHomePage> {
               child: Placeholder(),
             ),
             Expanded(
-              flex: 5,
+              flex: 8,
               child: Placeholder(),
             ),
             Expanded(
