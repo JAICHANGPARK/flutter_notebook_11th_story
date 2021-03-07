@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'ep718_experience_app/experience_app.dart';
+import 'ep721_vpn_mobile_app/vpn_mobile_app.dart';
 
 void main() {
-  runApp(ExperienceApp());
+  runApp(VpnMobileApp());
 }
 
