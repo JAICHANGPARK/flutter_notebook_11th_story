@@ -114,7 +114,8 @@ class _VpnHomePageState extends State<VpnHomePage> {
                     padding: const EdgeInsets.all(8.0),
                     child: Container(
                       decoration: BoxDecoration(
-                        color: Colors.blue
+                        color: Colors.blue,
+                        shape: BoxShape.circle,
                       ),
                     ),
                   ),
