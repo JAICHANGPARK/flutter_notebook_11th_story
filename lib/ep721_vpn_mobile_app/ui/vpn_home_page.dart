@@ -45,7 +45,11 @@ class _VpnHomePageState extends State<VpnHomePage> {
                       Text("Connected"),
                     ],
                   )),
-                  Expanded(child: Column()),
+                  Expanded(child: Column(
+                    children: [
+                      
+                    ],
+                  )),
                 ],
               ),
             ),
