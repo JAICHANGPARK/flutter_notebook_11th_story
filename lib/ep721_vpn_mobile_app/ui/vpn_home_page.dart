@@ -26,8 +26,7 @@ class _VpnHomePageState extends State<VpnHomePage> {
                       child: Center(
                         child: Text(
                           "SoftVPN",
-                          style: TextStyle(fontWeight: FontWeight.bold,
-                              color: Colors.blue, fontSize: 18),
+                          style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue, fontSize: 18),
                         ),
                       ),
                     ),
@@ -38,7 +37,17 @@ class _VpnHomePageState extends State<VpnHomePage> {
             ),
             Expanded(
               flex: 2,
-              child: Placeholder(),
+              child: Row(
+                children: [
+                  Expanded(child: Column(
+                    children: [
+                      Text("Status"),
+                      Text("Connected"),
+                    ],
+                  )),
+                  Expanded(child: Column()),
+                ],
+              ),
             ),
             Expanded(
               flex: 2,
