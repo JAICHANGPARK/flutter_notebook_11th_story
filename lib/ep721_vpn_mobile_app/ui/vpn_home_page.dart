@@ -143,7 +143,10 @@ class _VpnHomePageState extends State<VpnHomePage> {
                   padding: EdgeInsets.symmetric(horizontal: 16),
                   child: Row(
                     children: [
-                      Text("🇺🇸"),
+                      Text("🇺🇸" ,style: TextStyle(
+                        fontSize: 24
+                      ),),
+                      SizedBox(width: 16,),
                       Text("United states"),
                       Spacer(),
                       IconButton(onPressed: (){}, icon: Icon(Icons.arrow_forward_ios))
