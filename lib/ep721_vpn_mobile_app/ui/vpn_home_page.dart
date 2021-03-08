@@ -113,17 +113,18 @@ class _VpnHomePageState extends State<VpnHomePage> {
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: InkWell(
-                      onTap: (){
-
-                      },
+                      onTap: () {},
                       child: Container(
                         decoration: BoxDecoration(
                           color: Colors.blue,
                           shape: BoxShape.circle,
                         ),
                         child: Center(
-                          child: Icon(Icons.power_settings_new, color: Colors.white,
-                          size: 84,),
+                          child: Icon(
+                            Icons.power_settings_new,
+                            color: Colors.white,
+                            size: 84,
+                          ),
                         ),
                       ),
                     ),
@@ -143,13 +144,14 @@ class _VpnHomePageState extends State<VpnHomePage> {
                   padding: EdgeInsets.symmetric(horizontal: 16),
                   child: Row(
                     children: [
-                      Text("🇺🇸" ,style: TextStyle(
-                        fontSize: 24
-                      ),),
-                      SizedBox(width: 16,),
-                      Text("United states"),
+                      Text("🇺🇸", style: TextStyle(fontSize: 24)),
+                      SizedBox(width: 16),
+                      Text(
+                        "United states",
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
                       Spacer(),
-                      IconButton(onPressed: (){}, icon: Icon(Icons.arrow_forward_ios))
+                      IconButton(onPressed: () {}, icon: Icon(Icons.arrow_forward_ios))
                     ],
                   ),
                 ),
