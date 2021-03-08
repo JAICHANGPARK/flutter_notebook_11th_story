@@ -76,20 +76,22 @@ class _VpnHomePageState extends State<VpnHomePage> {
             ),
             Expanded(
               flex: 2,
-              child: Column(
-                mainAxisSize: MainAxisSize.max,
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  Text(
-                    "Connection time",
-                    style: TextStyle(fontWeight: FontWeight.bold, color: Colors.grey),
-                  ),
-                  Text(
-                    "00:55",
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
-                  ),
-                ],
+              child: Center(
+                child: Column(
+                  mainAxisSize: MainAxisSize.max,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Text(
+                      "Connection time",
+                      style: TextStyle(fontWeight: FontWeight.bold, color: Colors.grey),
+                    ),
+                    Text(
+                      "00:55",
+                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+                    ),
+                  ],
+                ),
               ),
             ),
             Expanded(
