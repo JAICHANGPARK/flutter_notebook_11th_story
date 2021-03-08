@@ -77,7 +77,9 @@ class _VpnHomePageState extends State<VpnHomePage> {
             Expanded(
               flex: 2,
               child: Column(
+                mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Text(
                     "Connection time",
