@@ -47,7 +47,9 @@ class _VpnHomePageState extends State<VpnHomePage> {
                   )),
                   Expanded(child: Column(
                     children: [
-                      
+                      Text("Your IP"),
+                      Text("192.224.154.214")
+
                     ],
                   )),
                 ],
