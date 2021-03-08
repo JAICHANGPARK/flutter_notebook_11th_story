@@ -41,6 +41,7 @@ class _VpnHomePageState extends State<VpnHomePage> {
                 children: [
                   Expanded(
                       child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
                         "Status",
@@ -54,6 +55,7 @@ class _VpnHomePageState extends State<VpnHomePage> {
                   )),
                   Expanded(
                       child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
                         "Your IP",
