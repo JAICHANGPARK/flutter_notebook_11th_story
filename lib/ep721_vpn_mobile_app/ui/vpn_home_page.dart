@@ -135,8 +135,10 @@ class _VpnHomePageState extends State<VpnHomePage> {
               flex: 2,
               child: Center(
                 child: Container(
+                  margin: EdgeInsets.symmetric(horizontal: 24, vertical: 8),
                   decoration: BoxDecoration(
-                    color: Colors.grey
+                    color: Colors.grey[300],
+                    borderRadius: BorderRadius.circular(8),
                   ),
                 ),
               ),
