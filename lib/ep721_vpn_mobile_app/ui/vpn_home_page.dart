@@ -102,11 +102,13 @@ class _VpnHomePageState extends State<VpnHomePage> {
             ),
             Expanded(
               flex: 8,
-              child: Container(
-                height: 84,
-                width: 84,
-                decoration: BoxDecoration(
-                  border: Border.all(color: Colors.blue)
+              child: Center(
+                child: Container(
+                  height: 240,
+                  width: 240,
+                  decoration: BoxDecoration(
+                    border: Border.all(color: Colors.blue)
+                  ),
                 ),
               ),
             ),
