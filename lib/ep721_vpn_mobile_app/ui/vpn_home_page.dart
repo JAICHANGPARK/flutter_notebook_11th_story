@@ -43,12 +43,17 @@ class _VpnHomePageState extends State<VpnHomePage> {
                       child: Column(
                     children: [
                       Text("Status"),
-                      Text("Connected"),
+                      Text(
+                        "Connected",
+                        style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue, fontSize: 18),
+                      )
                     ],
                   )),
                   Expanded(
                       child: Column(
-                    children: [Text("Your IP"), Text("192.224.154.214")],
+                    children: [Text("Your IP"), Text("192.224.154.214",
+                      style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue, fontSize: 18),
+                    )],
                   )),
                 ],
               ),
