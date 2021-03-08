@@ -117,6 +117,10 @@ class _VpnHomePageState extends State<VpnHomePage> {
                         color: Colors.blue,
                         shape: BoxShape.circle,
                       ),
+                      child: Center(
+                        child: Icon(Icons.power_settings_new, color: Colors.white,
+                        size: 84,),
+                      ),
                     ),
                   ),
                 ),
