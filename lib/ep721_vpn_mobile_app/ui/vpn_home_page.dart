@@ -114,7 +114,7 @@ class _VpnHomePageState extends State<VpnHomePage> {
                     padding: const EdgeInsets.all(8.0),
                     child: InkWell(
                       onTap: (){
-                        
+
                       },
                       child: Container(
                         decoration: BoxDecoration(
@@ -133,7 +133,13 @@ class _VpnHomePageState extends State<VpnHomePage> {
             ),
             Expanded(
               flex: 2,
-              child: Placeholder(),
+              child: Center(
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.grey
+                  ),
+                ),
+              ),
             ),
             Expanded(
               flex: 2,
