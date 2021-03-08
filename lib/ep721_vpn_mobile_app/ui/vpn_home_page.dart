@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 
 class VpnHomePage extends StatefulWidget {
@@ -6,6 +8,8 @@ class VpnHomePage extends StatefulWidget {
 }
 
 class _VpnHomePageState extends State<VpnHomePage> {
+  Timer connectionTimer;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -41,7 +45,7 @@ class _VpnHomePageState extends State<VpnHomePage> {
                 children: [
                   Expanded(
                       child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
                         "Status",
@@ -55,7 +59,7 @@ class _VpnHomePageState extends State<VpnHomePage> {
                   )),
                   Expanded(
                       child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
                         "Your IP",
@@ -72,7 +76,19 @@ class _VpnHomePageState extends State<VpnHomePage> {
             ),
             Expanded(
               flex: 2,
-              child: Placeholder(),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    "Connection time",
+                    style: TextStyle(fontWeight: FontWeight.bold, color: Colors.grey),
+                  ),
+                  Text(
+                    "00:55",
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+                  ),
+                ],
+              ),
             ),
             Expanded(
               flex: 8,
