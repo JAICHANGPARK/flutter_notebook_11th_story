@@ -11,6 +11,12 @@ class _VpnHomePageState extends State<VpnHomePage> {
   Timer connectionTimer;
 
   @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
@@ -96,7 +102,13 @@ class _VpnHomePageState extends State<VpnHomePage> {
             ),
             Expanded(
               flex: 8,
-              child: Placeholder(),
+              child: Container(
+                height: 84,
+                width: 84,
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.blue)
+                ),
+              ),
             ),
             Expanded(
               flex: 2,
