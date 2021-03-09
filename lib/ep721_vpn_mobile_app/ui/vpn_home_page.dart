@@ -168,9 +168,10 @@ class _VpnHomePageState extends State<VpnHomePage> {
             Expanded(
               flex: 2,
               child: Container(
-                margin: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+                margin: EdgeInsets.symmetric(vertical: 12, horizontal: 16),
                 decoration: BoxDecoration(
-                  color: Colors.pinkAccent[100]
+                  color: Colors.pinkAccent[100],
+                  borderRadius: BorderRadius.circular(8),
                 ),
                 child: Center(
                   child: Text("Get premium"),
