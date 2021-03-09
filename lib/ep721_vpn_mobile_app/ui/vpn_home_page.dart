@@ -159,11 +159,21 @@ class _VpnHomePageState extends State<VpnHomePage> {
             ),
             Expanded(
               flex: 2,
-              child: Placeholder(),
+              child: Column(
+                children: [
+
+                ],
+              ),
             ),
             Expanded(
               flex: 2,
-              child: Placeholder(),
+              child: Container(
+                child: Row(
+                  children: [
+                    
+                  ],
+                ),
+              ),
             ),
           ],
         ),
