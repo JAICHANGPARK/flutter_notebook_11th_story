@@ -162,25 +162,26 @@ class _VpnHomePageState extends State<VpnHomePage> {
               flex: 2,
               child: Column(
                 children: [
-
+                  Row(
+                    children: [],
+                  )
                 ],
               ),
             ),
             Expanded(
               flex: 2,
               child: Container(
-                margin: EdgeInsets.symmetric(vertical: 12, horizontal: 16),
-                decoration: BoxDecoration(
-                  color: Colors.pinkAccent[100],
-                  borderRadius: BorderRadius.circular(8),
-                ),
-                child: Center(
-                  child: Text("Get premium", style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold
-                  ),),
-                )
-              ),
+                  margin: EdgeInsets.symmetric(vertical: 12, horizontal: 16),
+                  decoration: BoxDecoration(
+                    color: Colors.pinkAccent[100],
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: Center(
+                    child: Text(
+                      "Get premium",
+                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+                    ),
+                  )),
             ),
           ],
         ),
