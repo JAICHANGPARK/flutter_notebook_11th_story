@@ -162,7 +162,17 @@ class _VpnHomePageState extends State<VpnHomePage> {
               flex: 2,
               child: Row(
                 children: [
-
+                    Column(
+                      children: [
+                        Text("Upload"),
+                        Row(
+                          children: [
+                            Icon(Icons.arrow_upward),
+                            Text("124 Mb/s")
+                          ],
+                        )
+                      ],
+                    )
                 ],
               ),
             ),
