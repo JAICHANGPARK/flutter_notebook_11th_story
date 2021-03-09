@@ -160,11 +160,9 @@ class _VpnHomePageState extends State<VpnHomePage> {
             ),
             Expanded(
               flex: 2,
-              child: Column(
+              child: Row(
                 children: [
-                  Row(
-                    children: [],
-                  )
+
                 ],
               ),
             ),
