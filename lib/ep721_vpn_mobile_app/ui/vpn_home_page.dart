@@ -10,11 +10,13 @@ class VpnHomePage extends StatefulWidget {
 
 class _VpnHomePageState extends State<VpnHomePage> {
   Timer connectionTimer;
-
+  String timeText = "";
+  
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
+
   }
 
   @override
@@ -94,7 +96,7 @@ class _VpnHomePageState extends State<VpnHomePage> {
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.grey),
                     ),
                     Text(
-                      "00:55",
+                      "",
                       style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
                     ),
                   ],
@@ -114,7 +116,9 @@ class _VpnHomePageState extends State<VpnHomePage> {
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: InkWell(
-                      onTap: () {},
+                      onTap: () {
+                        connectionTimer = Timer.periodic(Duration(seconds: 1), (timer) {});
+                      },
                       child: Container(
                         decoration: BoxDecoration(
                           color: Colors.blue,
