@@ -173,7 +173,10 @@ class _VpnHomePageState extends State<VpnHomePage> {
                       ),
                       Row(
                         children: [
-                          Icon(Icons.arrow_upward),
+                          Icon(
+                            Icons.arrow_upward,
+                            color: Colors.pink,
+                          ),
                           Text(
                             "124 Mb/s",
                             style: TextStyle(
@@ -194,9 +197,9 @@ class _VpnHomePageState extends State<VpnHomePage> {
                       ),
                       Row(
                         children: [
-                          Icon(Icons.arrow_downward),
+                          Icon(Icons.arrow_downward, color: Colors.blue),
                           Text(
-                            "124 Mb/s",
+                            "154 Mb/s",
                             style: TextStyle(fontWeight: FontWeight.bold),
                           )
                         ],
