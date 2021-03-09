@@ -161,21 +161,30 @@ class _VpnHomePageState extends State<VpnHomePage> {
             Expanded(
               flex: 2,
               child: Row(
+
                 children: [
-                    Column(
-                      children: [
-                        Text("Upload"),
-                        Row(
-                          children: [
-                            Icon(Icons.arrow_upward),
-                            Text("124 Mb/s")
-                          ],
-                        )
-                      ],
-                    )
+                  Column(
+                    children: [
+                      Text("Upload"),
+                      Row(
+                        children: [Icon(Icons.arrow_upward), Text("124 Mb/s")],
+                      )
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      Text("Download"),
+                      Row(
+                        children: [Icon(Icons.arrow_upward), Text("124 Mb/s", style: TextStyle(
+                          fontWeight: FontWeight.bold
+                        ),)],
+                      )
+                    ],
+                  )
                 ],
               ),
             ),
+            //TODO: Implement Button
             Expanded(
               flex: 2,
               child: Container(
