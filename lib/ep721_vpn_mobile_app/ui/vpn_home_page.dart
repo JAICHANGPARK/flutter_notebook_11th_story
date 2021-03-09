@@ -121,7 +121,11 @@ class _VpnHomePageState extends State<VpnHomePage> {
                           timeCounter++;
                           int min = timeCounter ~/ 60;
                           int sec = timeCounter % 60;
-                          timeText = "";
+                          print(min);
+                          print(sec);
+                          setState(() {
+                            timeText = "$min:$sec";
+                          });
                         });
                       },
                       child: Container(
