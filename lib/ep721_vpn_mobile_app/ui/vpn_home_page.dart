@@ -118,6 +118,7 @@ class _VpnHomePageState extends State<VpnHomePage> {
                     padding: const EdgeInsets.all(8.0),
                     child: InkWell(
                       onTap: () {
+
                         if(!isConnected){
                           connectionTimer = Timer.periodic(Duration(seconds: 1), (timer) {
                             timeCounter++;
@@ -130,6 +131,7 @@ class _VpnHomePageState extends State<VpnHomePage> {
                         }else{
                           connectionTimer.cancel();
                         }
+                        isConnected = !isConnected;
 
                       },
                       child: Container(
