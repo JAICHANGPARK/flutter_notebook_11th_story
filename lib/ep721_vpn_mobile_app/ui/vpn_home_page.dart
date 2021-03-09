@@ -17,7 +17,6 @@ class _VpnHomePageState extends State<VpnHomePage> {
   void initState() {
     // TODO: implement initState
     super.initState();
-
   }
 
   @override
@@ -120,8 +119,9 @@ class _VpnHomePageState extends State<VpnHomePage> {
                       onTap: () {
                         connectionTimer = Timer.periodic(Duration(seconds: 1), (timer) {
                           timeCounter++;
-                          
-
+                          int min = timeCounter ~/ 60;
+                          int sec = timeCounter % 60;
+                          timeText = "";
                         });
                       },
                       child: Container(
