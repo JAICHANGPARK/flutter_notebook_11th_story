@@ -165,6 +165,7 @@ class _VpnHomePageState extends State<VpnHomePage> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
                         "Upload",
@@ -183,7 +184,9 @@ class _VpnHomePageState extends State<VpnHomePage> {
                       )
                     ],
                   ),
+                  SizedBox(width: 24),
                   Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
                         "Download",
