@@ -11,7 +11,8 @@ class VpnHomePage extends StatefulWidget {
 class _VpnHomePageState extends State<VpnHomePage> {
   Timer connectionTimer;
   String timeText = "";
-  
+  int timeCounter = 0;
+
   @override
   void initState() {
     // TODO: implement initState
@@ -117,7 +118,11 @@ class _VpnHomePageState extends State<VpnHomePage> {
                     padding: const EdgeInsets.all(8.0),
                     child: InkWell(
                       onTap: () {
-                        connectionTimer = Timer.periodic(Duration(seconds: 1), (timer) {});
+                        connectionTimer = Timer.periodic(Duration(seconds: 1), (timer) {
+                          timeCounter++;
+                          
+
+                        });
                       },
                       child: Container(
                         decoration: BoxDecoration(
