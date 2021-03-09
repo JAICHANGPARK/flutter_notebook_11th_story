@@ -118,8 +118,7 @@ class _VpnHomePageState extends State<VpnHomePage> {
                     padding: const EdgeInsets.all(8.0),
                     child: InkWell(
                       onTap: () {
-
-                        if(!isConnected){
+                        if (!isConnected) {
                           connectionTimer = Timer.periodic(Duration(seconds: 1), (timer) {
                             timeCounter++;
                             int min = timeCounter ~/ 60;
@@ -128,11 +127,13 @@ class _VpnHomePageState extends State<VpnHomePage> {
                               timeText = "$min:$sec";
                             });
                           });
-                        }else{
+                        } else {
                           connectionTimer.cancel();
+                          setState(() {
+                            timeText = "00:00";
+                          });
                         }
                         isConnected = !isConnected;
-
                       },
                       child: Container(
                         decoration: BoxDecoration(
