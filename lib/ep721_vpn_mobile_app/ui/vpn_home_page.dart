@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class VpnHomePage extends StatefulWidget {
@@ -174,7 +175,10 @@ class _VpnHomePageState extends State<VpnHomePage> {
                   borderRadius: BorderRadius.circular(8),
                 ),
                 child: Center(
-                  child: Text("Get premium"),
+                  child: Text("Get premium", style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold
+                  ),),
                 )
               ),
             ),
