@@ -12,6 +12,7 @@ class _VpnHomePageState extends State<VpnHomePage> {
   Timer connectionTimer;
   String timeText = "";
   int timeCounter = 0;
+  bool isConnected = false;
 
   @override
   void initState() {
@@ -96,7 +97,7 @@ class _VpnHomePageState extends State<VpnHomePage> {
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.grey),
                     ),
                     Text(
-                      "",
+                      "$timeText",
                       style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
                     ),
                   ],
