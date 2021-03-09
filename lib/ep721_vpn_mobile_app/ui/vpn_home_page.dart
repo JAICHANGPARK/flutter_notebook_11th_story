@@ -161,7 +161,7 @@ class _VpnHomePageState extends State<VpnHomePage> {
             Expanded(
               flex: 2,
               child: Row(
-
+                mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Column(
                     children: [
@@ -173,11 +173,18 @@ class _VpnHomePageState extends State<VpnHomePage> {
                   ),
                   Column(
                     children: [
-                      Text("Download"),
+                      Text(
+                        "Download",
+                        style: TextStyle(fontWeight: FontWeight.bold, color: Colors.grey),
+                      ),
                       Row(
-                        children: [Icon(Icons.arrow_upward), Text("124 Mb/s", style: TextStyle(
-                          fontWeight: FontWeight.bold
-                        ),)],
+                        children: [
+                          Icon(Icons.arrow_downward),
+                          Text(
+                            "124 Mb/s",
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          )
+                        ],
                       )
                     ],
                   )
