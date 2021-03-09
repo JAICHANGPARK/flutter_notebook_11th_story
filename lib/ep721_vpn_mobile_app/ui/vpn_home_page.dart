@@ -118,16 +118,19 @@ class _VpnHomePageState extends State<VpnHomePage> {
                     padding: const EdgeInsets.all(8.0),
                     child: InkWell(
                       onTap: () {
-                        connectionTimer = Timer.periodic(Duration(seconds: 1), (timer) {
-                          timeCounter++;
-                          int min = timeCounter ~/ 60;
-                          int sec = timeCounter % 60;
-                          print(min);
-                          print(sec);
-                          setState(() {
-                            timeText = "$min:$sec";
+                        if(!isConnected){
+                          connectionTimer = Timer.periodic(Duration(seconds: 1), (timer) {
+                            timeCounter++;
+                            int min = timeCounter ~/ 60;
+                            int sec = timeCounter % 60;
+                            setState(() {
+                              timeText = "$min:$sec";
+                            });
                           });
-                        });
+                        }else{
+                          connectionTimer.cancel();
+                        }
+
                       },
                       child: Container(
                         decoration: BoxDecoration(
