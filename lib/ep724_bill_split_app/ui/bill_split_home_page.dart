@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-
 class BillSplitHomePage extends StatefulWidget {
   @override
   _BillSplitHomePageState createState() => _BillSplitHomePageState();
@@ -19,14 +18,13 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
               Row(
                 children: [
                   CircleAvatar(),
-                  Text("ofsp_ce", style: GoogleFonts.montserrat(
-                    fontWeight: FontWeight.bold
-                  ),),
+                  Text(
+                    "ofsp_ce",
+                    style: GoogleFonts.montserrat(fontWeight: FontWeight.bold),
+                  ),
                   CircleAvatar(),
                 ],
               ),
-
-
             ],
           ),
         ),
@@ -37,8 +35,10 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.red, onPressed: () {  },
+        backgroundColor: Colors.red,
+        onPressed: () {},
       ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
   }
 }
