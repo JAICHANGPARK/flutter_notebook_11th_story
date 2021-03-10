@@ -22,9 +22,10 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
                   Text("ofsp_ce", style: GoogleFonts.montserrat(
                     fontWeight: FontWeight.bold
                   ),),
-                  CircleAvatar()
+                  CircleAvatar(),
                 ],
-              )
+              ),
+
             ],
           ),
         ),
