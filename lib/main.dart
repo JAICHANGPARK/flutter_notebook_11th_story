@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'ep721_vpn_mobile_app/vpn_mobile_app.dart';
+import 'ep724_bill_split_app/bill_split_app.dart';
 
 void main() {
-  runApp(VpnMobileApp());
+  runApp(BillSplitApp());
 }
