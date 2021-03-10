@@ -13,7 +13,7 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            
+
           ],
         ),
       ),
