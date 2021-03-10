@@ -9,6 +9,14 @@ class BillSplitHomePage extends StatefulWidget {
 class _BillSplitHomePageState extends State<BillSplitHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            
+          ],
+        ),
+      ),
+    );
   }
 }
