@@ -26,9 +26,18 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
                 ],
               ),
 
+
             ],
           ),
         ),
+      ),
+      bottomNavigationBar: BottomAppBar(
+        child: Container(
+          height: 72,
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.red, onPressed: () {  },
       ),
     );
   }
