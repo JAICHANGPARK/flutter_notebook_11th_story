@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 
 class BillSplitHomePage extends StatefulWidget {
@@ -11,14 +12,19 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
-        child: Column(
-          children: [
-            Row(
-              children: [
-                
-              ],
-            )
-          ],
+        child: SafeArea(
+          child: Column(
+            children: [
+              Row(
+                children: [
+                  CircleAvatar(),
+                  Text("ofsp_ce", style: GoogleFonts.montserrat(
+                    fontWeight: FontWeight.bold
+                  ),)
+                ],
+              )
+            ],
+          ),
         ),
       ),
     );
