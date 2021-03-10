@@ -14,13 +14,15 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
       body: SingleChildScrollView(
         child: SafeArea(
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Row(
                 children: [
                   CircleAvatar(),
                   Text("ofsp_ce", style: GoogleFonts.montserrat(
                     fontWeight: FontWeight.bold
-                  ),)
+                  ),),
+                  CircleAvatar()
                 ],
               )
             ],
