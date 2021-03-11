@@ -49,8 +49,11 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
         ),
       ),
       bottomNavigationBar: BottomAppBar(
+        shape: CircularNotchedRectangle(
+        ),
+        notchMargin: 8,
         child: Container(
-          height: 72,
+          height: 64,
         ),
       ),
       floatingActionButton: FloatingActionButton(
