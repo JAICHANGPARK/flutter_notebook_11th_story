@@ -54,11 +54,15 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
                   Row(
                     children: [
                       CircleAvatar(
-                        radius: 16,
+                        radius: 14,
                         backgroundColor: Colors.pinkAccent,
                         foregroundColor: Colors.white,
                         child: Icon(Icons.attach_money,),
-                      )
+                      ),
+                      Text("2870,86", style: GoogleFonts.montserrat(
+                        fontSize: 32,
+                        fontWeight: FontWeight.bold
+                      ),)
                     ],
                   )
 
