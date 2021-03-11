@@ -15,23 +15,31 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Row(
-                children: [
-                  PhysicalModel(
-                    
-                    color: Colors.black.withOpacity(0.2),
-                    shape: BoxShape.circle,
-                    child: CircleAvatar(
-                      radius: 12,
-                      backgroundColor: Colors.white,
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  children: [
+                    PhysicalModel(
+
+                      color: Colors.black.withOpacity(0.3),
+                      shape: BoxShape.circle,
+                      child: CircleAvatar(
+                        radius: 12,
+                        backgroundColor: Colors.white,
+                      ),
                     ),
-                  ),
-                  Text(
-                    "ofsp_ce",
-                    style: GoogleFonts.montserrat(fontWeight: FontWeight.bold),
-                  ),
-                  CircleAvatar(),
-                ],
+
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text(
+                        "ofsp_ce",
+                        style: GoogleFonts.montserrat(fontWeight: FontWeight.bold,
+                        fontSize: 20),
+                      ),
+                    ),
+                    CircleAvatar(),
+                  ],
+                ),
               ),
             ],
           ),
