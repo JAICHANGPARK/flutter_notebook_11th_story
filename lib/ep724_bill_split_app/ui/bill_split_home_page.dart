@@ -90,8 +90,9 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
                             color: Colors.red
                           ),
                         ),
+                        SizedBox(height: 12,),
                         Text("Total Bill", style: TextStyle(
-                          fontSize: 18
+                          fontSize: 16
                         ),),
                         Text("\$2870,86"),
                         SizedBox(height: 12,),
@@ -102,7 +103,8 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
                           borderRadius: BorderRadius.circular(24),
                             color: Colors.orangeAccent
                           ),
-                          child: Center(child: Text("Split Now")),
+                          child: Center(child: Text("Split Now",
+                            style: GoogleFonts.montserrat(fontSize: 18, fontWeight: FontWeight.bold),)),
                         )
                       ],
                     ),
