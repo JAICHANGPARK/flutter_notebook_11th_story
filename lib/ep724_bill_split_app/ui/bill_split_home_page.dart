@@ -27,7 +27,7 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
                         radius: 12,
                         backgroundColor: Colors.white,
                         foregroundColor: Colors.black,
-                        child: Icon(Icons.pin_drop_outlined),
+                        child: Icon(Icons.pin_drop_outlined, size: 16,),
                       ),
                     ),
 
