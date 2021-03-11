@@ -94,17 +94,17 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
                         Text("Total Bill", style: TextStyle(
                           fontSize: 16
                         ),),
-                        Text("\$2870,86"),
+                        Text("\$2870,86", style: GoogleFonts.montserrat(fontSize: 16, fontWeight: FontWeight.bold),),
                         SizedBox(height: 12,),
                         Container(
                           height: 48,
                           width: double.infinity,
                           decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(24),
-                            color: Colors.orangeAccent
+                            color: Colors.orangeAccent[100]
                           ),
                           child: Center(child: Text("Split Now",
-                            style: GoogleFonts.montserrat(fontSize: 18, fontWeight: FontWeight.bold),)),
+                            style: GoogleFonts.montserrat(fontSize: 16, fontWeight: FontWeight.bold),)),
                         )
                       ],
                     ),
