@@ -16,7 +16,7 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
                 child: Row(
                   children: [
                     PhysicalModel(
@@ -40,7 +40,10 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
                       ),
                     ),
                     Spacer(),
-                    CircleAvatar(),
+                    CircleAvatar(
+                      radius: 12,
+                      backgroundColor: Colors.orange[100],
+                    ),
                   ],
                 ),
               ),
