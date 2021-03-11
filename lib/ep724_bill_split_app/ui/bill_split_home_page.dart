@@ -76,23 +76,32 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
                   )
                 ],
               ),
-              Card(
-                elevation: 16,
-                child: Column(
-                  children: [
-                    Container(),
-                    Text("Total Bill"),
-                    Text("\$2870,86"),
-                    SizedBox(height: 12,),
-                    Container(
-                      height: 32,
-                      decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(24),
-                        color: Colors.orangeAccent
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Card(
+                  elevation: 16,
+                  child: Column(
+                    children: [
+                      Container(
+                        height: 72,
+                        decoration: BoxDecoration(
+                          color: Colors.red
+                        ),
                       ),
-                      child: Text("Split Now"),
-                    )
-                  ],
+                      Text("Total Bill"),
+                      Text("\$2870,86"),
+                      SizedBox(height: 12,),
+                      Container(
+                        height: 48,
+                        width: double.infinity,
+                        decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(24),
+                          color: Colors.orangeAccent
+                        ),
+                        child: Center(child: Text("Split Now")),
+                      )
+                    ],
+                  ),
                 ),
               )
             ],
