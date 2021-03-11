@@ -48,7 +48,20 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
               ),
               Column(
                 children: [
-                  Text("")
+                  Text("My Balance", style:  GoogleFonts.montserrat(
+                    fontSize: 18
+                  ),),
+                  Row(
+                    children: [
+                      CircleAvatar(
+                        radius: 16,
+                        backgroundColor: Colors.pinkAccent,
+                        foregroundColor: Colors.white,
+                        child: Icon(Icons.attach_money,),
+                      )
+                    ],
+                  )
+
                 ],
               )
             ],
