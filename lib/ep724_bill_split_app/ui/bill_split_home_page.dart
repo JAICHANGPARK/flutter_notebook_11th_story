@@ -17,7 +17,15 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
             children: [
               Row(
                 children: [
-                  CircleAvatar(),
+                  PhysicalModel(
+                    
+                    color: Colors.black.withOpacity(0.2),
+                    shape: BoxShape.circle,
+                    child: CircleAvatar(
+                      radius: 12,
+                      backgroundColor: Colors.white,
+                    ),
+                  ),
                   Text(
                     "ofsp_ce",
                     style: GoogleFonts.montserrat(fontWeight: FontWeight.bold),
