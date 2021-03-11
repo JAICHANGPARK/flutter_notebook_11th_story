@@ -55,9 +55,11 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
         child: Container(
           height: 64,
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               IconButton(onPressed: (){}, icon: Icon(Icons.home)),
               IconButton(onPressed: (){}, icon: Icon(Icons.home)),
+              SizedBox(width: 64,),
               IconButton(onPressed: (){}, icon: Icon(Icons.home)),
               IconButton(onPressed: (){}, icon: Icon(Icons.home)),
             ],
