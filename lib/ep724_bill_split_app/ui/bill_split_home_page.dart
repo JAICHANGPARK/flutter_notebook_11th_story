@@ -20,22 +20,23 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
                 child: Row(
                   children: [
                     PhysicalModel(
-
                       color: Colors.black.withOpacity(0.3),
                       shape: BoxShape.circle,
                       child: CircleAvatar(
                         radius: 12,
                         backgroundColor: Colors.white,
                         foregroundColor: Colors.black,
-                        child: Icon(Icons.pin_drop_outlined, size: 16,),
+                        child: Icon(
+                          Icons.pin_drop_outlined,
+                          size: 16,
+                        ),
                       ),
                     ),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Text(
                         "ofsp_ce",
-                        style: GoogleFonts.montserrat(fontWeight: FontWeight.bold,
-                        fontSize: 20),
+                        style: GoogleFonts.montserrat(fontWeight: FontWeight.bold, fontSize: 20),
                       ),
                     ),
                     Spacer(),
@@ -47,25 +48,32 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
                 ),
               ),
               Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Text("My Balance", style:  GoogleFonts.montserrat(
-                    fontSize: 18
-                  ),),
+                  Text(
+                    "My Balance",
+                    style: GoogleFonts.montserrat(fontSize: 18),
+                  ),
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       CircleAvatar(
                         radius: 14,
                         backgroundColor: Colors.pinkAccent,
                         foregroundColor: Colors.white,
-                        child: Icon(Icons.attach_money,),
+                        child: Icon(
+                          Icons.attach_money,
+                        ),
                       ),
-                      Text("2870,86", style: GoogleFonts.montserrat(
-                        fontSize: 32,
-                        fontWeight: FontWeight.bold
-                      ),)
+                      SizedBox(
+                        width: 8,
+                      ),
+                      Text(
+                        "2870,86",
+                        style: GoogleFonts.montserrat(fontSize: 32, fontWeight: FontWeight.bold),
+                      )
                     ],
                   )
-
                 ],
               )
             ],
@@ -73,8 +81,7 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
         ),
       ),
       bottomNavigationBar: BottomAppBar(
-        shape: CircularNotchedRectangle(
-        ),
+        shape: CircularNotchedRectangle(),
         notchMargin: 8,
         child: Container(
           height: 64,
@@ -82,11 +89,13 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              IconButton(onPressed: (){}, icon: Icon(Icons.home)),
-              IconButton(onPressed: (){}, icon: Icon(Icons.person_outline)),
-              SizedBox(width: 64,),
-              IconButton(onPressed: (){}, icon: Icon(Icons.supervisor_account)),
-              IconButton(onPressed: (){}, icon: Icon(Icons.notifications_none)),
+              IconButton(onPressed: () {}, icon: Icon(Icons.home)),
+              IconButton(onPressed: () {}, icon: Icon(Icons.person_outline)),
+              SizedBox(
+                width: 64,
+              ),
+              IconButton(onPressed: () {}, icon: Icon(Icons.supervisor_account)),
+              IconButton(onPressed: () {}, icon: Icon(Icons.notifications_none)),
             ],
           ),
         ),
