@@ -9,7 +9,7 @@ class VpnHomePage extends StatefulWidget {
 }
 
 class _VpnHomePageState extends State<VpnHomePage> {
-  Timer connectionTimer;
+  Timer? connectionTimer;
   String timeText = "";
   int timeCounter = 0;
   bool isConnected = false;
@@ -128,7 +128,7 @@ class _VpnHomePageState extends State<VpnHomePage> {
                             });
                           });
                         } else {
-                          connectionTimer.cancel();
+                          connectionTimer?.cancel();
                           setState(() {
                             timeText = "00:00";
                           });
