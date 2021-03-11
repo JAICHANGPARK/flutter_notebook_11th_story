@@ -81,7 +81,7 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
                 child: Card(
                   elevation: 16,
                   child: Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 16),
                     child: Column(
                       children: [
                         Container(
@@ -94,7 +94,7 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
                         Text("Total Bill", style: TextStyle(
                           fontSize: 16
                         ),),
-                        Text("\$2870,86", style: GoogleFonts.montserrat(fontSize: 16, fontWeight: FontWeight.bold),),
+                        Text("\$2870,86", style: GoogleFonts.montserrat(fontSize: 24, fontWeight: FontWeight.bold),),
                         SizedBox(height: 12,),
                         Container(
                           height: 48,
