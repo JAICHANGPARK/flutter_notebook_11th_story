@@ -54,20 +54,22 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
         notchMargin: 8,
         child: Container(
           height: 64,
+          padding: EdgeInsets.symmetric(horizontal: 8),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               IconButton(onPressed: (){}, icon: Icon(Icons.home)),
-              IconButton(onPressed: (){}, icon: Icon(Icons.home)),
+              IconButton(onPressed: (){}, icon: Icon(Icons.person_outline)),
               SizedBox(width: 64,),
-              IconButton(onPressed: (){}, icon: Icon(Icons.home)),
-              IconButton(onPressed: (){}, icon: Icon(Icons.home)),
+              IconButton(onPressed: (){}, icon: Icon(Icons.supervisor_account)),
+              IconButton(onPressed: (){}, icon: Icon(Icons.notifications_none)),
             ],
           ),
         ),
       ),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.red,
+        child: Icon(Icons.qr_code_scanner),
         onPressed: () {},
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
