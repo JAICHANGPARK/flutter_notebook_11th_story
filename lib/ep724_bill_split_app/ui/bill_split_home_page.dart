@@ -54,6 +54,14 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
         notchMargin: 8,
         child: Container(
           height: 64,
+          child: Row(
+            children: [
+              IconButton(onPressed: (){}, icon: Icon(Icons.home)),
+              IconButton(onPressed: (){}, icon: Icon(Icons.home)),
+              IconButton(onPressed: (){}, icon: Icon(Icons.home)),
+              IconButton(onPressed: (){}, icon: Icon(Icons.home)),
+            ],
+          ),
         ),
       ),
       floatingActionButton: FloatingActionButton(
