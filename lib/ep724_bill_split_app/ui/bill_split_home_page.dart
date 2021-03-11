@@ -76,8 +76,9 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
                   )
                 ],
               ),
+              SizedBox(height: 8,),
               Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.all(16.0),
                 child: Card(
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(16)
