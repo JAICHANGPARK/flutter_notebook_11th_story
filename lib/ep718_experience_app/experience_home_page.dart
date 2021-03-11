@@ -46,7 +46,7 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
                           child: Container(
                             padding: EdgeInsets.symmetric(horizontal: 16),
                             decoration: BoxDecoration(
-                              border: Border.all(color: Colors.grey[300]),
+                              border: Border.all(color: Colors.grey[300]!),
                               borderRadius: BorderRadius.circular(24),
                             ),
                             child: TextField(
@@ -169,7 +169,7 @@ class _ExperienceHomePageState extends State<ExperienceHomePage> {
                                 width: MediaQuery.of(context).size.width / 2,
                                 decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(16),
-                                    border: Border.all(color: Colors.grey[400])),
+                                    border: Border.all(color: Colors.grey[400]!)),
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
