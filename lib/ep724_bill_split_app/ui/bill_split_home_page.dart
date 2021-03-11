@@ -26,6 +26,8 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
                       child: CircleAvatar(
                         radius: 12,
                         backgroundColor: Colors.white,
+                        foregroundColor: Colors.black,
+                        child: Icon(Icons.pin_drop_outlined),
                       ),
                     ),
 
@@ -37,6 +39,7 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
                         fontSize: 20),
                       ),
                     ),
+                    Spacer(),
                     CircleAvatar(),
                   ],
                 ),
