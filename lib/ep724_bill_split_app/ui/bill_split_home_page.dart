@@ -30,7 +30,6 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
                         child: Icon(Icons.pin_drop_outlined, size: 16,),
                       ),
                     ),
-
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Text(
@@ -47,6 +46,11 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
                   ],
                 ),
               ),
+              Column(
+                children: [
+                  Text("")
+                ],
+              )
             ],
           ),
         ),
