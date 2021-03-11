@@ -79,6 +79,9 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Card(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(16)
+                  ),
                   elevation: 16,
                   child: Padding(
                     padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 16),
