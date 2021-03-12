@@ -277,7 +277,14 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
                     ],
                   ),
                 ),
-              )
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+                child: Text(
+                  "Today Activity",
+                  style: GoogleFonts.montserrat(fontSize: 16, fontWeight: FontWeight.bold),
+                ),
+              ),
             ],
           ),
         ),
