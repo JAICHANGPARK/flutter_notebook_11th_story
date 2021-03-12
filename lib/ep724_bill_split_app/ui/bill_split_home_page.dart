@@ -190,7 +190,9 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
                                   left: 0,
                                   child: Container(
                                     decoration:
-                                    BoxDecoration(color: Colors.blue[100],
+                                    BoxDecoration(
+
+                                        color: Colors.yellow[300],
 
                                         borderRadius: BorderRadius.circular(8)),
                                     child: Column(
