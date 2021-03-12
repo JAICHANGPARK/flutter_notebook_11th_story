@@ -152,7 +152,7 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
                           left: 0,
                           right: 0,
                           child: CircleAvatar(
-                            radius: 8,
+                            radius: 16,
                           ),
                           )
                         ],
