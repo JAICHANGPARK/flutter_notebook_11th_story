@@ -133,7 +133,11 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
                 height: 160,
                 child: Row(
                   children: [
-                    Expanded(child: Placeholder()),
+                    Expanded(child: Stack(
+                      children: [
+                        Positioned(child: Container())
+                      ],
+                    )),
                     Expanded(child: Placeholder()),
                     Expanded(child: Placeholder()),
                   ],
