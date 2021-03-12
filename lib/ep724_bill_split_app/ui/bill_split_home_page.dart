@@ -124,7 +124,8 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
               ),
               Padding(
                 padding: const EdgeInsets.all(16.0),
-                child: Text("Nearby Friends",
+                child: Text(
+                  "Nearby Friends",
                   style: GoogleFonts.montserrat(fontSize: 16, fontWeight: FontWeight.bold),
                 ),
               ),
@@ -132,10 +133,9 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
                 height: 160,
                 child: Row(
                   children: [
-                  Expanded(child: Placeholder()),
-                    Expanded(child: Placeholder()),                  Expanded(child: Placeholder()),
-
-
+                    Expanded(child: Placeholder()),
+                    Expanded(child: Placeholder()),
+                    Expanded(child: Placeholder()),
                   ],
                 ),
               )
