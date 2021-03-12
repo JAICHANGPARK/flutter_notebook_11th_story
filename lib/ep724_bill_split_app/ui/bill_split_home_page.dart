@@ -123,7 +123,7 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.all(16.0),
+                padding: const EdgeInsets.symmetric(horizontal: 16),
                 child: Text(
                   "Nearby Friends",
                   style: GoogleFonts.montserrat(fontSize: 16, fontWeight: FontWeight.bold),
@@ -131,23 +131,26 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
               ),
               SizedBox(
                 height: 160,
-                child: Row(
-                  children: [
-                    Expanded(child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Stack(
-                        children: [
-                          Positioned(child: Container(
-                            decoration: BoxDecoration(
-                              color: Colors.blue[100]
-                            ),
-                          ))
-                        ],
-                      ),
-                    )),
-                    Expanded(child: Placeholder()),
-                    Expanded(child: Placeholder()),
-                  ],
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  child: Row(
+                    children: [
+                      Expanded(child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Stack(
+                          children: [
+                            Positioned(child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.blue[100]
+                              ),
+                            ))
+                          ],
+                        ),
+                      )),
+                      Expanded(child: Placeholder()),
+                      Expanded(child: Placeholder()),
+                    ],
+                  ),
                 ),
               )
             ],
