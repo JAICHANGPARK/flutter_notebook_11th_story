@@ -128,10 +128,13 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
                   style: GoogleFonts.montserrat(fontSize: 16, fontWeight: FontWeight.bold),
                 ),
               ),
-              Row(
-                children: [
-                    
-                ],
+              SizedBox(
+                height: 160,
+                child: Row(
+                  children: [
+                  Expanded(child: Placeholder()),
+                  ],
+                ),
               )
             ],
           ),
