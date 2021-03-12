@@ -133,10 +133,17 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
                 height: 160,
                 child: Row(
                   children: [
-                    Expanded(child: Stack(
-                      children: [
-                        Positioned(child: Container())
-                      ],
+                    Expanded(child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Stack(
+                        children: [
+                          Positioned(child: Container(
+                            decoration: BoxDecoration(
+                              color: Colors.blue[100]
+                            ),
+                          ))
+                        ],
+                      ),
                     )),
                     Expanded(child: Placeholder()),
                     Expanded(child: Placeholder()),
