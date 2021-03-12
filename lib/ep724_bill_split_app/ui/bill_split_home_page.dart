@@ -121,6 +121,12 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
                     ),
                   ),
                 ),
+              ),
+              Text("Nearby Friends"),
+              Row(
+                children: [
+                  
+                ],
               )
             ],
           ),
