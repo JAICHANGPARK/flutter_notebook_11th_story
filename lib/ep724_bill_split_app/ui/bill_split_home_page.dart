@@ -133,6 +133,9 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
                 child: Row(
                   children: [
                   Expanded(child: Placeholder()),
+                    Expanded(child: Placeholder()),                  Expanded(child: Placeholder()),
+
+
                   ],
                 ),
               )
