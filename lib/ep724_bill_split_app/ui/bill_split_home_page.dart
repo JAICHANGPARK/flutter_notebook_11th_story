@@ -76,13 +76,13 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
                   )
                 ],
               ),
-              SizedBox(height: 8,),
+              SizedBox(
+                height: 8,
+              ),
               Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Card(
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(16)
-                  ),
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
                   elevation: 16,
                   child: Padding(
                     padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 16),
@@ -90,25 +90,32 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
                       children: [
                         Container(
                           height: 72,
-                          decoration: BoxDecoration(
-                            color: Colors.red
-                          ),
+                          decoration: BoxDecoration(color: Colors.red),
                         ),
-                        SizedBox(height: 12,),
-                        Text("Total Bill", style: TextStyle(
-                          fontSize: 16
-                        ),),
-                        Text("\$2870,86", style: GoogleFonts.montserrat(fontSize: 24, fontWeight: FontWeight.bold),),
-                        SizedBox(height: 12,),
+                        SizedBox(
+                          height: 12,
+                        ),
+                        Text(
+                          "Total Bill",
+                          style: TextStyle(fontSize: 16),
+                        ),
+                        Text(
+                          "\$2870,86",
+                          style: GoogleFonts.montserrat(fontSize: 24, fontWeight: FontWeight.bold),
+                        ),
+                        SizedBox(
+                          height: 12,
+                        ),
                         Container(
                           height: 48,
                           width: double.infinity,
-                          decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(24),
-                            color: Colors.orangeAccent[100]
-                          ),
-                          child: Center(child: Text("Split Now",
-                            style: GoogleFonts.montserrat(fontSize: 16, fontWeight: FontWeight.bold),)),
+                          decoration:
+                              BoxDecoration(borderRadius: BorderRadius.circular(24), color: Colors.orangeAccent[100]),
+                          child: Center(
+                              child: Text(
+                            "Split Now",
+                            style: GoogleFonts.montserrat(fontSize: 16, fontWeight: FontWeight.bold),
+                          )),
                         )
                       ],
                     ),
