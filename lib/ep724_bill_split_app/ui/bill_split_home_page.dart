@@ -102,7 +102,7 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
                                 ),
                               ),
                               Positioned(
-                                left: 48+20,
+                                left: 48+20+48,
                                 top: 0,
                                 bottom: 0,
                                 child: CircleAvatar(
