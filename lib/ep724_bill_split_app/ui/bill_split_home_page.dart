@@ -122,10 +122,15 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
                   ),
                 ),
               ),
-              Text("Nearby Friends"),
+              Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Text("Nearby Friends",
+                  style: GoogleFonts.montserrat(fontSize: 16, fontWeight: FontWeight.bold),
+                ),
+              ),
               Row(
                 children: [
-
+                    
                 ],
               )
             ],
