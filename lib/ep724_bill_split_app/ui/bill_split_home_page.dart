@@ -93,12 +93,14 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
                           width: double.infinity,
                           child: Stack(
                             children: [
+
                               Positioned(
-                                left: 48,
+                                left: 48+20+72,
                                 top: 0,
                                 bottom: 0,
                                 child: CircleAvatar(
-                                  radius: 20,
+                                  radius: 24,
+                                  backgroundColor: Colors.red[300],
                                 ),
                               ),
                               Positioned(
@@ -111,12 +113,11 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
                                 ),
                               ),
                               Positioned(
-                                left: 48+20+72,
+                                left: 48+20+8,
                                 top: 0,
                                 bottom: 0,
                                 child: CircleAvatar(
-                                  radius: 24,
-                                  backgroundColor: Colors.red[300],
+                                  radius: 20,
                                 ),
                               ),
                               Positioned(
