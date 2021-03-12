@@ -91,7 +91,6 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
                         Container(
                           height: 72,
                           width: double.infinity,
-                          decoration: BoxDecoration(color: Colors.red),
                           child: Stack(
                             children: [
                               Positioned(
@@ -111,11 +110,12 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
                                 ),
                               ),
                               Positioned(
-                                left: 48+20+24,
+                                left: 48+20+72,
                                 top: 0,
                                 bottom: 0,
                                 child: CircleAvatar(
                                   radius: 24,
+                                  backgroundColor: Colors.red[300],
                                 ),
                               ),
                               Positioned(
