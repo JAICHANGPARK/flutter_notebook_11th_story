@@ -83,7 +83,7 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
                 padding: const EdgeInsets.all(16.0),
                 child: Card(
                   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-                  elevation: 16,
+                  elevation: 8,
                   child: Padding(
                     padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 16),
                     child: Column(
@@ -125,7 +125,7 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
               Text("Nearby Friends"),
               Row(
                 children: [
-                  
+
                 ],
               )
             ],
