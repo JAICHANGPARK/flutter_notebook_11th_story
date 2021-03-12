@@ -135,27 +135,43 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
                   padding: const EdgeInsets.symmetric(horizontal: 16),
                   child: Row(
                     children: [
-                      Expanded(child: Stack(
+                      Expanded(
+                          child: Stack(
                         children: [
                           Positioned(
-                              top:8,
+                              top: 8,
                               right: 8,
                               bottom: 16,
                               left: 0,
                               child: Container(
-                            decoration: BoxDecoration(
-                              color: Colors.blue[100],
-                              borderRadius: BorderRadius.circular(8)
-                            ),
-                          )),
+                                decoration:
+                                    BoxDecoration(color: Colors.blue[100], borderRadius: BorderRadius.circular(8)),
+                                child: Column(
+                                  children: [
+                                    Container(
+                                      height: 48,
+                                      width: 48,
+                                      decoration: BoxDecoration(
+                                        border: Border.all(color: Colors.white),
+                                        shape: BoxShape.circle,
+                                      ),
+                                    ),
+                                    Text("Albert", style: GoogleFonts.montserrat(
+                                      fontWeight: FontWeight.bold,
+                                      
+                                    ),)
+                                  ],
+                                ),
+                              )),
                           Positioned(
                             bottom: 0,
-                          left: 0,
-                          right: 0,
-                          child: CircleAvatar(
-                            radius: 16,
-                            backgroundColor: Colors.blue[200],
-                          ),
+                            left: 0,
+                            right: 0,
+                            child: CircleAvatar(
+                              radius: 16,
+                              backgroundColor: Colors.blue[200],
+                              child: Icon(Icons.add),
+                            ),
                           )
                         ],
                       )),
