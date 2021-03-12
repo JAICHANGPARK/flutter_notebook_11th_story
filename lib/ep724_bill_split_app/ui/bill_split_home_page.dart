@@ -174,13 +174,104 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
                             child: CircleAvatar(
                               radius: 16,
                               backgroundColor: Colors.blue[200],
+                              foregroundColor: Colors.white,
                               child: Icon(Icons.add),
                             ),
                           )
                         ],
                       )),
-                      Expanded(child: Placeholder()),
-                      Expanded(child: Placeholder()),
+                      Expanded(
+                          child: Stack(
+                            children: [
+                              Positioned(
+                                  top: 8,
+                                  right: 8,
+                                  bottom: 16,
+                                  left: 0,
+                                  child: Container(
+                                    decoration:
+                                    BoxDecoration(color: Colors.blue[100],
+
+                                        borderRadius: BorderRadius.circular(8)),
+                                    child: Column(
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      children: [
+                                        Container(
+                                          height: 48,
+                                          width: 48,
+                                          decoration: BoxDecoration(
+                                            border: Border.all(color: Colors.white),
+                                            shape: BoxShape.circle,
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: Text("Albert", style: GoogleFonts.montserrat(
+                                            fontWeight: FontWeight.bold,
+
+                                          ),),
+                                        )
+                                      ],
+                                    ),
+                                  )),
+                              Positioned(
+                                bottom: 0,
+                                left: 0,
+                                right: 0,
+                                child: CircleAvatar(
+                                  radius: 16,
+                                  backgroundColor: Colors.yellow[200],
+                                  foregroundColor: Colors.white,
+                                  child: Icon(Icons.add),
+                                ),
+                              )
+                            ],
+                          )),
+                      Expanded(
+                          child: Stack(
+                            children: [
+                              Positioned(
+                                  top: 8,
+                                  right: 8,
+                                  bottom: 16,
+                                  left: 0,
+                                  child: Container(
+                                    decoration:
+                                    BoxDecoration(color: Colors.blue[100], borderRadius: BorderRadius.circular(8)),
+                                    child: Column(
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      children: [
+                                        Container(
+                                          height: 48,
+                                          width: 48,
+                                          decoration: BoxDecoration(
+                                            border: Border.all(color: Colors.white),
+                                            shape: BoxShape.circle,
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: Text("Albert", style: GoogleFonts.montserrat(
+                                            fontWeight: FontWeight.bold,
+
+                                          ),),
+                                        )
+                                      ],
+                                    ),
+                                  )),
+                              Positioned(
+                                bottom: 0,
+                                left: 0,
+                                right: 0,
+                                child: CircleAvatar(
+                                  radius: 16,
+                                  backgroundColor: Colors.blue[200],
+                                  foregroundColor: Colors.white,
+                                  child: Icon(Icons.add),
+                                ),
+                              )
+                            ],
+                          )),
                     ],
                   ),
                 ),
