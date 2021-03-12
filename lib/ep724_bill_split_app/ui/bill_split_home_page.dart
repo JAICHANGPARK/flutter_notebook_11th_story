@@ -90,11 +90,17 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
                       children: [
                         Container(
                           height: 72,
+                          width: double.infinity,
                           decoration: BoxDecoration(color: Colors.red),
                           child: Stack(
                             children: [
-                              CircleAvatar(
-                                radius: 20,
+                              Positioned(
+                                left: 48,
+                                top: 0,
+                                bottom: 0,
+                                child: CircleAvatar(
+                                  radius: 20,
+                                ),
                               ),
                               CircleAvatar(
                                 radius: 22,
