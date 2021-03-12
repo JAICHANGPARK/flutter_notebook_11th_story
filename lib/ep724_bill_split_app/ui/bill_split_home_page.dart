@@ -147,6 +147,7 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
                                 decoration:
                                     BoxDecoration(color: Colors.blue[100], borderRadius: BorderRadius.circular(8)),
                                 child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     Container(
                                       height: 48,
@@ -156,10 +157,13 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
                                         shape: BoxShape.circle,
                                       ),
                                     ),
-                                    Text("Albert", style: GoogleFonts.montserrat(
-                                      fontWeight: FontWeight.bold,
-                                      
-                                    ),)
+                                    Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Text("Albert", style: GoogleFonts.montserrat(
+                                        fontWeight: FontWeight.bold,
+
+                                      ),),
+                                    )
                                   ],
                                 ),
                               )),
