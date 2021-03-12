@@ -239,7 +239,7 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
                                   left: 0,
                                   child: Container(
                                     decoration:
-                                    BoxDecoration(color: Colors.blue[100], borderRadius: BorderRadius.circular(8)),
+                                    BoxDecoration(color: Colors.red[100], borderRadius: BorderRadius.circular(8)),
                                     child: Column(
                                       mainAxisAlignment: MainAxisAlignment.center,
                                       children: [
@@ -267,7 +267,7 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
                                 right: 0,
                                 child: CircleAvatar(
                                   radius: 16,
-                                  backgroundColor: Colors.blue[200],
+                                  backgroundColor: Colors.red[200],
                                   foregroundColor: Colors.white,
                                   child: Icon(Icons.add),
                                 ),
