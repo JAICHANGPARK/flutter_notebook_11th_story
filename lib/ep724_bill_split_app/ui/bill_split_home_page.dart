@@ -118,6 +118,7 @@ class _BillSplitHomePageState extends State<BillSplitHomePage> {
                                 bottom: 0,
                                 child: CircleAvatar(
                                   radius: 20,
+                                  backgroundColor: Colors.red[300],
                                 ),
                               ),
                               Positioned(
