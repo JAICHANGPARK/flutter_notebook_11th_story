@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'irys_home_page.dart';
+import 'ui/irys_home_page.dart';
 
 class IrysMobileApp extends StatelessWidget {
   @override
