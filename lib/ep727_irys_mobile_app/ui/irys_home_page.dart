@@ -115,6 +115,7 @@ class _IrysHomePageState extends State<IrysHomePage> with SingleTickerProviderSt
                       isScrollable: true,
                       labelColor: Colors.black,
                       unselectedLabelColor: Colors.grey,
+                      indicatorColor: Colors.black,
                       tabs: [
                         Tab(
                           text: "Feed",
