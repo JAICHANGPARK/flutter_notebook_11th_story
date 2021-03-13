@@ -26,6 +26,52 @@ class _IrysHomePageState extends State<IrysHomePage> with SingleTickerProviderSt
       body: SafeArea(
         child: Stack(
           children: [
+
+            Positioned(
+                child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Expanded(
+                    flex: 5,
+                    child: Column(
+                      children: [
+                        Expanded(child: Placeholder()),
+                        Expanded(child: Placeholder()),
+                        Expanded(child: Placeholder()),
+                      ],
+                    )),
+                Expanded(
+                    flex: 1,
+                    child: TabBar(
+                      controller: _tabController,
+                      isScrollable: true,
+                      labelColor: Colors.black,
+                      unselectedLabelColor: Colors.grey,
+                      indicatorColor: Colors.black,
+                      tabs: [
+                        Tab(
+                          text: "Feed",
+                        ),
+                        Tab(
+                          text: "News",
+                        )
+                      ],
+                    )),
+                Expanded(
+                    flex: 7,
+                    child: TabBarView(
+                      controller: _tabController,
+                      children: [
+                        Container(
+                          color: Colors.red,
+                        ),
+                        Container(
+                          color: Colors.blue,
+                        )
+                      ],
+                    )),
+              ],
+            )),
             Positioned(
               left: 0,
               right: 0,
@@ -95,51 +141,6 @@ class _IrysHomePageState extends State<IrysHomePage> with SingleTickerProviderSt
                 ),
               ),
             ),
-            Positioned(
-                child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Expanded(
-                    flex: 5,
-                    child: Column(
-                      children: [
-                        Expanded(child: Placeholder()),
-                        Expanded(child: Placeholder()),
-                        Expanded(child: Placeholder()),
-                      ],
-                    )),
-                Expanded(
-                    flex: 1,
-                    child: TabBar(
-                      controller: _tabController,
-                      isScrollable: true,
-                      labelColor: Colors.black,
-                      unselectedLabelColor: Colors.grey,
-                      indicatorColor: Colors.black,
-                      tabs: [
-                        Tab(
-                          text: "Feed",
-                        ),
-                        Tab(
-                          text: "News",
-                        )
-                      ],
-                    )),
-                Expanded(
-                    flex: 7,
-                    child: TabBarView(
-                      controller: _tabController,
-                      children: [
-                        Container(
-                          color: Colors.red,
-                        ),
-                        Container(
-                          color: Colors.blue,
-                        )
-                      ],
-                    )),
-              ],
-            )),
           ],
         ),
       ),
