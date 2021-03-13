@@ -15,7 +15,19 @@ class _IrysHomePageState extends State<IrysHomePage> {
             Positioned(child: Column(children: [
               
             ],)),
-            Positioned(child: Card()),
+            Positioned(child: Card(
+              child: Row(
+                children: [
+                  Row(
+                    children: [
+                      Icon(Icons.list),
+                      Text("List View")
+                    ],
+                  ),
+
+                ],
+              ),
+            ), left: 0, right: 0, bottom: 16,),
           ],
         ),
       ),
