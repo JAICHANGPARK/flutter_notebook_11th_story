@@ -6,7 +6,7 @@ class IrysHomePage extends StatefulWidget {
   _IrysHomePageState createState() => _IrysHomePageState();
 }
 
-class _IrysHomePageState extends State<IrysHomePage> {
+class _IrysHomePageState extends State<IrysHomePage> with SingleTickerProviderStateMixin{
   int _viewTabIdx = 0;
   TabController? _tabController;
 
@@ -14,6 +14,7 @@ class _IrysHomePageState extends State<IrysHomePage> {
   void initState() {
     // TODO: implement initState
     super.initState();
+    _tabController = TabController(vsync: this, length: 2, );
   }
 
   @override
@@ -105,10 +106,18 @@ class _IrysHomePageState extends State<IrysHomePage> {
                     )),
                 Expanded(
                     flex: 1,
-                    child: Placeholder()),
+                    child: TabBar(
+                      controller: _tabController,
+                      tabs: [
+
+                      ],
+                    )),
                 Expanded(
                     flex: 6,
-                    child: Placeholder()),
+                    child: TabBarView(
+                      controller: _tabController,
+                      children: [],
+                    )),
               ],
             )),
           ],
