@@ -17,23 +17,29 @@ class _IrysHomePageState extends State<IrysHomePage> {
               left: 0,
               right: 0,
               bottom: 16,
-              child: Container(
-                margin: EdgeInsets.symmetric(horizontal: 64),
-                padding: EdgeInsets.symmetric(vertical: 8),
-                decoration: BoxDecoration(
-                  color: Colors.blueAccent
-                ),
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Row(
-                      children: [Icon(Icons.list), Text("List View")],
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 84),
+                child: Card(
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Row(
+                          children: [Icon(Icons.list), Text("List View")],
+                        ),
+                        SizedBox(
+                          child: VerticalDivider(
+                            color: Colors.grey,
+                          ),
+                        ),
+                        Row(
+                          children: [Icon(Icons.list), Text("List View")],
+                        ),
+                      ],
                     ),
-                    Row(
-                      children: [Icon(Icons.list), Text("List View")],
-                    ),
-                  ],
+                  ),
                 ),
               ),
             ),
