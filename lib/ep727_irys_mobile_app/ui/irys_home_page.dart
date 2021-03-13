@@ -7,6 +7,8 @@ class IrysHomePage extends StatefulWidget {
 }
 
 class _IrysHomePageState extends State<IrysHomePage> {
+  int _viewTabIdx = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,8 +32,16 @@ class _IrysHomePageState extends State<IrysHomePage> {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Row(
-                          children: [Icon(Icons.list), Text("List View")],
+                        GestureDetector(
+                          onTap: (){
+                            setState(() {
+                              _viewTabIdx = 0;
+                            });
+
+                          },
+                          child: Row(
+                            children: [Icon(Icons.list), Text("List View")],
+                          ),
                         ),
                         SizedBox(
                           height: 24,
@@ -39,8 +49,16 @@ class _IrysHomePageState extends State<IrysHomePage> {
                             color: Colors.grey,
                           ),
                         ),
-                        Row(
-                          children: [Icon(Icons.map), Text("Map View")],
+                        GestureDetector(
+                          onTap: (){
+                            setState(() {
+                              _viewTabIdx = 1;
+                            });
+                          },
+                          child: Row(
+                            children: [Icon(Icons.map,
+                            color: _viewTabIdx == 1 ? Colors.black : Colors.grey,), Text("Map View")],
+                          ),
                         ),
                       ],
                     ),
