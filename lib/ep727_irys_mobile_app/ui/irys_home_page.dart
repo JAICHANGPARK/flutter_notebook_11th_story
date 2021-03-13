@@ -97,10 +97,10 @@ class _IrysHomePageState extends State<IrysHomePage> with SingleTickerProviderSt
             ),
             Positioned(
                 child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Expanded(
-                    flex: 4,
+                    flex: 5,
                     child: Column(
                       children: [
                         Expanded(child: Placeholder()),
@@ -125,7 +125,7 @@ class _IrysHomePageState extends State<IrysHomePage> with SingleTickerProviderSt
                       ],
                     )),
                 Expanded(
-                    flex: 6,
+                    flex: 7,
                     child: TabBarView(
                       controller: _tabController,
                       children: [
