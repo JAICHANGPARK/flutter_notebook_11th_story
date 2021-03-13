@@ -20,6 +20,7 @@ class _IrysHomePageState extends State<IrysHomePage> {
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 84),
                 child: Card(
+                  elevation: 4,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(24)
                   ),
@@ -33,13 +34,13 @@ class _IrysHomePageState extends State<IrysHomePage> {
                           children: [Icon(Icons.list), Text("List View")],
                         ),
                         SizedBox(
-                          height: 32,
+                          height: 24,
                           child: VerticalDivider(
                             color: Colors.grey,
                           ),
                         ),
                         Row(
-                          children: [Icon(Icons.list), Text("List View")],
+                          children: [Icon(Icons.map), Text("Map View")],
                         ),
                       ],
                     ),
