@@ -9,8 +9,10 @@ class _IrysHomePageState extends State<IrysHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stack(
-        children: [],
+      body: SafeArea(
+        child: Stack(
+          children: [],
+        ),
       ),
     );
   }
