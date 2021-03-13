@@ -24,13 +24,32 @@ class _IrysHomePageState extends State<IrysHomePage> {
                       Text("List View")
                     ],
                   ),
-
+                  Row(
+                    children: [
+                      Icon(Icons.list),
+                      Text("List View")
+                    ],
+                  ),
                 ],
               ),
             ), left: 0, right: 0, bottom: 16,),
           ],
         ),
       ),
+      floatingActionButton: FloatingActionButton(onPressed: () {  },),
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
