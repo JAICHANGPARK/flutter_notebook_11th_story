@@ -87,7 +87,9 @@ class _IrysHomePageState extends State<IrysHomePage> {
             Positioned(
                 child: Column(
               children: [
-                Expanded(child: Placeholder()),
+                Expanded(
+                    flex: 2,
+                    child: Placeholder()),
                 Expanded(child: Placeholder()),
                 Expanded(child: Placeholder()),
               ],
