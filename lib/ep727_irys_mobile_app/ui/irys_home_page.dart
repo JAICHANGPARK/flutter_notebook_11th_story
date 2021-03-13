@@ -6,7 +6,7 @@ class IrysHomePage extends StatefulWidget {
   _IrysHomePageState createState() => _IrysHomePageState();
 }
 
-class _IrysHomePageState extends State<IrysHomePage> with SingleTickerProviderStateMixin{
+class _IrysHomePageState extends State<IrysHomePage> with SingleTickerProviderStateMixin {
   int _viewTabIdx = 0;
   TabController? _tabController;
 
@@ -14,7 +14,10 @@ class _IrysHomePageState extends State<IrysHomePage> with SingleTickerProviderSt
   void initState() {
     // TODO: implement initState
     super.initState();
-    _tabController = TabController(vsync: this, length: 2, );
+    _tabController = TabController(
+      vsync: this,
+      length: 2,
+    );
   }
 
   @override
@@ -94,6 +97,7 @@ class _IrysHomePageState extends State<IrysHomePage> with SingleTickerProviderSt
             ),
             Positioned(
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Expanded(
                     flex: 4,
@@ -108,10 +112,13 @@ class _IrysHomePageState extends State<IrysHomePage> with SingleTickerProviderSt
                     flex: 1,
                     child: TabBar(
                       controller: _tabController,
+                      isScrollable: true,
+                      labelColor: Colors.black,
+                      unselectedLabelColor: Colors.grey,
                       tabs: [
-                            Tab(
-                              text: "Feed",
-                            ),
+                        Tab(
+                          text: "Feed",
+                        ),
                         Tab(
                           text: "News",
                         )
