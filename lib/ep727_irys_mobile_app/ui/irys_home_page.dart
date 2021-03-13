@@ -109,14 +109,26 @@ class _IrysHomePageState extends State<IrysHomePage> with SingleTickerProviderSt
                     child: TabBar(
                       controller: _tabController,
                       tabs: [
-
+                            Tab(
+                              text: "Feed",
+                            ),
+                        Tab(
+                          text: "News",
+                        )
                       ],
                     )),
                 Expanded(
                     flex: 6,
                     child: TabBarView(
                       controller: _tabController,
-                      children: [],
+                      children: [
+                        Container(
+                          color: Colors.red,
+                        ),
+                        Container(
+                          color: Colors.blue,
+                        )
+                      ],
                     )),
               ],
             )),
