@@ -8,6 +8,13 @@ class IrysHomePage extends StatefulWidget {
 
 class _IrysHomePageState extends State<IrysHomePage> {
   int _viewTabIdx = 0;
+  TabController? _tabController;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -89,7 +96,13 @@ class _IrysHomePageState extends State<IrysHomePage> {
               children: [
                 Expanded(
                     flex: 4,
-                    child: Placeholder()),
+                    child: Column(
+                      children: [
+                        Expanded(child: Placeholder()),
+                        Expanded(child: Placeholder()),
+                        Expanded(child: Placeholder()),
+                      ],
+                    )),
                 Expanded(
                     flex: 1,
                     child: Placeholder()),
