@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'ep724_bill_split_app/bill_split_app.dart';
+import 'ep727_irys_mobile_app/irys_mobile_app.dart';
 
 void main() {
-  runApp(BillSplitApp());
+  runApp(IrysMobileApp());
 }
