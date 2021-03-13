@@ -11,7 +11,12 @@ class _IrysHomePageState extends State<IrysHomePage> {
     return Scaffold(
       body: SafeArea(
         child: Stack(
-          children: [],
+          children: [
+            Positioned(child: Column(children: [
+              
+            ],)),
+            Positioned(child: Card()),
+          ],
         ),
       ),
     );
