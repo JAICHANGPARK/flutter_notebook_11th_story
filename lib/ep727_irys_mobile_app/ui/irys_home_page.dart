@@ -88,10 +88,14 @@ class _IrysHomePageState extends State<IrysHomePage> {
                 child: Column(
               children: [
                 Expanded(
-                    flex: 2,
+                    flex: 4,
                     child: Placeholder()),
-                Expanded(child: Placeholder()),
-                Expanded(child: Placeholder()),
+                Expanded(
+                    flex: 1,
+                    child: Placeholder()),
+                Expanded(
+                    flex: 6,
+                    child: Placeholder()),
               ],
             )),
           ],
