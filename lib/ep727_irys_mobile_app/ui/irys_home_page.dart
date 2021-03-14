@@ -54,20 +54,24 @@ class _IrysHomePageState extends State<IrysHomePage> with SingleTickerProviderSt
                                     child: Icon(Icons.notifications_none),
                                     alignment: Alignment.centerLeft,
                                     position: BadgePosition.topStart(),
-                                    badgeContent: Text("1", style: TextStyle(
-                                      color: Colors.white
-                                    ),),
+                                    badgeContent: Text(
+                                      "1",
+                                      style: TextStyle(color: Colors.white),
+                                    ),
                                   ),
-                                  SizedBox(width: 16,),
-                                  IconButton(onPressed: (){}, icon: Icon(Icons.menu))
+                                  SizedBox(
+                                    width: 16,
+                                  ),
+                                  IconButton(onPressed: () {}, icon: Icon(Icons.menu))
                                 ],
                               ),
                             )),
-                        Expanded(flex: 2, child: Column(
-                          children: [
-                            
-                          ],
-                        )),
+                        Expanded(
+                            flex: 2,
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [],
+                            )),
                         Expanded(flex: 6, child: Placeholder()),
                       ],
                     )),
