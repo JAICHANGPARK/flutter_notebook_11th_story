@@ -104,10 +104,14 @@ class _IrysHomePageState extends State<IrysHomePage> with SingleTickerProviderSt
                                         children: [
                                           Icon(Icons.calendar_today_outlined),
                                           Spacer(),
-                                          Text("Cityshaper", style: TextStyle(
-                                            fontSize: 18,
-                                          ),),
-                                          Text("Event"),
+                                          Text(
+                                            "Cityshaper",
+                                            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                                          ),
+                                          Text(
+                                            "Event",
+                                            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                                          ),
                                         ],
                                       ),
                                       decoration: BoxDecoration(
