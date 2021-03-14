@@ -99,9 +99,10 @@ class _IrysHomePageState extends State<IrysHomePage> with SingleTickerProviderSt
                                     child: Container(
                                       width: 140,
                                       child: Column(
-                                        
+                                        crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
                                           Icon(Icons.calendar_today_outlined),
+                                          Spacer(),
                                           Text("Cityshaper"),
                                           Text("Event"),
                                         ],
