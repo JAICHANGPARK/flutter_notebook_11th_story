@@ -26,7 +26,6 @@ class _IrysHomePageState extends State<IrysHomePage> with SingleTickerProviderSt
       body: SafeArea(
         child: Stack(
           children: [
-
             Positioned(
                 child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -35,9 +34,25 @@ class _IrysHomePageState extends State<IrysHomePage> with SingleTickerProviderSt
                     flex: 5,
                     child: Column(
                       children: [
-                        Expanded(child: Placeholder()),
-                        Expanded(child: Placeholder()),
-                        Expanded(child: Placeholder()),
+                        Expanded(
+                            flex: 3,
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Row(
+                                children: [
+                                  Container(
+                                    height: 48,
+                                    width: 48,
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey,
+                                      
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            )),
+                        Expanded(flex: 2, child: Placeholder()),
+                        Expanded(flex: 6, child: Placeholder()),
                       ],
                     )),
                 Expanded(
