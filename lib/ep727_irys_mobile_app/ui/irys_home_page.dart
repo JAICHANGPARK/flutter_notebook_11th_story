@@ -91,6 +91,12 @@ class _IrysHomePageState extends State<IrysHomePage> with SingleTickerProviderSt
                             child: ListView(
                               scrollDirection: Axis.horizontal,
                               children: [
+                                Container(
+                                  width: 140,
+                                  decoration:BoxDecoration(
+                                    color: Colors.greenAccent,
+                                  ),
+                                ),
 
                               ],
                             )),
