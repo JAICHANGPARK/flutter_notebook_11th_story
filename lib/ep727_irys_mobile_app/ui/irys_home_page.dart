@@ -87,18 +87,21 @@ class _IrysHomePageState extends State<IrysHomePage> with SingleTickerProviderSt
                                 ],
                               ),
                             )),
-                        Expanded(flex: 6,
-                            child: ListView(
-                              scrollDirection: Axis.horizontal,
-                              children: [
-                                Container(
-                                  width: 140,
-                                  decoration:BoxDecoration(
-                                    color: Colors.greenAccent,
+                        Expanded(
+                            flex: 6,
+                            child: Padding(
+                              padding: const EdgeInsets.only(left: 8, bottom: 4, top: 4),
+                              child: ListView(
+                                scrollDirection: Axis.horizontal,
+                                children: [
+                                  Container(
+                                    width: 140,
+                                    decoration: BoxDecoration(
+                                      color: Colors.greenAccent,
+                                    ),
                                   ),
-                                ),
-
-                              ],
+                                ],
+                              ),
                             )),
                       ],
                     )),
