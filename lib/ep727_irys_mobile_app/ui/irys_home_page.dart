@@ -98,6 +98,14 @@ class _IrysHomePageState extends State<IrysHomePage> with SingleTickerProviderSt
                                     padding: const EdgeInsets.only(right: 8),
                                     child: Container(
                                       width: 140,
+                                      child: Column(
+                                        
+                                        children: [
+                                          Icon(Icons.calendar_today_outlined),
+                                          Text("Cityshaper"),
+                                          Text("Event"),
+                                        ],
+                                      ),
                                       decoration: BoxDecoration(
                                           color: Colors.greenAccent, borderRadius: BorderRadius.circular(8)),
                                     ),
