@@ -226,13 +226,20 @@ class _IrysHomePageState extends State<IrysHomePage> with SingleTickerProviderSt
                                         ),
                                         child: Column(
                                           children: [
-                                            Expanded(child: Placeholder(), flex: 8,),
-                                            Expanded(child: Placeholder(), flex: 2,),
+                                            Expanded(
+                                              child: Container(),
+                                              flex: 6,
+                                            ),
+                                            Expanded(
+                                              child: Column(
+                                                children: [],
+                                              ),
+                                              flex: 2,
+                                            ),
                                           ],
                                         ),
                                       ),
                                     ),
-
                                     Padding(
                                       padding: const EdgeInsets.all(8.0),
                                       child: Container(
