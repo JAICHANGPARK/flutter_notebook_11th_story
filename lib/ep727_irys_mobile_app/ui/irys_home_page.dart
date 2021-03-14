@@ -213,7 +213,18 @@ class _IrysHomePageState extends State<IrysHomePage> with SingleTickerProviderSt
                                     )
                                   ],
                                 )),
-                            Expanded(flex: 12, child: Placeholder()),
+                            Expanded(
+                                flex: 12,
+                                child: ListView(
+                                  children: [
+                                    Container(
+                                      height: MediaQuery.of(context).size.height / 5,
+                                      decoration: BoxDecoration(
+                                        color: Colors.greenAccent
+                                      ),
+                                    )
+                                  ],
+                                )),
                           ],
                         ),
                         Container(
