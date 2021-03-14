@@ -213,7 +213,7 @@ class _IrysHomePageState extends State<IrysHomePage> with SingleTickerProviderSt
                                     )
                                   ],
                                 )),
-                            Expanded(flex: 10, child: Placeholder()),
+                            Expanded(flex: 12, child: Placeholder()),
                           ],
                         ),
                         Container(
