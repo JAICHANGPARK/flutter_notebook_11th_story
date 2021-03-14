@@ -217,16 +217,28 @@ class _IrysHomePageState extends State<IrysHomePage> with SingleTickerProviderSt
                                 flex: 12,
                                 child: ListView(
                                   children: [
-                                    Container(
-                                      height: MediaQuery.of(context).size.height / 4,
-                                      decoration: BoxDecoration(
-                                        color: Colors.greenAccent,
+                                    Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Container(
+                                        height: MediaQuery.of(context).size.height / 4,
+                                        decoration: BoxDecoration(
+                                          color: Colors.greenAccent,
+                                        ),
+                                        child: Column(
+                                          children: [
+                                            
+                                          ],
+                                        ),
                                       ),
                                     ),
-                                    Container(
-                                      height: MediaQuery.of(context).size.height / 4,
-                                      decoration: BoxDecoration(
-                                        color: Colors.greenAccent,
+
+                                    Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Container(
+                                        height: MediaQuery.of(context).size.height / 4,
+                                        decoration: BoxDecoration(
+                                          color: Colors.greenAccent,
+                                        ),
                                       ),
                                     )
                                   ],
