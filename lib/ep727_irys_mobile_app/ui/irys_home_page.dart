@@ -58,11 +58,16 @@ class _IrysHomePageState extends State<IrysHomePage> with SingleTickerProviderSt
                                       color: Colors.white
                                     ),),
                                   ),
+                                  SizedBox(width: 16,),
                                   IconButton(onPressed: (){}, icon: Icon(Icons.menu))
                                 ],
                               ),
                             )),
-                        Expanded(flex: 2, child: Placeholder()),
+                        Expanded(flex: 2, child: Column(
+                          children: [
+                            
+                          ],
+                        )),
                         Expanded(flex: 6, child: Placeholder()),
                       ],
                     )),
