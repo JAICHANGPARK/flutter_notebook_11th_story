@@ -88,7 +88,12 @@ class _IrysHomePageState extends State<IrysHomePage> with SingleTickerProviderSt
                               ),
                             )),
                         Expanded(flex: 6,
-                            child: ListView()),
+                            child: ListView(
+                              scrollDirection: Axis.horizontal,
+                              children: [
+
+                              ],
+                            )),
                       ],
                     )),
                 Expanded(
