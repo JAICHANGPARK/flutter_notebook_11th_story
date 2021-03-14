@@ -231,17 +231,20 @@ class _IrysHomePageState extends State<IrysHomePage> with SingleTickerProviderSt
                                               flex: 6,
                                             ),
                                             Expanded(
-                                              child: Column(
-                                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                                crossAxisAlignment: CrossAxisAlignment.start,
-                                                children: [
-                                                  Row(
-                                                    children: [Text("FLOODING"),
-                                                      Spacer(),
-                                                      Text('2 July 2020')],
-                                                  ),
-                                                  Text("3517 W. Gray St. Utica, Pennsylvania 57867")
-                                                ],
+                                              child: Padding(
+                                                padding: const EdgeInsets.symmetric(vertical: 4),
+                                                child: Column(
+                                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                                  children: [
+                                                    Row(
+                                                      children: [Text("FLOODING"),
+                                                        Spacer(),
+                                                        Text('2 July 2020')],
+                                                    ),
+                                                    Text("3517 W. Gray St. Utica, Pennsylvania 57867")
+                                                  ],
+                                                ),
                                               ),
                                               flex: 2,
                                             ),
