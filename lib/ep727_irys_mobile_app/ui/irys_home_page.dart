@@ -1,3 +1,4 @@
+import 'package:badges/badges.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -45,9 +46,14 @@ class _IrysHomePageState extends State<IrysHomePage> with SingleTickerProviderSt
                                     width: 48,
                                     decoration: BoxDecoration(
                                       color: Colors.grey,
-                                      
+                                      borderRadius: BorderRadius.circular(8),
                                     ),
                                   ),
+                                  Spacer(),
+                                  Badge(
+                                    child: Icon(Icons.notifications_none),
+                                  ),
+                                  IconButton(onPressed: (){}, icon: Icon(Icons.menu))
                                 ],
                               ),
                             )),
