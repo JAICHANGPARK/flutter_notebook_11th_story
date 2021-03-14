@@ -198,13 +198,13 @@ class _IrysHomePageState extends State<IrysHomePage> with SingleTickerProviderSt
                             Expanded(
                                 flex: 2,
                                 child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    
-                                  ],
+                                    Icon(Icons.filter_list),
+                                    SizedBox(width: 8),
+                                    Text("Open Filter")],
                                 )),
-                            Expanded(
-                                flex: 10,
-                                child: Placeholder()),
+                            Expanded(flex: 10, child: Placeholder()),
                           ],
                         ),
                         Container(
