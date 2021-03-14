@@ -52,6 +52,11 @@ class _IrysHomePageState extends State<IrysHomePage> with SingleTickerProviderSt
                                   Spacer(),
                                   Badge(
                                     child: Icon(Icons.notifications_none),
+                                    alignment: Alignment.centerLeft,
+                                    position: BadgePosition.topStart(),
+                                    badgeContent: Text("1", style: TextStyle(
+                                      color: Colors.white
+                                    ),),
                                   ),
                                   IconButton(onPressed: (){}, icon: Icon(Icons.menu))
                                 ],
