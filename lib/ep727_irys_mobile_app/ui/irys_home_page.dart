@@ -68,14 +68,24 @@ class _IrysHomePageState extends State<IrysHomePage> with SingleTickerProviderSt
                               ),
                             )),
                         Expanded(
-                            flex: 2,
+                            flex: 3,
                             child: Padding(
                               padding: const EdgeInsets.all(8.0),
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text("Hi, Dreamwalker"),
-                                  Text("Ready to shape our city better?")
+                                  Text(
+                                    "Hi, Dreamwalker",
+                                    style: TextStyle(
+                                      fontSize: 18,
+                                    ),
+                                  ),
+                                  Text(
+                                    "Ready to shape our city better?",
+                                    style: TextStyle(
+
+                                    ),
+                                  )
                                 ],
                               ),
                             )),
