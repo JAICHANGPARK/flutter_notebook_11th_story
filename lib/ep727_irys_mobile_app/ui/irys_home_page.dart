@@ -70,7 +70,10 @@ class _IrysHomePageState extends State<IrysHomePage> with SingleTickerProviderSt
                             flex: 2,
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [],
+                              children: [
+                                Text("Hi, Dreamwalker"),
+                                Text("Ready to shape our city better?")
+                              ],
                             )),
                         Expanded(flex: 6, child: Placeholder()),
                       ],
