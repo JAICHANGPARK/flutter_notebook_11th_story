@@ -227,7 +227,15 @@ class _IrysHomePageState extends State<IrysHomePage> with SingleTickerProviderSt
                                         child: Column(
                                           children: [
                                             Expanded(
-                                              child: Container(),
+                                              child: Container(
+                                                decoration: BoxDecoration(
+                                                  borderRadius: BorderRadius.circular(8),
+                                                  image: DecorationImage(
+                                                    image: NetworkImage("https://cdn.pixabay.com/photo/2021/02/07/18/32/shops-5992277__340.jpg"),
+                                                    fit: BoxFit.cover,
+                                                  )
+                                                ),
+                                              ),
                                               flex: 6,
                                             ),
                                             Expanded(
@@ -238,7 +246,8 @@ class _IrysHomePageState extends State<IrysHomePage> with SingleTickerProviderSt
                                                   crossAxisAlignment: CrossAxisAlignment.start,
                                                   children: [
                                                     Row(
-                                                      children: [Text("FLOODING"),
+                                                      children: [
+                                                        Text("FLOODING"),
                                                         Spacer(),
                                                         Text('2 July 2020')],
                                                     ),
