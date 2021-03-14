@@ -221,20 +221,17 @@ class _IrysHomePageState extends State<IrysHomePage> with SingleTickerProviderSt
                                       padding: const EdgeInsets.all(8.0),
                                       child: Container(
                                         height: MediaQuery.of(context).size.height / 4,
-                                        decoration: BoxDecoration(
-                                          color: Colors.greenAccent,
-                                        ),
                                         child: Column(
                                           children: [
                                             Expanded(
                                               child: Container(
                                                 decoration: BoxDecoration(
-                                                  borderRadius: BorderRadius.circular(8),
-                                                  image: DecorationImage(
-                                                    image: NetworkImage("https://cdn.pixabay.com/photo/2021/02/07/18/32/shops-5992277__340.jpg"),
-                                                    fit: BoxFit.cover,
-                                                  )
-                                                ),
+                                                    borderRadius: BorderRadius.circular(8),
+                                                    image: DecorationImage(
+                                                      image: NetworkImage(
+                                                          "https://cdn.pixabay.com/photo/2021/02/07/18/32/shops-5992277__340.jpg"),
+                                                      fit: BoxFit.cover,
+                                                    )),
                                               ),
                                               flex: 6,
                                             ),
@@ -249,7 +246,11 @@ class _IrysHomePageState extends State<IrysHomePage> with SingleTickerProviderSt
                                                       children: [
                                                         Text("FLOODING"),
                                                         Spacer(),
-                                                        Text('2 July 2020')],
+                                                        Text(
+                                                          '2 July 2020',
+                                                          style: TextStyle(color: Colors.grey),
+                                                        )
+                                                      ],
                                                     ),
                                                     Text("3517 W. Gray St. Utica, Pennsylvania 57867")
                                                   ],
@@ -265,11 +266,47 @@ class _IrysHomePageState extends State<IrysHomePage> with SingleTickerProviderSt
                                       padding: const EdgeInsets.all(8.0),
                                       child: Container(
                                         height: MediaQuery.of(context).size.height / 4,
-                                        decoration: BoxDecoration(
-                                          color: Colors.greenAccent,
+                                        child: Column(
+                                          children: [
+                                            Expanded(
+                                              child: Container(
+                                                decoration: BoxDecoration(
+                                                    borderRadius: BorderRadius.circular(8),
+                                                    image: DecorationImage(
+                                                      image: NetworkImage(
+                                                          "https://cdn.pixabay.com/photo/2021/02/07/18/32/shops-5992277__340.jpg"),
+                                                      fit: BoxFit.cover,
+                                                    )),
+                                              ),
+                                              flex: 6,
+                                            ),
+                                            Expanded(
+                                              child: Padding(
+                                                padding: const EdgeInsets.symmetric(vertical: 4),
+                                                child: Column(
+                                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                                  children: [
+                                                    Row(
+                                                      children: [
+                                                        Text("FLOODING"),
+                                                        Spacer(),
+                                                        Text(
+                                                          '2 July 2020',
+                                                          style: TextStyle(color: Colors.grey),
+                                                        )
+                                                      ],
+                                                    ),
+                                                    Text("3517 W. Gray St. Utica, Pennsylvania 57867")
+                                                  ],
+                                                ),
+                                              ),
+                                              flex: 2,
+                                            ),
+                                          ],
                                         ),
                                       ),
-                                    )
+                                    ),
                                   ],
                                 )),
                           ],
