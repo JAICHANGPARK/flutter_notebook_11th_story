@@ -124,6 +124,22 @@ class _IrysHomePageState extends State<IrysHomePage> with SingleTickerProviderSt
                                       width: 140,
                                       decoration: BoxDecoration(
                                           color: Colors.lightGreenAccent, borderRadius: BorderRadius.circular(8)),
+                                      padding: EdgeInsets.all(16),
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          Icon(Icons.supervisor_account),
+                                          Spacer(),
+                                          Text(
+                                            "Get",
+                                            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                                          ),
+                                          Text(
+                                            "Involved",
+                                            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                                          ),
+                                        ],
+                                      ),
                                     ),
                                   ),
                                   Padding(
@@ -131,7 +147,23 @@ class _IrysHomePageState extends State<IrysHomePage> with SingleTickerProviderSt
                                     child: Container(
                                       width: 140,
                                       decoration: BoxDecoration(
-                                          color: Colors.purpleAccent, borderRadius: BorderRadius.circular(8)),
+                                          color: Colors.purpleAccent[100], borderRadius: BorderRadius.circular(8)),
+                                      padding: EdgeInsets.all(16),
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          Icon(Icons.info),
+                                          Spacer(),
+                                          Text(
+                                            "About",
+                                            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                                          ),
+                                          Text(
+                                            "Project",
+                                            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                                          ),
+                                        ],
+                                      ),
                                     ),
                                   ),
                                 ],
@@ -161,8 +193,15 @@ class _IrysHomePageState extends State<IrysHomePage> with SingleTickerProviderSt
                     child: TabBarView(
                       controller: _tabController,
                       children: [
-                        Container(
-                          color: Colors.red,
+                        Column(
+                          children: [
+                            Expanded(
+                                flex: 2,
+                                child: Placeholder()),
+                            Expanded(
+                                flex: 10,
+                                child: Placeholder()),
+                          ],
                         ),
                         Container(
                           color: Colors.blue,
