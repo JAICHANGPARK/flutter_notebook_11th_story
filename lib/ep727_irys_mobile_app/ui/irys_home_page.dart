@@ -82,14 +82,13 @@ class _IrysHomePageState extends State<IrysHomePage> with SingleTickerProviderSt
                                   ),
                                   Text(
                                     "Ready to shape our city better?",
-                                    style: TextStyle(
-
-                                    ),
+                                    style: TextStyle(),
                                   )
                                 ],
                               ),
                             )),
-                        Expanded(flex: 6, child: Placeholder()),
+                        Expanded(flex: 6,
+                            child: ListView()),
                       ],
                     )),
                 Expanded(
