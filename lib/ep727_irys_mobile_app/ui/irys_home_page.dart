@@ -99,20 +99,23 @@ class _IrysHomePageState extends State<IrysHomePage> with SingleTickerProviderSt
                                     child: Container(
                                       width: 140,
                                       decoration: BoxDecoration(
-                                        color: Colors.greenAccent,
-                                        borderRadius: BorderRadius.circular(8)
-                                      ),
+                                          color: Colors.greenAccent, borderRadius: BorderRadius.circular(8)),
                                     ),
                                   ),
-
                                   Padding(
                                     padding: const EdgeInsets.only(right: 8),
                                     child: Container(
                                       width: 140,
                                       decoration: BoxDecoration(
-                                        color: Colors.greenAccent,
-                                          borderRadius: BorderRadius.circular(8)
-                                      ),
+                                          color: Colors.lightGreenAccent, borderRadius: BorderRadius.circular(8)),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.only(right: 8),
+                                    child: Container(
+                                      width: 140,
+                                      decoration: BoxDecoration(
+                                          color: Colors.purpleAccent, borderRadius: BorderRadius.circular(8)),
                                     ),
                                   ),
                                 ],
