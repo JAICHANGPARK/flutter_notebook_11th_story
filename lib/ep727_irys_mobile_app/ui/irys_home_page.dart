@@ -218,9 +218,15 @@ class _IrysHomePageState extends State<IrysHomePage> with SingleTickerProviderSt
                                 child: ListView(
                                   children: [
                                     Container(
-                                      height: MediaQuery.of(context).size.height / 5,
+                                      height: MediaQuery.of(context).size.height / 4,
                                       decoration: BoxDecoration(
-                                        color: Colors.greenAccent
+                                        color: Colors.greenAccent,
+                                      ),
+                                    ),
+                                    Container(
+                                      height: MediaQuery.of(context).size.height / 4,
+                                      decoration: BoxDecoration(
+                                        color: Colors.greenAccent,
                                       ),
                                     )
                                   ],
