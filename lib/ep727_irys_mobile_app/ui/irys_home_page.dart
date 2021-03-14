@@ -34,6 +34,7 @@ class _IrysHomePageState extends State<IrysHomePage> with SingleTickerProviderSt
                 Expanded(
                     flex: 5,
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Expanded(
                             flex: 3,
@@ -68,12 +69,15 @@ class _IrysHomePageState extends State<IrysHomePage> with SingleTickerProviderSt
                             )),
                         Expanded(
                             flex: 2,
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text("Hi, Dreamwalker"),
-                                Text("Ready to shape our city better?")
-                              ],
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text("Hi, Dreamwalker"),
+                                  Text("Ready to shape our city better?")
+                                ],
+                              ),
                             )),
                         Expanded(flex: 6, child: Placeholder()),
                       ],
