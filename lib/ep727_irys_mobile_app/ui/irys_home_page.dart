@@ -42,12 +42,15 @@ class _IrysHomePageState extends State<IrysHomePage> with SingleTickerProviderSt
                               padding: const EdgeInsets.all(8.0),
                               child: Row(
                                 children: [
-                                  Container(
-                                    height: 48,
-                                    width: 48,
-                                    decoration: BoxDecoration(
-                                      color: Colors.grey,
-                                      borderRadius: BorderRadius.circular(8),
+                                  GestureDetector(
+                                    
+                                    child: Container(
+                                      height: 48,
+                                      width: 48,
+                                      decoration: BoxDecoration(
+                                        color: Colors.grey,
+                                        borderRadius: BorderRadius.circular(8),
+                                      ),
                                     ),
                                   ),
                                   Spacer(),
