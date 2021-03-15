@@ -21,7 +21,11 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                 },
                 icon: Icon(Icons.arrow_back_ios)),
             Expanded(
-              child: Placeholder(),
+              child: Column(
+                children: [
+                  
+                ],
+              ),
               flex: 5,
             ),
             Expanded(
@@ -46,7 +50,7 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                             Spacer(),
                             Container(
                               height: 2,
-                              color: Colors.black,
+                              color: _tabIndex == 0  ? Colors.black : Colors.transparent,
                             )
                           ],
                         ),
