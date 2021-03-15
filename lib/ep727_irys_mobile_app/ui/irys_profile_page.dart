@@ -18,9 +18,9 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
               Navigator.of(context).pop();
 
             }, icon: Icon(Icons.arrow_back_ios)),
-            Expanded(child: Placeholder()),
-            Expanded(child: Placeholder()),
-            Expanded(child: Placeholder()),
+            Expanded(child: Placeholder(), flex: 5,),
+            Expanded(child: Placeholder(), flex: 1,),
+            Expanded(child: Placeholder(), flex: 6,),
           ],
         ),
       ),
