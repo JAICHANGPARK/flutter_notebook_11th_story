@@ -19,8 +19,12 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
 
             }, icon: Icon(Icons.arrow_back_ios)),
             Expanded(child: Placeholder(), flex: 5,),
-            Expanded(child: Placeholder(), flex: 1,),
-            Expanded(child: Placeholder(), flex: 6,),
+            Expanded(child: PhysicalModel(child: Container(
+              color: Colors.white,
+            ),
+            color: Colors.grey[200]!,
+            ), flex: 1,),
+            Expanded(child: Placeholder(), flex: 8,),
           ],
         ),
       ),
