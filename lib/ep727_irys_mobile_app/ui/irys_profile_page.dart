@@ -44,31 +44,34 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                           )
                         ],
                       )),
-                      Expanded(child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Spacer(),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Text("My Event", style: TextStyle(
-                                  fontSize: 16
-                              ),),
-                              SizedBox(width: 8,),
-                              CircleAvatar(
-                                radius: 12,
-                                backgroundColor: Colors.red,
-                                child: Text("3"),
-                                foregroundColor: Colors.white,
-                              )
-                            ],
-                          ),
-                          Spacer(),
-                          Container(
-                            height: 2,
-                            color: _tabIndex == 1  ? Colors.black : Colors.transparent,
-                          )
-                        ],
+                      Expanded(child: GestureDetector(
+                        onTap: (){},
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Spacer(),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text("My Event", style: TextStyle(
+                                    fontSize: 16
+                                ),),
+                                SizedBox(width: 8,),
+                                CircleAvatar(
+                                  radius: 12,
+                                  backgroundColor: Colors.red,
+                                  child: Text("3"),
+                                  foregroundColor: Colors.white,
+                                )
+                              ],
+                            ),
+                            Spacer(),
+                            Container(
+                              height: 2,
+                              color: _tabIndex == 1  ? Colors.black : Colors.transparent,
+                            )
+                          ],
+                        ),
                       )),
                     ],
                   ),
