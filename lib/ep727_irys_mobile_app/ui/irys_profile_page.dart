@@ -35,7 +35,7 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                         children: [
                           Spacer(),
                           Text("My Engagement", style: TextStyle(
-                            fontSize: 18
+                            fontSize: 16
                           ),),
                           Spacer(),
                           Container(
@@ -44,7 +44,30 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                           )
                         ],
                       )),
-                      Expanded(child: Placeholder())
+                      Expanded(child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Spacer(),
+                          Row(
+                            children: [
+                              Text("My Event", style: TextStyle(
+                                  fontSize: 16
+                              ),),
+                              CircleAvatar(
+                                radius: 12,
+                                backgroundColor: Colors.red,
+                                child: Text("3"),
+                                foregroundColor: Colors.white,
+                              )
+                            ],
+                          ),
+                          Spacer(),
+                          Container(
+                            height: 2,
+                            color: Colors.black,
+                          )
+                        ],
+                      )),
                     ],
                   ),
 
