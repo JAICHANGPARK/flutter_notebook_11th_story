@@ -49,10 +49,12 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                         children: [
                           Spacer(),
                           Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text("My Event", style: TextStyle(
                                   fontSize: 16
                               ),),
+                              SizedBox(width: 8,),
                               CircleAvatar(
                                 radius: 12,
                                 backgroundColor: Colors.red,
@@ -64,7 +66,7 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                           Spacer(),
                           Container(
                             height: 2,
-                            color: Colors.black,
+                            color: _tabIndex == 1  ? Colors.black : Colors.transparent,
                           )
                         ],
                       )),
