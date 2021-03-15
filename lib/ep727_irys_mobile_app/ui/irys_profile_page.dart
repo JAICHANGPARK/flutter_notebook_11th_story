@@ -30,22 +30,33 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                   color: Colors.white,
                   child: Row(
                     children: [
-                      Expanded(child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Spacer(),
-                          Text("My Engagement", style: TextStyle(
-                            fontSize: 16
-                          ),),
-                          Spacer(),
-                          Container(
-                            height: 2,
-                            color: Colors.black,
-                          )
-                        ],
+                      Expanded(child: GestureDetector(
+                        onTap: (){
+                          setState(() {
+                            _tabIndex = 0;
+                          });
+                        },
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Spacer(),
+                            Text("My Engagement", style: TextStyle(
+                              fontSize: 16
+                            ),),
+                            Spacer(),
+                            Container(
+                              height: 2,
+                              color: Colors.black,
+                            )
+                          ],
+                        ),
                       )),
                       Expanded(child: GestureDetector(
-                        onTap: (){},
+                        onTap: (){
+                          setState(() {
+                            _tabIndex = 1;
+                          });
+                        },
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
