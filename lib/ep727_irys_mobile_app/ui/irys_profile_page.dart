@@ -9,6 +9,8 @@ class IrysProfilePage extends StatefulWidget {
 class _IrysProfilePageState extends State<IrysProfilePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: SafeArea(),
+    );
   }
 }
