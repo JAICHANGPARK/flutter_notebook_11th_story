@@ -21,12 +21,17 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                 },
                 icon: Icon(Icons.arrow_back_ios)),
             Expanded(
-              child: Column(
-                children: [
-
-                ],
+              child: Padding(
+                padding: const EdgeInsets.only(left: 24),
+                child: Column(
+                  children: [
+                    Expanded(child: Placeholder()),
+                    Expanded(child: Placeholder()),
+                    Expanded(child: Placeholder()),
+                  ],
+                ),
               ),
-              flex: 5,
+              flex: 6,
             ),
             Expanded(
               child: PhysicalModel(
