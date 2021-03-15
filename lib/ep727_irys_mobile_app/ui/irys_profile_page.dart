@@ -10,7 +10,10 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(),
+      body: SafeArea(child: Column(children: [
+
+        
+      ],),),
     );
   }
 }
