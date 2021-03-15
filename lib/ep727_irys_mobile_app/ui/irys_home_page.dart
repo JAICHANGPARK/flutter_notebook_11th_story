@@ -1,6 +1,7 @@
 import 'package:badges/badges.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_11th_story/ep727_irys_mobile_app/ui/irys_profile_page.dart';
 
 class IrysHomePage extends StatefulWidget {
   @override
@@ -44,7 +45,8 @@ class _IrysHomePageState extends State<IrysHomePage> with SingleTickerProviderSt
                                 children: [
                                   GestureDetector(
                                     onTap: (){
-                                      
+                                      Navigator.of(context).push(MaterialPageRoute(builder: (context)
+                                      => IrysProfilePage()));
                                     },
                                     child: Container(
                                       height: 48,
