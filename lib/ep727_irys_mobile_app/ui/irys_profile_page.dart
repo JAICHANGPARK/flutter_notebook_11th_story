@@ -23,13 +23,14 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
             Expanded(
               child: Column(
                 children: [
-                  
+
                 ],
               ),
               flex: 5,
             ),
             Expanded(
               child: PhysicalModel(
+                color: Colors.grey[700]!,
                 child: Container(
                   color: Colors.white,
                   child: Row(
@@ -92,7 +93,7 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                   ),
 
                 ),
-                color: Colors.grey[200]!,
+
               ),
               flex: 1,
             ),
