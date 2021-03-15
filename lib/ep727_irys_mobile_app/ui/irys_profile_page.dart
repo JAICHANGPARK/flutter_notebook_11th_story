@@ -6,6 +6,7 @@ class IrysProfilePage extends StatefulWidget {
 }
 
 class _IrysProfilePageState extends State<IrysProfilePage> {
+  int _tabIndex = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
