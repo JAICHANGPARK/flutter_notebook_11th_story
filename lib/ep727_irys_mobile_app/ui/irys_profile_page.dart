@@ -30,7 +30,20 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                   color: Colors.white,
                   child: Row(
                     children: [
-                      Expanded(child: Placeholder()),
+                      Expanded(child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Spacer(),
+                          Text("My Engagement", style: TextStyle(
+                            fontSize: 18
+                          ),),
+                          Spacer(),
+                          Container(
+                            height: 2,
+                            color: Colors.black,
+                          )
+                        ],
+                      )),
                       Expanded(child: Placeholder())
                     ],
                   ),
