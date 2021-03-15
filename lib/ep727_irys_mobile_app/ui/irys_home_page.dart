@@ -44,9 +44,9 @@ class _IrysHomePageState extends State<IrysHomePage> with SingleTickerProviderSt
                               child: Row(
                                 children: [
                                   GestureDetector(
-                                    onTap: (){
-                                      Navigator.of(context).push(MaterialPageRoute(builder: (context)
-                                      => IrysProfilePage()));
+                                    onTap: () {
+                                      Navigator.of(context)
+                                          .push(MaterialPageRoute(builder: (context) => IrysProfilePage()));
                                     },
                                     child: Container(
                                       height: 48,
