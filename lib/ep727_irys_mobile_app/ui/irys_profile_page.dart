@@ -99,7 +99,7 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
             ),
             Expanded(
               child: Placeholder(),
-              flex: 8,
+              flex: 10,
             ),
           ],
         ),
