@@ -40,8 +40,9 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                   color: Colors.white,
                   child: Row(
                     children: [
-                      Expanded(child: GestureDetector(
-                        onTap: (){
+                      Expanded(
+                          child: GestureDetector(
+                        onTap: () {
                           setState(() {
                             _tabIndex = 0;
                           });
@@ -50,19 +51,21 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Spacer(),
-                            Text("My Engagement", style: TextStyle(
-                              fontSize: 16
-                            ),),
+                            Text(
+                              "My Engagement",
+                              style: TextStyle(fontSize: 16),
+                            ),
                             Spacer(),
                             Container(
                               height: 2,
-                              color: _tabIndex == 0  ? Colors.black : Colors.transparent,
+                              color: _tabIndex == 0 ? Colors.black : Colors.transparent,
                             )
                           ],
                         ),
                       )),
-                      Expanded(child: GestureDetector(
-                        onTap: (){
+                      Expanded(
+                          child: GestureDetector(
+                        onTap: () {
                           setState(() {
                             _tabIndex = 1;
                           });
@@ -74,10 +77,13 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                             Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Text("My Event", style: TextStyle(
-                                    fontSize: 16
-                                ),),
-                                SizedBox(width: 8,),
+                                Text(
+                                  "My Event",
+                                  style: TextStyle(fontSize: 16),
+                                ),
+                                SizedBox(
+                                  width: 8,
+                                ),
                                 CircleAvatar(
                                   radius: 12,
                                   backgroundColor: Colors.red,
@@ -89,16 +95,14 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                             Spacer(),
                             Container(
                               height: 2,
-                              color: _tabIndex == 1  ? Colors.black : Colors.transparent,
+                              color: _tabIndex == 1 ? Colors.black : Colors.transparent,
                             )
                           ],
                         ),
                       )),
                     ],
                   ),
-
                 ),
-
               ),
               flex: 1,
             ),
