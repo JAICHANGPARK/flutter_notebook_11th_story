@@ -35,7 +35,7 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                           decoration: BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(16)),
                         ),
                         Padding(
-                          padding: const EdgeInsets.only(left: 16),
+                          padding: const EdgeInsets.only(left: 16, top: 4, bottom: 4),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -56,7 +56,10 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                               )
                             ],
                           ),
-                        )
+                        ),
+                        Spacer(),
+                        IconButton(onPressed: (){}, icon: Icon(Icons.edit)),
+
                       ],
                     )),
                     Expanded(child: Placeholder()),
