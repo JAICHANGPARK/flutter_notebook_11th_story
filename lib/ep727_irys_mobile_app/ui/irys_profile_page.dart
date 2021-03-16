@@ -281,11 +281,18 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                                               ),
                                               Row(
                                                 children: [
-                                                  Text("2 July 2020"),
+                                                  Text("2 July 2020", style: TextStyle(
+                                                      color: Colors.grey,
+                                                    fontSize: 12
+                                                  ),),
                                                   Spacer(),
-                                                  Text("+130 pts"),
+                                                  Text("+130 pts", style: TextStyle(
+                                                    color: Colors.teal
+                                                  ),),
                                                   SizedBox(width: 8),
-                                                  Text("+1 badge"),
+                                                  Text("+1 badge", style: TextStyle(
+                                                      color: Colors.purpleAccent
+                                                  ),),
                                                 ],
                                               )
                                             ],
