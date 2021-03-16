@@ -233,8 +233,17 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                 children: [
                   Column(
                     children: [
-                      Expanded(child: Placeholder()),
-                      Expanded(child: Placeholder())
+                      Expanded(
+                          flex:1,
+                          child: Row(
+                            children: [
+                              Icon(Icons.filter_list),
+                              Text("Open Filter")
+                            ],
+                          )),
+                      Expanded(
+                          flex: 8,
+                          child: Placeholder())
                     ],
                   ),
                 ],
