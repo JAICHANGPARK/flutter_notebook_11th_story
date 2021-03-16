@@ -245,7 +245,11 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                           )),
                       Expanded(
                           flex: 8,
-                          child: Placeholder())
+                          child: ListView(
+                            children: [
+                              
+                            ],
+                          ))
                     ],
                   ),
                 ],
