@@ -254,6 +254,23 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                                   border: Border.all(color: Colors.grey),
                                   borderRadius: BorderRadius.circular(8)
                                 ),
+
+                                child: Row(
+                                  children: [
+                                    Expanded(
+                                        flex: 3,
+                                        child: Container(
+                                          margin: EdgeInsets.all(7),
+                                          decoration: BoxDecoration(
+                                            color: Colors.red,
+                                            borderRadius: BorderRadius.circular(16)
+                                          ),
+                                        )),
+                                    Expanded(
+                                        flex: 7,
+                                        child: Placeholder()),
+                                  ],
+                                ),
                               )
                             ],
                           ))
