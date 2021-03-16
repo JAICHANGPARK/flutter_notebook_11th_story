@@ -219,7 +219,12 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
               flex: 1,
             ),
             Expanded(
-              child: Placeholder(),
+              child: PageView(
+                scrollDirection: Axis.horizontal,
+                children: [
+                  Container(),
+                ],
+              ),
               flex: 10,
             ),
           ],
