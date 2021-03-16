@@ -163,8 +163,12 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                       Expanded(
                           child: GestureDetector(
                         onTap: () {
+
                           setState(() {
                             _tabIndex = 0;
+                            pageController.animateToPage(_tabIndex, duration: Duration(
+                                milliseconds: 250
+                            ), curve: Curves.linear);
                           });
                         },
                         child: Column(
@@ -186,8 +190,12 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                       Expanded(
                           child: GestureDetector(
                         onTap: () {
+
                           setState(() {
                             _tabIndex = 1;
+                            pageController.animateToPage(_tabIndex, duration: Duration(
+                                milliseconds: 250
+                            ), curve: Curves.linear);
                           });
                         },
                         child: Column(
@@ -288,6 +296,59 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                                                   Spacer(),
                                                   Text("+130 pts", style: TextStyle(
                                                     color: Colors.teal
+                                                  ),),
+                                                  SizedBox(width: 8),
+                                                  Text("+1 badge", style: TextStyle(
+                                                      color: Colors.purpleAccent
+                                                  ),),
+                                                ],
+                                              )
+                                            ],
+                                          ),
+                                        )),
+                                  ],
+                                ),
+                              ),
+                              SizedBox(height: 16,),
+                              Container(
+                                margin: EdgeInsets.symmetric(horizontal: 16),
+                                height: 120,
+                                decoration: BoxDecoration(
+                                    border: Border.all(color: Colors.grey), borderRadius: BorderRadius.circular(8)),
+                                child: Row(
+                                  children: [
+                                    Expanded(
+                                        flex: 2,
+                                        child: Container(
+                                          margin: EdgeInsets.all(7),
+                                          decoration:
+                                          BoxDecoration(color: Colors.red, borderRadius: BorderRadius.circular(16)),
+                                        )),
+                                    Expanded(
+                                        flex: 6,
+                                        child: Padding(
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: Column(
+                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              Text(
+                                                "Transportation",
+                                                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                                              ),
+                                              Text(
+                                                "3517 W, Gray St. Utica,\nPennsylvania 57867",
+                                                style: TextStyle(fontSize: 12, color: Colors.grey),
+                                              ),
+                                              Row(
+                                                children: [
+                                                  Text("2 July 2020", style: TextStyle(
+                                                      color: Colors.grey,
+                                                      fontSize: 12
+                                                  ),),
+                                                  Spacer(),
+                                                  Text("+130 pts", style: TextStyle(
+                                                      color: Colors.teal
                                                   ),),
                                                   SizedBox(width: 8),
                                                   Text("+1 badge", style: TextStyle(
