@@ -132,8 +132,11 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                     Expanded(child: ListView.builder(
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index){
-                      return CircleAvatar(
-
+                      return Padding(
+                        padding: const EdgeInsets.only(right: 16),
+                        child: CircleAvatar(
+radius: 24,
+                        ),
                       );
                     })),
                   ],
