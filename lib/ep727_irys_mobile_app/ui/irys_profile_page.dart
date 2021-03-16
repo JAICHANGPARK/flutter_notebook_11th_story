@@ -94,7 +94,7 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                                 ),
                               ),
                               Text(
-                                "Points earned",
+                                "Points Earned",
                                 style: TextStyle(fontSize: 14, color: Colors.teal),
                               )
                             ],
@@ -129,7 +129,13 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                             ))
                       ],
                     )),
-                    Expanded(child: Placeholder()),
+                    Expanded(child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemBuilder: (context, index){
+                      return CircleAvatar(
+
+                      );
+                    })),
                   ],
                 ),
               ),
