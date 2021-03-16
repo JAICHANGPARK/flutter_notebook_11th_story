@@ -14,7 +14,7 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
   void initState() {
     // TODO: implement initState
     super.initState();
-     pageController = PageController(initialPage: _tabIndex);
+    pageController = PageController(initialPage: _tabIndex);
   }
 
   @override
@@ -234,12 +234,14 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                   Column(
                     children: [
                       Expanded(
-                          flex:1,
+                          flex: 1,
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Icon(Icons.filter_list),
-                              SizedBox(width: 8,),
+                              SizedBox(
+                                width: 8,
+                              ),
                               Text("Open Filter"),
                             ],
                           )),
@@ -251,20 +253,15 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                                 margin: EdgeInsets.symmetric(horizontal: 16),
                                 height: 140,
                                 decoration: BoxDecoration(
-                                  border: Border.all(color: Colors.grey),
-                                  borderRadius: BorderRadius.circular(8)
-                                ),
-
+                                    border: Border.all(color: Colors.grey), borderRadius: BorderRadius.circular(8)),
                                 child: Row(
                                   children: [
                                     Expanded(
                                         flex: 3,
                                         child: Container(
                                           margin: EdgeInsets.all(7),
-                                          decoration: BoxDecoration(
-                                            color: Colors.red,
-                                            borderRadius: BorderRadius.circular(16)
-                                          ),
+                                          decoration:
+                                              BoxDecoration(color: Colors.red, borderRadius: BorderRadius.circular(16)),
                                         )),
                                     Expanded(
                                         flex: 7,
@@ -273,21 +270,22 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                                           child: Column(
                                             crossAxisAlignment: CrossAxisAlignment.start,
                                             children: [
-                                              Text("Transportation", style: TextStyle(
-                                                fontSize: 16,
-                                                fontWeight: FontWeight.bold
-                                              ),),
-                                              Text("3517 W, Gray St. Utica,"),
+                                              Text(
+                                                "Transportation",
+                                                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                                              ),
+                                              Text(
+                                                "3517 W, Gray St. Utica,",
+                                                style: TextStyle(fontSize: 12, color: Colors.grey),
+                                              ),
                                               Text("Pennsylvania 57867"),
                                               Row(
                                                 children: [
                                                   Text("2 July 2020"),
                                                   Text("+130 pts"),
                                                   Text("+1 badge"),
-
                                                 ],
                                               )
-
                                             ],
                                           ),
                                         )),
