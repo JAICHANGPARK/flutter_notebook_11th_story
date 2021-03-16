@@ -60,10 +60,24 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                           ),
                         ),
                         Spacer(),
-                        IconButton(onPressed: () {}, icon: Icon(Icons.edit)),
+                        IconButton(onPressed: () {}, icon: Icon(Icons.edit),
+                        color: Colors.grey,),
                       ],
                     )),
-                    Expanded(child: Placeholder()),
+                    Expanded(child: Row(
+                      children: [
+                        Expanded(child: Placeholder()),
+                        Expanded(child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text("500"),
+                            Text("75%"),
+                            Text("Points earned")
+                          ],
+                        )),
+                        Expanded(child: Placeholder()),
+                      ],
+                    )),
                     Expanded(child: Placeholder()),
                   ],
                 ),
