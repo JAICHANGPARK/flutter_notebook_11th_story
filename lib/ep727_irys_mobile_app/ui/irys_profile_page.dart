@@ -28,6 +28,7 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                   children: [
                     Expanded(
                         child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
                           height: 64,
@@ -35,10 +36,10 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                           decoration: BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(16)),
                         ),
                         Padding(
-                          padding: const EdgeInsets.only(left: 16, top: 4, bottom: 4),
+                          padding: const EdgeInsets.only(left: 16,bottom: 16),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
                                 'Dreamwalker',
@@ -47,6 +48,7 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
+                              SizedBox(height: 16,),
                               Text(
                                 "Software Engineer",
                                 style: TextStyle(
@@ -58,8 +60,7 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                           ),
                         ),
                         Spacer(),
-                        IconButton(onPressed: (){}, icon: Icon(Icons.edit)),
-
+                        IconButton(onPressed: () {}, icon: Icon(Icons.edit)),
                       ],
                     )),
                     Expanded(child: Placeholder()),
