@@ -102,43 +102,44 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                         )),
                         Expanded(
                             child: Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    "10",
-                                    style: TextStyle(
-                                      fontSize: 18,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                  Text(
-                                    "35%",
-                                    style: TextStyle(
-                                      fontSize: 14,
-                                      color: Colors.grey,
-                                    ),
-                                  ),
-                                  Text(
-                                    "Badge Collected",
-                                    style: TextStyle(fontSize: 14, color: Colors.purpleAccent),
-                                  )
-                                ],
+                          padding: const EdgeInsets.all(8.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "10",
+                                style: TextStyle(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold,
+                                ),
                               ),
-                            ))
+                              Text(
+                                "35%",
+                                style: TextStyle(
+                                  fontSize: 14,
+                                  color: Colors.grey,
+                                ),
+                              ),
+                              Text(
+                                "Badge Collected",
+                                style: TextStyle(fontSize: 14, color: Colors.purpleAccent),
+                              )
+                            ],
+                          ),
+                        ))
                       ],
                     )),
-                    Expanded(child: ListView.builder(
-                        scrollDirection: Axis.horizontal,
-                        itemBuilder: (context, index){
-                      return Padding(
-                        padding: const EdgeInsets.only(right: 16),
-                        child: CircleAvatar(
-radius: 24,
-                        ),
-                      );
-                    })),
+                    Expanded(
+                        child: ListView.builder(
+                            scrollDirection: Axis.horizontal,
+                            itemBuilder: (context, index) {
+                              return Padding(
+                                padding: const EdgeInsets.only(right: 16),
+                                child: CircleAvatar(
+                                  radius: 24,
+                                ),
+                              );
+                            })),
                   ],
                 ),
               ),
