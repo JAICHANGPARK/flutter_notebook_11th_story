@@ -9,11 +9,13 @@ class IrysProfilePage extends StatefulWidget {
 class _IrysProfilePageState extends State<IrysProfilePage> {
   int _tabIndex = 0;
   PageController pageController = PageController(initialPage: _tabIndex);
+
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -228,7 +230,12 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                 controller: pageController,
                 scrollDirection: Axis.horizontal,
                 children: [
-                  Container(),
+                  Column(
+                    children: [
+                      Expanded(child: Placeholder()),
+                      Expanded(child: Placeholder())
+                    ],
+                  ),
                 ],
               ),
               flex: 10,
