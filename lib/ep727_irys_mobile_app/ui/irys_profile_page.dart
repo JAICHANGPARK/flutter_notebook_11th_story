@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class IrysProfilePage extends StatefulWidget {
@@ -35,11 +36,19 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                             borderRadius: BorderRadius.circular(16)
                           ),
                         ),
-                        Column(
-                          children: [
-                            Text('Dreamwalker'),
-                            Text("Software Engineer")
-                          ],
+                        Padding(
+                          padding: const EdgeInsets.only(left: 16),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Text('Dreamwalker', style: TextStyle(
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                              ),),
+                              Text("Software Engineer")
+                            ],
+                          ),
                         )
                       ],
                     )),
