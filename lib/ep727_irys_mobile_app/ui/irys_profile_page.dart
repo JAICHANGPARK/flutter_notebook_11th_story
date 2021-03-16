@@ -268,6 +268,7 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                                         child: Padding(
                                           padding: const EdgeInsets.all(8.0),
                                           child: Column(
+                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                             crossAxisAlignment: CrossAxisAlignment.start,
                                             children: [
                                               Text(
@@ -275,14 +276,15 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                                                 style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                                               ),
                                               Text(
-                                                "3517 W, Gray St. Utica,",
+                                                "3517 W, Gray St. Utica,\nPennsylvania 57867",
                                                 style: TextStyle(fontSize: 12, color: Colors.grey),
                                               ),
-                                              Text("Pennsylvania 57867"),
                                               Row(
                                                 children: [
                                                   Text("2 July 2020"),
+                                                  Spacer(),
                                                   Text("+130 pts"),
+                                                  SizedBox(width: 4),
                                                   Text("+1 badge"),
                                                 ],
                                               )
