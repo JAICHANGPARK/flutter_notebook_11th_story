@@ -75,10 +75,10 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                         Expanded(child: Placeholder()),
                         Expanded(
                             child: Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
+                          padding: const EdgeInsets.all(8.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
                               Text(
                                 "500",
                                 style: TextStyle(
@@ -97,14 +97,36 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                                 "Points earned",
                                 style: TextStyle(fontSize: 14, color: Colors.teal),
                               )
-                          ],
-                        ),
-                            )),
-                        Expanded(
-                            child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [Text("500"), Text("75%"), Text("Points earned")],
+                            ],
+                          ),
                         )),
+                        Expanded(
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    "500",
+                                    style: TextStyle(
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  Text(
+                                    "75%",
+                                    style: TextStyle(
+                                      fontSize: 14,
+                                      color: Colors.grey,
+                                    ),
+                                  ),
+                                  Text(
+                                    "Points earned",
+                                    style: TextStyle(fontSize: 14, color: Colors.teal),
+                                  )
+                                ],
+                              ),
+                            ))
                       ],
                     )),
                     Expanded(child: Placeholder()),
