@@ -8,12 +8,13 @@ class IrysProfilePage extends StatefulWidget {
 
 class _IrysProfilePageState extends State<IrysProfilePage> {
   int _tabIndex = 0;
-  PageController pageController = PageController(initialPage: _tabIndex);
+  late PageController pageController;
 
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
+     pageController = PageController(initialPage: _tabIndex);
   }
 
   @override
