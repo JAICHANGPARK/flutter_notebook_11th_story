@@ -25,7 +25,18 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                 padding: const EdgeInsets.only(left: 24),
                 child: Column(
                   children: [
-                    Expanded(child: Placeholder()),
+                    Expanded(child: Row(
+                      children: [
+                        Container(
+                          height: 64,
+                          width: 64,
+                          decoration: BoxDecoration(
+                            color: Colors.grey,
+                            borderRadius: BorderRadius.circular(16)
+                          ),
+                        )
+                      ],
+                    )),
                     Expanded(child: Placeholder()),
                     Expanded(child: Placeholder()),
                   ],
