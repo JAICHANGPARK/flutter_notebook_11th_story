@@ -36,7 +36,7 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                           decoration: BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(16)),
                         ),
                         Padding(
-                          padding: const EdgeInsets.only(left: 16,bottom: 16),
+                          padding: const EdgeInsets.only(left: 16, bottom: 16),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisAlignment: MainAxisAlignment.center,
@@ -48,7 +48,9 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
-                              SizedBox(height: 16,),
+                              SizedBox(
+                                height: 16,
+                              ),
                               Text(
                                 "Software Engineer",
                                 style: TextStyle(
@@ -60,22 +62,27 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                           ),
                         ),
                         Spacer(),
-                        IconButton(onPressed: () {}, icon: Icon(Icons.edit),
-                        color: Colors.grey,),
+                        IconButton(
+                          onPressed: () {},
+                          icon: Icon(Icons.edit),
+                          color: Colors.grey,
+                        ),
                       ],
                     )),
-                    Expanded(child: Row(
+                    Expanded(
+                        child: Row(
                       children: [
                         Expanded(child: Placeholder()),
-                        Expanded(child: Column(
+                        Expanded(
+                            child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text("500"),
-                            Text("75%"),
-                            Text("Points earned")
-                          ],
+                          children: [Text("500"), Text("75%"), Text("Points earned")],
                         )),
-                        Expanded(child: Placeholder()),
+                        Expanded(
+                            child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [Text("500"), Text("75%"), Text("Points earned")],
+                        )),
                       ],
                     )),
                     Expanded(child: Placeholder()),
