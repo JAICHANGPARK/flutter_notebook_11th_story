@@ -268,7 +268,29 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                                         )),
                                     Expanded(
                                         flex: 7,
-                                        child: Placeholder()),
+                                        child: Padding(
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              Text("Transportation", style: TextStyle(
+                                                fontSize: 16,
+                                                fontWeight: FontWeight.bold
+                                              ),),
+                                              Text("3517 W, Gray St. Utica,"),
+                                              Text("Pennsylvania 57867"),
+                                              Row(
+                                                children: [
+                                                  Text("2 July 2020"),
+                                                  Text("+130 pts"),
+                                                  Text("+1 badge"),
+
+                                                ],
+                                              )
+
+                                            ],
+                                          ),
+                                        )),
                                   ],
                                 ),
                               )
