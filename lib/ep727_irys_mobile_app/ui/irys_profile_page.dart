@@ -107,22 +107,22 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(
-                                    "500",
+                                    "10",
                                     style: TextStyle(
                                       fontSize: 18,
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
                                   Text(
-                                    "75%",
+                                    "35%",
                                     style: TextStyle(
                                       fontSize: 14,
                                       color: Colors.grey,
                                     ),
                                   ),
                                   Text(
-                                    "Points earned",
-                                    style: TextStyle(fontSize: 14, color: Colors.teal),
+                                    "Badge Collected",
+                                    style: TextStyle(fontSize: 14, color: Colors.purpleAccent),
                                   )
                                 ],
                               ),
