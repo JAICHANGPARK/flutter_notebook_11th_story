@@ -247,7 +247,14 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                           flex: 8,
                           child: ListView(
                             children: [
-                              
+                              Container(
+                                margin: EdgeInsets.symmetric(horizontal: 16),
+                                height: 140,
+                                decoration: BoxDecoration(
+                                  border: Border.all(color: Colors.grey),
+                                  borderRadius: BorderRadius.circular(8)
+                                ),
+                              )
                             ],
                           ))
                     ],
