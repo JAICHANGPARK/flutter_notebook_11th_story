@@ -34,6 +34,12 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                             color: Colors.grey,
                             borderRadius: BorderRadius.circular(16)
                           ),
+                        ),
+                        Column(
+                          children: [
+                            Text('Dreamwalker'),
+                            Text("Software Engineer")
+                          ],
                         )
                       ],
                     )),
