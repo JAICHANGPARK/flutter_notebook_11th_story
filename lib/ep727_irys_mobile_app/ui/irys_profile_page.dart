@@ -251,20 +251,20 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                             children: [
                               Container(
                                 margin: EdgeInsets.symmetric(horizontal: 16),
-                                height: 140,
+                                height: 120,
                                 decoration: BoxDecoration(
                                     border: Border.all(color: Colors.grey), borderRadius: BorderRadius.circular(8)),
                                 child: Row(
                                   children: [
                                     Expanded(
-                                        flex: 3,
+                                        flex: 2,
                                         child: Container(
                                           margin: EdgeInsets.all(7),
                                           decoration:
                                               BoxDecoration(color: Colors.red, borderRadius: BorderRadius.circular(16)),
                                         )),
                                     Expanded(
-                                        flex: 7,
+                                        flex: 6,
                                         child: Padding(
                                           padding: const EdgeInsets.all(8.0),
                                           child: Column(
@@ -284,7 +284,7 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                                                   Text("2 July 2020"),
                                                   Spacer(),
                                                   Text("+130 pts"),
-                                                  SizedBox(width: 4),
+                                                  SizedBox(width: 8),
                                                   Text("+1 badge"),
                                                 ],
                                               )
