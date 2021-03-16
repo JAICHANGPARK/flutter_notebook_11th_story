@@ -26,15 +26,13 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                 padding: const EdgeInsets.only(left: 24),
                 child: Column(
                   children: [
-                    Expanded(child: Row(
+                    Expanded(
+                        child: Row(
                       children: [
                         Container(
                           height: 64,
                           width: 64,
-                          decoration: BoxDecoration(
-                            color: Colors.grey,
-                            borderRadius: BorderRadius.circular(16)
-                          ),
+                          decoration: BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(16)),
                         ),
                         Padding(
                           padding: const EdgeInsets.only(left: 16),
@@ -42,11 +40,20 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
-                              Text('Dreamwalker', style: TextStyle(
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold,
-                              ),),
-                              Text("Software Engineer")
+                              Text(
+                                'Dreamwalker',
+                                style: TextStyle(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Text(
+                                "Software Engineer",
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  color: Colors.grey,
+                                ),
+                              )
                             ],
                           ),
                         )
