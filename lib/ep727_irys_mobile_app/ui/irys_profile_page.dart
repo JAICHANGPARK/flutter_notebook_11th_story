@@ -236,9 +236,11 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                       Expanded(
                           flex:1,
                           child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Icon(Icons.filter_list),
-                              Text("Open Filter")
+                              SizedBox(width: 8,),
+                              Text("Open Filter"),
                             ],
                           )),
                       Expanded(
