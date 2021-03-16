@@ -74,10 +74,32 @@ class _IrysProfilePageState extends State<IrysProfilePage> {
                       children: [
                         Expanded(child: Placeholder()),
                         Expanded(
-                            child: Column(
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [Text("500"), Text("75%"), Text("Points earned")],
-                        )),
+                          children: [
+                              Text(
+                                "500",
+                                style: TextStyle(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Text(
+                                "75%",
+                                style: TextStyle(
+                                  fontSize: 14,
+                                  color: Colors.grey,
+                                ),
+                              ),
+                              Text(
+                                "Points earned",
+                                style: TextStyle(fontSize: 14, color: Colors.teal),
+                              )
+                          ],
+                        ),
+                            )),
                         Expanded(
                             child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
