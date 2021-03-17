@@ -41,13 +41,20 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                     height: 64,
                     decoration: BoxDecoration(color: Colors.white),
                     child: Row(
-                      children: [
-                        
-                      ],
+                      children: [],
                     ),
-
                   ),
                 )),
+            Positioned(
+              left: 0,
+                bottom: 72,
+                right: 0,
+                top: 0,
+                child: Column(
+              children: [
+
+              ],
+            ))
           ],
         ),
       ),
