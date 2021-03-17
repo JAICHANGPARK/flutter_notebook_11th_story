@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class RealEstateHomePage extends StatefulWidget {
-  RealEstateHomePage({Key key}) : super(key: key);
+  RealEstateHomePage({Key? key}) : super(key: key);
 
   @override
   _RealEstateHomePageState createState() => _RealEstateHomePageState();
