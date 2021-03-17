@@ -58,8 +58,16 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                         SizedBox(
                           width: 100,
                         ),
-                        IconButton(onPressed: () {}, icon: Icon(Icons.chat)),
-                        IconButton(onPressed: () {}, icon: Icon(Icons.notifications)),
+                        IconButton(onPressed: () {
+                          setState(() {
+                            _bottomTabIndex = 2;
+                          });
+                        }, icon: Icon(Icons.chat)),
+                        IconButton(onPressed: () {
+                          setState(() {
+                            _bottomTabIndex = 3;
+                          });
+                        }, icon: Icon(Icons.notifications)),
                       ],
                     ),
                   ),
