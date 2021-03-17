@@ -37,12 +37,16 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
               bottom: 0,
                 left: 0,
                 right: 0,
-                child: Container(
+                child: PhysicalModel(
+                  color: Colors.black.withOpacity(0.4),
+                  elevation: 2,
+                  child: Container(
               height: 64,
               decoration: BoxDecoration(
-                color: Colors.white
+                  color: Colors.white
               ),
-            )),
+            ),
+                )),
           ],
         ),
       ),
