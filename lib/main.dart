@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'ep727_irys_mobile_app/irys_mobile_app.dart';
+import 'ep731_real_estate_app/real_estate_app.dart';
 
 void main() {
-  runApp(IrysMobileApp());
+  runApp(RealEstateApp());
 }
