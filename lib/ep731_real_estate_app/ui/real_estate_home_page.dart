@@ -14,7 +14,12 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
       body: SafeArea(
         child: Stack(
           children: [
-            
+            Positioned(child: Container(
+              height: 64,
+              decoration: BoxDecoration(
+                color: Colors.white
+              ),
+            )),
           ],
         ),
       ),
