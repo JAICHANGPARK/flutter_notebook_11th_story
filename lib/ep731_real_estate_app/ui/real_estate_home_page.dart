@@ -46,20 +46,22 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                   ),
                 )),
             Positioned(
-              left: 0,
+                left: 0,
                 bottom: 92,
                 right: 0,
                 top: 0,
                 child: Column(
-              children: [
-                  Expanded(child: Placeholder()),
-                Expanded(child: Placeholder()),
-                Expanded(
-                    flex: 6,
-                    child: Placeholder()),
-                Expanded(flex: 5,child: Placeholder()),
-              ],
-            ))
+                  children: [
+                    Expanded(child: Placeholder()),
+                    Expanded(child: Placeholder()),
+                    Expanded(flex: 6, child: Placeholder()),
+                    Expanded(flex: 5, child: Placeholder()),
+                  ],
+                )),
+            Positioned(child: FloatingActionButton(onPressed: () {  },),
+            left: 0,
+            right: 0,
+            bottom: 32,)
           ],
         ),
       ),
