@@ -19,6 +19,8 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                 gradient: LinearGradient(
                   colors: [
                     Colors.white,
+                    Colors.grey[50]!,
+                    Colors.grey[100]!,
                     Colors.grey[200]!,
                     Colors.grey[300]!,
                   ],
