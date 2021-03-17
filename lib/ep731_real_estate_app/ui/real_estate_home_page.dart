@@ -8,6 +8,8 @@ class RealEstateHomePage extends StatefulWidget {
 }
 
 class _RealEstateHomePageState extends State<RealEstateHomePage> {
+  int _bottomTabIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -43,11 +45,21 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
-                        IconButton(onPressed: (){}, icon: Icon(Icons.home)),
-                        IconButton(onPressed: (){}, icon: Icon(Icons.account_balance_wallet)),
-                        SizedBox(width: 100,),
-                        IconButton(onPressed: (){}, icon: Icon(Icons.chat)),
-                        IconButton(onPressed: (){}, icon: Icon(Icons.notifications)),
+                        IconButton(onPressed: () {
+                          setState(() {
+                            _bottomTabIndex = 0;
+                          });
+                        }, icon: Icon(Icons.home)),
+                        IconButton(onPressed: () {
+                          setState(() {
+                            _bottomTabIndex = 1;
+                          });
+                        }, icon: Icon(Icons.account_balance_wallet)),
+                        SizedBox(
+                          width: 100,
+                        ),
+                        IconButton(onPressed: () {}, icon: Icon(Icons.chat)),
+                        IconButton(onPressed: () {}, icon: Icon(Icons.notifications)),
                       ],
                     ),
                   ),
@@ -65,10 +77,14 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                     Expanded(flex: 5, child: Placeholder()),
                   ],
                 )),
-            Positioned(child: FloatingActionButton(onPressed: () {  },),
-            left: 0,
-            right: 0,
-            bottom: 32,)
+            Positioned(
+              child: FloatingActionButton(
+                onPressed: () {},
+              ),
+              left: 0,
+              right: 0,
+              bottom: 32,
+            )
           ],
         ),
       ),
