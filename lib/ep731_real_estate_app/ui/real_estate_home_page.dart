@@ -19,8 +19,8 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                 gradient: LinearGradient(
                   colors: [
                     Colors.white,
+                    Colors.grey[200]!,
                     Colors.grey[300]!,
-                    Colors.grey,
                   ],
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter
@@ -31,7 +31,11 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
             bottom: 0,
             top: 0,
             right: 0,),
-            Positioned(child: Container(
+            Positioned(
+              bottom: 0,
+                left: 0,
+                right: 0,
+                child: Container(
               height: 64,
               decoration: BoxDecoration(
                 color: Colors.white
