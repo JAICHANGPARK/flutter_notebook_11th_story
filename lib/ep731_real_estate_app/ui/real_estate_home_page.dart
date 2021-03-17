@@ -41,7 +41,14 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                     height: 64,
                     decoration: BoxDecoration(color: Colors.white),
                     child: Row(
-                      children: [],
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        IconButton(onPressed: (){}, icon: Icon(Icons.home)),
+                        IconButton(onPressed: (){}, icon: Icon(Icons.wal)),
+                        SizedBox(width: 120,),
+                        IconButton(onPressed: (){}, icon: Icon(Icons.home)),
+                        IconButton(onPressed: (){}, icon: Icon(Icons.home)),
+                      ],
                     ),
                   ),
                 )),
