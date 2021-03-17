@@ -20,8 +20,10 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                   colors: [
                     Colors.white,
                     Colors.grey[300]!,
+                    Colors.grey,
                   ],
-                  begin: Alignment.topCenter
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter
                 )
               ),
             ),
