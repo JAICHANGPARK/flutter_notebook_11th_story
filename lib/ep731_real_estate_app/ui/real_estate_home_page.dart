@@ -79,7 +79,11 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                 top: 0,
                 child: Column(
                   children: [
-                    Expanded(child: Placeholder()),
+                    Expanded(child: Row(
+                      children: [
+
+                      ],
+                    )),
                     Expanded(child: Placeholder()),
                     Expanded(flex: 6, child: Placeholder()),
                     Expanded(flex: 5, child: Placeholder()),
