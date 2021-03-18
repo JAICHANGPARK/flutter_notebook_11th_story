@@ -21,12 +21,12 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
               child: Container(
                 decoration: BoxDecoration(
                     gradient: LinearGradient(colors: [
-                      Colors.white,
-                      Colors.grey[50]!,
-                      Colors.grey[100]!,
-                      Colors.grey[200]!,
-                      Colors.grey[300]!,
-                    ], begin: Alignment.topCenter, end: Alignment.bottomCenter)),
+                  Colors.white,
+                  Colors.grey[50]!,
+                  Colors.grey[100]!,
+                  Colors.grey[200]!,
+                  Colors.grey[300]!,
+                ], begin: Alignment.topCenter, end: Alignment.bottomCenter)),
               ),
               left: 0,
               bottom: 0,
@@ -46,29 +46,37 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
-                        IconButton(onPressed: () {
-                          setState(() {
-                            _bottomTabIndex = 0;
-                          });
-                        }, icon: Icon(Icons.home)),
-                        IconButton(onPressed: () {
-                          setState(() {
-                            _bottomTabIndex = 1;
-                          });
-                        }, icon: Icon(Icons.account_balance_wallet)),
+                        IconButton(
+                            onPressed: () {
+                              setState(() {
+                                _bottomTabIndex = 0;
+                              });
+                            },
+                            icon: Icon(Icons.home)),
+                        IconButton(
+                            onPressed: () {
+                              setState(() {
+                                _bottomTabIndex = 1;
+                              });
+                            },
+                            icon: Icon(Icons.account_balance_wallet)),
                         SizedBox(
                           width: 100,
                         ),
-                        IconButton(onPressed: () {
-                          setState(() {
-                            _bottomTabIndex = 2;
-                          });
-                        }, icon: Icon(Icons.chat)),
-                        IconButton(onPressed: () {
-                          setState(() {
-                            _bottomTabIndex = 3;
-                          });
-                        }, icon: Icon(Icons.notifications)),
+                        IconButton(
+                            onPressed: () {
+                              setState(() {
+                                _bottomTabIndex = 2;
+                              });
+                            },
+                            icon: Icon(Icons.chat)),
+                        IconButton(
+                            onPressed: () {
+                              setState(() {
+                                _bottomTabIndex = 3;
+                              });
+                            },
+                            icon: Icon(Icons.notifications)),
                       ],
                     ),
                   ),
@@ -80,18 +88,21 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                 top: 0,
                 child: Column(
                   children: [
-                    Expanded(child: Padding(
+                    Expanded(
+                        child: Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 8),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          IconButton(onPressed: (){}, icon: Icon(Icons.apps)),
-
+                          IconButton(onPressed: () {}, icon: Icon(Icons.apps)),
                           Badge(
-                            child: Icon(Icons.notifications_none,),
-                            badgeContent: Text("2", style: TextStyle(
-                              color: Colors.white
-                            ),),
+                            child: Icon(
+                              Icons.notifications_none,
+                            ),
+                            badgeContent: Text(
+                              "2",
+                              style: TextStyle(color: Colors.white),
+                            ),
                           ),
                         ],
                       ),
