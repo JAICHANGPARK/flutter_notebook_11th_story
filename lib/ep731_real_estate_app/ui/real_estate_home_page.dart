@@ -157,7 +157,12 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                         Text("Featured Property", style: TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.bold
-                        ),)
+                        ),),
+                        Expanded(child: Container(
+                          decoration: BoxDecoration(
+                            color: Colors.red
+                          ),
+                        ))
                       ],
                     )),
                   ],
