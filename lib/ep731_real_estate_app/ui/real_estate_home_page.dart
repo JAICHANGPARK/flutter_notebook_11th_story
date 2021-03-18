@@ -112,13 +112,15 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                       child: Row(
                         children: [
                           Expanded(
-                            flex: 8,
+                            flex: 7,
                               child: Placeholder()),
                           Expanded(
                               flex: 1,
                               child: Container(
                                 decoration: BoxDecoration(
-                                  
+                                  borderRadius: BorderRadius.circular(12),
+                                  color: Colors.brown,
+
                                 ),
                               )),
                         ],
