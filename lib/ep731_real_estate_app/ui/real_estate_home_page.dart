@@ -122,6 +122,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                   color: Colors.brown,
 
                                 ),
+                                child: Center(child: Icon(Icons.tune)),
                               )),
                         ],
                       ),
