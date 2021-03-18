@@ -10,6 +10,7 @@ class RealEstateHomePage extends StatefulWidget {
 
 class _RealEstateHomePageState extends State<RealEstateHomePage> {
   int _bottomTabIndex = 0;
+  TextEditingController _textEditingController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -112,7 +113,11 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                       padding: const EdgeInsets.symmetric(horizontal: 8),
                       child: Row(
                         children: [
-                          Expanded(flex: 7, child: Placeholder()),
+                          Expanded(flex: 7, child: Container(
+                            decoration: BoxDecoration(
+                              color: Colors.blueGrey[100]!
+                            ),
+                          )),
                           Expanded(
                               flex: 1,
                               child: Container(
