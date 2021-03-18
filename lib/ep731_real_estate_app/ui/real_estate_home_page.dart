@@ -80,15 +80,19 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                 top: 0,
                 child: Column(
                   children: [
-                    Expanded(child: Row(
-                      children: [
-                        IconButton(onPressed: (){}, icon: Icon(Icons.apps)),
+                    Expanded(child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          IconButton(onPressed: (){}, icon: Icon(Icons.apps)),
 
-                        Badge(
-                          child: Icon(Icons.notifications_none,),
-                          padding: EdgeInsets.all(8),
-                        ),
-                      ],
+                          Badge(
+                            child: Icon(Icons.notifications_none,),
+                            padding: EdgeInsets.all(4),
+                          ),
+                        ],
+                      ),
                     )),
                     Expanded(child: Placeholder()),
                     Expanded(flex: 6, child: Placeholder()),
