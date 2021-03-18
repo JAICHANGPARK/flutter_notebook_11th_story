@@ -118,7 +118,13 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                             child: Container(
                               decoration: BoxDecoration(
                                 color: Colors.grey[200]!,
-                                borderRadius: BorderRadius.circular(7)
+                                borderRadius: BorderRadius.circular(7),
+                              ),
+                              child: TextField(
+                                controller: _textEditingController,
+                                decoration: InputDecoration(
+                                  border: InputBorder.none
+                                ),
                               ),
                             ),
                           )),
