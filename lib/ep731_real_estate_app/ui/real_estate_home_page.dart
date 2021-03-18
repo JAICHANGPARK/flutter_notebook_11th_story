@@ -1,3 +1,4 @@
+import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
 
 class RealEstateHomePage extends StatefulWidget {
@@ -81,7 +82,12 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                   children: [
                     Expanded(child: Row(
                       children: [
+                        IconButton(onPressed: (){}, icon: Icon(Icons.apps)),
 
+                        Badge(
+                          child: Icon(Icons.notifications_none,),
+                          padding: EdgeInsets.all(8),
+                        ),
                       ],
                     )),
                     Expanded(child: Placeholder()),
