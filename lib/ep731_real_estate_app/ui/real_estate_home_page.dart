@@ -151,19 +151,25 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                       ),
                     )),
                     Expanded(flex: 6, child: Placeholder()),
-                    Expanded(flex: 5, child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text("Featured Property", style: TextStyle(
-                          fontSize: 18,
-                          fontWeight: FontWeight.bold
-                        ),),
-                        Expanded(child: Container(
-                          decoration: BoxDecoration(
-                            color: Colors.red
-                          ),
-                        ))
-                      ],
+                    Expanded(flex: 5, child: Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text("Featured Property", style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold
+                          ),),
+                          Expanded(child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.red
+                              ),
+                            ),
+                          ))
+                        ],
+                      ),
                     )),
                   ],
                 )),
