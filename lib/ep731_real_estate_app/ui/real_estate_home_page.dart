@@ -81,7 +81,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                 child: Column(
                   children: [
                     Expanded(child: Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                      padding: const EdgeInsets.symmetric(horizontal: 8),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
@@ -89,7 +89,9 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
 
                           Badge(
                             child: Icon(Icons.notifications_none,),
-                            padding: EdgeInsets.all(4),
+                            badgeContent: Text("2", style: TextStyle(
+                              color: Colors.white
+                            ),),
                           ),
                         ],
                       ),
