@@ -20,12 +20,12 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
               child: Container(
                 decoration: BoxDecoration(
                     gradient: LinearGradient(colors: [
-                  Colors.white,
-                  Colors.grey[50]!,
-                  Colors.grey[100]!,
-                  Colors.grey[200]!,
-                  Colors.grey[300]!,
-                ], begin: Alignment.topCenter, end: Alignment.bottomCenter)),
+                      Colors.white,
+                      Colors.grey[50]!,
+                      Colors.grey[100]!,
+                      Colors.grey[200]!,
+                      Colors.grey[300]!,
+                    ], begin: Alignment.topCenter, end: Alignment.bottomCenter)),
               ),
               left: 0,
               bottom: 0,
