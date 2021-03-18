@@ -114,7 +114,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                       child: Row(
                         children: [
                           Expanded(flex: 7, child: Padding(
-                            padding: const EdgeInsets.only(right: 8, ),
+                            padding: const EdgeInsets.only(right: 8, left: 8 ),
                             child: Container(
                               decoration: BoxDecoration(
                                 color: Colors.grey[200]!,
@@ -126,6 +126,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                 decoration: InputDecoration(
                                   border: InputBorder.none,
                                   hintText: "Search",
+                                  suffixIcon: Icon(Icons.search),
 
 
                                 ),
