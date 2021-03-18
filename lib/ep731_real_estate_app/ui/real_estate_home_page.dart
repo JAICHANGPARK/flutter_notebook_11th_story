@@ -107,15 +107,18 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                         ],
                       ),
                     )),
-                    Expanded(child: Row(
-                      children: [
-                        Expanded(
-                          flex: 8,
-                            child: Placeholder()),
-                        Expanded(
-                            flex: 2,
-                            child: Placeholder()),
-                      ],
+                    Expanded(child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 8),
+                      child: Row(
+                        children: [
+                          Expanded(
+                            flex: 8,
+                              child: Placeholder()),
+                          Expanded(
+                              flex: 2,
+                              child: Placeholder()),
+                        ],
+                      ),
                     )),
                     Expanded(flex: 6, child: Placeholder()),
                     Expanded(flex: 5, child: Placeholder()),
