@@ -161,7 +161,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                             fontWeight: FontWeight.bold
                           ),),
                           Expanded(child: Padding(
-                            padding: const EdgeInsets.all(8.0),
+                            padding: const EdgeInsets.symmetric(vertical: 12, ),
                             child: Container(
                               decoration: BoxDecoration(
                                 color: Colors.red
