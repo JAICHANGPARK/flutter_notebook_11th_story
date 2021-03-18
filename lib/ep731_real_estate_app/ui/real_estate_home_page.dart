@@ -115,8 +115,12 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                             flex: 8,
                               child: Placeholder()),
                           Expanded(
-                              flex: 2,
-                              child: Placeholder()),
+                              flex: 1,
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  
+                                ),
+                              )),
                         ],
                       ),
                     )),
