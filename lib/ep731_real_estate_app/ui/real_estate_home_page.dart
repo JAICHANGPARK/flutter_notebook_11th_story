@@ -152,6 +152,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                     )),
                     Expanded(flex: 6, child: Placeholder()),
                     Expanded(flex: 5, child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text("Featured Property", style: TextStyle(
                           fontSize: 18,
