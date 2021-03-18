@@ -162,9 +162,14 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                           ),),
                           Expanded(child: Padding(
                             padding: const EdgeInsets.symmetric(vertical: 12, ),
-                            child: Container(
-                              decoration: BoxDecoration(
-                                color: Colors.red
+                            child: PhysicalModel(
+                              color: Colors.grey[100]!,
+                              borderRadius: BorderRadius.circular(8),
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: BorderRadius.circular(8)
+                                ),
                               ),
                             ),
                           ))
