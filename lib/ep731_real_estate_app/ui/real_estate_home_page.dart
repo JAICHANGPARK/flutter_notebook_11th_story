@@ -113,9 +113,13 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                       padding: const EdgeInsets.symmetric(horizontal: 8),
                       child: Row(
                         children: [
-                          Expanded(flex: 7, child: Container(
-                            decoration: BoxDecoration(
-                              color: Colors.blueGrey[100]!
+                          Expanded(flex: 7, child: Padding(
+                            padding: const EdgeInsets.only(right: 8, ),
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.grey[200]!,
+                                borderRadius: BorderRadius.circular(7)
+                              ),
                             ),
                           )),
                           Expanded(
