@@ -103,7 +103,7 @@ packages:
       name: flutter_inner_drawer
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.5.7+2"
+    version: "1.0.0+1"
   flutter_page_indicator:
     dependency: transitive
     description:
@@ -309,7 +309,7 @@ packages:
       name: win32
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.0.0"
+    version: "2.0.4"
   xdg_directories:
     dependency: transitive
     description:
