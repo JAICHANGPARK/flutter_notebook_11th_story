@@ -107,22 +107,24 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                         ],
                       ),
                     )),
-                    Expanded(child: Padding(
+                    Expanded(
+                        child: Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 8),
                       child: Row(
                         children: [
-                          Expanded(
-                            flex: 7,
-                              child: Placeholder()),
+                          Expanded(flex: 7, child: Placeholder()),
                           Expanded(
                               flex: 1,
                               child: Container(
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(12),
                                   color: Colors.brown,
-
                                 ),
-                                child: Center(child: Icon(Icons.tune)),
+                                child: Center(
+                                    child: Icon(
+                                  Icons.tune,
+                                  color: Colors.deepOrange,
+                                )),
                               )),
                         ],
                       ),
