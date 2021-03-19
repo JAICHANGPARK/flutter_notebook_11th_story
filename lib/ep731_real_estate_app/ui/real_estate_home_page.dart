@@ -192,6 +192,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                       padding: const EdgeInsets.all(8.0),
                                       child: Column(
                                         crossAxisAlignment: CrossAxisAlignment.start,
+                                        mainAxisAlignment: MainAxisAlignment.spaceAround,
                                         children: [
                                           Row(
                                             children: [
@@ -217,6 +218,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                                       borderRadius: BorderRadius.circular(16),
                                                     ),
                                                     child: Row(
+
                                                       children: [
                                                         Icon(Icons.supervisor_account, color: Colors.red,),
                                                         Text("Family", style: TextStyle(
@@ -239,6 +241,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                             color: Colors.orangeAccent
                                           ),),
                                           Row(
+                                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                             children: [
                                             Text("2 Bathroom"),
                                               Text("2 Bedroom")
