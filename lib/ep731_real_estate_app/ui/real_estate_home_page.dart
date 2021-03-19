@@ -175,8 +175,8 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                 ),
                                 child: Row(
                                   children: [
-                                    Expanded(child: Placeholder()),
-                                    Expanded(child: Placeholder()),
+                                    Expanded(child: Placeholder(), flex: 3,),
+                                    Expanded(child: Placeholder(), flex: 7,),
                                   ],
                                 ),
                               ),
