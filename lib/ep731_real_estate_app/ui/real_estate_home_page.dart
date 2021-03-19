@@ -173,9 +173,14 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                   color: Colors.white,
                                   borderRadius: BorderRadius.circular(8)
                                 ),
+                                padding: EdgeInsets.all(8),
                                 child: Row(
                                   children: [
-                                    Expanded(child: Placeholder(), flex: 3,),
+                                    Expanded(child: Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.red
+                                      ),
+                                    ), flex: 4,),
                                     Expanded(child: Placeholder(), flex: 7,),
                                   ],
                                 ),
