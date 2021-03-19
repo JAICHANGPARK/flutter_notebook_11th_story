@@ -188,7 +188,34 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                         borderRadius: BorderRadius.circular(8)
                                       ),
                                     ), flex: 4,),
-                                    Expanded(child: Placeholder(), flex: 7,),
+                                    Expanded(child: Column(
+                                      children: [
+                                        Row(
+                                          children: [
+                                            Row(
+                                              children: [
+                                                Container(
+                                                  child: Row(
+                                                    children: [
+                                                      Icon(Icons.network_check),
+                                                      Text("4 Network"),
+                                                    ],
+                                                  ),
+                                                ),
+                                                Container(
+                                                  child: Row(
+                                                    children: [
+                                                      Icon(Icons.supervisor_account),
+                                                      Text("Family"),
+                                                    ],
+                                                  ),
+                                                )
+                                              ],
+                                            )
+                                          ],
+                                        )
+                                      ],
+                                    ), flex: 7,),
                                   ],
                                 ),
                               ),
