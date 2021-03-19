@@ -230,11 +230,13 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
 
                                             ],
                                           ),
-                                          Text("425 Vine St #301, Seattle, WA"),
+                                          Text("425 Vine St #301, Seattle, WA", style: TextStyle(
+                                            fontSize: 16
+                                          ),),
                                           Text("\$ 269,000", style: TextStyle(
                                             fontSize: 18,
                                             fontWeight: FontWeight.bold,
-                                            color: Colors.yellow
+                                            color: Colors.orangeAccent
                                           ),),
                                           Row(
                                             children: [
