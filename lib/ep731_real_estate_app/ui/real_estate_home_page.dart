@@ -209,7 +209,9 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                                     child: Row(
                                                       children: [
                                                         Icon(Icons.network_check),
-                                                        Text("4 Network"),
+                                                        Text("4 Network", style: TextStyle(
+                                                          fontSize: 12
+                                                        ),),
                                                       ],
                                                     ),
                                                   ),
