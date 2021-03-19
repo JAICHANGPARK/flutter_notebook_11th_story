@@ -195,6 +195,11 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                             Row(
                                               children: [
                                                 Container(
+                                                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                                                  decoration: BoxDecoration(
+                                                    color: Colors.grey[300],
+                                                    borderRadius: BorderRadius.circular(16),
+                                                  ),
                                                   child: Row(
                                                     children: [
                                                       Icon(Icons.network_check),
@@ -203,15 +208,30 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                                   ),
                                                 ),
                                                 Container(
+                                                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                                                  decoration: BoxDecoration(
+                                                    color: Colors.red[300],
+                                                    borderRadius: BorderRadius.circular(16),
+                                                  ),
                                                   child: Row(
                                                     children: [
-                                                      Icon(Icons.supervisor_account),
-                                                      Text("Family"),
+                                                      Icon(Icons.supervisor_account, color: Colors.red,),
+                                                      Text("Family", style: TextStyle(
+                                                        color: Colors.red,
+                                                      ),),
                                                     ],
                                                   ),
                                                 )
                                               ],
-                                            )
+                                            ),
+
+                                          ],
+                                        ),
+                                        Text("425 Vine St #301, Seattle, WA"),
+                                        Text("\$ 269,000"),
+                                        Row(
+                                          children: [
+                                            
                                           ],
                                         )
                                       ],
