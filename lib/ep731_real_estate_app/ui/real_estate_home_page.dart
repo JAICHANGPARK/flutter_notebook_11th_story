@@ -184,7 +184,8 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                             "https://cdn.pixabay.com/photo/2016/06/24/10/47/house-1477041_960_720.jpg"
                                           ),
                                           fit: BoxFit.cover
-                                        )
+                                        ),
+                                        borderRadius: BorderRadius.circular(8)
                                       ),
                                     ), flex: 4,),
                                     Expanded(child: Placeholder(), flex: 7,),
