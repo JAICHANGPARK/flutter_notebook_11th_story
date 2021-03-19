@@ -188,55 +188,59 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                         borderRadius: BorderRadius.circular(8)
                                       ),
                                     ), flex: 4,),
-                                    Expanded(child: Column(
-                                      children: [
-                                        Row(
-                                          children: [
-                                            Row(
-                                              children: [
-                                                Container(
-                                                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
-                                                  decoration: BoxDecoration(
-                                                    color: Colors.grey[300],
-                                                    borderRadius: BorderRadius.circular(16),
+                                    Expanded(child: Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          Row(
+                                            children: [
+                                              Row(
+                                                children: [
+                                                  Container(
+                                                    padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                                                    decoration: BoxDecoration(
+                                                      color: Colors.grey[300],
+                                                      borderRadius: BorderRadius.circular(16),
+                                                    ),
+                                                    child: Row(
+                                                      children: [
+                                                        Icon(Icons.network_check),
+                                                        Text("4 Network"),
+                                                      ],
+                                                    ),
                                                   ),
-                                                  child: Row(
-                                                    children: [
-                                                      Icon(Icons.network_check),
-                                                      Text("4 Network"),
-                                                    ],
-                                                  ),
-                                                ),
-                                                Container(
-                                                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
-                                                  decoration: BoxDecoration(
-                                                    color: Colors.red[300],
-                                                    borderRadius: BorderRadius.circular(16),
-                                                  ),
-                                                  child: Row(
-                                                    children: [
-                                                      Icon(Icons.supervisor_account, color: Colors.red,),
-                                                      Text("Family", style: TextStyle(
-                                                        color: Colors.red,
-                                                      ),),
-                                                    ],
-                                                  ),
-                                                )
-                                              ],
-                                            ),
+                                                  Container(
+                                                    padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                                                    decoration: BoxDecoration(
+                                                      color: Colors.red[300],
+                                                      borderRadius: BorderRadius.circular(16),
+                                                    ),
+                                                    child: Row(
+                                                      children: [
+                                                        Icon(Icons.supervisor_account, color: Colors.red,),
+                                                        Text("Family", style: TextStyle(
+                                                          color: Colors.red,
+                                                        ),),
+                                                      ],
+                                                    ),
+                                                  )
+                                                ],
+                                              ),
 
-                                          ],
-                                        ),
-                                        Text("425 Vine St #301, Seattle, WA"),
-                                        Text("\$ 269,000"),
-                                        Row(
-                                          children: [
-                                          Text("2 Bathroom"),
-                                            Text("2 Bedroom")
-                                          ],
-                                        ),
-                                        Text("1200 Sq. Fit")
-                                      ],
+                                            ],
+                                          ),
+                                          Text("425 Vine St #301, Seattle, WA"),
+                                          Text("\$ 269,000"),
+                                          Row(
+                                            children: [
+                                            Text("2 Bathroom"),
+                                              Text("2 Bedroom")
+                                            ],
+                                          ),
+                                          Text("1200 Sq. Fit")
+                                        ],
+                                      ),
                                     ), flex: 7,),
                                   ],
                                 ),
