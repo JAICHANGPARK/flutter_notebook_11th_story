@@ -215,6 +215,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                                       ],
                                                     ),
                                                   ),
+                                                  SizedBox(width: 8,),
                                                   Container(
                                                     padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
                                                     decoration: BoxDecoration(
@@ -227,6 +228,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                                         Icon(Icons.supervisor_account, color: Colors.red,),
                                                         Text("Family", style: TextStyle(
                                                           color: Colors.red,
+                                                            fontSize: 12
                                                         ),),
                                                       ],
                                                     ),
