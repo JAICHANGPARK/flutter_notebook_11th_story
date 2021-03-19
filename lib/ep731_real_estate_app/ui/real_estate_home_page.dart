@@ -231,9 +231,11 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                         Text("\$ 269,000"),
                                         Row(
                                           children: [
-                                            
+                                          Text("2 Bathroom"),
+                                            Text("2 Bedroom")
                                           ],
-                                        )
+                                        ),
+                                        Text("1200 Sq. Fit")
                                       ],
                                     ), flex: 7,),
                                   ],
