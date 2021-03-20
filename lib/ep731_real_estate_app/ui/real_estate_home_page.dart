@@ -210,7 +210,19 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                       )),
                                       Expanded(child: Column(
                                         children: [
-                                          
+                                          Text("425 Vine St #301, Seattle, WA"),
+                                          Text("\$269,000"),
+                                          Row(
+                                            children: [
+                                              Row(
+                                                children: [
+                                                  Icon(Icons.bathtub_outlined),
+                                                  Text("2 Bathroom")
+                                                ],
+                                              ),
+
+                                            ],
+                                          )
                                         ],
                                       )),
                                     ],
