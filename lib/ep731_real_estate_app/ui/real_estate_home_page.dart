@@ -176,7 +176,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                       Expanded(child: Container(
                                         child: Stack(
                                           children: [
-                                            
+                                            Positioned(child: Container()),
                                           ],
                                         ),
                                       )),
