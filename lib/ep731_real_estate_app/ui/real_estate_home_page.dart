@@ -195,10 +195,12 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                                       Icon(
                                                         Icons.settings_ethernet,
                                                         color: Colors.white,
+                                                        size: 16,
                                                       ),
+                                                      SizedBox(width: 8),
                                                       Text(
                                                         "6 network",
-                                                        style: TextStyle(color: Colors.white),
+                                                        style: TextStyle(color: Colors.white, fontSize: 13),
                                                       )
                                                     ],
                                                   ),
