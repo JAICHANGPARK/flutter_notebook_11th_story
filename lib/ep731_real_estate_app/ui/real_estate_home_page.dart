@@ -214,16 +214,23 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                                         children: [
                                           Text("425 Vine St #301, Seattle, WA"),
-                                          Text("\$269,000"),
-                                          Row(
-                                            children: [
-                                              Row(
-                                                children: [Icon(Icons.bathtub_outlined), Text("2 Bathroom")],
-                                              ),
-                                              Row(
-                                                children: [Icon(Icons.single_bed), Text("2 Bedroom")],
-                                              ),
-                                            ],
+                                          Text("\$269,000",style: TextStyle(
+                                            color: Colors.orange,
+                                            fontSize: 18
+                                          ),),
+                                          Padding(
+                                            padding: const EdgeInsets.only(right: 16),
+                                            child: Row(
+                                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                              children: [
+                                                Row(
+                                                  children: [Icon(Icons.bathtub_outlined), Text("2 Bathroom")],
+                                                ),
+                                                Row(
+                                                  children: [Icon(Icons.single_bed), Text("2 Bedroom")],
+                                                ),
+                                              ],
+                                            ),
                                           ),
                                           Row(
                                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
