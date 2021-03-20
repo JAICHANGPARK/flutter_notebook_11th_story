@@ -169,6 +169,16 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                             itemBuilder: (context, index) {
                               return Card(
                                 elevation: 4,
+                                child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Column(
+                                    children: [
+                                      Expanded(child: Placeholder()),
+                                      Expanded(child: Placeholder()),
+
+                                    ],
+                                  ),
+                                ),
                               );
                             },
                           ),
