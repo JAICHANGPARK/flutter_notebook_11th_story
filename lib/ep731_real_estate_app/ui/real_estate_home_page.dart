@@ -176,7 +176,14 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                       Expanded(child: Container(
                                         child: Stack(
                                           children: [
-                                            Positioned(child: Container()),
+                                            Positioned(child: Container(
+                                              child: Row(
+                                                children: [
+                                                  Icon(Icons.settings_ethernet),
+                                                  Text("6 network")
+                                                ],
+                                              ),
+                                            )),
                                           ],
                                         ),
                                       )),
