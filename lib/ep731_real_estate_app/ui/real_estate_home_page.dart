@@ -236,7 +236,10 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                                   Text("1200 Sq. Fit")
                                                 ],
                                               ),
-                                              CircleAvatar()
+                                              CircleAvatar(
+                                                radius: 12,
+                                                child: Icon(Icons.keyboard_arrow_right),
+                                              )
                                             ],
                                           ),
                                         ],
