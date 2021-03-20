@@ -175,7 +175,6 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                     children: [
                                       Expanded(child: Placeholder()),
                                       Expanded(child: Placeholder()),
-
                                     ],
                                   ),
                                 ),
