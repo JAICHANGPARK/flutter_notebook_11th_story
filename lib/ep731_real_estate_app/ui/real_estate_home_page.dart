@@ -1,5 +1,6 @@
 import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_swiper/flutter_swiper.dart';
 
 class RealEstateHomePage extends StatefulWidget {
   RealEstateHomePage({Key? key}) : super(key: key);
@@ -154,7 +155,8 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                         flex: 6,
                         child: Padding(
                           padding: const EdgeInsets.all(16.0),
-                          child: Placeholder(),
+                          child: Swiper(itemCount: 7,
+                          ),
                         )),
                     Expanded(
                         flex: 5,
