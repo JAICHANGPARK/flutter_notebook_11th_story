@@ -158,6 +158,12 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                           padding: const EdgeInsets.only(top: 8, bottom: 8),
                           child: Swiper(itemCount: 7,
                             viewportFraction: 0.8,
+                            index: swipIndex,
+                            onIndexChanged: (idx){
+                            setState(() {
+                              swipIndex = idx;
+                            });
+                            },
                             itemBuilder: (context, index){
                             return Card();
                             },
