@@ -11,6 +11,7 @@ class RealEstateHomePage extends StatefulWidget {
 
 class _RealEstateHomePageState extends State<RealEstateHomePage> {
   int _bottomTabIndex = 0;
+  int swipIndex = 1;
   TextEditingController _textEditingController = TextEditingController();
 
   @override
