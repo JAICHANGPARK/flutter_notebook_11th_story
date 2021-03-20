@@ -154,8 +154,9 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                     Expanded(
                         flex: 6,
                         child: Padding(
-                          padding: const EdgeInsets.all(16.0),
+                          padding: const EdgeInsets.only(top: 8, bottom: 8),
                           child: Swiper(itemCount: 7,
+                            viewportFraction: 0.8,
                             itemBuilder: (context, index){
                             return Card();
                             },
