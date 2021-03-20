@@ -173,20 +173,28 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                   padding: const EdgeInsets.all(8.0),
                                   child: Column(
                                     children: [
-                                      Expanded(child: Container(
+                                      Expanded(
+                                          child: Container(
                                         child: Stack(
                                           children: [
                                             Positioned(
                                                 bottom: 8,
                                                 left: 8,
                                                 child: Container(
-                                              child: Row(
-                                                children: [
-                                                  Icon(Icons.settings_ethernet),
-                                                  Text("6 network")
-                                                ],
-                                              ),
-                                            )),
+                                                  color: Colors.white.withOpacity(0.4),
+                                                  child: Row(
+                                                    children: [
+                                                      Icon(
+                                                        Icons.settings_ethernet,
+                                                        color: Colors.white,
+                                                      ),
+                                                      Text(
+                                                        "6 network",
+                                                        style: TextStyle(color: Colors.white),
+                                                      )
+                                                    ],
+                                                  ),
+                                                )),
                                           ],
                                         ),
                                       )),
