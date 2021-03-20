@@ -208,7 +208,11 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                           ],
                                         ),
                                       )),
-                                      Expanded(child: Placeholder()),
+                                      Expanded(child: Column(
+                                        children: [
+                                          
+                                        ],
+                                      )),
                                     ],
                                   ),
                                 ),
