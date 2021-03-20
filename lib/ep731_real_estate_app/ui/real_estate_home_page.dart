@@ -208,36 +208,30 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                           ],
                                         ),
                                       )),
-                                      Expanded(child: Column(
+                                      Expanded(
+                                          child: Column(
                                         children: [
                                           Text("425 Vine St #301, Seattle, WA"),
                                           Text("\$269,000"),
                                           Row(
                                             children: [
                                               Row(
-                                                children: [
-                                                  Icon(Icons.bathtub_outlined),
-                                                  Text("2 Bathroom")
-                                                ],
+                                                children: [Icon(Icons.bathtub_outlined), Text("2 Bathroom")],
                                               ),
                                               Row(
-                                                children: [
-                                                  Icon(Icons.single_bed),
-                                                  Text("2 Bedroom")
-                                                ],
+                                                children: [Icon(Icons.single_bed), Text("2 Bedroom")],
                                               ),
                                             ],
                                           ),
                                           Row(
                                             children: [
                                               Row(
-                                                children: [
-                                                  Icon(Icons.filter_tilt_shift),
-                                                  Text("1200 Sq. Fit")
-                                                ],
+                                                children: [Icon(Icons.filter_tilt_shift), Text("1200 Sq. Fit")],
                                               ),
                                               CircleAvatar(
                                                 radius: 12,
+                                                foregroundColor: Colors.deepOrangeAccent,
+                                                backgroundColor: Colors.black,
                                                 child: Icon(Icons.keyboard_arrow_right),
                                               )
                                             ],
