@@ -211,6 +211,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                       Expanded(
                                           child: Column(
                                         crossAxisAlignment: CrossAxisAlignment.start,
+                                        mainAxisAlignment: MainAxisAlignment.spaceAround,
                                         children: [
                                           Text("425 Vine St #301, Seattle, WA"),
                                           Text("\$269,000"),
