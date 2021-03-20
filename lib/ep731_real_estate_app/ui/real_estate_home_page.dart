@@ -175,6 +175,14 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                     children: [
                                       Expanded(
                                           child: Container(
+                                            decoration: BoxDecoration(
+                                              image: DecorationImage(
+                                                image: NetworkImage(
+                                                  "https://cdn.pixabay.com/photo/2014/07/10/17/18/large-home-389271_960_720.jpg",
+                                                ),
+                                                fit: BoxFit.cover,
+                                              )
+                                            ),
                                         child: Stack(
                                           children: [
                                             Positioned(
