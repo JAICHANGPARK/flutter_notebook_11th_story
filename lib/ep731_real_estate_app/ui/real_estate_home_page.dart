@@ -114,26 +114,26 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                       padding: const EdgeInsets.symmetric(horizontal: 8),
                       child: Row(
                         children: [
-                          Expanded(flex: 7, child: Padding(
-                            padding: const EdgeInsets.only(right: 8, left: 8 ),
-                            child: Container(
-                              decoration: BoxDecoration(
-                                color: Colors.grey[200]!,
-                                borderRadius: BorderRadius.circular(7),
-                              ),
-                              padding: EdgeInsets.symmetric(horizontal: 8),
-                              child: TextField(
-                                controller: _textEditingController,
-                                decoration: InputDecoration(
-                                  border: InputBorder.none,
-                                  hintText: "Search",
-                                  suffixIcon: Icon(Icons.search),
-
-
+                          Expanded(
+                              flex: 7,
+                              child: Padding(
+                                padding: const EdgeInsets.only(right: 8, left: 8),
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.grey[200]!,
+                                    borderRadius: BorderRadius.circular(7),
+                                  ),
+                                  padding: EdgeInsets.symmetric(horizontal: 8),
+                                  child: TextField(
+                                    controller: _textEditingController,
+                                    decoration: InputDecoration(
+                                      border: InputBorder.none,
+                                      hintText: "Search",
+                                      suffixIcon: Icon(Icons.search),
+                                    ),
+                                  ),
                                 ),
-                              ),
-                            ),
-                          )),
+                              )),
                           Expanded(
                               flex: 1,
                               child: Container(
@@ -150,121 +150,132 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                         ],
                       ),
                     )),
-                    Expanded(flex: 6, child: Padding(
-                      padding: const EdgeInsets.all(16.0),
-                      child: Placeholder(),
-                    )),
-                    Expanded(flex: 5, child: Padding(
-                      padding: const EdgeInsets.all(16.0),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text("Featured Property", style: TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold
-                          ),),
-                          Expanded(child: Padding(
-                            padding: const EdgeInsets.symmetric(vertical: 12, ),
-                            child: PhysicalModel(
-                              color: Colors.grey[100]!,
-                              borderRadius: BorderRadius.circular(8),
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  borderRadius: BorderRadius.circular(8)
-                                ),
-                                padding: EdgeInsets.all(8),
-                                child: Row(
-                                  children: [
-                                    Expanded(child: Container(
-                                      decoration: BoxDecoration(
-                                        color: Colors.red,
-                                        image: DecorationImage(
-                                          image: NetworkImage(
-                                            "https://cdn.pixabay.com/photo/2016/06/24/10/47/house-1477041_960_720.jpg"
-                                          ),
-                                          fit: BoxFit.cover
-                                        ),
-                                        borderRadius: BorderRadius.circular(8)
-                                      ),
-                                    ), flex: 4,),
-                                    Expanded(child: Padding(
-                                      padding: const EdgeInsets.all(8.0),
-                                      child: Column(
-                                        crossAxisAlignment: CrossAxisAlignment.start,
-                                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                                        children: [
-                                          Row(
-
-                                            children: [
-                                              Row(
-                                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                                children: [
-                                                  Container(
-                                                    padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
-                                                    decoration: BoxDecoration(
-                                                      color: Colors.grey[300],
-                                                      borderRadius: BorderRadius.circular(16),
-                                                    ),
-                                                    child: Row(
-                                                      children: [
-                                                        Icon(Icons.network_check),
-                                                        Text("4 Network", style: TextStyle(
-                                                          fontSize: 12
-                                                        ),),
-                                                      ],
-                                                    ),
-                                                  ),
-                                                  SizedBox(width: 8,),
-                                                  Container(
-                                                    padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
-                                                    decoration: BoxDecoration(
-                                                      color: Colors.red[300],
-                                                      borderRadius: BorderRadius.circular(16),
-                                                    ),
-                                                    child: Row(
-
-                                                      children: [
-                                                        Icon(Icons.supervisor_account, color: Colors.red,),
-                                                        Text("Family", style: TextStyle(
-                                                          color: Colors.red,
-                                                            fontSize: 12
-                                                        ),),
-                                                      ],
-                                                    ),
-                                                  )
-                                                ],
-                                              ),
-
-                                            ],
-                                          ),
-                                          Text("425 Vine St #301, Seattle, WA", style: TextStyle(
-                                            fontSize: 14
-                                          ),),
-                                          Text("\$ 269,000", style: TextStyle(
-                                            fontSize: 18,
-                                            fontWeight: FontWeight.bold,
-                                            color: Colors.orangeAccent
-                                          ),),
-                                          Row(
-                                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                            children: [
-                                            Text("2 Bathroom"),
-                                              Text("2 Bedroom")
-                                            ],
-                                          ),
-                                          Text("1200 Sq. Fit")
-                                        ],
-                                      ),
-                                    ), flex: 7,),
-                                  ],
-                                ),
+                    Expanded(
+                        flex: 6,
+                        child: Padding(
+                          padding: const EdgeInsets.all(16.0),
+                          child: Placeholder(),
+                        )),
+                    Expanded(
+                        flex: 5,
+                        child: Padding(
+                          padding: const EdgeInsets.all(16.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Featured Property",
+                                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                               ),
-                            ),
-                          ))
-                        ],
-                      ),
-                    )),
+                              Expanded(
+                                  child: Padding(
+                                padding: const EdgeInsets.symmetric(
+                                  vertical: 12,
+                                ),
+                                child: PhysicalModel(
+                                  color: Colors.grey[100]!,
+                                  borderRadius: BorderRadius.circular(8),
+                                  child: Container(
+                                    decoration:
+                                        BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
+                                    padding: EdgeInsets.all(8),
+                                    child: Row(
+                                      children: [
+                                        Expanded(
+                                          child: Container(
+                                            decoration: BoxDecoration(
+                                                color: Colors.red,
+                                                image: DecorationImage(
+                                                    image: NetworkImage(
+                                                        "https://cdn.pixabay.com/photo/2016/06/24/10/47/house-1477041_960_720.jpg"),
+                                                    fit: BoxFit.cover),
+                                                borderRadius: BorderRadius.circular(8)),
+                                          ),
+                                          flex: 4,
+                                        ),
+                                        Expanded(
+                                          child: Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: Column(
+                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                              children: [
+                                                Row(
+                                                  children: [
+                                                    Row(
+                                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                      children: [
+                                                        Container(
+                                                          padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                                                          decoration: BoxDecoration(
+                                                            color: Colors.grey[300],
+                                                            borderRadius: BorderRadius.circular(16),
+                                                          ),
+                                                          child: Row(
+                                                            children: [
+                                                              Icon(Icons.network_check),
+                                                              Text(
+                                                                "4 Network",
+                                                                style: TextStyle(fontSize: 12),
+                                                              ),
+                                                            ],
+                                                          ),
+                                                        ),
+                                                        SizedBox(
+                                                          width: 8,
+                                                        ),
+                                                        Container(
+                                                          padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                                                          decoration: BoxDecoration(
+                                                            color: Colors.red[300],
+                                                            borderRadius: BorderRadius.circular(16),
+                                                          ),
+                                                          child: Row(
+                                                            children: [
+                                                              Icon(
+                                                                Icons.supervisor_account,
+                                                                color: Colors.red,
+                                                              ),
+                                                              Text(
+                                                                "Family",
+                                                                style: TextStyle(color: Colors.red, fontSize: 12),
+                                                              ),
+                                                            ],
+                                                          ),
+                                                        )
+                                                      ],
+                                                    ),
+                                                  ],
+                                                ),
+                                                Text(
+                                                  "425 Vine St #301, Seattle, WA",
+                                                  style: TextStyle(fontSize: 14),
+                                                ),
+                                                Text(
+                                                  "\$ 269,000",
+                                                  style: TextStyle(
+                                                      fontSize: 18,
+                                                      fontWeight: FontWeight.bold,
+                                                      color: Colors.orangeAccent),
+                                                ),
+                                                Row(
+                                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                  children: [Text("2 Bathroom"), Text("2 Bedroom")],
+                                                ),
+                                                Text("1200 Sq. Fit")
+                                              ],
+                                            ),
+                                          ),
+                                          flex: 7,
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ))
+                            ],
+                          ),
+                        )),
                   ],
                 )),
             Positioned(
