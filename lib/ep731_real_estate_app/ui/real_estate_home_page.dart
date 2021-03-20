@@ -220,9 +220,25 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                                   Text("2 Bathroom")
                                                 ],
                                               ),
-
+                                              Row(
+                                                children: [
+                                                  Icon(Icons.single_bed),
+                                                  Text("2 Bedroom")
+                                                ],
+                                              ),
                                             ],
-                                          )
+                                          ),
+                                          Row(
+                                            children: [
+                                              Row(
+                                                children: [
+                                                  Icon(Icons.filter_tilt_shift),
+                                                  Text("1200 Sq. Fit")
+                                                ],
+                                              ),
+                                              CircleAvatar()
+                                            ],
+                                          ),
                                         ],
                                       )),
                                     ],
