@@ -173,7 +173,13 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                   padding: const EdgeInsets.all(8.0),
                                   child: Column(
                                     children: [
-                                      Expanded(child: Placeholder()),
+                                      Expanded(child: Container(
+                                        child: Stack(
+                                          children: [
+                                            
+                                          ],
+                                        ),
+                                      )),
                                       Expanded(child: Placeholder()),
                                     ],
                                   ),
