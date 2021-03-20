@@ -210,6 +210,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                       )),
                                       Expanded(
                                           child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
                                           Text("425 Vine St #301, Seattle, WA"),
                                           Text("\$269,000"),
@@ -224,12 +225,13 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                             ],
                                           ),
                                           Row(
+                                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                             children: [
                                               Row(
                                                 children: [Icon(Icons.filter_tilt_shift), Text("1200 Sq. Fit")],
                                               ),
                                               CircleAvatar(
-                                                radius: 12,
+                                                radius: 10,
                                                 foregroundColor: Colors.deepOrangeAccent,
                                                 backgroundColor: Colors.black,
                                                 child: Icon(Icons.keyboard_arrow_right),
