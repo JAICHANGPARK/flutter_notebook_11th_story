@@ -210,30 +210,38 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                       )),
                                       Expanded(
                                           child: Padding(
-                                            padding: const EdgeInsets.symmetric(vertical: 4),
-                                            child: Column(
-                                        crossAxisAlignment: CrossAxisAlignment.start,
-                                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                                        children: [
+                                        padding: const EdgeInsets.symmetric(vertical: 4),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                          children: [
                                             Text("425 Vine St #301, Seattle, WA"),
-                                            Text("\$269,000",style: TextStyle(
-                                              color: Colors.orange,
-                                              fontSize: 18
-                                            ),),
+                                            Text(
+                                              "\$269,000",
+                                              style: TextStyle(color: Colors.orange, fontSize: 18),
+                                            ),
                                             Padding(
                                               padding: const EdgeInsets.only(right: 16),
                                               child: Row(
                                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                 children: [
                                                   Row(
-                                                    children: [Icon(Icons.bathtub_outlined,
-                                                      size: 16,
-                                                    ), Text("2 Bathroom")],
+                                                    children: [
+                                                      Icon(
+                                                        Icons.bathtub_outlined,
+                                                        size: 16,
+                                                      ),
+                                                      Text("2 Bathroom")
+                                                    ],
                                                   ),
                                                   Row(
-                                                    children: [Icon(Icons.single_bed,
-                                                      size: 16,
-                                                    ), Text("2 Bedroom")],
+                                                    children: [
+                                                      Icon(
+                                                        Icons.single_bed,
+                                                        size: 16,
+                                                      ),
+                                                      Text("2 Bedroom")
+                                                    ],
                                                   ),
                                                 ],
                                               ),
@@ -242,22 +250,28 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                               children: [
                                                 Row(
-                                                  children: [Icon(Icons.filter_tilt_shift,
-                                                    size: 16,
-                                                  ), Text("1200 Sq. Fit")],
+                                                  children: [
+                                                    Icon(
+                                                      Icons.filter_tilt_shift,
+                                                      size: 16,
+                                                    ),
+                                                    Text("1200 Sq. Fit")
+                                                  ],
                                                 ),
                                                 CircleAvatar(
                                                   radius: 10,
                                                   foregroundColor: Colors.deepOrangeAccent,
                                                   backgroundColor: Colors.black,
-                                                  child: Icon(Icons.keyboard_arrow_right,
-                                                  size: 13,),
+                                                  child: Icon(
+                                                    Icons.keyboard_arrow_right,
+                                                    size: 13,
+                                                  ),
                                                 )
                                               ],
                                             ),
-                                        ],
-                                      ),
-                                          )),
+                                          ],
+                                        ),
+                                      )),
                                     ],
                                   ),
                                 ),
