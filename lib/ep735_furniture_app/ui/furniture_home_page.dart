@@ -18,17 +18,19 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
               right: 0,
               left: 0,
               child: Container(
-                height: 72,
-                decoration: BoxDecoration(color: Colors.indigo),
-                padding: EdgeInsets.symmetric(horizontal: 24),
-                child: Row(
-                  children: [
-                    IconButton(onPressed: (){}, icon: Icon(Icons.home),color: Colors.white,)
-                  ],
-                )
-              )
-
-          )
+                  height: 72,
+                  decoration: BoxDecoration(color: Colors.indigo),
+                  padding: EdgeInsets.symmetric(horizontal: 36),
+                  child: Row(
+                    children: [
+                      IconButton(
+                        onPressed: () {},
+                        iconSize: 32,
+                        icon: Icon(Icons.home),
+                        color: Colors.white,
+                      )
+                    ],
+                  )))
         ],
       ),
     );
