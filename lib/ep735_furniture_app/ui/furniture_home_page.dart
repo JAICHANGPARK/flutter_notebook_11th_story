@@ -14,27 +14,29 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
       backgroundColor: Colors.blueGrey[50],
       body: Stack(
         children: [
-          Positioned(child: Column(
-            children: [
-              Expanded(child: Placeholder()),
-              Expanded(child: Placeholder()),
-              Expanded(child: Placeholder()),
-              Expanded(child: Placeholder()),
-            ],
+          Positioned(
+            top: 0,
+            right: 0,
+            left: 0,
+            bottom: 96,
+            child: Column(
+              children: [
+                Expanded(child: Placeholder()),
+                Expanded(child: Placeholder()),
+                Expanded(child: Placeholder()),
+                Expanded(child: Placeholder()),
+              ],
+            ),
           ),
-          bottom: 96,),
           Positioned(
               bottom: 0,
               right: 0,
               left: 0,
               child: Container(
                   height: 72,
-                  decoration: BoxDecoration(color: Colors.indigo,
-                  
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(16),
-                    topRight: Radius.circular(16)
-                  )),
+                  decoration: BoxDecoration(
+                      color: Colors.indigo,
+                      borderRadius: BorderRadius.only(topLeft: Radius.circular(16), topRight: Radius.circular(16))),
                   padding: EdgeInsets.symmetric(horizontal: 36),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
