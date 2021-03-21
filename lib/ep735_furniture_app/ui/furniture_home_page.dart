@@ -16,13 +16,18 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
           Positioned(
               bottom: 0,
               right: 0,
-              top: 0,
+              left: 0,
               child: Container(
                 height: 72,
-            decoration: BoxDecoration(
-              color: Colors.indigo
-            ),
-          ))
+                decoration: BoxDecoration(color: Colors.indigo),
+                child: Row(
+                  children: [
+                    IconButton(onPressed: (){}, icon: Icon(Icons.home))
+                  ],
+                )
+              )
+
+          )
         ],
       ),
     );
