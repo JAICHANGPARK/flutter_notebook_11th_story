@@ -13,8 +13,15 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
     return Scaffold(
       body: Stack(
         children: [
-          Positioned(child: Container(
-            decoration: BoxDecoration(),
+          Positioned(
+              bottom: 0,
+              right: 0,
+              top: 0,
+              child: Container(
+                height: 72,
+            decoration: BoxDecoration(
+              color: Colors.indigo
+            ),
           ))
         ],
       ),
