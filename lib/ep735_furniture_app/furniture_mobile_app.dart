@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'ui/furniture_home_page.dart';
+
 
 class FurnitureMobileApp extends StatelessWidget {
   @override
