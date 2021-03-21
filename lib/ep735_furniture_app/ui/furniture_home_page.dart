@@ -10,6 +10,14 @@ class FurnitureHomePage extends StatefulWidget {
 class _FurnitureHomePageState extends State<FurnitureHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Stack(
+        children: [
+          Positioned(child: Container(
+            decoration: BoxDecoration(),
+          ))
+        ],
+      ),
+    );
   }
 }
