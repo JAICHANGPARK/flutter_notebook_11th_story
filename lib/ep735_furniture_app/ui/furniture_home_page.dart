@@ -33,19 +33,19 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                       IconButton(
                         onPressed: () {},
                         iconSize: 32,
-                        icon: Icon(Icons.home),
+                        icon: Icon(Icons.shopping_bag_outlined),
                         color: Colors.white,
                       ),
                       IconButton(
                         onPressed: () {},
                         iconSize: 32,
-                        icon: Icon(Icons.home),
+                        icon: Icon(Icons.star_border),
                         color: Colors.white,
                       ),
                       IconButton(
                         onPressed: () {},
                         iconSize: 32,
-                        icon: Icon(Icons.home),
+                        icon: Icon(Icons.person_outline),
                         color: Colors.white,
                       )
                     ],
