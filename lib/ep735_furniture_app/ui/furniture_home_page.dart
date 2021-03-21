@@ -22,18 +22,10 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
               bottom: 96,
               child: Column(
                 children: [
-                  Expanded(
-                      flex:2,
-                      child: Placeholder()),
-                  Expanded(
-                      flex:2,
-                      child: Placeholder()),
-                  Expanded(
-                      flex:1,
-                      child: Placeholder()),
-                  Expanded(
-                      flex:10,
-                      child: Placeholder()),
+                  Expanded(flex: 2, child: Placeholder()),
+                  Expanded(flex: 2, child: Placeholder()),
+                  Expanded(flex: 1, child: Placeholder()),
+                  Expanded(flex: 10, child: Placeholder()),
                 ],
               ),
             ),
@@ -44,8 +36,12 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                 child: Container(
                     height: 72,
                     decoration: BoxDecoration(
-                        color: Colors.indigo,
-                        borderRadius: BorderRadius.only(topLeft: Radius.circular(16), topRight: Radius.circular(16))),
+                      color: Colors.indigo,
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(16),
+                        topRight: Radius.circular(16),
+                      ),
+                    ),
                     padding: EdgeInsets.symmetric(horizontal: 36),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
