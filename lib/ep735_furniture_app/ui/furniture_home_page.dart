@@ -20,9 +20,10 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
               child: Container(
                 height: 72,
                 decoration: BoxDecoration(color: Colors.indigo),
+                padding: EdgeInsets.symmetric(horizontal: 24),
                 child: Row(
                   children: [
-                    IconButton(onPressed: (){}, icon: Icon(Icons.home))
+                    IconButton(onPressed: (){}, icon: Icon(Icons.home),color: Colors.white,)
                   ],
                 )
               )
