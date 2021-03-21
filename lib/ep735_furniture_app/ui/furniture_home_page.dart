@@ -20,7 +20,12 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
               left: 0,
               child: Container(
                   height: 72,
-                  decoration: BoxDecoration(color: Colors.indigo),
+                  decoration: BoxDecoration(color: Colors.indigo,
+                  
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(16),
+                    topRight: Radius.circular(16)
+                  )),
                   padding: EdgeInsets.symmetric(horizontal: 36),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
