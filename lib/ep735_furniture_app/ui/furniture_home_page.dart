@@ -28,6 +28,24 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                         iconSize: 32,
                         icon: Icon(Icons.home),
                         color: Colors.white,
+                      ),
+                      IconButton(
+                        onPressed: () {},
+                        iconSize: 32,
+                        icon: Icon(Icons.home),
+                        color: Colors.white,
+                      ),
+                      IconButton(
+                        onPressed: () {},
+                        iconSize: 32,
+                        icon: Icon(Icons.home),
+                        color: Colors.white,
+                      ),
+                      IconButton(
+                        onPressed: () {},
+                        iconSize: 32,
+                        icon: Icon(Icons.home),
+                        color: Colors.white,
                       )
                     ],
                   )))
