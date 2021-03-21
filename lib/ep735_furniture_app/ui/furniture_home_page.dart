@@ -14,6 +14,7 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
       backgroundColor: Colors.blueGrey[50],
       body: Stack(
         children: [
+          Positioned(child: Column()),
           Positioned(
               bottom: 0,
               right: 0,
