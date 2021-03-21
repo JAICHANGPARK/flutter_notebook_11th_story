@@ -22,6 +22,7 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                   decoration: BoxDecoration(color: Colors.indigo),
                   padding: EdgeInsets.symmetric(horizontal: 36),
                   child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       IconButton(
                         onPressed: () {},
