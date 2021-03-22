@@ -87,7 +87,12 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                         child: Row(
                           children: [
                             Expanded(
-                              child: Placeholder(),
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: BorderRadius.circular(8)
+                                ),
+                              ),
                               flex: 10,
                             ),
                             SizedBox(
