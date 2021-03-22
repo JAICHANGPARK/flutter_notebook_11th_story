@@ -77,7 +77,14 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                           ],
                         ),
                       )),
-                  Expanded(flex: 2, child: Placeholder()),
+                  Expanded(flex: 2, child: Row(
+                    children: [
+                      Expanded(child: Placeholder()),
+                      SizedBox(width: 16,),
+                      Expanded(child: Placeholder()),
+
+                    ],
+                  )),
                   Expanded(flex: 1, child: Placeholder()),
                   Expanded(flex: 10, child: Placeholder()),
                 ],
