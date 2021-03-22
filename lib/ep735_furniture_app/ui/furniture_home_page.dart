@@ -92,9 +92,10 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                                   color: Colors.white,
                                   borderRadius: BorderRadius.circular(8)
                                 ),
+                                padding: EdgeInsets.symmetric(horizontal: 8),
                                 child: TextField(
                                   decoration: InputDecoration(
-                                    icon: Icon(Icons.search),
+                                    icon: Icon(Icons.search,size: 28,),
                                     hintText: "search",
                                     hintStyle: GoogleFonts.montserrat(fontWeight: FontWeight.bold)
                                   ),
