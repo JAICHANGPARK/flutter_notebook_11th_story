@@ -33,6 +33,7 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                           children: [
                             CircleAvatar(
                               radius: 24,
+                              backgroundColor: mainColor,
                             ),
                             Padding(
                               padding: const EdgeInsets.all(8.0),
