@@ -46,13 +46,18 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                             ),
                             Spacer(),
                             Container(
-                              height: 32,
-                              width: 32,
+                              height: 48,
+                              width: 48,
                               child: Stack(
                                 children: [
                                   Positioned(
+                                    top: 0,
+                                    left: 0,
+                                      right: 0,
+                                      bottom: 0,
                                       child: IconButton(
                                     icon: Icon(Icons.notifications_none),
+                                    iconSize: 28,
                                     onPressed: () {},
                                   )),
                                   Positioned(
