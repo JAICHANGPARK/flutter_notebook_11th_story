@@ -28,6 +28,7 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Row(
+
                           children: [
                             CircleAvatar(
                               radius: 28,
@@ -43,6 +44,7 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                                 ],
                               ),
                             ),
+                            Spacer(),
                             Container(
                               height: 32,
                               width: 32,
