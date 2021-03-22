@@ -61,8 +61,8 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                                     onPressed: () {},
                                   )),
                                   Positioned(
-                                      top: 4,
-                                      right: 4,
+                                      top: 8,
+                                      right: 8,
                                       child: CircleAvatar(radius: 4,backgroundColor: Colors.red,))
                                 ],
                               ),
