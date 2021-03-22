@@ -8,7 +8,7 @@ class FurnitureHomePage extends StatefulWidget {
 }
 
 class _FurnitureHomePageState extends State<FurnitureHomePage> {
-  Color mainColor = Color(0xff000000); // 
+  Color mainColor = Color(0xff000000); // 72 76 127
   @override
   Widget build(BuildContext context) {
     return Scaffold(
