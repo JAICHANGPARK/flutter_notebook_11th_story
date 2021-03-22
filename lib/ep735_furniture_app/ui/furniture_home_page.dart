@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class FurnitureHomePage extends StatefulWidget {
   FurnitureHomePage({Key? key}) : super(key: key);
@@ -39,8 +40,8 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text("Welcome,"),
-                                  Text("Courtney Henry"),
+                                  Text("Welcome,",),
+                                  Text("Courtney Henry", style: GoogleFonts.montserrat(),),
                                 ],
                               ),
                             ),
