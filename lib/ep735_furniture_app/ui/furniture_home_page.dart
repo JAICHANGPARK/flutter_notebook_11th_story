@@ -92,6 +92,13 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                                   color: Colors.white,
                                   borderRadius: BorderRadius.circular(8)
                                 ),
+                                child: TextField(
+                                  decoration: InputDecoration(
+                                    icon: Icon(Icons.search),
+                                    hintText: "search",
+                                    hintStyle: GoogleFonts.montserrat(fontWeight: FontWeight.bold)
+                                  ),
+                                ),
                               ),
                               flex: 10,
                             ),
