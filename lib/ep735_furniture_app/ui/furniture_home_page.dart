@@ -54,7 +54,8 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                                       child: IconButton(
                                     icon: Icon(Icons.notifications_none),
                                     onPressed: () {},
-                                  ))
+                                  )),
+                                  Positioned(child: CircleAvatar(radius: 2,backgroundColor: Colors.red,))
                                 ],
                               ),
                             )
