@@ -97,8 +97,10 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                                   decoration: InputDecoration(
                                     icon: Icon(Icons.search,size: 28,),
                                     hintText: "search",
-                                    hintStyle: GoogleFonts.montserrat(fontWeight: FontWeight.bold)
+                                    hintStyle: GoogleFonts.montserrat(fontWeight: FontWeight.bold),
+                                    border: InputBorder.none
                                   ),
+
                                 ),
                               ),
                               flex: 10,
