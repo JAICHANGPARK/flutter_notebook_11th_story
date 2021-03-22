@@ -23,7 +23,18 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
               bottom: 96,
               child: Column(
                 children: [
-                  Expanded(flex: 2, child: Placeholder()),
+                  Expanded(flex: 2, child: Row(
+                    children: [
+                      CircleAvatar(),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text("Welcome,"),
+                          Text("Courtney Henry"),
+                        ],
+                      )
+                    ],
+                  )),
                   Expanded(flex: 2, child: Placeholder()),
                   Expanded(flex: 1, child: Placeholder()),
                   Expanded(flex: 10, child: Placeholder()),
