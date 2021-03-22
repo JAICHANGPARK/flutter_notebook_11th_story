@@ -96,15 +96,18 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                               flex: 10,
                             ),
                             SizedBox(
-                              width: 24,
+                              width: 32,
                             ),
                             Expanded(
-                              child: Placeholder(),
+                              child: Container(
+                                decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: BorderRadius.circular(8)
+                                ),
+                              ),
                               flex: 2,
                             ),
-                            SizedBox(
-                              width: 16,
-                            ),
+
                           ],
                         ),
                       )),
