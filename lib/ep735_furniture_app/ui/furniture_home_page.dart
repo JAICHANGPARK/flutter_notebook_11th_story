@@ -32,7 +32,7 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
 
                           children: [
                             CircleAvatar(
-                              radius: 28,
+                              radius: 24,
                             ),
                             Padding(
                               padding: const EdgeInsets.all(8.0),
@@ -40,8 +40,13 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text("Welcome,",),
-                                  Text("Courtney Henry", style: GoogleFonts.montserrat(),),
+                                  Text("Welcome,",style: GoogleFonts.montserrat(
+                                    fontSize: 12
+                                  ),),
+                                  Text("Courtney Henry", style: GoogleFonts.montserrat(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.bold
+                                  ),),
                                 ],
                               ),
                             ),
