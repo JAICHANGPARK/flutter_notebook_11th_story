@@ -8,7 +8,7 @@ class FurnitureHomePage extends StatefulWidget {
 }
 
 class _FurnitureHomePageState extends State<FurnitureHomePage> {
-  Color mainColor = Color(0xff000000); // 72 76 127
+  Color mainColor = Color(0xff484c7F); // 72 76 127  48 4c 7F
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,7 +37,7 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                 child: Container(
                     height: 72,
                     decoration: BoxDecoration(
-                      color: Colors.indigo,
+                      color: mainColor,
                       borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(16),
                         topRight: Radius.circular(16),
