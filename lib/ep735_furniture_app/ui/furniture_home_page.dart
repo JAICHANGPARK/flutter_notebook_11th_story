@@ -96,13 +96,16 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                                 ),
                                 padding: EdgeInsets.symmetric(horizontal: 8),
                                 child: TextField(
+                                  controller: _textEditingController,
                                   decoration: InputDecoration(
                                     icon: Icon(Icons.search,size: 28,),
                                     hintText: "search",
                                     hintStyle: GoogleFonts.montserrat(fontWeight: FontWeight.bold),
                                     border: InputBorder.none
                                   ),
-
+                                  onSubmitted: (s){
+                                    print(s);
+                                  },
                                 ),
                               ),
                               flex: 10,
