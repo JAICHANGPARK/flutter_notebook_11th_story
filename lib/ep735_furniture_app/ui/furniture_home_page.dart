@@ -25,29 +25,35 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                 children: [
                   Expanded(
                       flex: 2,
-                      child: Row(
-                        children: [
-                          CircleAvatar(),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text("Welcome,"),
-                              Text("Courtney Henry"),
-                            ],
-                          ),
-                          Container(
-                            height: 32,
-                            width: 32,
-                            child: Stack(
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Row(
+                          children: [
+                            CircleAvatar(
+                              radius: 28,
+                            ),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Positioned(
-                                    child: IconButton(
-                                  icon: Icon(Icons.notifications_none), onPressed: () {  },
-                                ))
+                                Text("Welcome,"),
+                                Text("Courtney Henry"),
                               ],
                             ),
-                          )
-                        ],
+                            Container(
+                              height: 32,
+                              width: 32,
+                              child: Stack(
+                                children: [
+                                  Positioned(
+                                      child: IconButton(
+                                    icon: Icon(Icons.notifications_none),
+                                    onPressed: () {},
+                                  ))
+                                ],
+                              ),
+                            )
+                          ],
+                        ),
                       )),
                   Expanded(flex: 2, child: Placeholder()),
                   Expanded(flex: 1, child: Placeholder()),
