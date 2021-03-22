@@ -29,7 +29,6 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Row(
-
                           children: [
                             CircleAvatar(
                               radius: 24,
@@ -41,13 +40,14 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text("Welcome,",style: GoogleFonts.montserrat(
-                                    fontSize: 12
-                                  ),),
-                                  Text("Courtney Henry", style: GoogleFonts.montserrat(
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.bold
-                                  ),),
+                                  Text(
+                                    "Welcome,",
+                                    style: GoogleFonts.montserrat(fontSize: 12),
+                                  ),
+                                  Text(
+                                    "Courtney Henry",
+                                    style: GoogleFonts.montserrat(fontSize: 16, fontWeight: FontWeight.bold),
+                                  ),
                                 ],
                               ),
                             ),
@@ -58,35 +58,48 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                               child: Stack(
                                 children: [
                                   Positioned(
-                                    top: 0,
-                                    left: 0,
+                                      top: 0,
+                                      left: 0,
                                       right: 0,
                                       bottom: 0,
                                       child: IconButton(
-                                    icon: Icon(Icons.notifications_none),
-                                    iconSize: 28,
-                                    onPressed: () {},
-                                  )),
+                                        icon: Icon(Icons.notifications_none),
+                                        iconSize: 28,
+                                        onPressed: () {},
+                                      )),
                                   Positioned(
                                       top: 8,
                                       right: 8,
-                                      child: CircleAvatar(radius: 4,backgroundColor: Colors.red,))
+                                      child: CircleAvatar(
+                                        radius: 4,
+                                        backgroundColor: Colors.red,
+                                      ))
                                 ],
                               ),
                             )
                           ],
                         ),
                       )),
-                  Expanded(flex: 2, child: Row(
-                    children: [
-                      Expanded(child: Placeholder(),
-                      flex: 8,),
-                      SizedBox(width: 16,),
-                      Expanded(child: Placeholder(),
-                      flex: 2,),
-
-                    ],
-                  )),
+                  Expanded(
+                      flex: 2,
+                      child: Row(
+                        children: [
+                          Expanded(
+                            child: Placeholder(),
+                            flex: 8,
+                          ),
+                          SizedBox(
+                            width: 16,
+                          ),
+                          Expanded(
+                            child: Placeholder(),
+                            flex: 2,
+                          ),
+                          SizedBox(
+                            width: 16,
+                          ),
+                        ],
+                      )),
                   Expanded(flex: 1, child: Placeholder()),
                   Expanded(flex: 10, child: Placeholder()),
                 ],
