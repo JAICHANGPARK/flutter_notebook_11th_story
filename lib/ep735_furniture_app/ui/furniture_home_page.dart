@@ -32,12 +32,16 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                             CircleAvatar(
                               radius: 28,
                             ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text("Welcome,"),
-                                Text("Courtney Henry"),
-                              ],
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text("Welcome,"),
+                                  Text("Courtney Henry"),
+                                ],
+                              ),
                             ),
                             Container(
                               height: 32,
