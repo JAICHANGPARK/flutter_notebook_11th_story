@@ -114,6 +114,7 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                                     color: Colors.white,
                                     borderRadius: BorderRadius.circular(8)
                                 ),
+                                child: IconButton(icon: Icon(Icons.settings_outlined), onPressed: () {  },),
                               ),
                               flex: 2,
                             ),
