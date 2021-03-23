@@ -162,11 +162,13 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                                             ),),
                                             Text("\$201.00", style: GoogleFonts.montserrat(
                                               fontWeight: FontWeight.bold,
+                                              color: Colors.grey
 
                                             ),),
                                             Row(
                                               children: [
                                                 Icon(Icons.star, size: 18, color: Colors.yellow,),
+                                                SizedBox(width: 16,),
                                                 Text("4.5"),
                                               ],
                                             )
