@@ -184,6 +184,9 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                                   Expanded(
                                       flex: 2,
                                       child: Container(
+                                        child: Center(
+                                          child: Text(""),
+                                        ),
                                         decoration:
                                             BoxDecoration(color: mainColor, borderRadius: BorderRadius.circular(8)),
                                       )),
