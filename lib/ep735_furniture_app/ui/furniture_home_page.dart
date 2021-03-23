@@ -150,22 +150,28 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                                   ),
                                   Expanded(
                                       flex: 4,
-                                      child: Column(
-                                        crossAxisAlignment: CrossAxisAlignment.start,
-                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                        children: [
-                                          Text("Black Chair", style: GoogleFonts.montserrat(
-                                            fontWeight: FontWeight.bold,
+                                      child: Padding(
+                                        padding: const EdgeInsets.symmetric(vertical: 4),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                          children: [
+                                            Text("Black Chair", style: GoogleFonts.montserrat(
+                                              fontWeight: FontWeight.bold,
 
-                                          ),),
-                                          Text("\$201.00"),
-                                          Row(
-                                            children: [
-                                              Icon(Icons.star, size: 18, color: Colors.yellow,),
-                                              Text("4.5"),
-                                            ],
-                                          )
-                                        ],
+                                            ),),
+                                            Text("\$201.00", style: GoogleFonts.montserrat(
+                                              fontWeight: FontWeight.bold,
+
+                                            ),),
+                                            Row(
+                                              children: [
+                                                Icon(Icons.star, size: 18, color: Colors.yellow,),
+                                                Text("4.5"),
+                                              ],
+                                            )
+                                          ],
+                                        ),
                                       )),
                                   Expanded(
                                       flex: 2,
