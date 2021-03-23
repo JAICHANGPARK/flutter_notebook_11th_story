@@ -11,6 +11,7 @@ class FurnitureHomePage extends StatefulWidget {
 class _FurnitureHomePageState extends State<FurnitureHomePage> {
   Color mainColor = Color(0xff484c7F); // 72 76 127  48 4c 7F
   TextEditingController _textEditingController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -90,20 +91,19 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                           children: [
                             Expanded(
                               child: Container(
-                                decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  borderRadius: BorderRadius.circular(8)
-                                ),
+                                decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
                                 padding: EdgeInsets.symmetric(horizontal: 8),
                                 child: TextField(
                                   controller: _textEditingController,
                                   decoration: InputDecoration(
-                                    icon: Icon(Icons.search,size: 28,),
-                                    hintText: "search",
-                                    hintStyle: GoogleFonts.montserrat(fontWeight: FontWeight.bold),
-                                    border: InputBorder.none
-                                  ),
-                                  onSubmitted: (s){
+                                      icon: Icon(
+                                        Icons.search,
+                                        size: 28,
+                                      ),
+                                      hintText: "search",
+                                      hintStyle: GoogleFonts.montserrat(fontWeight: FontWeight.bold),
+                                      border: InputBorder.none),
+                                  onSubmitted: (s) {
                                     print(s);
                                   },
                                 ),
@@ -115,15 +115,14 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                             ),
                             Expanded(
                               child: Container(
-                                decoration: BoxDecoration(
-                                    color: Colors.white,
-                                    borderRadius: BorderRadius.circular(8)
+                                decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
+                                child: IconButton(
+                                  icon: Icon(Icons.settings_outlined),
+                                  onPressed: () {},
                                 ),
-                                child: IconButton(icon: Icon(Icons.settings_outlined), onPressed: () {  },),
                               ),
                               flex: 2,
                             ),
-
                           ],
                         ),
                       )),
