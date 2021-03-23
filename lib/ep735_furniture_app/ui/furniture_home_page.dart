@@ -162,11 +162,11 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                                           )
                                         ],
                                       )),
-                                  Expanded(flex: 2, child: Container(
-                                                  decoration: BoxDecoration(
-                                                    color: mainColor
-                                                  ),
-                                  )),
+                                  Expanded(
+                                      flex: 2,
+                                      child: Container(
+                                        decoration: BoxDecoration(color: mainColor),
+                                      )),
                                 ],
                               ),
                             ),
