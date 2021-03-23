@@ -127,11 +127,25 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                         ),
                       )),
                   Expanded(flex: 1, child: Placeholder()),
-                  Expanded(flex: 10, child: GridView.count(crossAxisCount: 2,
-                    children: [
-                      
-                    ],
-                  ),),
+                  Expanded(
+                    flex: 10,
+                    child: GridView.count(
+                      crossAxisCount: 2,
+                      children: [
+                        Card(
+                          child: Column(
+                            children: [
+                              Expanded(child: Placeholder()),
+                              Expanded(child: Placeholder()),
+                              Expanded(child: Placeholder()),
+                              Expanded(child: Placeholder()),
+                            ],
+                          ),
+                        )
+
+                      ],
+                    ),
+                  ),
                 ],
               ),
             ),
