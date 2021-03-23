@@ -24,7 +24,7 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
               top: 0,
               right: 0,
               left: 0,
-              bottom: 96,
+              bottom: 72,
               child: Column(
                 children: [
                   Expanded(
@@ -142,7 +142,11 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Expanded(
-                                    child: Placeholder(),
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.purple[50],
+                                      ),
+                                    ),
                                     flex: 5,
                                   ),
                                   Expanded(flex: 4, child: Placeholder()),
