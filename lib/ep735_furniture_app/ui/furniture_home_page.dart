@@ -129,52 +129,57 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                   Expanded(flex: 1, child: Placeholder()),
                   Expanded(
                     flex: 10,
-                    child: GridView.count(
-                      crossAxisCount: 2,
-                      children: [
-                        Card(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Expanded(child: Placeholder()),
-                              Expanded(child: Placeholder()),
-                              Expanded(child: Placeholder()),
-                              Expanded(child: Placeholder()),
-                            ],
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: GridView.count(
+                        
+                        crossAxisCount: 2,
+                        children: [
+                          Card(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Expanded(
+                                  child: Placeholder(),
+                                  flex: 5,
+                                ),
+                                Expanded(flex: 4, child: Placeholder()),
+                                Expanded(flex: 2, child: Placeholder()),
+                              ],
+                            ),
                           ),
-                        ),
-                        Card(
-                          child: Column(
-                            children: [
-                              Expanded(child: Placeholder()),
-                              Expanded(child: Placeholder()),
-                              Expanded(child: Placeholder()),
-                              Expanded(child: Placeholder()),
-                            ],
+                          Card(
+                            child: Column(
+                              children: [
+                                Expanded(child: Placeholder()),
+                                Expanded(child: Placeholder()),
+                                Expanded(child: Placeholder()),
+                                Expanded(child: Placeholder()),
+                              ],
+                            ),
                           ),
-                        ),
-                        Card(
-                          child: Column(
-                            children: [
-                              Expanded(child: Placeholder()),
-                              Expanded(child: Placeholder()),
-                              Expanded(child: Placeholder()),
-                              Expanded(child: Placeholder()),
-                            ],
+                          Card(
+                            child: Column(
+                              children: [
+                                Expanded(child: Placeholder()),
+                                Expanded(child: Placeholder()),
+                                Expanded(child: Placeholder()),
+                                Expanded(child: Placeholder()),
+                              ],
+                            ),
                           ),
-                        ),
-                        Card(
-                          child: Column(
-                            children: [
-                              Expanded(child: Placeholder()),
-                              Expanded(child: Placeholder()),
-                              Expanded(child: Placeholder()),
-                              Expanded(child: Placeholder()),
-                            ],
-                          ),
-                        )
-
-                      ],
+                          Card(
+                            child: Column(
+                              children: [
+                                Expanded(child: Placeholder()),
+                                Expanded(child: Placeholder()),
+                                Expanded(child: Placeholder()),
+                                Expanded(child: Placeholder()),
+                              ],
+                            ),
+                          )
+                        ],
+                      ),
                     ),
                   ),
                 ],
