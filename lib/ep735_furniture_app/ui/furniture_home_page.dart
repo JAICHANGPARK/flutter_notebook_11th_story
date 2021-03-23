@@ -141,6 +141,16 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                               Expanded(child: Placeholder()),
                             ],
                           ),
+                        ),
+                        Card(
+                          child: Column(
+                            children: [
+                              Expanded(child: Placeholder()),
+                              Expanded(child: Placeholder()),
+                              Expanded(child: Placeholder()),
+                              Expanded(child: Placeholder()),
+                            ],
+                          ),
                         )
 
                       ],
