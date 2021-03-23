@@ -132,20 +132,23 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: GridView.count(
-                        
                         crossAxisCount: 2,
+                        childAspectRatio: 0.9,
                         children: [
                           Card(
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Expanded(
-                                  child: Placeholder(),
-                                  flex: 5,
-                                ),
-                                Expanded(flex: 4, child: Placeholder()),
-                                Expanded(flex: 2, child: Placeholder()),
-                              ],
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Expanded(
+                                    child: Placeholder(),
+                                    flex: 5,
+                                  ),
+                                  Expanded(flex: 4, child: Placeholder()),
+                                  Expanded(flex: 2, child: Placeholder()),
+                                ],
+                              ),
                             ),
                           ),
                           Card(
