@@ -185,7 +185,9 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                                       flex: 2,
                                       child: Container(
                                         child: Center(
-                                          child: Text(""),
+                                          child: Text("Buy", style: GoogleFonts.montserrat(
+                                            color: Colors.white
+                                          ),),
                                         ),
                                         decoration:
                                             BoxDecoration(color: mainColor, borderRadius: BorderRadius.circular(8)),
