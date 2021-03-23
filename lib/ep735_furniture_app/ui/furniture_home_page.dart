@@ -153,11 +153,14 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                                       child: Column(
                                         crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
-                                          Text("Black Chair"),
+                                          Text("Black Chair", style: GoogleFonts.montserrat(
+                                            fontWeight: FontWeight.bold,
+
+                                          ),),
                                           Text("\$201.00"),
                                           Row(
                                             children: [
-                                              Icon(Icons.star),
+                                              Icon(Icons.star, size: 18, color: Colors.yellow,),
                                               Text("4.5"),
                                             ],
                                           )
