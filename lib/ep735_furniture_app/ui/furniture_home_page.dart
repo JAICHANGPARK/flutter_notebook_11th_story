@@ -145,11 +145,22 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                                     child: Container(
                                       decoration: BoxDecoration(
                                         color: Colors.purple[50],
+                                        borderRadius: BorderRadius.circular(8)
                                       ),
                                     ),
                                     flex: 5,
                                   ),
-                                  Expanded(flex: 4, child: Placeholder()),
+                                  Expanded(flex: 4, child: Column(
+                                    children: [
+                                      Text("Black Chair"),
+                                      Text("\$201.00"),
+                                      Row(
+                                        children: [
+                                          
+                                        ],
+                                      )
+                                    ],
+                                  )),
                                   Expanded(flex: 2, child: Placeholder()),
                                 ],
                               ),
