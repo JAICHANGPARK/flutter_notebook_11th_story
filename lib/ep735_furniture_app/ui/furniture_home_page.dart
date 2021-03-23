@@ -151,6 +151,7 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                                   Expanded(
                                       flex: 4,
                                       child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
                                           Text("Black Chair"),
                                           Text("\$201.00"),
