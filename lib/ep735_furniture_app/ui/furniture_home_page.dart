@@ -152,6 +152,7 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                                       flex: 4,
                                       child: Column(
                                         crossAxisAlignment: CrossAxisAlignment.start,
+                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                         children: [
                                           Text("Black Chair", style: GoogleFonts.montserrat(
                                             fontWeight: FontWeight.bold,
