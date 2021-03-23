@@ -156,19 +156,25 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                           children: [
-                                            Text("Black Chair", style: GoogleFonts.montserrat(
-                                              fontWeight: FontWeight.bold,
-
-                                            ),),
-                                            Text("\$201.00", style: GoogleFonts.montserrat(
-                                              fontWeight: FontWeight.bold,
-                                              color: Colors.grey
-
-                                            ),),
+                                            Text(
+                                              "Black Chair",
+                                              style: GoogleFonts.montserrat(
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            ),
+                                            Text(
+                                              "\$201.00",
+                                              style: GoogleFonts.montserrat(
+                                                  fontWeight: FontWeight.bold, color: Colors.grey),
+                                            ),
                                             Row(
                                               children: [
-                                                Icon(Icons.star, size: 18, color: Colors.yellow,),
-                                                SizedBox(width: 16,),
+                                                Icon(
+                                                  Icons.star,
+                                                  size: 18,
+                                                  color: Colors.yellow,
+                                                ),
+                                                SizedBox(width: 16),
                                                 Text("4.5"),
                                               ],
                                             )
@@ -178,8 +184,8 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                                   Expanded(
                                       flex: 2,
                                       child: Container(
-                                        decoration: BoxDecoration(color: mainColor,
-                                        borderRadius: BorderRadius.circular(8)),
+                                        decoration:
+                                            BoxDecoration(color: mainColor, borderRadius: BorderRadius.circular(8)),
                                       )),
                                 ],
                               ),
