@@ -145,7 +145,17 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                                     child: Container(
                                       decoration: BoxDecoration(
                                           color: Colors.purple[50], borderRadius: BorderRadius.circular(8)),
+                                      child: Stack(
+                                        children: [
+                                          Positioned(child: CircleAvatar(
+                                            radius: 16,
+                                          ),
+                                          top: 8,
+                                          right: 8,)
+                                        ],
+                                      ),
                                     ),
+
                                     flex: 5,
                                   ),
                                   Expanded(
