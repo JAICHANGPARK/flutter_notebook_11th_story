@@ -134,6 +134,7 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                       children: [
                         Card(
                           child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Expanded(child: Placeholder()),
                               Expanded(child: Placeholder()),
