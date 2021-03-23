@@ -128,6 +128,9 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                       )),
                   Expanded(flex: 1, child: Placeholder()),
                   Expanded(flex: 10, child: GridView.count(crossAxisCount: 2,
+                    children: [
+                      
+                    ],
                   ),),
                 ],
               ),
