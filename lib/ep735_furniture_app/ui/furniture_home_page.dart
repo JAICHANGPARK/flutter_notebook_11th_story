@@ -156,7 +156,8 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                                       Text("\$201.00"),
                                       Row(
                                         children: [
-                                          
+                                          Icon(Icons.star),
+                                          Text("4.5")
                                         ],
                                       )
                                     ],
