@@ -227,7 +227,7 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                                             child: CircleAvatar(
                                               radius: 16,
                                               backgroundColor: Colors.white,
-                                              foregroundColor: Colors.black,
+                                              foregroundColor: Colors.red,
                                               child: Icon(Icons.favorite),
                                             ),
                                             top: 8,
