@@ -8,17 +8,18 @@ class FurnitureHomePage extends StatefulWidget {
   _FurnitureHomePageState createState() => _FurnitureHomePageState();
 }
 
-class _FurnitureHomePageState extends State<FurnitureHomePage>
-with SingleTickerProviderStateMixin{
+class _FurnitureHomePageState extends State<FurnitureHomePage> with SingleTickerProviderStateMixin {
   Color mainColor = Color(0xff484c7F); // 72 76 127  48 4c 7F
   TextEditingController _textEditingController = TextEditingController();
-  TabController? _tabController ;
+  TabController? _tabController;
+
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
     _tabController = TabController(length: 6, vsync: this);
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -137,11 +138,17 @@ with SingleTickerProviderStateMixin{
                       flex: 1,
                       child: TabBar(
                         controller: _tabController,
-                        tabs: [Tab(
-                          text: "Chair",
-                        ),
-                          Tab(text: "Chair",),
-                          Tab(text: "Chair",),],
+                        tabs: [
+                          Tab(
+                            text: "Chair",
+                          ),
+                          Tab(
+                            text: "Chair",
+                          ),
+                          Tab(
+                            text: "Chair",
+                          ),
+                        ],
                       )),
                   Expanded(
                     flex: 10,
