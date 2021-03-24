@@ -147,15 +147,16 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                                           color: Colors.purple[50], borderRadius: BorderRadius.circular(8)),
                                       child: Stack(
                                         children: [
-                                          Positioned(child: CircleAvatar(
-                                            radius: 16,
-                                          ),
-                                          top: 8,
-                                          right: 8,)
+                                          Positioned(
+                                            child: CircleAvatar(
+                                              radius: 16,
+                                            ),
+                                            top: 8,
+                                            right: 8,
+                                          )
                                         ],
                                       ),
                                     ),
-
                                     flex: 5,
                                   ),
                                   Expanded(
@@ -195,9 +196,10 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                                       flex: 2,
                                       child: Container(
                                         child: Center(
-                                          child: Text("Buy", style: GoogleFonts.montserrat(
-                                            color: Colors.white
-                                          ),),
+                                          child: Text(
+                                            "Buy",
+                                            style: GoogleFonts.montserrat(color: Colors.white),
+                                          ),
                                         ),
                                         decoration:
                                             BoxDecoration(color: mainColor, borderRadius: BorderRadius.circular(8)),
@@ -207,35 +209,224 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                             ),
                           ),
                           Card(
-                            child: Column(
-                              children: [
-                                Expanded(child: Placeholder()),
-                                Expanded(child: Placeholder()),
-                                Expanded(child: Placeholder()),
-                                Expanded(child: Placeholder()),
-                              ],
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Expanded(
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                          color: Colors.purple[50], borderRadius: BorderRadius.circular(8)),
+                                      child: Stack(
+                                        children: [
+                                          Positioned(
+                                            child: CircleAvatar(
+                                              radius: 16,
+                                            ),
+                                            top: 8,
+                                            right: 8,
+                                          )
+                                        ],
+                                      ),
+                                    ),
+                                    flex: 5,
+                                  ),
+                                  Expanded(
+                                      flex: 4,
+                                      child: Padding(
+                                        padding: const EdgeInsets.symmetric(vertical: 4),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                          children: [
+                                            Text(
+                                              "Black Chair",
+                                              style: GoogleFonts.montserrat(
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            ),
+                                            Text(
+                                              "\$201.00",
+                                              style: GoogleFonts.montserrat(
+                                                  fontWeight: FontWeight.bold, color: Colors.grey),
+                                            ),
+                                            Row(
+                                              children: [
+                                                Icon(
+                                                  Icons.star,
+                                                  size: 18,
+                                                  color: Colors.yellow,
+                                                ),
+                                                SizedBox(width: 16),
+                                                Text("4.5"),
+                                              ],
+                                            )
+                                          ],
+                                        ),
+                                      )),
+                                  Expanded(
+                                      flex: 2,
+                                      child: Container(
+                                        child: Center(
+                                          child: Text(
+                                            "Buy",
+                                            style: GoogleFonts.montserrat(color: Colors.white),
+                                          ),
+                                        ),
+                                        decoration:
+                                        BoxDecoration(color: mainColor, borderRadius: BorderRadius.circular(8)),
+                                      )),
+                                ],
+                              ),
                             ),
                           ),
                           Card(
-                            child: Column(
-                              children: [
-                                Expanded(child: Placeholder()),
-                                Expanded(child: Placeholder()),
-                                Expanded(child: Placeholder()),
-                                Expanded(child: Placeholder()),
-                              ],
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Expanded(
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                          color: Colors.purple[50], borderRadius: BorderRadius.circular(8)),
+                                      child: Stack(
+                                        children: [
+                                          Positioned(
+                                            child: CircleAvatar(
+                                              radius: 16,
+                                            ),
+                                            top: 8,
+                                            right: 8,
+                                          )
+                                        ],
+                                      ),
+                                    ),
+                                    flex: 5,
+                                  ),
+                                  Expanded(
+                                      flex: 4,
+                                      child: Padding(
+                                        padding: const EdgeInsets.symmetric(vertical: 4),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                          children: [
+                                            Text(
+                                              "Black Chair",
+                                              style: GoogleFonts.montserrat(
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            ),
+                                            Text(
+                                              "\$201.00",
+                                              style: GoogleFonts.montserrat(
+                                                  fontWeight: FontWeight.bold, color: Colors.grey),
+                                            ),
+                                            Row(
+                                              children: [
+                                                Icon(
+                                                  Icons.star,
+                                                  size: 18,
+                                                  color: Colors.yellow,
+                                                ),
+                                                SizedBox(width: 16),
+                                                Text("4.5"),
+                                              ],
+                                            )
+                                          ],
+                                        ),
+                                      )),
+                                  Expanded(
+                                      flex: 2,
+                                      child: Container(
+                                        child: Center(
+                                          child: Text(
+                                            "Buy",
+                                            style: GoogleFonts.montserrat(color: Colors.white),
+                                          ),
+                                        ),
+                                        decoration:
+                                        BoxDecoration(color: mainColor, borderRadius: BorderRadius.circular(8)),
+                                      )),
+                                ],
+                              ),
                             ),
                           ),
                           Card(
-                            child: Column(
-                              children: [
-                                Expanded(child: Placeholder()),
-                                Expanded(child: Placeholder()),
-                                Expanded(child: Placeholder()),
-                                Expanded(child: Placeholder()),
-                              ],
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Expanded(
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                          color: Colors.purple[50], borderRadius: BorderRadius.circular(8)),
+                                      child: Stack(
+                                        children: [
+                                          Positioned(
+                                            child: CircleAvatar(
+                                              radius: 16,
+                                            ),
+                                            top: 8,
+                                            right: 8,
+                                          )
+                                        ],
+                                      ),
+                                    ),
+                                    flex: 5,
+                                  ),
+                                  Expanded(
+                                      flex: 4,
+                                      child: Padding(
+                                        padding: const EdgeInsets.symmetric(vertical: 4),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                          children: [
+                                            Text(
+                                              "Black Chair",
+                                              style: GoogleFonts.montserrat(
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            ),
+                                            Text(
+                                              "\$201.00",
+                                              style: GoogleFonts.montserrat(
+                                                  fontWeight: FontWeight.bold, color: Colors.grey),
+                                            ),
+                                            Row(
+                                              children: [
+                                                Icon(
+                                                  Icons.star,
+                                                  size: 18,
+                                                  color: Colors.yellow,
+                                                ),
+                                                SizedBox(width: 16),
+                                                Text("4.5"),
+                                              ],
+                                            )
+                                          ],
+                                        ),
+                                      )),
+                                  Expanded(
+                                      flex: 2,
+                                      child: Container(
+                                        child: Center(
+                                          child: Text(
+                                            "Buy",
+                                            style: GoogleFonts.montserrat(color: Colors.white),
+                                          ),
+                                        ),
+                                        decoration:
+                                        BoxDecoration(color: mainColor, borderRadius: BorderRadius.circular(8)),
+                                      )),
+                                ],
+                              ),
                             ),
-                          )
+                          ),
                         ],
                       ),
                     ),
