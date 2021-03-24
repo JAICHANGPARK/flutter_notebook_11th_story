@@ -263,7 +263,8 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> with SingleTicker
                                               image: NetworkImage(
                                                   "https://cdn.pixabay.com/photo/2017/08/03/15/38/architecture-2576906_960_720.jpg"),
                                               fit: BoxFit.cover),
-                                          color: Colors.purple[50], borderRadius: BorderRadius.circular(8)),
+                                          color: Colors.purple[50],
+                                          borderRadius: BorderRadius.circular(8)),
                                       child: Stack(
                                         children: [
                                           Positioned(
@@ -343,7 +344,8 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> with SingleTicker
                                               image: NetworkImage(
                                                   "https://cdn.pixabay.com/photo/2017/08/03/15/38/architecture-2576906_960_720.jpg"),
                                               fit: BoxFit.cover),
-                                          color: Colors.purple[50], borderRadius: BorderRadius.circular(8)),
+                                          color: Colors.purple[50],
+                                          borderRadius: BorderRadius.circular(8)),
                                       child: Stack(
                                         children: [
                                           Positioned(
@@ -423,7 +425,8 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> with SingleTicker
                                               image: NetworkImage(
                                                   "https://cdn.pixabay.com/photo/2017/08/03/15/38/architecture-2576906_960_720.jpg"),
                                               fit: BoxFit.cover),
-                                          color: Colors.purple[50], borderRadius: BorderRadius.circular(8)),
+                                          color: Colors.purple[50],
+                                          borderRadius: BorderRadius.circular(8)),
                                       child: Stack(
                                         children: [
                                           Positioned(
