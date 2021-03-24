@@ -126,7 +126,11 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                           ],
                         ),
                       )),
-                  Expanded(flex: 1, child: Placeholder()),
+                  Expanded(flex: 1, child: TabBar(
+                    tabs: [
+                      Tab()
+                    ],
+                  )),
                   Expanded(
                     flex: 10,
                     child: Padding(
@@ -378,6 +382,9 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                                           Positioned(
                                             child: CircleAvatar(
                                               radius: 16,
+                                              backgroundColor: Colors.white,
+                                              foregroundColor: Colors.black,
+                                              child: Icon(Icons.favorite_border),
                                             ),
                                             top: 8,
                                             right: 8,
