@@ -8,10 +8,17 @@ class FurnitureHomePage extends StatefulWidget {
   _FurnitureHomePageState createState() => _FurnitureHomePageState();
 }
 
-class _FurnitureHomePageState extends State<FurnitureHomePage> {
+class _FurnitureHomePageState extends State<FurnitureHomePage>
+with SingleTickerProviderStateMixin{
   Color mainColor = Color(0xff484c7F); // 72 76 127  48 4c 7F
   TextEditingController _textEditingController = TextEditingController();
-  TabController _tabController = TabController(length: 6, vsync: this);
+  TabController? _tabController ;
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _tabController = TabController(length: 6, vsync: this);
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
