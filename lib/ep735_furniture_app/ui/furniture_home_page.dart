@@ -126,11 +126,11 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                           ],
                         ),
                       )),
-                  Expanded(flex: 1, child: TabBar(
-                    tabs: [
-                      Tab()
-                    ],
-                  )),
+                  Expanded(
+                      flex: 1,
+                      child: TabBar(
+                        tabs: [Tab()],
+                      )),
                   Expanded(
                     flex: 10,
                     child: Padding(
@@ -285,7 +285,7 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                                           ),
                                         ),
                                         decoration:
-                                        BoxDecoration(color: mainColor, borderRadius: BorderRadius.circular(8)),
+                                            BoxDecoration(color: mainColor, borderRadius: BorderRadius.circular(8)),
                                       )),
                                 ],
                               ),
@@ -361,7 +361,7 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                                           ),
                                         ),
                                         decoration:
-                                        BoxDecoration(color: mainColor, borderRadius: BorderRadius.circular(8)),
+                                            BoxDecoration(color: mainColor, borderRadius: BorderRadius.circular(8)),
                                       )),
                                 ],
                               ),
@@ -437,7 +437,7 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                                           ),
                                         ),
                                         decoration:
-                                        BoxDecoration(color: mainColor, borderRadius: BorderRadius.circular(8)),
+                                            BoxDecoration(color: mainColor, borderRadius: BorderRadius.circular(8)),
                                       )),
                                 ],
                               ),
