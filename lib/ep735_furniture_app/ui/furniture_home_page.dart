@@ -137,7 +137,11 @@ with SingleTickerProviderStateMixin{
                       flex: 1,
                       child: TabBar(
                         controller: _tabController,
-                        tabs: [Tab()],
+                        tabs: [Tab(
+                          text: "Chair",
+                        ),
+                          Tab(text: "Chair",),
+                          Tab(text: "Chair",),],
                       )),
                   Expanded(
                     flex: 10,
