@@ -143,20 +143,20 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> with SingleTicker
                             text: "Chair",
                           ),
                           Tab(
-                            text: "Chair",
+                            text: "All",
                           ),
                           Tab(
-                            text: "Chair",
+                            text: "Sofa",
                           ),
                           Tab(
-                            text: "Chair",
+                            text: "Table",
                           ),
                           Tab(
-                            text: "Chair",
-                          ),  Tab(
-                            text: "Chair",
+                            text: "Lamp",
                           ),
-
+                          Tab(
+                            text: "Furniture",
+                          ),
                         ],
                       )),
                   Expanded(
