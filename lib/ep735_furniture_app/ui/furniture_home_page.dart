@@ -138,6 +138,7 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> with SingleTicker
                       flex: 1,
                       child: TabBar(
                         controller: _tabController,
+                        isScrollable: true,
                         tabs: [
                           Tab(
                             text: "Chair",
