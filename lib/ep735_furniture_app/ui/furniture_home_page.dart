@@ -150,7 +150,8 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> {
                                           Positioned(
                                             child: CircleAvatar(
                                               radius: 16,
-                                              backgroundColor: Colors.white
+                                              backgroundColor: Colors.white,
+                                              child: Icon(Icons.favorite_border),
                                             ),
                                             top: 8,
                                             right: 8,
