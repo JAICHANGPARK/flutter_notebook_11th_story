@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_notebook_11th_story/ep735_furniture_app/ui/bubble_tab_indicator.dart';
 
 class BubblePainter extends BoxPainter {
-  final BubbleTabIndicator decoration;
-
   BubblePainter(this.decoration, VoidCallback? onChange) : super(onChange);
+
+  final BubbleTabIndicator decoration;
 
   double get indicatorHeight => decoration.indicatorHeight;
 
@@ -22,11 +22,16 @@ class BubblePainter extends BoxPainter {
   Rect _indicatorRectFor(Rect rect, TextDirection textDirection) {
     Rect indicator = padding.resolve(textDirection).inflateRect(rect);
 
-    if (tabBarIndicatorSize == TabBarIndicatorSize.label) {
+    if (tabBarIndicatorSize == TabBarIndicatorSize.tab) {
       indicator = insets.resolve(textDirection).deflateRect(rect);
     }
 
-    return Rect.fromLTRB(indicator.left, indicator.top, indicator.width, indicator.height);
+    return new Rect.fromLTWH(
+      indicator.left,
+      indicator.top,
+      indicator.width,
+      indicator.height,
+    );
   }
 
   @override
@@ -37,23 +42,8 @@ class BubblePainter extends BoxPainter {
     final TextDirection textDirection = configuration.textDirection!;
     final Rect indicator = _indicatorRectFor(rect, textDirection);
     final Paint paint = Paint();
-    paint.color= indicatorColor;
+    paint.color = indicatorColor;
     paint.style = PaintingStyle.fill;
     canvas.drawRRect(RRect.fromRectAndRadius(indicator, Radius.circular(indicatorRadius)), paint);
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
