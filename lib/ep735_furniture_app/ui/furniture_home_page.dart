@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_11th_story/ep735_furniture_app/ui/bubble_tab_indicator.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class FurnitureHomePage extends StatefulWidget {
@@ -139,7 +140,13 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> with SingleTicker
                       child: TabBar(
                         controller: _tabController,
                         isScrollable: true,
-                        labelColor: Colors.black,
+                        labelColor: Colors.white,
+                        unselectedLabelColor: Colors.black,
+                        indicator: BubbleTabIndicator(
+                          indicatorHeight: 24,
+                          indicatorColor: mainColor,
+                          tabBarIndicatorSize: TabBarIndicatorSize.label
+                        ),
                         tabs: [
                           Tab(
                             text: "Chair",
