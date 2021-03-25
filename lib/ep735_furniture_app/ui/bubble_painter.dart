@@ -34,6 +34,12 @@ class BubblePainter extends BoxPainter {
     assert(configuration.size != null);
     final Rect rect = Offset(offset.dx, (configuration.size!.height / 2) - indicatorHeight / 2) &
         Size(configuration.size!.width, indicatorHeight);
+    final TextDirection textDirection = configuration.textDirection!;
+    final Rect indicator = _indicatorRectFor(rect, textDirection);
+    final Paint paint = Paint();
+    paint.color= indicatorColor;
+    paint.style = PaintingStyle.fill;
+    canvas.drawRRect(RRect.fromRectAndRadius(indicator, Radius.circular(indicatorRadius)), paint);
   }
 }
 
