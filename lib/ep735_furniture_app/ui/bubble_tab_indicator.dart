@@ -12,12 +12,13 @@ class BubbleTabIndicator extends Decoration {
   BubbleTabIndicator({
     this.indicatorHeight: 20, this.indicatorColor: Colors.greenAccent,
     this.indicatorRadius: 100.0, this.padding
-        : const EdgeInsets.symmetric(vertical: 2.0, horizontal: 8.0), this.insets:const EdgeInsets.symmetric(vertical: 2.0, horizontal: 8.0),
-    this.tabBarIndicatorSize
+        : const EdgeInsets.symmetric(vertical: 2.0, horizontal: 8.0),
+    this.insets:const EdgeInsets.symmetric( horizontal: 5.0),
+    this.tabBarIndicatorSize : TabBarIndicatorSize.label
   });
 
   @override
-  BoxPainter createBoxPainter([VoidCallback onChanged]) {
+  BoxPainter createBoxPainter([VoidCallback? onChanged]) {
     // TODO: implement createBoxPainter
     throw UnimplementedError();
   }
