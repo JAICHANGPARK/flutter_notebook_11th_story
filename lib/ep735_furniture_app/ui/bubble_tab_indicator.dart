@@ -26,7 +26,17 @@ class BubbleTabIndicator extends Decoration {
       );
     }
     return super.lerpFrom(a, t);
-
+  }
+  @override
+  Decoration? lerpTo(Decoration? b, double t) {
+    // TODO: implement lerpTo
+    if(b is BubbleTabIndicator){
+      return BubbleTabIndicator(
+          padding: EdgeInsetsGeometry.lerp(padding, b.padding, t)!,
+          insets: EdgeInsetsGeometry.lerp(insets, b.insets, t)!
+      );
+    }
+    return super.lerpTo(b, t);
   }
 
   @override
