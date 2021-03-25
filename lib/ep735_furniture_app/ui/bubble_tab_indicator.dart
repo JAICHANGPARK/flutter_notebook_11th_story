@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_11th_story/ep735_furniture_app/ui/bubble_painter.dart';
 
 class BubbleTabIndicator extends Decoration {
   final double indicatorHeight;
@@ -42,7 +43,7 @@ class BubbleTabIndicator extends Decoration {
   @override
   BoxPainter createBoxPainter([VoidCallback? onChanged]) {
     // TODO: implement createBoxPainter
-    throw UnimplementedError();
+    return BubblePainter(this, onChanged);
   }
 
 }
