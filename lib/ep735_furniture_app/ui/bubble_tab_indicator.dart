@@ -18,6 +18,18 @@ class BubbleTabIndicator extends Decoration {
   });
 
   @override
+  Decoration? lerpFrom(Decoration? a, double t) {
+    if(a is BubbleTabIndicator){
+      return BubbleTabIndicator(
+        padding: EdgeInsetsGeometry.lerp(a.padding, padding, t)!,
+        insets: EdgeInsetsGeometry.lerp(a.insets, insets, t)!
+      );
+    }
+    return super.lerpFrom(a, t);
+
+  }
+
+  @override
   BoxPainter createBoxPainter([VoidCallback? onChanged]) {
     // TODO: implement createBoxPainter
     throw UnimplementedError();
