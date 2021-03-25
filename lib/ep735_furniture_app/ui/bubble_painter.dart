@@ -36,3 +36,18 @@ class BubblePainter extends BoxPainter {
         Size(configuration.size!.width, indicatorHeight);
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
