@@ -19,10 +19,10 @@ class BubblePainter extends BoxPainter {
 
   TabBarIndicatorSize get tabBarIndicatorSize => decoration.tabBarIndicatorSize;
 
-  Rect _indicatorRectFor(Rect rect, TextDirection textDirection){
+  Rect _indicatorRectFor(Rect rect, TextDirection textDirection) {
     Rect indicator = padding.resolve(textDirection).inflateRect(rect);
 
-    if(tabBarIndicatorSize == TabBarIndicatorSize.label){
+    if (tabBarIndicatorSize == TabBarIndicatorSize.label) {
       indicator = insets.resolve(textDirection).deflateRect(rect);
     }
 
@@ -32,5 +32,7 @@ class BubblePainter extends BoxPainter {
   @override
   void paint(Canvas canvas, Offset offset, ImageConfiguration configuration) {
     assert(configuration.size != null);
+    final Rect rect = Offset(offset.dx, (configuration.size!.height / 2) - indicatorHeight / 2) &
+        Size(configuration.size!.width, indicatorHeight);
   }
 }
