@@ -53,7 +53,7 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
                         width: 64,
                         decoration: BoxDecoration(
                           color: mainColor,
-                          
+                          borderRadius: BorderRadius.circular(8),
                         ),
                       ),
 
