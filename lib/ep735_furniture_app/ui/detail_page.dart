@@ -11,8 +11,19 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
     return Scaffold(
       body: Stack(
         children: [
-          Positioned(child: Container()),
-          Positioned(child: Container()),
+          Positioned(
+            left: 0,
+              child: Container(
+            height: MediaQuery.of(context).size.height / 4,
+          )),
+          Positioned(
+            child: Container(
+              height: MediaQuery.of(context).size.height / 3,
+            ),
+            left: 0,
+            right: 0,
+            bottom: 0,
+          ),
         ],
       ),
     );
