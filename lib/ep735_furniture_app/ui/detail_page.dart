@@ -16,14 +16,24 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
               right: 0,
               top: 0,
               child: Container(
-                height: MediaQuery.of(context).size.height / 4,
+                height: MediaQuery.of(context).size.height / 3,
                 color: Colors.grey[200],
               )),
           Positioned(
             child: Container(
-              height: MediaQuery.of(context).size.height / 5,
+              decoration: BoxDecoration(
+                color: Colors.white
+              ),
+              height: MediaQuery.of(context).size.height / 1.7,
               child: Column(
                 children: [
+                  Container(
+                    height: 12,
+                    width: 120,
+                    decoration: BoxDecoration(
+                      color: Colors.grey,
+                    ),
+                  ),
 
 
 
