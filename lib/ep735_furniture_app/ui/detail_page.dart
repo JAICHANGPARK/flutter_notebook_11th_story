@@ -48,12 +48,13 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
                   Row(
                     children: [
                       Container(
-                        height: 42,
+                        height: 32,
                         width: 64,
                         decoration: BoxDecoration(
                           color: mainColor,
                         ),
-                      )
+                      ),
+                      
                     ],
                   )
                 ],
