@@ -6,6 +6,7 @@ class FurnitureDetailPage extends StatefulWidget {
 }
 
 class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
+  Color mainColor = Color(0xff484c7F); // 72 76 127  48 4c 7F
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -44,6 +45,17 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
+                  Row(
+                    children: [
+                      Container(
+                        height: 42,
+                        width: 64,
+                        decoration: BoxDecoration(
+                          color: mainColor,
+                        ),
+                      )
+                    ],
+                  )
                 ],
               ),
             ),
