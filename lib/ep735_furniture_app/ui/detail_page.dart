@@ -54,7 +54,7 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
                           color: mainColor,
                         ),
                       ),
-                      
+
                     ],
                   )
                 ],
