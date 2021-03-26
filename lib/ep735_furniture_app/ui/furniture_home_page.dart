@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_notebook_11th_story/ep735_furniture_app/ui/bubble_tab_indicator.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'detail_page.dart';
+
 class FurnitureHomePage extends StatefulWidget {
   FurnitureHomePage({Key? key}) : super(key: key);
 
@@ -245,7 +247,8 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> with SingleTicker
                                       flex: 2,
                                       child: GestureDetector(
                                         onTap: (){
-                                          
+                                          Navigator.of(context).push(MaterialPageRoute(builder: (context)
+                                          => FurnitureDetailPage()));
                                         },
                                         child: Container(
                                           child: Center(
