@@ -25,16 +25,21 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
               decoration: BoxDecoration(color: Colors.white),
               height: MediaQuery.of(context).size.height / 1.7,
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   SizedBox(height: 16,),
-                  Container(
-                    height: 10,
-                    width: 72,
-                    decoration: BoxDecoration(
-                      color: Colors.grey[300],
-                      borderRadius: BorderRadius.circular(8)
+                  Center(
+                    child: Container(
+                      height: 10,
+                      width: 72,
+                      decoration: BoxDecoration(
+                        color: Colors.grey[300],
+                        borderRadius: BorderRadius.circular(8)
+                      ),
                     ),
                   ),
+                  Text("Blue Yutte"),
+
                 ],
               ),
             ),
