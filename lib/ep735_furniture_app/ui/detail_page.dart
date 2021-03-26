@@ -47,7 +47,7 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  SizedBox(height: 20),
+                  SizedBox(height: 16),
                   Row(
                     children: [
                       Container(
@@ -73,12 +73,13 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
                       ),
                     ],
                   ),
+                  SizedBox(height: 16),
                   Row(
                     children: [
                       Text(
                         "Color",
                         style: TextStyle(
-                          fontSize: 18,
+                          fontSize: 20,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
