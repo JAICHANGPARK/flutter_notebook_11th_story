@@ -92,8 +92,7 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
                     TextSpan(
                       children:[
                         TextSpan( text: "\$200", style: GoogleFonts.montserrat(
-                          fontSize: 24,
-                          fontWeight: FontWeight.bold
+                          fontSize: 26,
                         )),
                         TextSpan( text: ".00"),
                       ]
