@@ -24,22 +24,26 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
             child: Container(
               decoration: BoxDecoration(color: Colors.white),
               height: MediaQuery.of(context).size.height / 1.7,
+              padding: EdgeInsets.all(16),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  SizedBox(height: 16,),
+
                   Center(
                     child: Container(
-                      height: 10,
+                      height: 8,
                       width: 72,
-                      decoration: BoxDecoration(
-                        color: Colors.grey[300],
-                        borderRadius: BorderRadius.circular(8)
-                      ),
+                      decoration: BoxDecoration(color: Colors.grey[300], borderRadius: BorderRadius.circular(8)),
                     ),
                   ),
-                  Text("Blue Yutte"),
-
+                  SizedBox(height: 24,),
+                  Text(
+                    "Blue Yutte",
+                    style: TextStyle(
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                 ],
               ),
             ),
