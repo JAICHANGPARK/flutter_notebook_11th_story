@@ -91,7 +91,10 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
                   Text.rich(
                     TextSpan(
                       children:[
-                        
+                        TextSpan( text: "\$200", style: TextStyle(
+                          fontSize: 24,
+                        )),
+                        TextSpan( text: ".00"),
                       ]
                     )
                   ),
