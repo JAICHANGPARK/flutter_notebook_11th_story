@@ -29,7 +29,6 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-
                   Center(
                     child: Container(
                       height: 8,
@@ -37,7 +36,9 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
                       decoration: BoxDecoration(color: Colors.grey[300], borderRadius: BorderRadius.circular(8)),
                     ),
                   ),
-                  SizedBox(height: 24,),
+                  SizedBox(
+                    height: 24,
+                  ),
                   Text(
                     "Blue Yutte",
                     style: TextStyle(
@@ -45,7 +46,9 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  SizedBox(height: 20,),
+                  SizedBox(
+                    height: 20,
+                  ),
                   Row(
                     children: [
                       Container(
@@ -56,12 +59,19 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
                           borderRadius: BorderRadius.circular(8),
                         ),
                         child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
-                            
+                            Icon(Icons.star, color: Colors.yellow, size: 14),
+                            Text(
+                              "4.7",
+                              style: TextStyle(
+                                fontSize: 15,
+                                color: Colors.white,
+                              ),
+                            )
                           ],
                         ),
                       ),
-
                     ],
                   )
                 ],
