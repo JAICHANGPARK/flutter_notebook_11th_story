@@ -243,15 +243,20 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> with SingleTicker
                                       )),
                                   Expanded(
                                       flex: 2,
-                                      child: Container(
-                                        child: Center(
-                                          child: Text(
-                                            "Buy",
-                                            style: GoogleFonts.montserrat(color: Colors.white),
+                                      child: GestureDetector(
+                                        onTap: (){
+                                          
+                                        },
+                                        child: Container(
+                                          child: Center(
+                                            child: Text(
+                                              "Buy",
+                                              style: GoogleFonts.montserrat(color: Colors.white),
+                                            ),
                                           ),
+                                          decoration:
+                                              BoxDecoration(color: mainColor, borderRadius: BorderRadius.circular(8)),
                                         ),
-                                        decoration:
-                                            BoxDecoration(color: mainColor, borderRadius: BorderRadius.circular(8)),
                                       )),
                                 ],
                               ),
