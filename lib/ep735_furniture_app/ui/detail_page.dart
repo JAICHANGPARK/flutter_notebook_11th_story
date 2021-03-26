@@ -21,22 +21,18 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
               )),
           Positioned(
             child: Container(
-              decoration: BoxDecoration(
-                color: Colors.white
-              ),
+              decoration: BoxDecoration(color: Colors.white),
               height: MediaQuery.of(context).size.height / 1.7,
               child: Column(
                 children: [
                   Container(
-                    height: 12,
-                    width: 120,
+                    height: 10,
+                    width: 72,
                     decoration: BoxDecoration(
                       color: Colors.grey,
+                      borderRadius: BorderRadius.circular(8)
                     ),
                   ),
-
-
-
                 ],
               ),
             ),
