@@ -25,6 +25,7 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
               height: MediaQuery.of(context).size.height / 1.7,
               child: Column(
                 children: [
+                  SizedBox(height: 16,),
                   Container(
                     height: 10,
                     width: 72,
