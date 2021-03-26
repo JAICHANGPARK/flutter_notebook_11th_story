@@ -9,6 +9,7 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[200],
       body: Stack(
         children: [
           Positioned(
@@ -30,7 +31,7 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
                     height: 10,
                     width: 72,
                     decoration: BoxDecoration(
-                      color: Colors.grey,
+                      color: Colors.grey[300],
                       borderRadius: BorderRadius.circular(8)
                     ),
                   ),
