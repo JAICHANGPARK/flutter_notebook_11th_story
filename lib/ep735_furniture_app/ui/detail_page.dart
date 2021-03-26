@@ -55,6 +55,11 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
                           color: mainColor,
                           borderRadius: BorderRadius.circular(8),
                         ),
+                        child: Row(
+                          children: [
+                            
+                          ],
+                        ),
                       ),
 
                     ],
