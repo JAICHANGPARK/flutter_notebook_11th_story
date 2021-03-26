@@ -145,10 +145,9 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> with SingleTicker
                         labelColor: Colors.white,
                         unselectedLabelColor: Colors.black,
                         indicator: BubbleTabIndicator(
-                          indicatorHeight: 24,
-                          indicatorColor: mainColor,
-                          tabBarIndicatorSize: TabBarIndicatorSize.label
-                        ),
+                            indicatorHeight: 24,
+                            indicatorColor: mainColor,
+                            tabBarIndicatorSize: TabBarIndicatorSize.label),
                         tabs: [
                           Tab(
                             text: "Chair",
@@ -246,9 +245,10 @@ class _FurnitureHomePageState extends State<FurnitureHomePage> with SingleTicker
                                   Expanded(
                                       flex: 2,
                                       child: GestureDetector(
-                                        onTap: (){
-                                          Navigator.of(context).push(MaterialPageRoute(builder: (context)
-                                          => FurnitureDetailPage()));
+                                        onTap: () {
+                                          Navigator.of(context)
+                                              .push(MaterialPageRoute(builder: (context) =>
+                                              FurnitureDetailPage()));
                                         },
                                         child: Container(
                                           child: Center(
