@@ -21,9 +21,11 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
               )),
           Positioned(
             child: Container(
-              height: MediaQuery.of(context).size.height / 3,
+              height: MediaQuery.of(context).size.height / 5,
               child: Column(
                 children: [
+
+
 
                 ],
               ),
