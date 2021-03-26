@@ -9,7 +9,11 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
+      body: Stack(
+        children: [
+
+        ],
+      ),
     );
   }
 }
