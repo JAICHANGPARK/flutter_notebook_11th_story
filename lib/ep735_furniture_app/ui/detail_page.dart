@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class FurnitureDetailPage extends StatefulWidget {
   @override
@@ -41,14 +42,12 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
                   ),
                   Text(
                     "Blue Yutte",
-                    style: TextStyle(
+                    style: GoogleFonts.montserrat(
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  SizedBox(
-                    height: 20,
-                  ),
+                  SizedBox(height: 20),
                   Row(
                     children: [
                       Container(
@@ -70,6 +69,17 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
                               ),
                             )
                           ],
+                        ),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Text(
+                        "Color",
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
                         ),
                       ),
                     ],
