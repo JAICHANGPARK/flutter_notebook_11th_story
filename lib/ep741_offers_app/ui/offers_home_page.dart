@@ -12,7 +12,7 @@ class _OffersHomePageState extends State<OffersHomePage> {
       body: SafeArea(
         child: Column(
           children: [
-            
+
           ],
         ),
       ),
