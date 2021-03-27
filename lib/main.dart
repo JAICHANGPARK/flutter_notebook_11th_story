@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'ep735_furniture_app/furniture_mobile_app.dart';
+import 'ep741_offers_app/offers_app.dart';
 
 void main() {
-  runApp(FurnitureMobileApp());
+  runApp(OffersApp());
 }
