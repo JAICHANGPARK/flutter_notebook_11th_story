@@ -1,6 +1,9 @@
 name: flutter_notebook_11th_story
 description: flutter_notebook_11th_story.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+authors:
+  - Dreamwalker
+homepage: https://github.com/JAICHANGPARK
 version: 1.0.1+2
 
 environment:
