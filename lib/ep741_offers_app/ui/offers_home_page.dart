@@ -9,6 +9,7 @@ class _OffersHomePageState extends State<OffersHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.blueGrey[50],
       body: SafeArea(
         child: Column(
           children: [
