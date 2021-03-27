@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class OffersHomePage extends StatefulWidget {
   @override
@@ -16,7 +17,16 @@ class _OffersHomePageState extends State<OffersHomePage> {
           children: [
             Expanded(
                 flex: 2,
-                child: Placeholder()),
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    "Offers",
+                    style: GoogleFonts.montserrat(
+                      fontSize: 32,
+                      fontWeight: FontWeight.bold
+                    ),
+                  ),
+                )),
             Expanded(
                 flex:1,child: Placeholder()),
             Expanded(
