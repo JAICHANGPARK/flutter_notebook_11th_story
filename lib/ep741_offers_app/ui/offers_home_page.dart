@@ -40,10 +40,11 @@ class _OffersHomePageState extends State<OffersHomePage> {
                       ),
                       Spacer(),
                       Container(
-                        width: 48,
+                        width: 42,
                         margin: EdgeInsets.symmetric(vertical: 8),
                         decoration: BoxDecoration(
                           color: Colors.white,
+                          borderRadius: BorderRadius.circular(10)
                         ),
                       ),
 
