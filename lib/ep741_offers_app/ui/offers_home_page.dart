@@ -18,7 +18,7 @@ class _OffersHomePageState extends State<OffersHomePage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Expanded(
-                  flex: 2,
+                  flex: 3,
                   child: Align(
                     alignment: Alignment.centerLeft,
                     child: Text(
@@ -28,7 +28,7 @@ class _OffersHomePageState extends State<OffersHomePage> {
                   )),
 
               Expanded(
-                  flex: 1,
+                  flex: 2,
                   child: Row(
                     children: [
                       Container(
@@ -40,7 +40,7 @@ class _OffersHomePageState extends State<OffersHomePage> {
                       )
                     ],
                   )),SizedBox(height: 16),
-              Expanded(flex: 10, child: Placeholder()),
+              Expanded(flex: 20, child: Placeholder()),
             ],
           ),
         ),
