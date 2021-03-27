@@ -37,7 +37,16 @@ class _OffersHomePageState extends State<OffersHomePage> {
                         decoration: BoxDecoration(
                           color: Colors.white,
                         ),
-                      )
+                      ),
+                      Spacer(),
+                      Container(
+                        width: 48,
+                        margin: EdgeInsets.symmetric(vertical: 8),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                        ),
+                      ),
+
                     ],
                   )),SizedBox(height: 16),
               Expanded(flex: 20, child: Placeholder()),
