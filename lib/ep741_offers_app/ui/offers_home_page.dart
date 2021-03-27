@@ -12,27 +12,30 @@ class _OffersHomePageState extends State<OffersHomePage> {
     return Scaffold(
       backgroundColor: Colors.blueGrey[50],
       body: SafeArea(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Expanded(
-                flex: 2,
-                child: Align(
-                  alignment: Alignment.centerLeft,
-                  child: Text(
-                    "Offers",
-                    style: GoogleFonts.montserrat(
-                      fontSize: 32,
-                      fontWeight: FontWeight.bold
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 8),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Expanded(
+                  flex: 2,
+                  child: Align(
+                    alignment: Alignment.centerLeft,
+                    child: Text(
+                      "Offers",
+                      style: GoogleFonts.montserrat(
+                        fontSize: 32,
+                        fontWeight: FontWeight.bold
+                      ),
                     ),
-                  ),
-                )),
-            Expanded(
-                flex:1,child: Placeholder()),
-            Expanded(
-                flex: 10,
-                child: Placeholder()),
-          ],
+                  )),
+              Expanded(
+                  flex:1,child: Placeholder()),
+              Expanded(
+                  flex: 10,
+                  child: Placeholder()),
+            ],
+          ),
         ),
       ),
     );
