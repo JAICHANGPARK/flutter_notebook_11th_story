@@ -13,7 +13,7 @@ class _OffersHomePageState extends State<OffersHomePage> {
       backgroundColor: Colors.blueGrey[50],
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16),
+          padding: const EdgeInsets.symmetric(horizontal: 12),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
