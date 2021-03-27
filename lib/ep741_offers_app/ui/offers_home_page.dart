@@ -23,21 +23,24 @@ class _OffersHomePageState extends State<OffersHomePage> {
                     alignment: Alignment.centerLeft,
                     child: Text(
                       "Offers",
-                      style: GoogleFonts.montserrat(
-                        fontSize: 32,
-                        fontWeight: FontWeight.bold
-                      ),
+                      style: GoogleFonts.montserrat(fontSize: 32, fontWeight: FontWeight.bold),
                     ),
                   )),
+
               Expanded(
-                  flex:1,child: Row(
-                children: [
-                  
-                ],
-              )),
-              Expanded(
-                  flex: 10,
-                  child: Placeholder()),
+                  flex: 1,
+                  child: Row(
+                    children: [
+                      Container(
+                        width: 240,
+                        margin: EdgeInsets.symmetric(vertical: 8),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                        ),
+                      )
+                    ],
+                  )),SizedBox(height: 16),
+              Expanded(flex: 10, child: Placeholder()),
             ],
           ),
         ),
