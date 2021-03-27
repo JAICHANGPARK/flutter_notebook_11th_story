@@ -47,6 +47,11 @@ class _OffersHomePageState extends State<OffersHomePage> {
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(10)
                         ),
+                        child: Center(
+                          child: IconButton(
+                            icon: Icon(Icons.swap_vert), onPressed: () {  },
+                          ),
+                        ),
                       ),
 
                     ],
