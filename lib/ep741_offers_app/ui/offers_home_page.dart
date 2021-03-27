@@ -14,9 +14,14 @@ class _OffersHomePageState extends State<OffersHomePage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(child: Placeholder()),
-            Expanded(child: Placeholder()),
-            Expanded(child: Placeholder()),
+            Expanded(
+                flex: 2,
+                child: Placeholder()),
+            Expanded(
+                flex:1,child: Placeholder()),
+            Expanded(
+                flex: 10,
+                child: Placeholder()),
           ],
         ),
       ),
