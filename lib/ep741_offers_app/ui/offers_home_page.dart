@@ -12,8 +12,11 @@ class _OffersHomePageState extends State<OffersHomePage> {
       backgroundColor: Colors.blueGrey[50],
       body: SafeArea(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-
+            Expanded(child: Placeholder()),
+            Expanded(child: Placeholder()),
+            Expanded(child: Placeholder()),
           ],
         ),
       ),
