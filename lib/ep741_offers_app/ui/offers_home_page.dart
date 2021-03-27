@@ -10,7 +10,11 @@ class _OffersHomePageState extends State<OffersHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        
+        child: Column(
+          children: [
+            
+          ],
+        ),
       ),
     );
   }
