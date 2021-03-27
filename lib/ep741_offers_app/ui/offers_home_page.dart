@@ -30,7 +30,11 @@ class _OffersHomePageState extends State<OffersHomePage> {
                     ),
                   )),
               Expanded(
-                  flex:1,child: Placeholder()),
+                  flex:1,child: Row(
+                children: [
+                  
+                ],
+              )),
               Expanded(
                   flex: 10,
                   child: Placeholder()),
