@@ -53,7 +53,7 @@ class _OffersHomePageState extends State<OffersHomePage> {
               Expanded(flex: 20, child: ListView(
                 children: [
                   SizedBox(
-                    height: 160,
+                    height: 180,
                     child: PhysicalModel(
                       color: Colors.black.withOpacity(0.3),
                       elevation: 1,
@@ -65,7 +65,9 @@ class _OffersHomePageState extends State<OffersHomePage> {
                         ),
                         child: Column(
                           children: [
-                            
+                                    Expanded(child: Placeholder()),
+                            Expanded(child: Placeholder()),
+
                           ],
                         ),
                       ),
