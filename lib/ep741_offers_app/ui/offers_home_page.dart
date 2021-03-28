@@ -79,12 +79,16 @@ class _OffersHomePageState extends State<OffersHomePage> {
                                       child: Column(
                                         crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
-                                          Text("Luxurt Apartment with River View",
+                                          Text(
+                                            "Luxurt Apartment with River View",
                                             style: GoogleFonts.montserrat(
                                               fontWeight: FontWeight.bold,
                                             ),
                                           ),
-                                          Text("Grimm 12, 10115 Hamburg"),
+                                          Text(
+                                            "Grimm 12, 10115 Hamburg",
+                                            style: GoogleFonts.montserrat(),
+                                          )
                                         ],
                                       ),
                                     ),
@@ -99,20 +103,32 @@ class _OffersHomePageState extends State<OffersHomePage> {
                                           Icon(Icons.apps),
                                           Padding(
                                             padding: const EdgeInsets.symmetric(horizontal: 8),
-                                            child: Text("240 m^2", style: GoogleFonts.montserrat(),),
+                                            child: Text(
+                                              "240 m^2",
+                                              style: GoogleFonts.montserrat(),
+                                            ),
                                           ),
                                           Icon(Icons.airline_seat_legroom_extra),
                                           Padding(
                                             padding: const EdgeInsets.symmetric(horizontal: 8),
-                                            child: Text("5", style: GoogleFonts.montserrat(),),
+                                            child: Text(
+                                              "5",
+                                              style: GoogleFonts.montserrat(),
+                                            ),
                                           ),
                                           Icon(Icons.bathtub_outlined),
                                           Padding(
                                             padding: const EdgeInsets.symmetric(horizontal: 8),
-                                            child: Text("2", style: GoogleFonts.montserrat(),),
+                                            child: Text(
+                                              "2",
+                                              style: GoogleFonts.montserrat(),
+                                            ),
                                           ),
                                           Spacer(),
-                                          Text("\$1.950/month", style: GoogleFonts.montserrat(),),
+                                          Text(
+                                            "\$1.950/month",
+                                            style: GoogleFonts.montserrat(),
+                                          ),
                                         ],
                                       ),
                                     )
