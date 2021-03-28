@@ -108,7 +108,7 @@ class _OffersHomePageState extends State<OffersHomePage> {
                                             child: Text("2"),
                                           ),
                                           Spacer(),
-                                          Text("\$1.950/month"),
+                                          Text("\$1.950/month", style: GoogleFonts.montserrat(),),
                                         ],
                                       ),
                                     )
