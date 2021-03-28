@@ -67,36 +67,37 @@ class _OffersHomePageState extends State<OffersHomePage> {
                                 Expanded(
                                     child: Container(
                                   decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.only(
-                                      topRight: Radius.circular(16),
-                                      topLeft: Radius.circular(16),
-                                    ),
+                                      borderRadius: BorderRadius.only(
+                                        topRight: Radius.circular(16),
+                                        topLeft: Radius.circular(16),
+                                      ),
                                       image: DecorationImage(
-                                    image: NetworkImage(
-                                      "https://cdn.pixabay.com/photo/2015/10/20/18/57/furniture-998265_960_720.jpg",
-                                    ),
-                                    fit: BoxFit.cover,
-                                  )),
+                                        image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2015/10/20/18/57/furniture-998265_960_720.jpg",
+                                        ),
+                                        fit: BoxFit.cover,
+                                      )),
                                   child: Stack(
                                     children: [
                                       Positioned(
-                                        left: 16,
+                                          left: 16,
                                           top: 16,
                                           child: Row(
                                             children: [
                                               Container(
                                                 padding: EdgeInsets.all(6),
                                                 decoration: BoxDecoration(
-                                                  color: Colors.blue,
-                                                  borderRadius: BorderRadius.circular(12)
+                                                    color: Colors.blue, borderRadius: BorderRadius.circular(12)),
+                                                child: Center(
+                                                  child: Text(
+                                                    "NEW MATCH",
+                                                    style: GoogleFonts.montserrat(
+                                                      color: Colors.white,
+                                                      fontSize: 11,
+                                                    ),
+                                                  ),
                                                 ),
-                                        child: Center(
-                                              child: Text("NEW MATCH", style: GoogleFonts.montserrat(
-                                                color: Colors.white,
-                                                fontSize: 11,
-                                              ),),
-                                        ),
-                                      ),
+                                              ),
                                             ],
                                           ))
                                     ],
