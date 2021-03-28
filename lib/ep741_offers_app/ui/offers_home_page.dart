@@ -79,7 +79,11 @@ class _OffersHomePageState extends State<OffersHomePage> {
                                       child: Column(
                                         crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
-                                          Text("Luxurt Apartment with River View"),
+                                          Text("Luxurt Apartment with River View",
+                                            style: GoogleFonts.montserrat(
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
                                           Text("Grimm 12, 10115 Hamburg"),
                                         ],
                                       ),
