@@ -94,11 +94,14 @@ class _OffersHomePageState extends State<OffersHomePage> {
                                         children: [
                                           Icon(Icons.apps),
                                           Padding(
-                                            padding: const EdgeInsets.all(8.0),
+                                            padding: const EdgeInsets.symmetric(horizontal: 8),
                                             child: Text("240 m^2"),
                                           ),
                                           Icon(Icons.airline_seat_legroom_extra),
-                                          Text("5"),
+                                          Padding(
+                                            padding: const EdgeInsets.symmetric(horizontal: 8),
+                                            child: Text("5"),
+                                          ),
                                           Icon(Icons.bathtub_outlined),
                                           Text("2"),
                                           Spacer(),
