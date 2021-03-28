@@ -50,63 +50,71 @@ class _OffersHomePageState extends State<OffersHomePage> {
                     ],
                   )),
               SizedBox(height: 16),
-              Expanded(flex: 20, child: ListView(
-                children: [
-                  SizedBox(
-                    height: 180,
-                    child: PhysicalModel(
-                      color: Colors.black.withOpacity(0.3),
-                      elevation: 1,
-                      borderRadius: BorderRadius.circular(16),
-                      child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(16)
-                        ),
-                        child: Column(
-                          children: [
-                                    Expanded(child: Container(
-                                      child: Stack(
+              Expanded(
+                  flex: 20,
+                  child: ListView(
+                    children: [
+                      SizedBox(
+                        height: 180,
+                        child: PhysicalModel(
+                          color: Colors.black.withOpacity(0.3),
+                          elevation: 1,
+                          borderRadius: BorderRadius.circular(16),
+                          child: Container(
+                            decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(16)),
+                            child: Column(
+                              children: [
+                                Expanded(
+                                    child: Container(
+                                  child: Stack(
+                                    children: [],
+                                  ),
+                                )),
+                                Expanded(
+                                    child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
-
+                                          Text("Luxurt Apartment with River View"),
+                                          Text("Grimm 12, 10115 Hamburg"),
                                         ],
                                       ),
-                                    )),
-                            Expanded(child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Column(
-                                  children: [
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    Text("Luxurt Apartment with River View"),
-                                    Text("Grimm 12, 10115 Hamburg"),
+                                    ),
+                                    Divider(
+                                      height: 0,
+                                      color: Colors.grey[200],
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Row(
+                                        children: [
+                                          Icon(Icons.apps),
+                                          Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: Text("240 m^2"),
+                                          ),
+                                          Icon(Icons.airline_seat_legroom_extra),
+                                          Text("5"),
+                                          Icon(Icons.bathtub_outlined),
+                                          Text("2"),
+                                          Spacer(),
+                                          Text("\$1.950/month"),
+                                        ],
+                                      ),
+                                    )
                                   ],
-                                ),
-
-                                Divider(),
-                                Row(
-                                  children: [
-                                    Icon(Icons.apps),
-                                    Text("240 m^2"),
-                                    Icon(Icons.airline_seat_legroom_extra),
-                                    Text("5"),
-
-                                    Icon(Icons.bathtub_outlined),
-                                    Text("2"),
-                                    Spacer(),
-                                    Text("\$1.950/month"),
-                                  ],
-                                )
+                                )),
                               ],
-                            )),
-
-                          ],
+                            ),
+                          ),
                         ),
-                      ),
-                    ),
-                  )
-                ],
-              )),
+                      )
+                    ],
+                  )),
             ],
           ),
         ),
