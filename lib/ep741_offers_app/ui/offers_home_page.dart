@@ -87,7 +87,8 @@ class _OffersHomePageState extends State<OffersHomePage> {
                                               Container(
                                         child: Center(
                                               child: Text("NEW MATCH", style: GoogleFonts.montserrat(
-                                                color: Colors.white
+                                                color: Colors.white,
+                                                fontSize: 12,
                                               ),),
                                         ),
                                       ),
