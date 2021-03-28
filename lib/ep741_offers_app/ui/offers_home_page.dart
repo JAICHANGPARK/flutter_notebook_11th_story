@@ -55,7 +55,9 @@ class _OffersHomePageState extends State<OffersHomePage> {
                   SizedBox(
                     height: 160,
                     child: Container(
-
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                      ),
                     ),
                   )
                 ],
