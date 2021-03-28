@@ -190,7 +190,6 @@ class _OffersHomePageState extends State<OffersHomePage> {
                           ),
                         ),
                       ),
-
                       Padding(
                         padding: const EdgeInsets.symmetric(vertical: 8),
                         child: SizedBox(
