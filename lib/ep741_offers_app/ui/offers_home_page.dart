@@ -65,7 +65,13 @@ class _OffersHomePageState extends State<OffersHomePage> {
                         ),
                         child: Column(
                           children: [
-                                    Expanded(child: Placeholder()),
+                                    Expanded(child: Container(
+                                      child: Stack(
+                                        children: [
+                                          
+                                        ],
+                                      ),
+                                    )),
                             Expanded(child: Placeholder()),
 
                           ],
