@@ -85,15 +85,15 @@ class _OffersHomePageState extends State<OffersHomePage> {
                                           child: Row(
                                             children: [
                                               Container(
-                                                padding: EdgeInsets.all(4),
+                                                padding: EdgeInsets.all(6),
                                                 decoration: BoxDecoration(
                                                   color: Colors.blue,
-                                                  borderRadius: BorderRadius.circular(4)
+                                                  borderRadius: BorderRadius.circular(8)
                                                 ),
                                         child: Center(
                                               child: Text("NEW MATCH", style: GoogleFonts.montserrat(
                                                 color: Colors.white,
-                                                fontSize: 12,
+                                                fontSize: 11,
                                               ),),
                                         ),
                                       ),
