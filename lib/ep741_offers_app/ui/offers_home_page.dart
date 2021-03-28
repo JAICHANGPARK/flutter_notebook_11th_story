@@ -76,7 +76,21 @@ class _OffersHomePageState extends State<OffersHomePage> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text("Luxurt Apartment with River View"),
-                                Text("Grimm 12, 10115 Hamburg")
+                                Text("Grimm 12, 10115 Hamburg"),
+                                Divider(),
+                                Row(
+                                  children: [
+                                    Icon(Icons.apps),
+                                    Text("240 m^2"),
+                                    Icon(Icons.airline_seat_legroom_extra),
+                                    Text("5"),
+
+                                    Icon(Icons.bathtub_outlined),
+                                    Text("2"),
+                                    Spacer(),
+                                    
+                                  ],
+                                )
                               ],
                             )),
 
