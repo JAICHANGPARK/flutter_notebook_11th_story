@@ -66,13 +66,13 @@ class _OffersHomePageState extends State<OffersHomePage> {
                               children: [
                                 Expanded(
                                     child: Container(
-                                      decoration: BoxDecoration(
-                                     image: DecorationImage(
-                                       image: NetworkImage(
-                                         "https://cdn.pixabay.com/photo/2015/10/20/18/57/furniture-998265_960_720.jpg",
-                                       )
-                                     )
-                                      ),
+                                  decoration: BoxDecoration(
+                                      image: DecorationImage(
+                                    image: NetworkImage(
+                                      "https://cdn.pixabay.com/photo/2015/10/20/18/57/furniture-998265_960_720.jpg",
+                                    ),
+                                    fit: BoxFit.cover,
+                                  )),
                                   child: Stack(
                                     children: [],
                                   ),
