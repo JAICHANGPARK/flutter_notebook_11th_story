@@ -1,6 +1,8 @@
 # flutter_notebook_11th_story
 
-A new Flutter application.
+flutter_notebook_11th_story
+
+Live Playlist : https://youtube.com/playlist?list=PLnz10ftgq9R9oWrdd4ssybbZ4O97GKE-c
 
 ## Getting Started
 
