@@ -56,7 +56,7 @@ class _OffersHomePageState extends State<OffersHomePage> {
                     height: 160,
                     child: PhysicalModel(
                       color: Colors.black.withOpacity(0.3),
-                      elevation: 2,
+                      elevation: 1,
                       borderRadius: BorderRadius.circular(16),
                       child: Container(
                         decoration: BoxDecoration(
