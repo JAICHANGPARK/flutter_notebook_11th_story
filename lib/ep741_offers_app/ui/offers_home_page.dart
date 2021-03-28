@@ -98,6 +98,7 @@ class _OffersHomePageState extends State<OffersHomePage> {
                                                   ),
                                                 ),
                                               ),
+                                              SizedBox(width: 8,),
                                               Container(
                                                 padding: EdgeInsets.all(6),
                                                 decoration: BoxDecoration(
