@@ -63,6 +63,11 @@ class _OffersHomePageState extends State<OffersHomePage> {
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(16)
                         ),
+                        child: Column(
+                          children: [
+                            
+                          ],
+                        ),
                       ),
                     ),
                   )
