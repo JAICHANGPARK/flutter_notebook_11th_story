@@ -52,7 +52,12 @@ class _OffersHomePageState extends State<OffersHomePage> {
               SizedBox(height: 16),
               Expanded(flex: 20, child: ListView(
                 children: [
-                  Container()
+                  SizedBox(
+                    height: 160,
+                    child: Container(
+
+                    ),
+                  )
                 ],
               )),
             ],
