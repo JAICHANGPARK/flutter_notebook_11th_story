@@ -75,8 +75,14 @@ class _OffersHomePageState extends State<OffersHomePage> {
                             Expanded(child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text("Luxurt Apartment with River View"),
-                                Text("Grimm 12, 10115 Hamburg"),
+                                Column(
+                                  children: [
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    Text("Luxurt Apartment with River View"),
+                                    Text("Grimm 12, 10115 Hamburg"),
+                                  ],
+                                ),
+
                                 Divider(),
                                 Row(
                                   children: [
@@ -88,7 +94,7 @@ class _OffersHomePageState extends State<OffersHomePage> {
                                     Icon(Icons.bathtub_outlined),
                                     Text("2"),
                                     Spacer(),
-                                    
+                                    Text("\$1.950/month"),
                                   ],
                                 )
                               ],
