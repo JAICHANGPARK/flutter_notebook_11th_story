@@ -78,7 +78,11 @@ class _OffersHomePageState extends State<OffersHomePage> {
                                     fit: BoxFit.cover,
                                   )),
                                   child: Stack(
-                                    children: [],
+                                    children: [
+                                      Positioned(child: Center(
+                                        child: Text("NEW MATCH", style: GoogleFonts.montserrat(),),
+                                      ))
+                                    ],
                                   ),
                                 )),
                                 Expanded(
