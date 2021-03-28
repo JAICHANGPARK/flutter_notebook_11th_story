@@ -68,11 +68,17 @@ class _OffersHomePageState extends State<OffersHomePage> {
                                     Expanded(child: Container(
                                       child: Stack(
                                         children: [
-                                          
+
                                         ],
                                       ),
                                     )),
-                            Expanded(child: Placeholder()),
+                            Expanded(child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text("Luxurt Apartment with River View"),
+                                Text("Grimm 12, 10115 Hamburg")
+                              ],
+                            )),
 
                           ],
                         ),
