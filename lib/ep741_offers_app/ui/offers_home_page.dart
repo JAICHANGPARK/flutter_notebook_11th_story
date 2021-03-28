@@ -102,12 +102,12 @@ class _OffersHomePageState extends State<OffersHomePage> {
                                               Container(
                                                 padding: EdgeInsets.all(6),
                                                 decoration: BoxDecoration(
-                                                    color: Colors.blue, borderRadius: BorderRadius.circular(12)),
+                                                    color: Colors.grey[400], borderRadius: BorderRadius.circular(12)),
                                                 child: Center(
                                                   child: Text(
                                                     "FLAT",
                                                     style: GoogleFonts.montserrat(
-                                                      color: Colors.white,
+                                                      color: Colors.black,
                                                       fontSize: 11,
                                                     ),
                                                   ),
@@ -183,6 +183,143 @@ class _OffersHomePageState extends State<OffersHomePage> {
                                   ],
                                 )),
                               ],
+                            ),
+                          ),
+                        ),
+                      ),
+
+                      Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 16),
+                        child: SizedBox(
+                          height: 180,
+                          child: PhysicalModel(
+                            color: Colors.black.withOpacity(0.3),
+                            elevation: 1,
+                            borderRadius: BorderRadius.circular(16),
+                            child: Container(
+                              decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(16)),
+                              child: Column(
+                                children: [
+                                  Expanded(
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                            borderRadius: BorderRadius.only(
+                                              topRight: Radius.circular(16),
+                                              topLeft: Radius.circular(16),
+                                            ),
+                                            image: DecorationImage(
+                                              image: NetworkImage(
+                                                "https://cdn.pixabay.com/photo/2015/10/20/18/57/furniture-998265_960_720.jpg",
+                                              ),
+                                              fit: BoxFit.cover,
+                                            )),
+                                        child: Stack(
+                                          children: [
+                                            Positioned(
+                                                left: 16,
+                                                top: 16,
+                                                child: Row(
+                                                  children: [
+                                                    Container(
+                                                      padding: EdgeInsets.all(6),
+                                                      decoration: BoxDecoration(
+                                                          color: Colors.blue, borderRadius: BorderRadius.circular(12)),
+                                                      child: Center(
+                                                        child: Text(
+                                                          "NEW MATCH",
+                                                          style: GoogleFonts.montserrat(
+                                                            color: Colors.white,
+                                                            fontSize: 11,
+                                                          ),
+                                                        ),
+                                                      ),
+                                                    ),
+                                                    SizedBox(width: 8,),
+                                                    Container(
+                                                      padding: EdgeInsets.all(6),
+                                                      decoration: BoxDecoration(
+                                                          color: Colors.grey[400], borderRadius: BorderRadius.circular(12)),
+                                                      child: Center(
+                                                        child: Text(
+                                                          "FLAT",
+                                                          style: GoogleFonts.montserrat(
+                                                            color: Colors.black,
+                                                            fontSize: 11,
+                                                          ),
+                                                        ),
+                                                      ),
+                                                    ),
+                                                  ],
+                                                ))
+                                          ],
+                                        ),
+                                      )),
+                                  Expanded(
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: Column(
+                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                              children: [
+                                                Text(
+                                                  "Luxurt Apartment with River View",
+                                                  style: GoogleFonts.montserrat(
+                                                    fontWeight: FontWeight.bold,
+                                                  ),
+                                                ),
+                                                Text(
+                                                  "Grimm 12, 10115 Hamburg",
+                                                  style: GoogleFonts.montserrat(),
+                                                )
+                                              ],
+                                            ),
+                                          ),
+                                          Divider(
+                                            height: 0,
+                                            color: Colors.grey[200],
+                                          ),
+                                          Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: Row(
+                                              children: [
+                                                Icon(Icons.apps),
+                                                Padding(
+                                                  padding: const EdgeInsets.symmetric(horizontal: 8),
+                                                  child: Text(
+                                                    "240 m^2",
+                                                    style: GoogleFonts.montserrat(),
+                                                  ),
+                                                ),
+                                                Icon(Icons.airline_seat_legroom_extra),
+                                                Padding(
+                                                  padding: const EdgeInsets.symmetric(horizontal: 8),
+                                                  child: Text(
+                                                    "5",
+                                                    style: GoogleFonts.montserrat(),
+                                                  ),
+                                                ),
+                                                Icon(Icons.bathtub_outlined),
+                                                Padding(
+                                                  padding: const EdgeInsets.symmetric(horizontal: 8),
+                                                  child: Text(
+                                                    "2",
+                                                    style: GoogleFonts.montserrat(),
+                                                  ),
+                                                ),
+                                                Spacer(),
+                                                Text(
+                                                  "\$1.950/month",
+                                                  style: GoogleFonts.montserrat(),
+                                                ),
+                                              ],
+                                            ),
+                                          )
+                                        ],
+                                      )),
+                                ],
+                              ),
                             ),
                           ),
                         ),
