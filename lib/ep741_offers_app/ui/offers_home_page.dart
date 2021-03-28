@@ -88,7 +88,7 @@ class _OffersHomePageState extends State<OffersHomePage> {
                                                 padding: EdgeInsets.all(6),
                                                 decoration: BoxDecoration(
                                                   color: Colors.blue,
-                                                  borderRadius: BorderRadius.circular(8)
+                                                  borderRadius: BorderRadius.circular(12)
                                                 ),
                                         child: Center(
                                               child: Text("NEW MATCH", style: GoogleFonts.montserrat(
