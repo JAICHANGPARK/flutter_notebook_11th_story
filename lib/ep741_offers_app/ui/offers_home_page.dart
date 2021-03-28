@@ -26,7 +26,6 @@ class _OffersHomePageState extends State<OffersHomePage> {
                       style: GoogleFonts.montserrat(fontSize: 32, fontWeight: FontWeight.bold),
                     ),
                   )),
-
               Expanded(
                   flex: 2,
                   child: Row(
@@ -34,28 +33,23 @@ class _OffersHomePageState extends State<OffersHomePage> {
                       Container(
                         width: 240,
                         margin: EdgeInsets.symmetric(vertical: 8),
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                            borderRadius: BorderRadius.circular(16)
-                        ),
+                        decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(16)),
                       ),
                       Spacer(),
                       Container(
                         width: 42,
                         margin: EdgeInsets.symmetric(vertical: 8),
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(10)
-                        ),
+                        decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(10)),
                         child: Center(
                           child: IconButton(
-                            icon: Icon(Icons.swap_vert), onPressed: () {  },
+                            icon: Icon(Icons.swap_vert),
+                            onPressed: () {},
                           ),
                         ),
                       ),
-
                     ],
-                  )),SizedBox(height: 16),
+                  )),
+              SizedBox(height: 16),
               Expanded(flex: 20, child: Placeholder()),
             ],
           ),
@@ -64,9 +58,3 @@ class _OffersHomePageState extends State<OffersHomePage> {
     );
   }
 }
-
-
-
-
-
-
