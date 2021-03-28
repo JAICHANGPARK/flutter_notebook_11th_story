@@ -79,9 +79,20 @@ class _OffersHomePageState extends State<OffersHomePage> {
                                   )),
                                   child: Stack(
                                     children: [
-                                      Positioned(child: Center(
-                                        child: Text("NEW MATCH", style: GoogleFonts.montserrat(),),
-                                      ))
+                                      Positioned(
+                                        left: 16,
+                                          top: 16,
+                                          child: Row(
+                                            children: [
+                                              Container(
+                                        child: Center(
+                                              child: Text("NEW MATCH", style: GoogleFonts.montserrat(
+                                                color: Colors.white
+                                              ),),
+                                        ),
+                                      ),
+                                            ],
+                                          ))
                                     ],
                                   ),
                                 )),
