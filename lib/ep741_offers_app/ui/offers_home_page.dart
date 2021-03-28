@@ -103,7 +103,10 @@ class _OffersHomePageState extends State<OffersHomePage> {
                                             child: Text("5"),
                                           ),
                                           Icon(Icons.bathtub_outlined),
-                                          Text("2"),
+                                          Padding(
+                                            padding: const EdgeInsets.symmetric(horizontal: 8),
+                                            child: Text("2"),
+                                          ),
                                           Spacer(),
                                           Text("\$1.950/month"),
                                         ],
