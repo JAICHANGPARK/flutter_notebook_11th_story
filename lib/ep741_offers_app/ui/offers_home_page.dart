@@ -98,6 +98,20 @@ class _OffersHomePageState extends State<OffersHomePage> {
                                                   ),
                                                 ),
                                               ),
+                                              Container(
+                                                padding: EdgeInsets.all(6),
+                                                decoration: BoxDecoration(
+                                                    color: Colors.blue, borderRadius: BorderRadius.circular(12)),
+                                                child: Center(
+                                                  child: Text(
+                                                    "FLAT",
+                                                    style: GoogleFonts.montserrat(
+                                                      color: Colors.white,
+                                                      fontSize: 11,
+                                                    ),
+                                                  ),
+                                                ),
+                                              ),
                                             ],
                                           ))
                                     ],
