@@ -189,7 +189,7 @@ class _OffersHomePageState extends State<OffersHomePage> {
                                       width: 120,
                                       child: Container(
                                         decoration:
-                                            BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(16)),
+                                            BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(16)),
                                         padding: EdgeInsets.symmetric(horizontal: 8),
                                         child: Row(
                                           mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -198,7 +198,7 @@ class _OffersHomePageState extends State<OffersHomePage> {
                                               "Viewings",
                                               style: TextStyle(
                                                 fontSize: 14,
-                                                color: Colors.black,
+                                                color: Colors.white,
                                               ),
                                             ),
                                             Container(
