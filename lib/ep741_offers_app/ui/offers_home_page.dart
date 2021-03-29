@@ -43,7 +43,9 @@ class _OffersHomePageState extends State<OffersHomePage> {
                               top: 0,
                               bottom: 0,
                               child: GestureDetector(
-                                
+                                onTap: (){
+                                  
+                                },
                                 child: SizedBox(
                                   width: 120,
                                   child: Container(
