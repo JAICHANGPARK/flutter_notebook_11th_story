@@ -158,7 +158,7 @@ class _OffersHomePageState extends State<OffersHomePage> {
                                                 "Properties",
                                                 style: TextStyle(
                                                   fontSize: 14,
-                                                  color: Colors.white,
+                                                  color: Colors.black,
                                                 ),
                                               ),
                                               Container(
