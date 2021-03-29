@@ -41,13 +41,17 @@ class _OffersHomePageState extends State<OffersHomePage> {
                               top: 0,
                               bottom: 0,
                               child: SizedBox(
-                                width: 160,
+                                width: 120,
                                 child: Container(
                                   decoration: BoxDecoration(
                                     color: Colors.black,
+                                    
                                   ),
                                   child: Row(
-                                    children: [],
+                                    children: [
+                                      Text("Properties"),
+
+                                    ],
                                   ),
                                 ),
                               ),
