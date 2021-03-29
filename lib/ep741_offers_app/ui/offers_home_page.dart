@@ -90,7 +90,7 @@ class _OffersHomePageState extends State<OffersHomePage> {
                                     top: 0,
                                     bottom: 0,
                                     child: GestureDetector(
-                                      onTap: (){
+                                      onTap: () {
                                         setState(() {
                                           tabIndex = 1;
                                         });
@@ -98,8 +98,8 @@ class _OffersHomePageState extends State<OffersHomePage> {
                                       child: SizedBox(
                                         width: 120,
                                         child: Container(
-                                          decoration:
-                                              BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(16)),
+                                          decoration: BoxDecoration(
+                                              color: Colors.white, borderRadius: BorderRadius.circular(16)),
                                           padding: EdgeInsets.symmetric(horizontal: 8),
                                           child: Row(
                                             mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -140,7 +140,7 @@ class _OffersHomePageState extends State<OffersHomePage> {
                                     top: 0,
                                     bottom: 0,
                                     child: GestureDetector(
-                                      onTap: (){
+                                      onTap: () {
                                         setState(() {
                                           tabIndex = 0;
                                         });
@@ -148,8 +148,8 @@ class _OffersHomePageState extends State<OffersHomePage> {
                                       child: SizedBox(
                                         width: 120,
                                         child: Container(
-                                          decoration:
-                                              BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(16)),
+                                          decoration: BoxDecoration(
+                                              color: Colors.white, borderRadius: BorderRadius.circular(16)),
                                           padding: EdgeInsets.symmetric(horizontal: 8),
                                           child: Row(
                                             mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -171,7 +171,7 @@ class _OffersHomePageState extends State<OffersHomePage> {
                                                 child: Center(
                                                   child: Text(
                                                     "12",
-                                                    style: TextStyle(color: Colors.white, fontSize: 12),
+                                                    style: TextStyle(color: Colors.black, fontSize: 12),
                                                   ),
                                                 ),
                                               )
