@@ -42,37 +42,40 @@ class _OffersHomePageState extends State<OffersHomePage> {
                               left: 0,
                               top: 0,
                               bottom: 0,
-                              child: SizedBox(
-                                width: 120,
-                                child: Container(
-                                  decoration:
-                                      BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(16)),
-                                  padding: EdgeInsets.symmetric(horizontal: 8),
-                                  child: Row(
-                                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                                    children: [
-                                      Text(
-                                        "Properties",
-                                        style: TextStyle(
-                                          fontSize: 14,
-                                          color: Colors.white,
-                                        ),
-                                      ),
-                                      Container(
-                                        height: 24,
-                                        width: 24,
-                                        decoration: BoxDecoration(
-                                          color: Colors.white.withOpacity(0.3),
-                                          borderRadius: BorderRadius.circular(8),
-                                        ),
-                                        child: Center(
-                                          child: Text(
-                                            "12",
-                                            style: TextStyle(color: Colors.white, fontSize: 12),
+                              child: GestureDetector(
+                                
+                                child: SizedBox(
+                                  width: 120,
+                                  child: Container(
+                                    decoration:
+                                        BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(16)),
+                                    padding: EdgeInsets.symmetric(horizontal: 8),
+                                    child: Row(
+                                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                      children: [
+                                        Text(
+                                          "Properties",
+                                          style: TextStyle(
+                                            fontSize: 14,
+                                            color: Colors.white,
                                           ),
                                         ),
-                                      )
-                                    ],
+                                        Container(
+                                          height: 24,
+                                          width: 24,
+                                          decoration: BoxDecoration(
+                                            color: Colors.white.withOpacity(0.3),
+                                            borderRadius: BorderRadius.circular(8),
+                                          ),
+                                          child: Center(
+                                            child: Text(
+                                              "12",
+                                              style: TextStyle(color: Colors.white, fontSize: 12),
+                                            ),
+                                          ),
+                                        )
+                                      ],
+                                    ),
                                   ),
                                 ),
                               ),
