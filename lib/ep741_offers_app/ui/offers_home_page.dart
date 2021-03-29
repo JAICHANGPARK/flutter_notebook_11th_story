@@ -36,7 +36,7 @@ class _OffersHomePageState extends State<OffersHomePage> {
                         width: 240,
                         margin: EdgeInsets.symmetric(vertical: 8),
                         decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(16)),
-                        child: Stack(
+                        child: tabIndex == 0 ? Stack(
                           children: [
                             Positioned(
                               left: 0,
@@ -117,7 +117,7 @@ class _OffersHomePageState extends State<OffersHomePage> {
                               ),
                             ),
                           ],
-                        ),
+                        ) : ,
                       ),
                       Spacer(),
                       Container(
