@@ -598,7 +598,6 @@ class _OffersHomePageState extends State<OffersHomePage> {
                           ),
                         ),
                       )
-
                     ],
                   )),
             ],
