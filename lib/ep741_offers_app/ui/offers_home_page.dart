@@ -42,13 +42,15 @@ class _OffersHomePageState extends State<OffersHomePage> {
                               bottom: 0,
                               child: SizedBox(
                                 width: 160,
-                                child: Row(
-                                children: [
-
-                                ],
-                            ),
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.black,
+                                  ),
+                                  child: Row(
+                                    children: [],
+                                  ),
+                                ),
                               ),
-
                             )
                           ],
                         ),
