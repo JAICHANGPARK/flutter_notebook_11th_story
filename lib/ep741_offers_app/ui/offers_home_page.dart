@@ -36,174 +36,185 @@ class _OffersHomePageState extends State<OffersHomePage> {
                         width: 240,
                         margin: EdgeInsets.symmetric(vertical: 8),
                         decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(16)),
-                        child: tabIndex == 0 ? Stack(
-                          children: [
-                            Positioned(
-                              left: 0,
-                              top: 0,
-                              bottom: 0,
-                              child: GestureDetector(
-                                onTap: (){
-                                  
-                                },
-                                child: SizedBox(
-                                  width: 120,
-                                  child: Container(
-                                    decoration:
-                                        BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(16)),
-                                    padding: EdgeInsets.symmetric(horizontal: 8),
-                                    child: Row(
-                                      mainAxisAlignment: MainAxisAlignment.spaceAround,
-                                      children: [
-                                        Text(
-                                          "Properties",
-                                          style: TextStyle(
-                                            fontSize: 14,
-                                            color: Colors.white,
+                        child: tabIndex == 0
+                            ? Stack(
+                                children: [
+                                  Positioned(
+                                    left: 0,
+                                    top: 0,
+                                    bottom: 0,
+                                    child: GestureDetector(
+                                      onTap: () {
+                                        setState(() {
+                                          tabIndex = 0;
+                                        });
+                                      },
+                                      child: SizedBox(
+                                        width: 120,
+                                        child: Container(
+                                          decoration: BoxDecoration(
+                                              color: Colors.black, borderRadius: BorderRadius.circular(16)),
+                                          padding: EdgeInsets.symmetric(horizontal: 8),
+                                          child: Row(
+                                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                            children: [
+                                              Text(
+                                                "Properties",
+                                                style: TextStyle(
+                                                  fontSize: 14,
+                                                  color: Colors.white,
+                                                ),
+                                              ),
+                                              Container(
+                                                height: 24,
+                                                width: 24,
+                                                decoration: BoxDecoration(
+                                                  color: Colors.white.withOpacity(0.3),
+                                                  borderRadius: BorderRadius.circular(8),
+                                                ),
+                                                child: Center(
+                                                  child: Text(
+                                                    "12",
+                                                    style: TextStyle(color: Colors.white, fontSize: 12),
+                                                  ),
+                                                ),
+                                              )
+                                            ],
                                           ),
                                         ),
-                                        Container(
-                                          height: 24,
-                                          width: 24,
-                                          decoration: BoxDecoration(
-                                            color: Colors.white.withOpacity(0.3),
-                                            borderRadius: BorderRadius.circular(8),
-                                          ),
-                                          child: Center(
-                                            child: Text(
-                                              "12",
-                                              style: TextStyle(color: Colors.white, fontSize: 12),
-                                            ),
-                                          ),
-                                        )
-                                      ],
+                                      ),
                                     ),
                                   ),
-                                ),
-                              ),
-                            ),
-                            Positioned(
-                              right: 0,
-                              top: 0,
-                              bottom: 0,
-                              child: SizedBox(
-                                width: 120,
-                                child: Container(
-                                  decoration:
-                                      BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(16)),
-                                  padding: EdgeInsets.symmetric(horizontal: 8),
-                                  child: Row(
-                                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                                    children: [
-                                      Text(
-                                        "Viewings",
-                                        style: TextStyle(
-                                          fontSize: 14,
-                                          color: Colors.black,
-                                        ),
-                                      ),
-                                      Container(
-                                        height: 24,
-                                        width: 24,
-                                        decoration: BoxDecoration(
-                                          color: Colors.grey[300],
-                                          borderRadius: BorderRadius.circular(8),
-                                        ),
-                                        child: Center(
-                                          child: Text(
-                                            "8",
-                                            style: TextStyle(color: Colors.black, fontSize: 12),
+                                  Positioned(
+                                    right: 0,
+                                    top: 0,
+                                    bottom: 0,
+                                    child: GestureDetector(
+                                      onTap: (){
+                                        setState(() {
+                                          tabIndex = 1;
+                                        });
+                                      },
+                                      child: SizedBox(
+                                        width: 120,
+                                        child: Container(
+                                          decoration:
+                                              BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(16)),
+                                          padding: EdgeInsets.symmetric(horizontal: 8),
+                                          child: Row(
+                                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                            children: [
+                                              Text(
+                                                "Viewings",
+                                                style: TextStyle(
+                                                  fontSize: 14,
+                                                  color: Colors.black,
+                                                ),
+                                              ),
+                                              Container(
+                                                height: 24,
+                                                width: 24,
+                                                decoration: BoxDecoration(
+                                                  color: Colors.grey[300],
+                                                  borderRadius: BorderRadius.circular(8),
+                                                ),
+                                                child: Center(
+                                                  child: Text(
+                                                    "8",
+                                                    style: TextStyle(color: Colors.black, fontSize: 12),
+                                                  ),
+                                                ),
+                                              )
+                                            ],
                                           ),
                                         ),
-                                      )
-                                    ],
+                                      ),
+                                    ),
                                   ),
-                                ),
-                              ),
-                            ),
-                          ],
-                        ) : Stack(
-                          children: [
-                            Positioned(
-                              left: 0,
-                              top: 0,
-                              bottom: 0,
-                              child: SizedBox(
-                                width: 120,
-                                child: Container(
-                                  decoration:
-                                  BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(16)),
-                                  padding: EdgeInsets.symmetric(horizontal: 8),
-                                  child: Row(
-                                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                                    children: [
-                                      Text(
-                                        "Properties",
-                                        style: TextStyle(
-                                          fontSize: 14,
-                                          color: Colors.white,
+                                ],
+                              )
+                            : Stack(
+                                children: [
+                                  Positioned(
+                                    left: 0,
+                                    top: 0,
+                                    bottom: 0,
+                                    child: SizedBox(
+                                      width: 120,
+                                      child: Container(
+                                        decoration:
+                                            BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(16)),
+                                        padding: EdgeInsets.symmetric(horizontal: 8),
+                                        child: Row(
+                                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                          children: [
+                                            Text(
+                                              "Properties",
+                                              style: TextStyle(
+                                                fontSize: 14,
+                                                color: Colors.white,
+                                              ),
+                                            ),
+                                            Container(
+                                              height: 24,
+                                              width: 24,
+                                              decoration: BoxDecoration(
+                                                color: Colors.white.withOpacity(0.3),
+                                                borderRadius: BorderRadius.circular(8),
+                                              ),
+                                              child: Center(
+                                                child: Text(
+                                                  "12",
+                                                  style: TextStyle(color: Colors.white, fontSize: 12),
+                                                ),
+                                              ),
+                                            )
+                                          ],
                                         ),
                                       ),
-                                      Container(
-                                        height: 24,
-                                        width: 24,
-                                        decoration: BoxDecoration(
-                                          color: Colors.white.withOpacity(0.3),
-                                          borderRadius: BorderRadius.circular(8),
-                                        ),
-                                        child: Center(
-                                          child: Text(
-                                            "12",
-                                            style: TextStyle(color: Colors.white, fontSize: 12),
-                                          ),
-                                        ),
-                                      )
-                                    ],
+                                    ),
                                   ),
-                                ),
-                              ),
-                            ),
-                            Positioned(
-                              right: 0,
-                              top: 0,
-                              bottom: 0,
-                              child: SizedBox(
-                                width: 120,
-                                child: Container(
-                                  decoration:
-                                  BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(16)),
-                                  padding: EdgeInsets.symmetric(horizontal: 8),
-                                  child: Row(
-                                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                                    children: [
-                                      Text(
-                                        "Viewings",
-                                        style: TextStyle(
-                                          fontSize: 14,
-                                          color: Colors.black,
+                                  Positioned(
+                                    right: 0,
+                                    top: 0,
+                                    bottom: 0,
+                                    child: SizedBox(
+                                      width: 120,
+                                      child: Container(
+                                        decoration:
+                                            BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(16)),
+                                        padding: EdgeInsets.symmetric(horizontal: 8),
+                                        child: Row(
+                                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                          children: [
+                                            Text(
+                                              "Viewings",
+                                              style: TextStyle(
+                                                fontSize: 14,
+                                                color: Colors.black,
+                                              ),
+                                            ),
+                                            Container(
+                                              height: 24,
+                                              width: 24,
+                                              decoration: BoxDecoration(
+                                                color: Colors.grey[300],
+                                                borderRadius: BorderRadius.circular(8),
+                                              ),
+                                              child: Center(
+                                                child: Text(
+                                                  "8",
+                                                  style: TextStyle(color: Colors.black, fontSize: 12),
+                                                ),
+                                              ),
+                                            )
+                                          ],
                                         ),
                                       ),
-                                      Container(
-                                        height: 24,
-                                        width: 24,
-                                        decoration: BoxDecoration(
-                                          color: Colors.grey[300],
-                                          borderRadius: BorderRadius.circular(8),
-                                        ),
-                                        child: Center(
-                                          child: Text(
-                                            "8",
-                                            style: TextStyle(color: Colors.black, fontSize: 12),
-                                          ),
-                                        ),
-                                      )
-                                    ],
+                                    ),
                                   ),
-                                ),
+                                ],
                               ),
-                            ),
-                          ],
-                        )  ,
                       ),
                       Spacer(),
                       Container(
