@@ -50,6 +50,11 @@ class _OffersHomePageState extends State<OffersHomePage> {
                                   child: Row(
                                     children: [
                                       Text("Properties"),
+                                      Container(
+                                        height: 24,
+                                        width: 24,
+                                        decoration: BoxDecoration(),
+                                      )
 
                                     ],
                                   ),
