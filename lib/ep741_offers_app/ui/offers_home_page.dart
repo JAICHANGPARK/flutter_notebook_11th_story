@@ -36,7 +36,13 @@ class _OffersHomePageState extends State<OffersHomePage> {
                         decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(16)),
                         child: Stack(
                           children: [
-                            
+                            Positioned(child: Row(
+                              children: [
+                                
+                              ],
+                            ),
+
+                            )
                           ],
                         ),
                       ),
