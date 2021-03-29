@@ -43,19 +43,23 @@ class _OffersHomePageState extends State<OffersHomePage> {
                               child: SizedBox(
                                 width: 120,
                                 child: Container(
-                                  decoration: BoxDecoration(
-                                    color: Colors.black,
-                                    borderRadius: BorderRadius.circular(16)
-                                  ),
+                                  decoration:
+                                      BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(16)),
                                   child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceAround,
                                     children: [
-                                      Text("Properties"),
+                                      Text(
+                                        "Properties",
+                                        style: TextStyle(
+                                          fontSize: 14,
+                                          color: Colors.white,
+                                        ),
+                                      ),
                                       Container(
                                         height: 24,
                                         width: 24,
-                                        decoration: BoxDecoration(),
+                                        decoration: BoxDecoration(color: Colors.white.withOpacity(0.3)),
                                       )
-
                                     ],
                                   ),
                                 ),
