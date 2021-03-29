@@ -141,13 +141,15 @@ class _OffersHomePageState extends State<OffersHomePage> {
                                     bottom: 0,
                                     child: GestureDetector(
                                       onTap: (){
-                                        
+                                        setState(() {
+                                          tabIndex = 0;
+                                        });
                                       },
                                       child: SizedBox(
                                         width: 120,
                                         child: Container(
                                           decoration:
-                                              BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(16)),
+                                              BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(16)),
                                           padding: EdgeInsets.symmetric(horizontal: 8),
                                           child: Row(
                                             mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -163,7 +165,7 @@ class _OffersHomePageState extends State<OffersHomePage> {
                                                 height: 24,
                                                 width: 24,
                                                 decoration: BoxDecoration(
-                                                  color: Colors.white.withOpacity(0.3),
+                                                  color: Colors.grey[200],
                                                   borderRadius: BorderRadius.circular(8),
                                                 ),
                                                 child: Center(
