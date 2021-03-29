@@ -205,13 +205,13 @@ class _OffersHomePageState extends State<OffersHomePage> {
                                               height: 24,
                                               width: 24,
                                               decoration: BoxDecoration(
-                                                color: Colors.grey[300],
+                                                color: Colors.white.withOpacity(0.5),
                                                 borderRadius: BorderRadius.circular(8),
                                               ),
                                               child: Center(
                                                 child: Text(
                                                   "8",
-                                                  style: TextStyle(color: Colors.black, fontSize: 12),
+                                                  style: TextStyle(color: Colors.white, fontSize: 12),
                                                 ),
                                               ),
                                             )
