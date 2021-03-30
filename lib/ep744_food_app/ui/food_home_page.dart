@@ -17,6 +17,8 @@ class _FoodHomePageState extends State<FoodHomePage> {
         child: Column(
           children: [
             Expanded(child: Placeholder()),
+            Expanded(child: Placeholder()),
+            Expanded(child: Placeholder()),
           ],
         ),
       ),
