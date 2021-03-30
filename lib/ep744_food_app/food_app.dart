@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'ui/food_home_page.dart';
+
 class FoodApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -9,14 +11,3 @@ class FoodApp extends StatelessWidget {
   }
 }
 
-class FoodHomePage extends StatefulWidget {
-  @override
-  _FoodHomePageState createState() => _FoodHomePageState();
-}
-
-class _FoodHomePageState extends State<FoodHomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold();
-  }
-}
