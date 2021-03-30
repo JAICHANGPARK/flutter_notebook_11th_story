@@ -40,20 +40,20 @@ class _FoodHomePageState extends State<FoodHomePage> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Icon(
-                            Icons.home_outlined,
+                            Icons.shopping_cart_outlined,
                             size: 28,
                           ),
-                          Text("Home")
+                          Text("Orders")
                         ],
                       ),
                       Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Icon(
-                            Icons.home_outlined,
+                            Icons.person_outline,
                             size: 28,
                           ),
-                          Text("Home")
+                          Text("Profile")
                         ],
                       )
                     ],
