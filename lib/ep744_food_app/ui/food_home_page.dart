@@ -25,6 +25,10 @@ class _FoodHomePageState extends State<FoodHomePage> {
                 child: Container(
                   decoration: BoxDecoration(
                     color: Colors.white,
+                    borderRadius: BorderRadius.only(
+                      topRight: Radius.circular(8),
+                      topLeft: Radius.circular(8),
+                    )
                   ),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
