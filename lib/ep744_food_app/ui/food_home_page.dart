@@ -28,6 +28,7 @@ class _FoodHomePageState extends State<FoodHomePage> {
                   child: Row(
                     children: [
                       Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Icon(Icons.home_outlined, size: 28,),
                           Text("Home")
