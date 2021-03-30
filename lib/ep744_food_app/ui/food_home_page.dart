@@ -13,38 +13,43 @@ class _FoodHomePageState extends State<FoodHomePage> {
     return Scaffold(
       backgroundColor: Colors.grey[200],
       body: SafeArea(
-
         child: Column(
           children: [
-            Expanded(
-                flex: 4,
-                child: Placeholder()),
-            Expanded(
-                flex: 10,
-                child: Placeholder()),
+            Expanded(flex: 4, child: Placeholder()),
+            Expanded(flex: 10, child: Placeholder()),
             Expanded(
                 flex: 2,
                 child: Container(
                   child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Icon(Icons.home_outlined, size: 28,),
-                            Text("Home")
-                          ],
-                          ),
                       Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Icon(Icons.home_outlined, size: 28,),
+                          Icon(
+                            Icons.home_outlined,
+                            size: 28,
+                          ),
                           Text("Home")
                         ],
                       ),
                       Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Icon(Icons.home_outlined, size: 28,),
+                          Icon(
+                            Icons.home_outlined,
+                            size: 28,
+                          ),
+                          Text("Home")
+                        ],
+                      ),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(
+                            Icons.home_outlined,
+                            size: 28,
+                          ),
                           Text("Home")
                         ],
                       )
