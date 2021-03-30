@@ -27,7 +27,12 @@ class _FoodHomePageState extends State<FoodHomePage> {
                 child: Container(
                   child: Row(
                     children: [
-                      
+                      Column(
+                        children: [
+                          Icon(Icons.home_outlined),
+                          Text("Home")
+                        ],
+                      )
                     ],
                   ),
                 )),
