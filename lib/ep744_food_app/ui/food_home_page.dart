@@ -24,7 +24,13 @@ class _FoodHomePageState extends State<FoodHomePage> {
                 child: Placeholder()),
             Expanded(
                 flex: 2,
-                child: Placeholder()),
+                child: Container(
+                  child: Row(
+                    children: [
+                      
+                    ],
+                  ),
+                )),
           ],
         ),
       ),
