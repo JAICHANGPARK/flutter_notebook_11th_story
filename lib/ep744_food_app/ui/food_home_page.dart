@@ -29,7 +29,7 @@ class _FoodHomePageState extends State<FoodHomePage> {
                     children: [
                       Column(
                         children: [
-                          Icon(Icons.home_outlined),
+                          Icon(Icons.home_outlined, size: 28,),
                           Text("Home")
                         ],
                       )
