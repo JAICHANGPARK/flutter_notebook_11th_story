@@ -16,7 +16,7 @@ class _FoodHomePageState extends State<FoodHomePage> {
         child: Column(
           children: [
             Expanded(flex: 4, child: Placeholder()),
-            Expanded(flex: 12, child: Padding(
+            Expanded(flex: 15, child: Padding(
               padding: const EdgeInsets.all(8.0),
               child: Placeholder(),
             )),
