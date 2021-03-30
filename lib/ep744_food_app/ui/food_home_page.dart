@@ -16,10 +16,13 @@ class _FoodHomePageState extends State<FoodHomePage> {
         child: Column(
           children: [
             Expanded(flex: 4, child: Placeholder()),
-            Expanded(flex: 10, child: Placeholder()),
+            Expanded(flex: 12, child: Placeholder()),
             Expanded(
                 flex: 2,
                 child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                  ),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
