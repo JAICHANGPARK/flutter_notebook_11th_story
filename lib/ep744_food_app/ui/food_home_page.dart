@@ -52,15 +52,22 @@ class _FoodHomePageState extends State<FoodHomePage> {
                           ],
                         ),
                       ),
-                      Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Icon(
-                            Icons.shopping_cart_outlined,
-                            size: 28,
-                          ),
-                          Text("Orders")
-                        ],
+                      InkWell(
+                        onTap: (){
+                          setState(() {
+                            _btmIndex = 1;
+                          });
+                        },
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(
+                              Icons.shopping_cart_outlined,
+                              size: 28,
+                            ),
+                            Text("Orders")
+                          ],
+                        ),
                       ),
                       Column(
                         mainAxisAlignment: MainAxisAlignment.center,
