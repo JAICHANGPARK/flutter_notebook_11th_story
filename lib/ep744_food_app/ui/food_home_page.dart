@@ -33,7 +33,21 @@ class _FoodHomePageState extends State<FoodHomePage> {
                           Icon(Icons.home_outlined, size: 28,),
                           Text("Home")
                         ],
-                      )
+                      ,
+                        Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                      Icon(Icons.home_outlined, size: 28,),
+                      Text("Home")
+                    ],
+                  ),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(Icons.home_outlined, size: 28,),
+                      Text("Home")
+                    ],
+                  )
                     ],
                   ),
                 )),
