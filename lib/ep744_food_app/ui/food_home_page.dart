@@ -81,8 +81,11 @@ class _FoodHomePageState extends State<FoodHomePage> {
                             Icon(
                               Icons.person_outline,
                               size: 28,
+                                color: _btmIndex == 2 ? Colors.orange : Colors.grey
                             ),
-                            Text("Profile")
+                            Text("Profile", style: TextStyle(
+                              color: _btmIndex == 2 ? Colors.black : Colors.grey
+                            ),)
                           ],
                         ),
                       )
