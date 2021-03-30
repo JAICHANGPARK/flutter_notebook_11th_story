@@ -13,10 +13,10 @@ class _FoodHomePageState extends State<FoodHomePage> {
     return Scaffold(
       backgroundColor: Colors.grey[200],
       body: SafeArea(
-        
+
         child: Column(
           children: [
-            
+            Expanded(child: Placeholder()),
           ],
         ),
       ),
