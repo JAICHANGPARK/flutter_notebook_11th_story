@@ -8,6 +8,8 @@ class FoodHomePage extends StatefulWidget {
 }
 
 class _FoodHomePageState extends State<FoodHomePage> {
+  int _btmIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,15 +35,22 @@ class _FoodHomePageState extends State<FoodHomePage> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Icon(
-                            Icons.home_outlined,
-                            size: 28,
-                          ),
-                          Text("Home")
-                        ],
+                      InkWell(
+                        onTap: (){
+                          setState(() {
+                            _btmIndex = 0;
+                          });
+                        },
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(
+                              Icons.home_outlined,
+                              size: 28,
+                            ),
+                            Text("Home")
+                          ],
+                        ),
                       ),
                       Column(
                         mainAxisAlignment: MainAxisAlignment.center,
