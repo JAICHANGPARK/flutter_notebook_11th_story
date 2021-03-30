@@ -11,7 +11,15 @@ class _FoodHomePageState extends State<FoodHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[400],
+      backgroundColor: Colors.grey[200],
+      body: SafeArea(
+        
+        child: Column(
+          children: [
+            
+          ],
+        ),
+      ),
     );
   }
 }
