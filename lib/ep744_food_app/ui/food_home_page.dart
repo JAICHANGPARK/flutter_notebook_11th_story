@@ -69,15 +69,22 @@ class _FoodHomePageState extends State<FoodHomePage> {
                           ],
                         ),
                       ),
-                      Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Icon(
-                            Icons.person_outline,
-                            size: 28,
-                          ),
-                          Text("Profile")
-                        ],
+                      InkWell(
+                        onTap: (){
+                          setState(() {
+                            _btmIndex = 2;
+                          });
+                        },
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(
+                              Icons.person_outline,
+                              size: 28,
+                            ),
+                            Text("Profile")
+                          ],
+                        ),
                       )
                     ],
                   ),
