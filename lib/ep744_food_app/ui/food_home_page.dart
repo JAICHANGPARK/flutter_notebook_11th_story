@@ -64,8 +64,11 @@ class _FoodHomePageState extends State<FoodHomePage> {
                             Icon(
                               Icons.shopping_cart_outlined,
                               size: 28,
+                                color: _btmIndex == 1 ? Colors.orange : Colors.grey
                             ),
-                            Text("Orders")
+                            Text("Orders", style: TextStyle(
+                                color: _btmIndex == 1 ? Colors.black : Colors.grey
+                            ))
                           ],
                         ),
                       ),
