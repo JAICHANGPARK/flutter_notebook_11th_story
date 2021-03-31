@@ -40,11 +40,11 @@ class _FoodHomePageState extends State<FoodHomePage> {
                         Expanded(
                           flex: 2,
                           child: Row(
-
+                          
                           ),
                         ),
                         Expanded(
-                          flex: 3,
+                          flex: 4,
                           child: Container(
                             margin: EdgeInsets.all(8),
                             decoration: BoxDecoration(
