@@ -94,19 +94,22 @@ class _FoodHomePageState extends State<FoodHomePage> {
                   child: Column(
                     children: [
                       Expanded(
-                          child: Column(
+                          child: Padding(
+                            padding: const EdgeInsets.all(16.0),
+                            child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(
-                            "Something new",
-                            style: GoogleFonts.montserrat(
-                              fontSize: 18,
-                              fontWeight: FontWeight.bold,
+                            Text(
+                              "Something new",
+                              style: GoogleFonts.montserrat(
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                              ),
                             ),
-                          ),
-                          Expanded(child: Placeholder())
+                            Expanded(child: Placeholder())
                         ],
-                      )),
+                      ),
+                          )),
                       Expanded(child: Placeholder()),
                     ],
                   ),
