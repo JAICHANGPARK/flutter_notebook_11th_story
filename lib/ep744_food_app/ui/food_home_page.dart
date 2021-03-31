@@ -43,8 +43,10 @@ class _FoodHomePageState extends State<FoodHomePage> {
                           ),
                         ),
                         Expanded(
-                          child: Row(
-
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: Colors.grey[200]
+                            ),
                           ),
                         ),
 
