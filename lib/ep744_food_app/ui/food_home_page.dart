@@ -53,6 +53,7 @@ class _FoodHomePageState extends State<FoodHomePage> {
                             ),
                           ),
                         ),
+                        SizedBox(height: 8,),
 
                       ],
                     ),
