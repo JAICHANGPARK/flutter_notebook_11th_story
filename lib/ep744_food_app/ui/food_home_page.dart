@@ -22,6 +22,11 @@ class _FoodHomePageState extends State<FoodHomePage> {
                 child: PhysicalModel(
                   
                   color: Colors.black.withOpacity(0.2),
+                  elevation: 2,
+                  borderRadius: BorderRadius.only(
+                    bottomRight: Radius.circular(16),
+                    bottomLeft: Radius.circular(16),
+                  ),
                   child: Container(
                     decoration: BoxDecoration(
                       color: Colors.white,
