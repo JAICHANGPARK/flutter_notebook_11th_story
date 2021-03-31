@@ -115,7 +115,8 @@ class _FoodHomePageState extends State<FoodHomePage> {
                                 child: Container(
                                   width: 140,
                                   decoration: BoxDecoration(
-                                    color: Colors.orange
+                                    color: Colors.orange,
+                                    borderRadius: BorderRadius.circular(8)
                                   ),
                                 ),
                               );
