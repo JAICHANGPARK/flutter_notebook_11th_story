@@ -106,7 +106,14 @@ class _FoodHomePageState extends State<FoodHomePage> {
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
-                            Expanded(child: Placeholder())
+                            Expanded(child: ListView.builder(
+                                itemCount: 10,
+                                scrollDirection: Axis.horizontal,
+                                itemBuilder: (context, index){
+                              return Container(
+                                
+                              );
+                            }))
                         ],
                       ),
                           )),
