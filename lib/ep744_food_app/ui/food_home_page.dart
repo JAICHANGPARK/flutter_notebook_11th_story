@@ -10,6 +10,7 @@ class FoodHomePage extends StatefulWidget {
 class _FoodHomePageState extends State<FoodHomePage> {
   int _btmIndex = 0;
 
+  TextEditingController _textEditingController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
