@@ -95,8 +95,9 @@ class _FoodHomePageState extends State<FoodHomePage> {
                     children: [
                       Expanded(child: Column(
                         children: [
-                          Text("Someting new"),
-                          
+                          Text("Something new", style: GoogleFonts.montserrat(),),
+                          Expanded(child: Placeholder())
+
                         ],
                       )),
                       Expanded(child: Placeholder()),
