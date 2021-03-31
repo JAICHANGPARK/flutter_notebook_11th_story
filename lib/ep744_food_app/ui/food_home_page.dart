@@ -33,7 +33,6 @@ class _FoodHomePageState extends State<FoodHomePage> {
                         bottomRight: Radius.circular(16),
                         bottomLeft: Radius.circular(16),
                       ),
-
                     ),
                   ),
                 )),
