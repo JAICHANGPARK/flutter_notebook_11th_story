@@ -95,7 +95,7 @@ class _FoodHomePageState extends State<FoodHomePage> {
                     children: [
                       Expanded(
                           child: Padding(
-                            padding: const EdgeInsets.only(top: 8, left: 8),
+                            padding: const EdgeInsets.only(top: 8, left: 8, bottom: 16),
                             child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -110,10 +110,13 @@ class _FoodHomePageState extends State<FoodHomePage> {
                                 itemCount: 10,
                                 scrollDirection: Axis.horizontal,
                                 itemBuilder: (context, index){
-                              return Container(
-                                width: 140,
-                                decoration: BoxDecoration(
-                                  color: Colors.orange
+                              return Padding(
+                                padding: const EdgeInsets.only(right: 8, bottom: 8, top: 16),
+                                child: Container(
+                                  width: 140,
+                                  decoration: BoxDecoration(
+                                    color: Colors.orange
+                                  ),
                                 ),
                               );
                             }))
