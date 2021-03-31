@@ -38,14 +38,18 @@ class _FoodHomePageState extends State<FoodHomePage> {
                     child: Column(
                       children: [
                         Expanded(
+                          flex: 2,
                           child: Row(
 
                           ),
                         ),
                         Expanded(
+                          flex: 3,
                           child: Container(
+                            margin: EdgeInsets.all(8),
                             decoration: BoxDecoration(
-                              color: Colors.grey[200]
+                              color: Colors.grey[200],
+                              
                             ),
                           ),
                         ),
