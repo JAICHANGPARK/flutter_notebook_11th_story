@@ -19,14 +19,18 @@ class _FoodHomePageState extends State<FoodHomePage> {
           children: [
             Expanded(
                 flex: 3,
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.only(
-                      bottomRight: Radius.circular(16),
-                      bottomLeft: Radius.circular(16),
-                    ),
+                child: PhysicalModel(
+                  
+                  color: Colors.black.withOpacity(0.2),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.only(
+                        bottomRight: Radius.circular(16),
+                        bottomLeft: Radius.circular(16),
+                      ),
 
+                    ),
                   ),
                 )),
             Expanded(
