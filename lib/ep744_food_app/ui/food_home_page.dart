@@ -18,10 +18,11 @@ class _FoodHomePageState extends State<FoodHomePage> {
         child: Column(
           children: [
             Expanded(
-                flex: 4,
+                flex: 3,
                 child: Container(
                   decoration: BoxDecoration(
                     color: Colors.white,
+
                   ),
                 )),
             Expanded(
