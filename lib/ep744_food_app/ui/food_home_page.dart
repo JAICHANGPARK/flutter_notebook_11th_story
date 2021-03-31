@@ -70,6 +70,9 @@ class _FoodHomePageState extends State<FoodHomePage> {
                             decoration: BoxDecoration(
                               color: Colors.grey[200],
                             ),
+                            child: TextField(
+                              decoration: InputDecoration(),
+                            ),
                           ),
                         ),
                         SizedBox(
