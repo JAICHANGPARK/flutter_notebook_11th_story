@@ -20,7 +20,6 @@ class _FoodHomePageState extends State<FoodHomePage> {
             Expanded(
                 flex: 3,
                 child: PhysicalModel(
-                  
                   color: Colors.black.withOpacity(0.2),
                   elevation: 2,
                   borderRadius: BorderRadius.only(
