@@ -93,7 +93,12 @@ class _FoodHomePageState extends State<FoodHomePage> {
                   padding: const EdgeInsets.all(8.0),
                   child: Column(
                     children: [
-                      Expanded(child: Placeholder()),
+                      Expanded(child: Column(
+                        children: [
+                          Text("Someting new"),
+                          
+                        ],
+                      )),
                       Expanded(child: Placeholder()),
                     ],
                   ),
