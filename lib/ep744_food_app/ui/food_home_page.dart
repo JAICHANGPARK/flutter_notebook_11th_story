@@ -120,7 +120,10 @@ class _FoodHomePageState extends State<FoodHomePage> {
                                   ),
                                   child: Stack(
                                     children: [
-                                      Positioned(child: Text(""))
+                                      Positioned(child: Text("Pasta",style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white
+                                      ),))
                                     ],
                                   ),
                                 ),
