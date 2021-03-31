@@ -22,6 +22,9 @@ class _FoodHomePageState extends State<FoodHomePage> {
                 child: Container(
                   decoration: BoxDecoration(
                     color: Colors.white,
+                    borderRadius: BorderRadius.only(
+                      bottomRight: Radius.circular(16)
+                    ),
 
                   ),
                 )),
