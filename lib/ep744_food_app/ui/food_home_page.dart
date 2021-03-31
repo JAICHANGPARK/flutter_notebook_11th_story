@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class FoodHomePage extends StatefulWidget {
   FoodHomePage({Key? key}) : super(key: key);
@@ -39,12 +40,15 @@ class _FoodHomePageState extends State<FoodHomePage> {
                       children: [
                         Expanded(
                           flex: 2,
-                          child: Row(
-                          children: [
-                            Icon(Icons.location_pin, color: Colors.orange,),
-                            Text("800 Cheese avenue, "),
-                            Text("NYC")
-                          ],
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Row(
+                            children: [
+                              Icon(Icons.location_pin, color: Colors.orange,),
+                              Text("800 Cheese avenue, ", style: GoogleFonts.montserrat(),),
+                              Text("NYC")
+                            ],
+                            ),
                           ),
                         ),
                         Expanded(
