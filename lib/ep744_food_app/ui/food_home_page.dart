@@ -12,6 +12,7 @@ class _FoodHomePageState extends State<FoodHomePage> {
   int _btmIndex = 0;
 
   TextEditingController _textEditingController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -43,15 +44,22 @@ class _FoodHomePageState extends State<FoodHomePage> {
                           child: Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: Row(
-                            children: [
-                              Icon(Icons.location_pin, color: Colors.orange,),
-                              Text("800 Cheese avenue, ", style: GoogleFonts.montserrat(
-
-                              ),),
-                              Text("NYC", style: GoogleFonts.montserrat(
-                                color: Colors.grey
-                              ),)
-                            ],
+                              children: [
+                                Icon(
+                                  Icons.location_pin,
+                                  color: Colors.orange,
+                                ),
+                                Text(
+                                  "800 Cheese avenue, ",
+                                  style: GoogleFonts.montserrat(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                Text(
+                                  "NYC",
+                                  style: GoogleFonts.montserrat(color: Colors.grey),
+                                )
+                              ],
                             ),
                           ),
                         ),
@@ -61,12 +69,12 @@ class _FoodHomePageState extends State<FoodHomePage> {
                             margin: EdgeInsets.all(8),
                             decoration: BoxDecoration(
                               color: Colors.grey[200],
-                              
                             ),
                           ),
                         ),
-                        SizedBox(height: 8,),
-
+                        SizedBox(
+                          height: 8,
+                        ),
                       ],
                     ),
                   ),
