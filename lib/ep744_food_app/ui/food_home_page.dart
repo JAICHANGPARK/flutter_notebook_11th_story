@@ -40,7 +40,11 @@ class _FoodHomePageState extends State<FoodHomePage> {
                         Expanded(
                           flex: 2,
                           child: Row(
-                          
+                          children: [
+                            Icon(Icons.location_pin, color: Colors.orange,),
+                            Text("800 Cheese avenue, "),
+                            Text("NYC")
+                          ],
                           ),
                         ),
                         Expanded(
