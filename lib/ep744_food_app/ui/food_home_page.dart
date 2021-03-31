@@ -90,12 +90,12 @@ class _FoodHomePageState extends State<FoodHomePage> {
             Expanded(
                 flex: 15,
                 child: Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.only(top: 8, left: 8),
                   child: Column(
                     children: [
                       Expanded(
                           child: Padding(
-                            padding: const EdgeInsets.all(16.0),
+                            padding: const EdgeInsets.only(top: 8, left: 8),
                             child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -111,7 +111,8 @@ class _FoodHomePageState extends State<FoodHomePage> {
                                 scrollDirection: Axis.horizontal,
                                 itemBuilder: (context, index){
                               return Container(
-                                
+                                width: 140,
+
                               );
                             }))
                         ],
