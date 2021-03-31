@@ -35,6 +35,21 @@ class _FoodHomePageState extends State<FoodHomePage> {
                         bottomLeft: Radius.circular(16),
                       ),
                     ),
+                    child: Column(
+                      children: [
+                        Expanded(
+                          child: Row(
+
+                          ),
+                        ),
+                        Expanded(
+                          child: Row(
+
+                          ),
+                        ),
+
+                      ],
+                    ),
                   ),
                 )),
             Expanded(
