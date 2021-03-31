@@ -118,6 +118,11 @@ class _FoodHomePageState extends State<FoodHomePage> {
                                     color: Colors.orange,
                                     borderRadius: BorderRadius.circular(8)
                                   ),
+                                  child: Stack(
+                                    children: [
+                                      Positioned(child: Text(""))
+                                    ],
+                                  ),
                                 ),
                               );
                             }))
