@@ -112,7 +112,9 @@ class _FoodHomePageState extends State<FoodHomePage> {
                                 itemBuilder: (context, index){
                               return Container(
                                 width: 140,
-
+                                decoration: BoxDecoration(
+                                  color: Colors.orange
+                                ),
                               );
                             }))
                         ],
