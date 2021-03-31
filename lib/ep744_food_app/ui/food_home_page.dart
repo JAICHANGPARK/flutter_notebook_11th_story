@@ -70,14 +70,12 @@ class _FoodHomePageState extends State<FoodHomePage> {
                             decoration: BoxDecoration(
                               color: Colors.grey[200],
                             ),
-                            
+                            padding: EdgeInsets.symmetric(horizontal: 8),
                             child: TextField(
                               decoration: InputDecoration(
                                 border: InputBorder.none,
                                 icon: Icon(Icons.search),
                                 hintText: "Search for food",
-
-
                               ),
                             ),
                           ),
