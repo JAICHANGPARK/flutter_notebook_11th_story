@@ -70,8 +70,15 @@ class _FoodHomePageState extends State<FoodHomePage> {
                             decoration: BoxDecoration(
                               color: Colors.grey[200],
                             ),
+                            
                             child: TextField(
-                              decoration: InputDecoration(),
+                              decoration: InputDecoration(
+                                border: InputBorder.none,
+                                icon: Icon(Icons.search),
+                                hintText: "Search for food",
+
+
+                              ),
                             ),
                           ),
                         ),
