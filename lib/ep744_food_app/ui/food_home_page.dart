@@ -45,8 +45,12 @@ class _FoodHomePageState extends State<FoodHomePage> {
                             child: Row(
                             children: [
                               Icon(Icons.location_pin, color: Colors.orange,),
-                              Text("800 Cheese avenue, ", style: GoogleFonts.montserrat(),),
-                              Text("NYC")
+                              Text("800 Cheese avenue, ", style: GoogleFonts.montserrat(
+
+                              ),),
+                              Text("NYC", style: GoogleFonts.montserrat(
+                                color: Colors.grey
+                              ),)
                             ],
                             ),
                           ),
