@@ -170,6 +170,8 @@ class _FoodHomePageState extends State<FoodHomePage> {
                                                         image: NetworkImage("https://cdn.pixabay.com/photo/2015/04/20/13/30/kitchen-731351__340.jpg"),
                                                         fit: BoxFit.cover,
                                                       )
+                                                        ,
+                                                      borderRadius: BorderRadius.circular(8)
                                                     ),
 
                                                   )),
