@@ -180,10 +180,12 @@ class _FoodHomePageState extends State<FoodHomePage> {
                                                   child: Column(
                                                     crossAxisAlignment: CrossAxisAlignment.start,
                                                     children: [
-                                                      Text("Heaven's Food"),
+                                                      Text("Heaven's Food", style: TextStyle(
+                                                        fontSize: 16,
+                                                      ),),
                                                       Row(
                                                         children: [
-
+                                                                
                                                         ],
                                                       )
 
