@@ -177,7 +177,13 @@ class _FoodHomePageState extends State<FoodHomePage> {
                                                   )),
                                               Expanded(
                                                   flex: 3,
-                                                  child: Placeholder()),
+                                                  child: Column(
+                                                    children: [
+                                                      Text("Heaven's Food"),
+                                                      Row()
+
+                                                    ],
+                                                  )),
                                             ],
                                           )
                                         ),
