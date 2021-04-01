@@ -192,7 +192,7 @@ class _FoodHomePageState extends State<FoodHomePage> {
                                                                size: 16,),
                                                             Text("4.5", style: TextStyle(
                                                                 fontSize: 12,
-                                                                color: Colors.grey
+                                                              
                                                             ),),
                                                             SizedBox(width: 16,),
                                                             Icon(Icons.timer,size: 16,),
