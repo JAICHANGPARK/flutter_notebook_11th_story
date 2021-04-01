@@ -177,46 +177,50 @@ class _FoodHomePageState extends State<FoodHomePage> {
                                                   )),
                                               Expanded(
                                                   flex: 3,
-                                                  child: Column(
-                                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                                    children: [
-                                                      Text("Heaven's Food", style: TextStyle(
-                                                        fontSize: 16,
-                                                      ),),
-                                                      Row(
-                                                        children: [
-                                                             Icon(Icons.star, color: Colors.orange,
-                                                             size: 16,),
-                                                          Text("4.5",),
-                                                          SizedBox(width: 16,),
-                                                          Icon(Icons.timer,size: 16,),
-                                                          Text("25-30 min"),
-                                                          SizedBox(width: 16,),
-                                                          Text("\$\$\$", )
-                                                        ],
-                                                      ),
-                                                      Row(
-                                                        children: [
-                                                          Card(
-                                                            child: Padding(
-                                                              padding: const EdgeInsets.all(2.0),
-                                                              child: Text("Steak", style: TextStyle(
-                                                                fontSize: 12,
-                                                                color: Colors.grey
-                                                              ),),
+                                                  child: Padding(
+                                                    padding: const EdgeInsets.only(top: 4),
+                                                    child: Column(
+                                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                      children: [
+                                                        Text("Heaven's Food", style: TextStyle(
+                                                          fontSize: 16,
+                                                        ),),
+                                                        Row(
+                                                          children: [
+                                                               Icon(Icons.star, color: Colors.orange,
+                                                               size: 16,),
+                                                            Text("4.5",),
+                                                            SizedBox(width: 16,),
+                                                            Icon(Icons.timer,size: 16,),
+                                                            Text("25-30 min"),
+                                                            SizedBox(width: 16,),
+                                                            Text("\$\$\$", )
+                                                          ],
+                                                        ),
+                                                        Row(
+                                                          children: [
+                                                            Card(
+                                                              child: Padding(
+                                                                padding: const EdgeInsets.all(2.0),
+                                                                child: Text("Steak", style: TextStyle(
+                                                                  fontSize: 12,
+                                                                  color: Colors.grey
+                                                                ),),
+                                                              ),
                                                             ),
-                                                          ),
-                                                          Card(
-                                                            child: Text("Fish"),
-                                                          ),
-                                                          Card(
-                                                            child: Text("Experimental"),
-                                                          ),
-                                                        ],
-                                                      ),
+                                                            Card(
+                                                              child: Text("Fish"),
+                                                            ),
+                                                            Card(
+                                                              child: Text("Experimental"),
+                                                            ),
+                                                          ],
+                                                        ),
 
 
-                                                    ],
+                                                      ],
+                                                    ),
                                                   )),
                                             ],
                                           )
