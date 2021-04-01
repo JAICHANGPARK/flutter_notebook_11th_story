@@ -161,8 +161,12 @@ class _FoodHomePageState extends State<FoodHomePage> {
                                               color: Colors.blue, borderRadius: BorderRadius.circular(8)),
                                           child: Column(
                                             children: [
-                                              Expanded(child: Placeholder()),
-                                              Expanded(child: Placeholder()),
+                                              Expanded(
+                                                  flex: 4,
+                                                  child: Placeholder()),
+                                              Expanded(
+                                                  flex: 3,
+                                                  child: Placeholder()),
                                             ],
                                           )
                                         ),
