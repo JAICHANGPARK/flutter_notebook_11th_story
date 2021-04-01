@@ -69,6 +69,7 @@ class _FoodHomePageState extends State<FoodHomePage> {
                             margin: EdgeInsets.all(8),
                             decoration: BoxDecoration(
                               color: Colors.grey[200],
+                              borderRadius: BorderRadius.circular(8)
                             ),
                             padding: EdgeInsets.symmetric(horizontal: 8),
                             child: TextField(
