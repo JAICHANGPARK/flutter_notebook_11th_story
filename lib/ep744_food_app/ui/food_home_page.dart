@@ -185,7 +185,11 @@ class _FoodHomePageState extends State<FoodHomePage> {
                                                       ),),
                                                       Row(
                                                         children: [
-                                                                
+                                                             Icon(Icons.star, color: Colors.orange,),
+                                                          Text("4.5",),
+                                                          Icon(Icons.timer),
+                                                          Text("25-30 min"),
+                                                          Text("\$\$\$")
                                                         ],
                                                       )
 
