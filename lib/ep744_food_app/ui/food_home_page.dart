@@ -195,15 +195,20 @@ class _FoodHomePageState extends State<FoodHomePage> {
                                                           Text("\$\$\$", )
                                                         ],
                                                       ),
-                                                      Card(
-                                                        child: Text("Steak"),
+                                                      Row(
+                                                        children: [
+                                                          Card(
+                                                            child: Text("Steak"),
+                                                          ),
+                                                          Card(
+                                                            child: Text("Fish"),
+                                                          ),
+                                                          Card(
+                                                            child: Text("Experimental"),
+                                                          ),
+                                                        ],
                                                       ),
-                                                      Card(
-                                                        child: Text("Steak"),
-                                                      ),
-                                                      Card(
-                                                        child: Text("Steak"),
-                                                      ),
+
 
                                                     ],
                                                   )),
