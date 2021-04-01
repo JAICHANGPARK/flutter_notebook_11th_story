@@ -210,10 +210,16 @@ class _FoodHomePageState extends State<FoodHomePage> {
                                                               ),
                                                             ),
                                                             Card(
-                                                              child: Text("Fish"),
+                                                              child: Text("Fish", style: TextStyle(
+                                                                  fontSize: 12,
+                                                                  color: Colors.grey
+                                                              ),),
                                                             ),
                                                             Card(
-                                                              child: Text("Experimental"),
+                                                              child: Text("Experimental", style: TextStyle(
+                                                                  fontSize: 12,
+                                                                  color: Colors.grey
+                                                              ),),
                                                             ),
                                                           ],
                                                         ),
