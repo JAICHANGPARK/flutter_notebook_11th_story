@@ -198,7 +198,13 @@ class _FoodHomePageState extends State<FoodHomePage> {
                                                       Row(
                                                         children: [
                                                           Card(
-                                                            child: Text("Steak"),
+                                                            child: Padding(
+                                                              padding: const EdgeInsets.all(2.0),
+                                                              child: Text("Steak", style: TextStyle(
+                                                                fontSize: 12,
+                                                                color: Colors.grey
+                                                              ),),
+                                                            ),
                                                           ),
                                                           Card(
                                                             child: Text("Fish"),
