@@ -17,7 +17,6 @@ class _FoodHomePageState extends State<FoodHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey[200],
-
       body: SafeArea(
         child: Column(
           children: [
@@ -137,45 +136,45 @@ class _FoodHomePageState extends State<FoodHomePage> {
                       )),
                       Expanded(
                           child: Padding(
-                            padding: const EdgeInsets.only(top: 8, left: 8, bottom: 16),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  "Recommended",
-                                  style: GoogleFonts.montserrat(
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                                Expanded(
-                                    child: ListView.builder(
-                                        itemCount: 10,
-                                        scrollDirection: Axis.horizontal,
-                                        itemBuilder: (context, index) {
-                                          return Padding(
-                                            padding: const EdgeInsets.only(right: 8, bottom: 8, top: 16),
-                                            child: Container(
-                                              width: 280,
-                                              decoration: BoxDecoration(
-                                                  color: Colors.orange, borderRadius: BorderRadius.circular(8)),
-                                              child: Stack(
-                                                children: [
-                                                  Positioned(
-                                                      left: 8,
-                                                      top: 16,
-                                                      child: Text(
-                                                        "Pasta",
-                                                        style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
-                                                      ))
-                                                ],
-                                              ),
-                                            ),
-                                          );
-                                        }))
-                              ],
+                        padding: const EdgeInsets.only(top: 8, left: 8, bottom: 16),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "Recommended",
+                              style: GoogleFonts.montserrat(
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                              ),
                             ),
-                          )),
+                            Expanded(
+                                child: ListView.builder(
+                                    itemCount: 10,
+                                    scrollDirection: Axis.horizontal,
+                                    itemBuilder: (context, index) {
+                                      return Padding(
+                                        padding: const EdgeInsets.only(right: 8, bottom: 8, top: 16),
+                                        child: Container(
+                                          width: 280,
+                                          decoration: BoxDecoration(
+                                              color: Colors.orange, borderRadius: BorderRadius.circular(8)),
+                                          child: Stack(
+                                            children: [
+                                              Positioned(
+                                                  left: 8,
+                                                  top: 16,
+                                                  child: Text(
+                                                    "Pasta",
+                                                    style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
+                                                  ))
+                                            ],
+                                          ),
+                                        ),
+                                      );
+                                    }))
+                          ],
+                        ),
+                      )),
                     ],
                   ),
                 )),
