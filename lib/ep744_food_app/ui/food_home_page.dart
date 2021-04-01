@@ -184,7 +184,7 @@ class _FoodHomePageState extends State<FoodHomePage> {
                                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                       children: [
                                                         Text("Heaven's Food", style: TextStyle(
-                                                          fontSize: 16,
+                                                          fontSize: 14,
                                                         ),),
                                                         Row(
                                                           children: [
