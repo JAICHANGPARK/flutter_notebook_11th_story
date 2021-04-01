@@ -163,7 +163,16 @@ class _FoodHomePageState extends State<FoodHomePage> {
                                             children: [
                                               Expanded(
                                                   flex: 5,
-                                                  child: Container()),
+                                                  child: Container(
+                                                    decoration: BoxDecoration(
+                                                      color: Colors.grey,
+                                                      image: DecorationImage(
+                                                        image: NetworkImage("https://cdn.pixabay.com/photo/2015/04/20/13/30/kitchen-731351__340.jpg"),
+                                                        fit: BoxFit.cover,
+                                                      )
+                                                    ),
+
+                                                  )),
                                               Expanded(
                                                   flex: 3,
                                                   child: Placeholder()),
