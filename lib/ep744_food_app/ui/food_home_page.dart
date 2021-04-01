@@ -157,8 +157,7 @@ class _FoodHomePageState extends State<FoodHomePage> {
                                         padding: const EdgeInsets.only(right: 8, bottom: 8, top: 16),
                                         child: Container(
                                           width: 280,
-                                          decoration: BoxDecoration(
-                                              color: Colors.blue, borderRadius: BorderRadius.circular(8)),
+                                          decoration: BoxDecoration(borderRadius: BorderRadius.circular(8)),
                                           child: Column(
                                             children: [
                                               Expanded(
@@ -192,7 +191,7 @@ class _FoodHomePageState extends State<FoodHomePage> {
                                                                size: 16,),
                                                             Text("4.5", style: TextStyle(
                                                                 fontSize: 12,
-                                                              
+
                                                             ),),
                                                             SizedBox(width: 16,),
                                                             Icon(Icons.timer,size: 16,),
