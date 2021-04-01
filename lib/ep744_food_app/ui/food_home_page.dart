@@ -158,18 +158,13 @@ class _FoodHomePageState extends State<FoodHomePage> {
                                         child: Container(
                                           width: 280,
                                           decoration: BoxDecoration(
-                                              color: Colors.orange, borderRadius: BorderRadius.circular(8)),
-                                          child: Stack(
+                                              color: Colors.blue, borderRadius: BorderRadius.circular(8)),
+                                          child: Column(
                                             children: [
-                                              Positioned(
-                                                  left: 8,
-                                                  top: 16,
-                                                  child: Text(
-                                                    "Pasta",
-                                                    style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
-                                                  ))
+                                              Expanded(child: Placeholder()),
+                                              Expanded(child: Placeholder()),
                                             ],
-                                          ),
+                                          )
                                         ),
                                       );
                                     }))
