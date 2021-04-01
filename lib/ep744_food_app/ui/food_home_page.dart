@@ -210,16 +210,22 @@ class _FoodHomePageState extends State<FoodHomePage> {
                                                               ),
                                                             ),
                                                             Card(
-                                                              child: Text("Fish", style: TextStyle(
-                                                                  fontSize: 12,
-                                                                  color: Colors.grey
-                                                              ),),
+                                                              child: Padding(
+                                                                padding: const EdgeInsets.all(2.0),
+                                                                child: Text("Fish", style: TextStyle(
+                                                                    fontSize: 12,
+                                                                    color: Colors.grey
+                                                                ),),
+                                                              ),
                                                             ),
                                                             Card(
-                                                              child: Text("Experimental", style: TextStyle(
-                                                                  fontSize: 12,
-                                                                  color: Colors.grey
-                                                              ),),
+                                                              child: Padding(
+                                                                padding: const EdgeInsets.all(2.0),
+                                                                child: Text("Experimental", style: TextStyle(
+                                                                    fontSize: 12,
+                                                                    color: Colors.grey
+                                                                ),),
+                                                              ),
                                                             ),
                                                           ],
                                                         ),
