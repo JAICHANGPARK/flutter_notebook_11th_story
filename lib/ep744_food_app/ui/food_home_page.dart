@@ -194,7 +194,16 @@ class _FoodHomePageState extends State<FoodHomePage> {
                                                           SizedBox(width: 16,),
                                                           Text("\$\$\$", )
                                                         ],
-                                                      )
+                                                      ),
+                                                      Card(
+                                                        child: Text("Steak"),
+                                                      ),
+                                                      Card(
+                                                        child: Text("Steak"),
+                                                      ),
+                                                      Card(
+                                                        child: Text("Steak"),
+                                                      ),
 
                                                     ],
                                                   )),
