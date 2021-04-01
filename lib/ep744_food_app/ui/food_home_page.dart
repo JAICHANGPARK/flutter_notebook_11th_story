@@ -178,9 +178,14 @@ class _FoodHomePageState extends State<FoodHomePage> {
                                               Expanded(
                                                   flex: 3,
                                                   child: Column(
+                                                    crossAxisAlignment: CrossAxisAlignment.start,
                                                     children: [
                                                       Text("Heaven's Food"),
-                                                      Row()
+                                                      Row(
+                                                        children: [
+
+                                                        ],
+                                                      )
 
                                                     ],
                                                   )),
