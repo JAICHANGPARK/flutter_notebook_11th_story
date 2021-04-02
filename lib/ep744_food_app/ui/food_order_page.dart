@@ -59,6 +59,7 @@ class _FoodOrderPageState extends State<FoodOrderPage> {
                             color: Colors.orange,
                           ),
                           Text("Delivery / As soons as possible"),
+                          Spacer(),
                           Icon(Icons.keyboard_arrow_right)
                         ],
                       ),
