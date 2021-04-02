@@ -54,15 +54,22 @@ class _FoodOrderPageState extends State<FoodOrderPage> {
                       ),
                       Row(
                         children: [
-                          Icon(Icons.timer),
+                          Icon(
+                            Icons.timer,
+                            color: Colors.orange,
+                          ),
                           Text("Delivery / As soons as possible"),
                           Icon(Icons.keyboard_arrow_right)
                         ],
                       ),
                       Row(
                         children: [
-                          Icon(Icons.timer),
-                          Text("Delivery / As soons as possible"),
+                          Icon(
+                            Icons.location_pin,
+                            color: Colors.orange,
+                          ),
+                          Text("800 Cheese avenue, NYC"),
+                          Spacer(),
                           Icon(Icons.keyboard_arrow_right)
                         ],
                       )
