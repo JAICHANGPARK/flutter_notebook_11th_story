@@ -87,37 +87,30 @@ class _FoodOrderPageState extends State<FoodOrderPage> {
                     ],
                   ),
                 )),
-            Expanded(flex: 10, child: Container(
-              decoration: BoxDecoration(
-                color: Colors.white
-              ),
-            )),
-            Expanded(flex: 2, child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
-              decoration: BoxDecoration(
-                color: Colors.black,
-              ),
-              child: Center(
-                child: Text("Place order"),
-              ),
-            )),
+            Expanded(
+                flex: 10,
+                child: Container(
+                  decoration: BoxDecoration(color: Colors.white),
+                )),
+            Expanded(
+                flex: 2,
+                child: Container(
+                  margin: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+                  decoration: BoxDecoration(
+                    color: Colors.black,
+                  ),
+                  child: Center(
+                    child: Text(
+                      "Place order",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                )),
           ],
         ),
       ),
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
