@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_11th_story/ep744_food_app/ui/food_order_page.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class FoodHomePage extends StatefulWidget {
@@ -288,6 +289,9 @@ class _FoodHomePageState extends State<FoodHomePage> {
                         ),
                         InkWell(
                           onTap: () {
+                            Navigator.of(context).push(MaterialPageRoute(builder: (context)=>
+                            FoodOrderPage()
+                            ));
                             setState(() {
                               _btmIndex = 1;
                             });
