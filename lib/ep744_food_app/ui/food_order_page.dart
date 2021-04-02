@@ -98,6 +98,7 @@ class _FoodOrderPageState extends State<FoodOrderPage> {
                   margin: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
                   decoration: BoxDecoration(
                     color: Colors.black,
+                    borderRadius: BorderRadius.circular(8)
                   ),
                   child: Center(
                     child: Text(
