@@ -12,11 +12,14 @@ class _FoodOrderPageState extends State<FoodOrderPage> {
       body: SafeArea(
         child: Column(
           children: [
+            Expanded(
+                flex: 2,
+                child: Placeholder()),
+            Expanded(
+                flex: 5,child: Placeholder()),
             Expanded(child: Placeholder()),
             Expanded(child: Placeholder()),
-            Expanded(child: Placeholder()),
-            Expanded(child: Placeholder()),
-            
+
           ],
         ),
       ),
