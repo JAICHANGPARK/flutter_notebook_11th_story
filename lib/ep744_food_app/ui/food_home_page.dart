@@ -68,10 +68,7 @@ class _FoodHomePageState extends State<FoodHomePage> {
                           flex: 4,
                           child: Container(
                             margin: EdgeInsets.all(8),
-                            decoration: BoxDecoration(
-                              color: Colors.grey[200],
-                              borderRadius: BorderRadius.circular(8)
-                            ),
+                            decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(8)),
                             padding: EdgeInsets.symmetric(horizontal: 8),
                             child: TextField(
                               decoration: InputDecoration(
@@ -157,92 +154,106 @@ class _FoodHomePageState extends State<FoodHomePage> {
                                       return Padding(
                                         padding: const EdgeInsets.only(right: 8, bottom: 8, top: 16),
                                         child: Container(
-                                          width: 280,
-                                          decoration: BoxDecoration(borderRadius: BorderRadius.circular(8)),
-                                          child: Column(
-                                            children: [
-                                              Expanded(
-                                                  flex: 5,
-                                                  child: Container(
-                                                    decoration: BoxDecoration(
-                                                      color: Colors.grey,
-                                                      image: DecorationImage(
-                                                        image: NetworkImage("https://cdn.pixabay.com/photo/2015/04/20/13/30/kitchen-731351__340.jpg"),
-                                                        fit: BoxFit.cover,
-                                                      )
-                                                        ,
-                                                      borderRadius: BorderRadius.circular(8)
-                                                    ),
-
-                                                  )),
-                                              Expanded(
-                                                  flex: 3,
-                                                  child: Padding(
-                                                    padding: const EdgeInsets.only(top: 4),
-                                                    child: Column(
-                                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                                      children: [
-                                                        Text("Heaven's Food", style: TextStyle(
-                                                          fontSize: 14,
-                                                        ),),
-                                                        Row(
-                                                          children: [
-                                                               Icon(Icons.star, color: Colors.orange,
-                                                               size: 16,),
-                                                            Text("4.5", style: TextStyle(
-                                                                fontSize: 12,
-
-                                                            ),),
-                                                            SizedBox(width: 16,),
-                                                            Icon(Icons.timer,size: 16,),
-                                                            Text("25-30 min", style: TextStyle(
-                                                                fontSize: 12,
-
-                                                            ),),
-                                                            SizedBox(width: 16,),
-                                                            Text("\$\$\$", )
-                                                          ],
-                                                        ),
-                                                        Row(
-                                                          children: [
-                                                            Card(
-                                                              child: Padding(
-                                                                padding: const EdgeInsets.all(2.0),
-                                                                child: Text("Steak", style: TextStyle(
+                                            width: 280,
+                                            decoration: BoxDecoration(borderRadius: BorderRadius.circular(8)),
+                                            child: Column(
+                                              children: [
+                                                Expanded(
+                                                    flex: 5,
+                                                    child: Container(
+                                                      decoration: BoxDecoration(
+                                                          color: Colors.grey,
+                                                          image: DecorationImage(
+                                                            image: NetworkImage(
+                                                                "https://cdn.pixabay.com/photo/2015/04/20/13/30/kitchen-731351__340.jpg"),
+                                                            fit: BoxFit.cover,
+                                                          ),
+                                                          borderRadius: BorderRadius.circular(8)),
+                                                    )),
+                                                Expanded(
+                                                    flex: 3,
+                                                    child: Padding(
+                                                      padding: const EdgeInsets.only(top: 4),
+                                                      child: Column(
+                                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                        children: [
+                                                          Text(
+                                                            "Heaven's Food",
+                                                            style: TextStyle(
+                                                              fontSize: 14,
+                                                            ),
+                                                          ),
+                                                          Row(
+                                                            children: [
+                                                              Icon(
+                                                                Icons.star,
+                                                                color: Colors.orange,
+                                                                size: 16,
+                                                              ),
+                                                              Text(
+                                                                "4.5",
+                                                                style: TextStyle(
                                                                   fontSize: 12,
-                                                                  color: Colors.grey
-                                                                ),),
+                                                                ),
                                                               ),
-                                                            ),
-                                                            Card(
-                                                              child: Padding(
-                                                                padding: const EdgeInsets.all(2.0),
-                                                                child: Text("Fish", style: TextStyle(
-                                                                    fontSize: 12,
-                                                                    color: Colors.grey
-                                                                ),),
+                                                              SizedBox(
+                                                                width: 16,
                                                               ),
-                                                            ),
-                                                            Card(
-                                                              child: Padding(
-                                                                padding: const EdgeInsets.all(2.0),
-                                                                child: Text("Experimental", style: TextStyle(
-                                                                    fontSize: 12,
-                                                                    color: Colors.grey
-                                                                ),),
+                                                              Icon(
+                                                                Icons.timer,
+                                                                size: 16,
                                                               ),
-                                                            ),
-                                                          ],
-                                                        ),
-
-
-                                                      ],
-                                                    ),
-                                                  )),
-                                            ],
-                                          )
-                                        ),
+                                                              Text(
+                                                                "25-30 min",
+                                                                style: TextStyle(
+                                                                  fontSize: 12,
+                                                                ),
+                                                              ),
+                                                              SizedBox(
+                                                                width: 16,
+                                                              ),
+                                                              Text(
+                                                                "\$\$\$",
+                                                              )
+                                                            ],
+                                                          ),
+                                                          Row(
+                                                            children: [
+                                                              Card(
+                                                                child: Padding(
+                                                                  padding: const EdgeInsets.all(2.0),
+                                                                  child: Text(
+                                                                    "Steak",
+                                                                    style: TextStyle(fontSize: 12, color: Colors.grey),
+                                                                  ),
+                                                                ),
+                                                              ),
+                                                              Card(
+                                                                child: Padding(
+                                                                  padding: const EdgeInsets.all(2.0),
+                                                                  child: Text(
+                                                                    "Fish",
+                                                                    style: TextStyle(fontSize: 12, color: Colors.grey),
+                                                                  ),
+                                                                ),
+                                                              ),
+                                                              Card(
+                                                                child: Padding(
+                                                                  padding: const EdgeInsets.all(2.0),
+                                                                  child: Text(
+                                                                    "Experimental",
+                                                                    style: TextStyle(fontSize: 12, color: Colors.grey),
+                                                                  ),
+                                                                ),
+                                                              ),
+                                                            ],
+                                                          ),
+                                                        ],
+                                                      ),
+                                                    )),
+                                              ],
+                                            )),
                                       );
                                     }))
                           ],
@@ -289,9 +300,7 @@ class _FoodHomePageState extends State<FoodHomePage> {
                         ),
                         InkWell(
                           onTap: () {
-                            Navigator.of(context).push(MaterialPageRoute(builder: (context)=>
-                            FoodOrderPage()
-                            ));
+                            Navigator.of(context).push(MaterialPageRoute(builder: (context) => FoodOrderPage()));
                             setState(() {
                               _btmIndex = 1;
                             });
