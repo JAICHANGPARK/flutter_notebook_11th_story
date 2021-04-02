@@ -16,42 +16,39 @@ class _FoodOrderPageState extends State<FoodOrderPage> {
                 flex: 3,
                 child: Container(
                   decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.only(
-                      bottomRight: Radius.circular(16),
-                      bottomLeft: Radius.circular(16),
-                    )
-                  ),
+                      color: Colors.white,
+                      borderRadius: BorderRadius.only(
+                        bottomRight: Radius.circular(16),
+                        bottomLeft: Radius.circular(16),
+                      )),
                 )),
             Expanded(
-                flex: 5,child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text("Heaven's food"),
-                Row(
-                  children: [
-                    Icon(Icons.timer),
-                    Text("Delivery / As soons as possible"),
-                    Icon(Icons.keyboard_arrow_right)
-                  ],
-                ),
-                Row(
-                  children: [
-                    Icon(Icons.timer),
-                    Text("Delivery / As soons as possible"),
-                    Icon(Icons.keyboard_arrow_right)
-                  ],
-                )
-
-              ],
-            )),
-            Expanded(
-                flex: 10,
-                child: Placeholder()),
-            Expanded(
-                flex: 2,
-                child: Placeholder()),
-
+                flex: 4,
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 24, left: 16, right: 16),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text("Heaven's food"),
+                      Row(
+                        children: [
+                          Icon(Icons.timer),
+                          Text("Delivery / As soons as possible"),
+                          Icon(Icons.keyboard_arrow_right)
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          Icon(Icons.timer),
+                          Text("Delivery / As soons as possible"),
+                          Icon(Icons.keyboard_arrow_right)
+                        ],
+                      )
+                    ],
+                  ),
+                )),
+            Expanded(flex: 10, child: Placeholder()),
+            Expanded(flex: 2, child: Placeholder()),
           ],
         ),
       ),
