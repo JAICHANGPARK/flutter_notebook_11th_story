@@ -25,6 +25,7 @@ class _FoodOrderPageState extends State<FoodOrderPage> {
                 )),
             Expanded(
                 flex: 5,child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text("Heaven's food"),
                 Row(
