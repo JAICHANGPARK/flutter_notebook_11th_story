@@ -62,7 +62,10 @@ class _FoodOrderPageState extends State<FoodOrderPage> {
                             Icons.timer,
                             color: Colors.orange,
                           ),
-                          Text("Delivery / As soons as possible"),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Text("Delivery / As soons as possible"),
+                          ),
                           Spacer(),
                           Icon(Icons.keyboard_arrow_right)
                         ],
@@ -73,7 +76,10 @@ class _FoodOrderPageState extends State<FoodOrderPage> {
                             Icons.location_pin,
                             color: Colors.orange,
                           ),
-                          Text("800 Cheese avenue, NYC"),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Text("800 Cheese avenue, NYC"),
+                          ),
                           Spacer(),
                           Icon(Icons.keyboard_arrow_right)
                         ],
