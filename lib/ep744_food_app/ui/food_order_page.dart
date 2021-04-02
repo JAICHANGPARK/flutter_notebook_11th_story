@@ -25,9 +25,15 @@ class _FoodOrderPageState extends State<FoodOrderPage> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      IconButton(onPressed: (){}, icon: Icon(Icons.arrow_back)),
-                      Text("Order details"),
-                      IconButton(onPressed: (){}, icon: Icon(Icons.info))
+                      IconButton(onPressed: () {}, icon: Icon(Icons.arrow_back)),
+                      Text(
+                        "Order details",
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      IconButton(onPressed: () {}, icon: Icon(Icons.info))
                     ],
                   ),
                 )),
