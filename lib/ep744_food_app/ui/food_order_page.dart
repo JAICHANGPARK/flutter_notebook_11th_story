@@ -8,6 +8,18 @@ class FoodOrderPage extends StatefulWidget {
 class _FoodOrderPageState extends State<FoodOrderPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          children: [
+            Expanded(child: Placeholder()),
+            Expanded(child: Placeholder()),
+            Expanded(child: Placeholder()),
+            Expanded(child: Placeholder()),
+            
+          ],
+        ),
+      ),
+    );
   }
 }
