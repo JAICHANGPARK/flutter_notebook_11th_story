@@ -40,11 +40,18 @@ class _FoodOrderPageState extends State<FoodOrderPage> {
             Expanded(
                 flex: 4,
                 child: Padding(
-                  padding: const EdgeInsets.only(top: 24, left: 16, right: 16),
+                  padding: const EdgeInsets.only(top: 24, left: 16, right: 16, bottom: 24),
                   child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("Heaven's food"),
+                      Text(
+                        "Heaven's food",
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                       Row(
                         children: [
                           Icon(Icons.timer),
