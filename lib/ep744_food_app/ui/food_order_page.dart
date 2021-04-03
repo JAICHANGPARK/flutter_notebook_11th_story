@@ -88,7 +88,7 @@ class _FoodOrderPageState extends State<FoodOrderPage> {
                   ),
                 )),
             Expanded(
-              flex: 9,
+              flex: 10,
               child: Container(
                 decoration: BoxDecoration(color: Colors.white),
                 child: Column(
