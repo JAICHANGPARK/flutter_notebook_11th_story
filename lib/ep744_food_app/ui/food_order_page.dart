@@ -123,7 +123,7 @@ class _FoodOrderPageState extends State<FoodOrderPage> {
                           trailing: Text("\$37.50"),
                         ),
                         ListTile(
-                          title: Text("Subtotal"),
+                          title: Text("Delivery"),
                           trailing: Container(
                             padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                             decoration: BoxDecoration(
