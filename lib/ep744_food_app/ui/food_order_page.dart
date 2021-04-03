@@ -91,7 +91,15 @@ class _FoodOrderPageState extends State<FoodOrderPage> {
                 flex: 9,
                 child: Container(
                   decoration: BoxDecoration(color: Colors.white),
-                )),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+
+                  ],
+                ),
+                ),
+
+            ),
             Expanded(
                 flex: 2,
                 child: Container(
