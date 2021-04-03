@@ -131,7 +131,10 @@ class _FoodOrderPageState extends State<FoodOrderPage> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             ListTile(
-                              title: Text("Subtotal"),
+                              title: Text("Subtotal", style: TextStyle(
+                                  fontSize: 14,
+                                  color: Colors.grey
+                              ),),
                               trailing: Text("\$37.50"),
                             ),
                             ListTile(
