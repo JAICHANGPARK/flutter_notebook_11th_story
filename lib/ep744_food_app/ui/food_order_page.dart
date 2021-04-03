@@ -128,7 +128,6 @@ class _FoodOrderPageState extends State<FoodOrderPage> {
                             padding: const EdgeInsets.symmetric(vertical: 4,horizontal: 8),
                             child: Container(
                               height: 78,
-                              color: Colors.red,
                               child: Row(
                                 children: [
                                   Container(height: 78,
@@ -136,11 +135,16 @@ class _FoodOrderPageState extends State<FoodOrderPage> {
                                   decoration: BoxDecoration(
                                     color: Colors.grey,
                                   ),),
-                                  Column(
-                                    children: [
-                                      Text("Big Mad Burger"),
-                                      Text("\$12.90"),
-                                    ],
+                                  Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Column(
+                                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Text("Big Mad Burger"),
+                                        Text("\$12.90"),
+                                      ],
+                                    ),
                                   ),
                                   Spacer(),
                                   Container(
