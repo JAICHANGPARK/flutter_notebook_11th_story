@@ -115,7 +115,7 @@ class _FoodOrderPageState extends State<FoodOrderPage> {
                         color: Colors.red,
                       );
                     })),
-                    Expanded(flex: 4, child: Column(
+                    Expanded(flex: 5, child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         ListTile(
@@ -132,6 +132,10 @@ class _FoodOrderPageState extends State<FoodOrderPage> {
                             ),
                             child: Text("Free"),
                           )
+                        ),
+                        ListTile(
+                            title: Text("Total"),
+                            trailing: Text("\$37.50")
                         )
                       ],
                     )),
