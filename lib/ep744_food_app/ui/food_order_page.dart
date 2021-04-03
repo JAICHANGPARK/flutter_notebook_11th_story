@@ -135,7 +135,10 @@ class _FoodOrderPageState extends State<FoodOrderPage> {
                               trailing: Text("\$37.50"),
                             ),
                             ListTile(
-                                title: Text("Delivery"),
+                                title: Text("Delivery", style: TextStyle(
+                                  fontSize: 14,
+                                  color: Colors.grey
+                                ),),
                                 trailing: Container(
                                   padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                                   decoration:
@@ -143,7 +146,10 @@ class _FoodOrderPageState extends State<FoodOrderPage> {
                                   child: Text("Free"),
                                 )),
                             ListTile(
-                                title: Text("Total"),
+                                title: Text("Total", style: TextStyle(
+                                  fontSize: 24,
+                                  fontWeight: FontWeight.bold
+                                ),),
                                 trailing: Text(
                                   "\$37.50",
                                   style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
