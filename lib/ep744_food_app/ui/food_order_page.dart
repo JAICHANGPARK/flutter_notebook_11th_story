@@ -125,10 +125,10 @@ class _FoodOrderPageState extends State<FoodOrderPage> {
                         ListTile(
                           title: Text("Subtotal"),
                           trailing: Container(
-                            padding: EdgeInsets.all(4),
+                            padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(4),
-                              color: Colors.grey
+                              color: Colors.grey[300]
                             ),
                             child: Text("Free"),
                           )
