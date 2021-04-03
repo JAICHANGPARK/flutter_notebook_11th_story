@@ -99,8 +99,13 @@ class _FoodOrderPageState extends State<FoodOrderPage> {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text("Your order"),
-                          Text("See more"),
+                          Text("Your order",style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                          ),),
+                          Text("See more", style: TextStyle(
+                            color: Colors.grey,
+                          ),),
                         ],
                       ),
                     )),
