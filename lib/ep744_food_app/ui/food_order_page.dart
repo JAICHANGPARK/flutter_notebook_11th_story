@@ -118,15 +118,20 @@ class _FoodOrderPageState extends State<FoodOrderPage> {
                           ),
                         )),
                     Expanded(
-                        flex: 4,
-                        child: ListView.builder(itemBuilder: (context, index) {
-                          return Container(
-                            height: 120,
-                            color: Colors.red,
+                        flex: 6,
+                        child: ListView.builder(
+                          itemCount: 3,
+                            itemBuilder: (context, index) {
+                          return Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 4,horizontal: 8),
+                            child: Container(
+                              height: 78,
+                              color: Colors.red,
+                            ),
                           );
                         })),
                     Expanded(
-                        flex: 5,
+                        flex: 6,
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
