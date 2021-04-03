@@ -109,7 +109,12 @@ class _FoodOrderPageState extends State<FoodOrderPage> {
                         ],
                       ),
                     )),
-                    Expanded(flex: 4, child: Placeholder()),
+                    Expanded(flex: 4, child: ListView.builder(itemBuilder: (context, index){
+                      return Container(
+                        height: 120,
+                        color: Colors.red,
+                      );
+                    })),
                     Expanded(flex: 4, child: Placeholder()),
                   ],
                 ),
