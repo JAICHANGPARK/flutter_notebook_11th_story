@@ -142,19 +142,25 @@ class _FoodOrderPageState extends State<FoodOrderPage> {
                                       Text("\$12.90"),
                                     ],
                                   ),
+                                  Spacer(),
                                   Container(
                                     height: 42,
                                     width: 42,
                                     decoration: BoxDecoration(
                                       color: Colors.orange,
+                                      borderRadius: BorderRadius.circular(8)
                                     ),
                                   ),
-                                  Text("$_itemCount"),
+                                  Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Text("$_itemCount"),
+                                  ),
                                   Container(
                                     height: 42,
                                     width: 42,
                                     decoration: BoxDecoration(
                                       color: Colors.orange,
+                                        borderRadius: BorderRadius.circular(8)
                                     ),
                                   )
                                 ],
