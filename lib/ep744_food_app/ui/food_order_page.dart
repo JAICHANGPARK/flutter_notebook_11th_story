@@ -6,8 +6,8 @@ class FoodOrderPage extends StatefulWidget {
 }
 
 class _FoodOrderPageState extends State<FoodOrderPage> {
-
   num _itemCount = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -122,91 +122,106 @@ class _FoodOrderPageState extends State<FoodOrderPage> {
                     Expanded(
                         flex: 6,
                         child: ListView.builder(
-                          itemCount: 3,
+                            itemCount: 3,
                             itemBuilder: (context, index) {
-                          return Padding(
-                            padding: const EdgeInsets.symmetric(vertical: 4,horizontal: 8),
-                            child: Container(
-                              height: 78,
-                              child: Row(
-                                children: [
-                                  Container(height: 78,
-                                  width: 78,
-                                  decoration: BoxDecoration(
-                                    color: Colors.grey,
-                                    borderRadius: BorderRadius.circular(8)
-                                  ),),
-                                  Padding(
-                                    padding: const EdgeInsets.all(8.0),
-                                    child: Column(
-                                      mainAxisAlignment: MainAxisAlignment.spaceAround,
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        Text("Big Mad Burger"),
-                                        Text("\$12.90"),
-                                      ],
-                                    ),
-                                  ),
-                                  Spacer(),
-                                  InkWell(
-                                    onTap: (){
-                                      setState(() {
-                                        _itemCount--;
-                                      });
-                                    },
-                                    child: Container(
-                                      height: 42,
-                                      width: 42,
-                                      decoration: BoxDecoration(
-                                        color: Colors.orange,
-                                        borderRadius: BorderRadius.circular(8)
+                              return Padding(
+                                padding: const EdgeInsets.symmetric(vertical: 6, horizontal: 8),
+                                child: Container(
+                                  height: 74,
+                                  child: Row(
+                                    children: [
+                                      Container(
+                                        height: 74,
+                                        width: 74,
+                                        decoration:
+                                            BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(8)),
                                       ),
-                                      child: Center(
-                                        child: Icon(Icons.remove),
+                                      Padding(
+                                        padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 16),
+                                        child: Column(
+                                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: [
+                                            Text(
+                                              "Big Mad Burger",
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            ),
+                                            Text(
+                                              "\$12.90",
+                                              style: TextStyle(
+                                                color: Colors.grey,
+                                              ),
+                                            ),
+                                          ],
+                                        ),
                                       ),
-                                    ),
-                                  ),
-                                  Padding(
-                                    padding: const EdgeInsets.all(8.0),
-                                    child: Text("$_itemCount"),
-                                  ),
-                                  InkWell(
-                                    onTap: (){
-                                      setState(() {
-                                        _itemCount++;
-                                      });
-                                    },
-                                    child: Container(
-                                      height: 42,
-                                      width: 42,
-                                      decoration: BoxDecoration(
-                                        color: Colors.orange,
-                                          borderRadius: BorderRadius.circular(8)
+                                      Spacer(),
+                                      InkWell(
+                                        onTap: () {
+                                          setState(() {
+                                            _itemCount--;
+                                          });
+                                        },
+                                        child: Container(
+                                          height: 42,
+                                          width: 42,
+                                          decoration: BoxDecoration(
+                                              color: Colors.orange, borderRadius: BorderRadius.circular(8)),
+                                          child: Center(
+                                            child: Icon(
+                                              Icons.remove,
+                                              color: Colors.white,
+                                            ),
+                                          ),
+                                        ),
                                       ),
-                                    ),
-                                  )
-                                ],
-                              ),
-                            ),
-                          );
-                        })),
+                                      Padding(
+                                        padding: const EdgeInsets.symmetric(horizontal: 12),
+                                        child: Text("$_itemCount"),
+                                      ),
+                                      InkWell(
+                                        onTap: () {
+                                          setState(() {
+                                            _itemCount++;
+                                          });
+                                        },
+                                        child: Container(
+                                          height: 42,
+                                          width: 42,
+                                          decoration: BoxDecoration(
+                                              color: Colors.orange, borderRadius: BorderRadius.circular(8)),
+                                          child: Center(
+                                            child: Icon(
+                                              Icons.add,
+                                              color: Colors.white,
+                                            ),
+                                          ),
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                ),
+                              );
+                            })),
                     Expanded(
                         flex: 6,
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             ListTile(
-                              title: Text("Subtotal", style: TextStyle(
-                                  fontSize: 14,
-                                  color: Colors.grey
-                              ),),
+                              title: Text(
+                                "Subtotal",
+                                style: TextStyle(fontSize: 14, color: Colors.grey),
+                              ),
                               trailing: Text("\$37.50"),
                             ),
                             ListTile(
-                                title: Text("Delivery", style: TextStyle(
-                                  fontSize: 14,
-                                  color: Colors.grey
-                                ),),
+                                title: Text(
+                                  "Delivery",
+                                  style: TextStyle(fontSize: 14, color: Colors.grey),
+                                ),
                                 trailing: Container(
                                   padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                                   decoration:
@@ -214,10 +229,10 @@ class _FoodOrderPageState extends State<FoodOrderPage> {
                                   child: Text("Free"),
                                 )),
                             ListTile(
-                                title: Text("Total", style: TextStyle(
-                                  fontSize: 24,
-                                  fontWeight: FontWeight.bold
-                                ),),
+                                title: Text(
+                                  "Total",
+                                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                                ),
                                 trailing: Text(
                                   "\$37.50",
                                   style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
