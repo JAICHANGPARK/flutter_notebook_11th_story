@@ -6,6 +6,8 @@ class FoodOrderPage extends StatefulWidget {
 }
 
 class _FoodOrderPageState extends State<FoodOrderPage> {
+
+  num _itemCount = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -127,6 +129,36 @@ class _FoodOrderPageState extends State<FoodOrderPage> {
                             child: Container(
                               height: 78,
                               color: Colors.red,
+                              child: Row(
+                                children: [
+                                  Container(height: 78,
+                                  width: 78,
+                                  decoration: BoxDecoration(
+                                    color: Colors.grey,
+                                  ),),
+                                  Column(
+                                    children: [
+                                      Text("Big Mad Burger"),
+                                      Text("\$12.90"),
+                                    ],
+                                  ),
+                                  Container(
+                                    height: 42,
+                                    width: 42,
+                                    decoration: BoxDecoration(
+                                      color: Colors.orange,
+                                    ),
+                                  ),
+                                  Text("$_itemCount"),
+                                  Container(
+                                    height: 42,
+                                    width: 42,
+                                    decoration: BoxDecoration(
+                                      color: Colors.orange,
+                                    ),
+                                  )
+                                ],
+                              ),
                             ),
                           );
                         })),
