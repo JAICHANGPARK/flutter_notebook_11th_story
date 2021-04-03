@@ -115,7 +115,12 @@ class _FoodOrderPageState extends State<FoodOrderPage> {
                         color: Colors.red,
                       );
                     })),
-                    Expanded(flex: 4, child: Placeholder()),
+                    Expanded(flex: 4, child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+
+                      ],
+                    )),
                   ],
                 ),
               ),
