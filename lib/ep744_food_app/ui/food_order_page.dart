@@ -118,7 +118,19 @@ class _FoodOrderPageState extends State<FoodOrderPage> {
                     Expanded(flex: 4, child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-
+                        ListTile(
+                          title: Text("Subtotal"),
+                          trailing: Text("\$37.50"),
+                        ),
+                        ListTile(
+                          title: Text("Subtotal"),
+                          trailing: Container(
+                            decoration: BoxDecoration(
+                              color: Colors.grey
+                            ),
+                            child: Text("Free"),
+                          )
+                        )
                       ],
                     )),
                   ],
