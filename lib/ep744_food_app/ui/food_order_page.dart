@@ -134,6 +134,7 @@ class _FoodOrderPageState extends State<FoodOrderPage> {
                                   width: 78,
                                   decoration: BoxDecoration(
                                     color: Colors.grey,
+                                    borderRadius: BorderRadius.circular(8)
                                   ),),
                                   Padding(
                                     padding: const EdgeInsets.all(8.0),
@@ -147,24 +148,41 @@ class _FoodOrderPageState extends State<FoodOrderPage> {
                                     ),
                                   ),
                                   Spacer(),
-                                  Container(
-                                    height: 42,
-                                    width: 42,
-                                    decoration: BoxDecoration(
-                                      color: Colors.orange,
-                                      borderRadius: BorderRadius.circular(8)
+                                  InkWell(
+                                    onTap: (){
+                                      setState(() {
+                                        _itemCount--;
+                                      });
+                                    },
+                                    child: Container(
+                                      height: 42,
+                                      width: 42,
+                                      decoration: BoxDecoration(
+                                        color: Colors.orange,
+                                        borderRadius: BorderRadius.circular(8)
+                                      ),
+                                      child: Center(
+                                        child: Icon(Icons.remove),
+                                      ),
                                     ),
                                   ),
                                   Padding(
                                     padding: const EdgeInsets.all(8.0),
                                     child: Text("$_itemCount"),
                                   ),
-                                  Container(
-                                    height: 42,
-                                    width: 42,
-                                    decoration: BoxDecoration(
-                                      color: Colors.orange,
-                                        borderRadius: BorderRadius.circular(8)
+                                  InkWell(
+                                    onTap: (){
+                                      setState(() {
+                                        _itemCount++;
+                                      });
+                                    },
+                                    child: Container(
+                                      height: 42,
+                                      width: 42,
+                                      decoration: BoxDecoration(
+                                        color: Colors.orange,
+                                          borderRadius: BorderRadius.circular(8)
+                                      ),
                                     ),
                                   )
                                 ],
