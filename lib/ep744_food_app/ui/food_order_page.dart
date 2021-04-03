@@ -94,51 +94,62 @@ class _FoodOrderPageState extends State<FoodOrderPage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Expanded(flex: 2, child: Padding(
-                      padding: const EdgeInsets.all(16.0),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text("Your order",style: TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold,
-                          ),),
-                          Text("See more", style: TextStyle(
-                            color: Colors.grey,
-                          ),),
-                        ],
-                      ),
-                    )),
-                    Expanded(flex: 4, child: ListView.builder(itemBuilder: (context, index){
-                      return Container(
-                        height: 120,
-                        color: Colors.red,
-                      );
-                    })),
-                    Expanded(flex: 5, child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        ListTile(
-                          title: Text("Subtotal"),
-                          trailing: Text("\$37.50"),
-                        ),
-                        ListTile(
-                          title: Text("Delivery"),
-                          trailing: Container(
-                            padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(4),
-                              color: Colors.grey[300]
+                    Expanded(
+                        flex: 2,
+                        child: Padding(
+                          padding: const EdgeInsets.all(16.0),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                "Your order",
+                                style: TextStyle(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Text(
+                                "See more",
+                                style: TextStyle(
+                                  color: Colors.grey,
+                                ),
+                              ),
+                            ],
+                          ),
+                        )),
+                    Expanded(
+                        flex: 4,
+                        child: ListView.builder(itemBuilder: (context, index) {
+                          return Container(
+                            height: 120,
+                            color: Colors.red,
+                          );
+                        })),
+                    Expanded(
+                        flex: 5,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            ListTile(
+                              title: Text("Subtotal"),
+                              trailing: Text("\$37.50"),
                             ),
-                            child: Text("Free"),
-                          )
-                        ),
-                        ListTile(
-                            title: Text("Total"),
-                            trailing: Text("\$37.50")
-                        )
-                      ],
-                    )),
+                            ListTile(
+                                title: Text("Delivery"),
+                                trailing: Container(
+                                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                  decoration:
+                                      BoxDecoration(borderRadius: BorderRadius.circular(4), color: Colors.grey[300]),
+                                  child: Text("Free"),
+                                )),
+                            ListTile(
+                                title: Text("Total"),
+                                trailing: Text(
+                                  "\$37.50",
+                                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                                ))
+                          ],
+                        )),
                   ],
                 ),
               ),
