@@ -94,10 +94,15 @@ class _FoodOrderPageState extends State<FoodOrderPage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                      Expanded(child: Placeholder()),
-                    Expanded(child: Placeholder()),
-                    
-                    Expanded(child: Placeholder()),
+                      Expanded(
+                          flex: 2,
+                          child: Placeholder()),
+                    Expanded(
+                        flex: 4,
+                        child: Placeholder()),
+
+                    Expanded(
+                        flex: 4,child: Placeholder()),
                   ],
                 ),
                 ),
