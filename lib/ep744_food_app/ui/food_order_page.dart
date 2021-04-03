@@ -88,34 +88,33 @@ class _FoodOrderPageState extends State<FoodOrderPage> {
                   ),
                 )),
             Expanded(
-                flex: 9,
-                child: Container(
-                  decoration: BoxDecoration(color: Colors.white),
+              flex: 9,
+              child: Container(
+                decoration: BoxDecoration(color: Colors.white),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                      Expanded(
-                          flex: 2,
-                          child: Placeholder()),
-                    Expanded(
-                        flex: 4,
-                        child: Placeholder()),
-
-                    Expanded(
-                        flex: 4,child: Placeholder()),
+                    Expanded(flex: 2, child: Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text("Your order"),
+                          Text("See more"),
+                        ],
+                      ),
+                    )),
+                    Expanded(flex: 4, child: Placeholder()),
+                    Expanded(flex: 4, child: Placeholder()),
                   ],
                 ),
-                ),
-
+              ),
             ),
             Expanded(
                 flex: 2,
                 child: Container(
                   margin: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
-                  decoration: BoxDecoration(
-                    color: Colors.black,
-                    borderRadius: BorderRadius.circular(8)
-                  ),
+                  decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(8)),
                   child: Center(
                     child: Text(
                       "Place order",
