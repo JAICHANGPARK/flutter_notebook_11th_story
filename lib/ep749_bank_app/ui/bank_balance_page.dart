@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -99,21 +100,27 @@ class _BankBalancePageState extends State<BankBalancePage> {
                               Expanded(flex: 2, child: Row(
                                 children: [
                                   Expanded(child: Row(
+                                    crossAxisAlignment: CrossAxisAlignment.center,
                                     children: [
                                       Container(
                                         height: 42,
                                         width: 42,
                                         decoration: BoxDecoration(
                                           color: Colors.tealAccent,
+                                          borderRadius: BorderRadius.circular(12)
                                         ),
                                         child: Icon(Icons.download_rounded),
                                       ),
-                                      Column(
-                                        crossAxisAlignment: CrossAxisAlignment.start,
-                                        children: [
-                                          Text("Income"),
-                                          Text("\$29.568,24")
-                                        ],
+                                      Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                          children: [
+                                            Text("Income"),
+                                            Text("\$29.568,24")
+                                          ],
+                                        ),
                                       )
                                     ],
                                   )),
