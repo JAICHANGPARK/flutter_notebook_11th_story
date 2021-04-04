@@ -35,11 +35,13 @@ class _BankBalancePageState extends State<BankBalancePage> {
                 )),
             Expanded(
                 flex: 15,
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 24),
-                  child: Column(
-                    children: [
-                      Row(
+                child: Column(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 16,
+                      ),
+                      child: Row(
                         children: [
                           Text(
                             "Reports",
@@ -53,11 +55,14 @@ class _BankBalancePageState extends State<BankBalancePage> {
                           Icon(Icons.keyboard_arrow_down_outlined),
                         ],
                       ),
-                      Expanded(
-                          child: Card(
-                        elevation: 2,
-                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+                    ),
+                    Expanded(
                         child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Card(
+                      elevation: 2,
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+                      child: Padding(
                           padding: const EdgeInsets.all(12.0),
                           child: Column(
                             children: [
@@ -73,10 +78,10 @@ class _BankBalancePageState extends State<BankBalancePage> {
                               Expanded(flex: 2, child: Placeholder()),
                             ],
                           ),
-                        ),
-                      )),
-                    ],
-                  ),
+                      ),
+                    ),
+                        )),
+                  ],
                 )),
             Expanded(
               flex: 2,
