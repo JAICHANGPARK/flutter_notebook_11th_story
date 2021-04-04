@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class BankBalancePage extends StatefulWidget {
   @override
@@ -32,60 +33,58 @@ class _BankBalancePageState extends State<BankBalancePage> {
                     ],
                   ),
                 )),
-            Expanded(flex: 15, child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 24),
-              child: Column(
-                children: [
-                  Row(
+            Expanded(
+                flex: 15,
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 24),
+                  child: Column(
                     children: [
-                      Text("Reports"),
-                      Spacer(),
-                      Text("July 2021"),
-                      Icon(Icons.keyboard_arrow_down_outlined),
-                    ],
-                  ),
-                  Expanded(child: Card(
-                    elevation: 2,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(16)
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.all(12.0),
-                      child: Column(
+                      Row(
                         children: [
-                          Expanded(
-                              flex: 3,
-                              child: Row(
-                            children: [
-                              Expanded(child: Placeholder()),
-                              Expanded(child: Placeholder()),
-                            ],
-                          )),
-                          Expanded(
-                              flex: 8,
-                              child: Placeholder()),
-                          Expanded(
-                              flex: 2,
-                              child: Placeholder()),
+                          Text(
+                            "Reports",
+                            style: GoogleFonts.montserrat(color: Colors.grey),
+                          ),
+                          Spacer(),
+                          Text("July 2021"),
+                          Icon(Icons.keyboard_arrow_down_outlined),
                         ],
                       ),
-                    ),
-                  )),
-                ],
-              ),
-            )),
-            Expanded(
-                flex: 2,
-                child: Container(
-                  margin: EdgeInsets.all(9),
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                   borderRadius: BorderRadius.circular(36)
+                      Expanded(
+                          child: Card(
+                        elevation: 2,
+                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+                        child: Padding(
+                          padding: const EdgeInsets.all(12.0),
+                          child: Column(
+                            children: [
+                              Expanded(
+                                  flex: 3,
+                                  child: Row(
+                                    children: [
+                                      Expanded(child: Placeholder()),
+                                      Expanded(child: Placeholder()),
+                                    ],
+                                  )),
+                              Expanded(flex: 8, child: Placeholder()),
+                              Expanded(flex: 2, child: Placeholder()),
+                            ],
+                          ),
+                        ),
+                      )),
+                    ],
                   ),
-                ),
-
+                )),
+            Expanded(
+              flex: 2,
+              child: Container(
+                margin: EdgeInsets.all(9),
+                decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(36)),
+              ),
             ),
-            SizedBox(height: 8,)
+            SizedBox(
+              height: 8,
+            )
           ],
         ),
       ),
