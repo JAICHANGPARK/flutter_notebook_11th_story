@@ -33,20 +33,24 @@ class _BankBalancePageState extends State<BankBalancePage> {
                   ),
                 )),
             Expanded(flex: 15, child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16),
+              padding: const EdgeInsets.symmetric(horizontal: 24),
               child: Column(
                 children: [
                   Row(
                     children: [
-                      Text("Repors"),
+                      Text("Reports"),
                       Spacer(),
                       Text("July 2021"),
                       Icon(Icons.keyboard_arrow_down_outlined),
                     ],
                   ),
                   Expanded(child: Card(
+                    elevation: 2,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(16)
+                    ),
                     child: Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.all(12.0),
                       child: Column(
                         children: [
                           Expanded(
