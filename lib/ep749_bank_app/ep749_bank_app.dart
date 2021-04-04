@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'ui/bank_balance_page.dart';
+
 
 class Ep749BankApp extends StatelessWidget {
   @override
@@ -7,17 +9,5 @@ class Ep749BankApp extends StatelessWidget {
     return MaterialApp(
       home: BankBalancePage(),
     );
-  }
-}
-
-class BankBalancePage extends StatefulWidget {
-  @override
-  _BankBalancePageState createState() => _BankBalancePageState();
-}
-
-class _BankBalancePageState extends State<BankBalancePage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold();
   }
 }
