@@ -32,17 +32,33 @@ class _BankBalancePageState extends State<BankBalancePage> {
                     ],
                   ),
                 )),
-            Expanded(flex: 15, child: Placeholder()),
+            Expanded(flex: 15, child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      Text("Repors"),
+                      Spacer(),
+                      Text("July 2021"),
+                      Icon(Icons.keyboard_arrow_down_outlined),
+                    ],
+                  )
+                ],
+              ),
+            )),
             Expanded(
                 flex: 2,
                 child: Container(
                   margin: EdgeInsets.all(9),
                   decoration: BoxDecoration(
-                    color: Colors.white, 
-                    borderRadius: BorderRadius.circular(24)
+                    color: Colors.white,
+                   borderRadius: BorderRadius.circular(36)
                   ),
-                )),
-            SizedBox(height: 16,)
+                ),
+
+            ),
+            SizedBox(height: 8,)
           ],
         ),
       ),
