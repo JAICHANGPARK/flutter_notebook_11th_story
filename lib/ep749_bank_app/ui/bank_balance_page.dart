@@ -25,8 +25,7 @@ class _BankBalancePageState extends State<BankBalancePage> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       IconButton(
-                        padding: EdgeInsets.zero,
-
+                          padding: EdgeInsets.zero,
                           onPressed: () {
                             scaffoldKey.currentState!.openDrawer();
                           },
@@ -60,11 +59,11 @@ class _BankBalancePageState extends State<BankBalancePage> {
                     ),
                     Expanded(
                         child: Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Card(
-                      elevation: 2,
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-                      child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Card(
+                        elevation: 2,
+                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+                        child: Padding(
                           padding: const EdgeInsets.all(12.0),
                           child: Column(
                             children: [
@@ -72,17 +71,25 @@ class _BankBalancePageState extends State<BankBalancePage> {
                                   flex: 3,
                                   child: Row(
                                     children: [
-                                      Expanded(child: Placeholder()),
-                                      Expanded(child: Placeholder()),
+                                      Expanded(child: Container(
+                                        margin: EdgeInsets.symmetric(vertical: 8),
+                                        decoration: BoxDecoration(
+                                          color: Colors.green,
+                                          borderRadius: BorderRadius.circular(8)
+                                        ),
+                                      )),
+                                      Expanded(child: Column(
+                                        children: [],
+                                      )),
                                     ],
                                   )),
                               Expanded(flex: 8, child: Placeholder()),
                               Expanded(flex: 2, child: Placeholder()),
                             ],
                           ),
+                        ),
                       ),
-                    ),
-                        )),
+                    )),
                   ],
                 )),
             Expanded(
