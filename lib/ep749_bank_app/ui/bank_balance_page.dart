@@ -45,19 +45,26 @@ class _BankBalancePageState extends State<BankBalancePage> {
                     ],
                   ),
                   Expanded(child: Card(
-                    child: Column(
-                      children: [
-                        Expanded(
-                            flex: 3,
-                            child: Row(
-                          children: [
-                            Expanded(child: Placeholder()),
-                            Expanded(child: Placeholder()),
-                          ],
-                        )),
-                        Expanded(child: Placeholder()),
-                        Expanded(child: Placeholder()),
-                      ],
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Column(
+                        children: [
+                          Expanded(
+                              flex: 3,
+                              child: Row(
+                            children: [
+                              Expanded(child: Placeholder()),
+                              Expanded(child: Placeholder()),
+                            ],
+                          )),
+                          Expanded(
+                              flex: 8,
+                              child: Placeholder()),
+                          Expanded(
+                              flex: 2,
+                              child: Placeholder()),
+                        ],
+                      ),
                     ),
                   )),
                 ],
