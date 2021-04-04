@@ -125,6 +125,7 @@ class _BankBalancePageState extends State<BankBalancePage> {
                                     ],
                                   )),
                                   Expanded(child: Row(
+                                    crossAxisAlignment: CrossAxisAlignment.center,
                                     children: [
                                       Container(
                                         height: 42,
@@ -135,12 +136,16 @@ class _BankBalancePageState extends State<BankBalancePage> {
                                         ),
                                         child: Icon(Icons.download_rounded),
                                       ),
-                                      Column(
-                                        crossAxisAlignment: CrossAxisAlignment.start,
-                                        children: [
-                                          Text("Expense"),
-                                          Text("\$17.222,24")
-                                        ],
+                                      Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                          children: [
+                                            Text("Expense"),
+                                            Text("\$17.222,24")
+                                          ],
+                                        ),
                                       )
                                     ],
                                   )),
