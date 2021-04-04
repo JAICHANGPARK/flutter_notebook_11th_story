@@ -25,6 +25,8 @@ class _BankBalancePageState extends State<BankBalancePage> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       IconButton(
+                        padding: EdgeInsets.zero,
+
                           onPressed: () {
                             scaffoldKey.currentState!.openDrawer();
                           },
