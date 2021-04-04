@@ -18,14 +18,20 @@ class _BankBalancePageState extends State<BankBalancePage> {
           children: [
             Expanded(
                 flex: 2,
-                child: Row(
-                  children: [
-                    IconButton(
-                        onPressed: () {
-                          scaffoldKey.currentState!.openDrawer();
-                        },
-                        icon: Icon(Icons.menu))
-                  ],
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      IconButton(
+                          onPressed: () {
+                            scaffoldKey.currentState!.openDrawer();
+                          },
+                          icon: Icon(Icons.menu)),
+                      CircleAvatar(),
+
+                    ],
+                  ),
                 )),
             Expanded(flex: 15, child: Placeholder()),
             Expanded(flex: 2, child: Placeholder()),
