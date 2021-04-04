@@ -109,7 +109,8 @@ class _BankBalancePageState extends State<BankBalancePage> {
                                       ),
                                       Column(
                                         children: [
-                                          
+                                          Text("Income"),
+                                          Text("\$29.568,24")
                                         ],
                                       )
                                     ],
