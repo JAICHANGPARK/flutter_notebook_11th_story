@@ -33,7 +33,13 @@ class _BankBalancePageState extends State<BankBalancePage> {
                   ),
                 )),
             Expanded(flex: 15, child: Placeholder()),
-            Expanded(flex: 2, child: Placeholder()),
+            Expanded(
+                flex: 2,
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                  ),
+                )),
           ],
         ),
       ),
