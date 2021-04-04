@@ -47,7 +47,14 @@ class _BankBalancePageState extends State<BankBalancePage> {
                   Expanded(child: Card(
                     child: Column(
                       children: [
-                        Expanded(child: Placeholder()),
+                        Expanded(
+                            flex: 3,
+                            child: Row(
+                          children: [
+                            Expanded(child: Placeholder()),
+                            Expanded(child: Placeholder()),
+                          ],
+                        )),
                         Expanded(child: Placeholder()),
                         Expanded(child: Placeholder()),
                       ],
