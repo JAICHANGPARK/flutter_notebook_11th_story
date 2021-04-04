@@ -98,6 +98,7 @@ class _BankBalancePageState extends State<BankBalancePage> {
                                   )),
                               Expanded(flex: 10, child: Placeholder()),
                               Expanded(flex: 2, child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
                                   Expanded(child: Row(
                                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -131,10 +132,10 @@ class _BankBalancePageState extends State<BankBalancePage> {
                                         height: 42,
                                         width: 42,
                                         decoration: BoxDecoration(
-                                            color: Colors.tealAccent,
+                                            color: Colors.orangeAccent,
                                             borderRadius: BorderRadius.circular(12)
                                         ),
-                                        child: Icon(Icons.download_rounded),
+                                        child: Icon(Icons.upload_rounded),
                                       ),
                                       Padding(
                                         padding: const EdgeInsets.all(8.0),
