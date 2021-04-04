@@ -36,10 +36,13 @@ class _BankBalancePageState extends State<BankBalancePage> {
             Expanded(
                 flex: 2,
                 child: Container(
+                  margin: EdgeInsets.all(9),
                   decoration: BoxDecoration(
-                    color: Colors.white,
+                    color: Colors.white, 
+                    borderRadius: BorderRadius.circular(24)
                   ),
                 )),
+            SizedBox(height: 16,)
           ],
         ),
       ),
