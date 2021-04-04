@@ -43,7 +43,16 @@ class _BankBalancePageState extends State<BankBalancePage> {
                       Text("July 2021"),
                       Icon(Icons.keyboard_arrow_down_outlined),
                     ],
-                  )
+                  ),
+                  Expanded(child: Card(
+                    child: Column(
+                      children: [
+                        Expanded(child: Placeholder()),
+                        Expanded(child: Placeholder()),
+                        Expanded(child: Placeholder()),
+                      ],
+                    ),
+                  )),
                 ],
               ),
             )),
