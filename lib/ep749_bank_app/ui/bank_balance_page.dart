@@ -73,7 +73,7 @@ class _BankBalancePageState extends State<BankBalancePage> {
                                   child: Row(
                                     children: [
                                       Expanded(child: Container(
-                                        margin: EdgeInsets.symmetric(vertical: 8),
+                                        margin: EdgeInsets.only(top: 8, bottom: 8, right: 8),
                                         decoration: BoxDecoration(
                                           color: Colors.green,
                                           borderRadius: BorderRadius.circular(8)
