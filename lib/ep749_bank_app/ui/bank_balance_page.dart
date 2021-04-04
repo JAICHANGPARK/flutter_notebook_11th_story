@@ -8,6 +8,13 @@ class BankBalancePage extends StatefulWidget {
 class _BankBalancePageState extends State<BankBalancePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: Colors.red[50]!,
+      body: Stack(
+        children: [
+          Positioned(child: Placeholder(),)
+        ],
+      ),
+    );
   }
 }
