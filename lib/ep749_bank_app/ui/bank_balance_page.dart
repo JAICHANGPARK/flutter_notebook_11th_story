@@ -95,8 +95,13 @@ class _BankBalancePageState extends State<BankBalancePage> {
                                       )),
                                     ],
                                   )),
-                              Expanded(flex: 8, child: Placeholder()),
-                              Expanded(flex: 2, child: Placeholder()),
+                              Expanded(flex: 10, child: Placeholder()),
+                              Expanded(flex: 2, child: Row(
+                                children: [
+                                  Expanded(child: Placeholder()),
+                                  Expanded(child: Placeholder())
+                                ],
+                              )),
                             ],
                           ),
                         ),
@@ -109,6 +114,16 @@ class _BankBalancePageState extends State<BankBalancePage> {
               child: Container(
                 margin: EdgeInsets.all(9),
                 decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(36)),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    IconButton(onPressed: (){}, icon: Icon(Icons.credit_card)),
+                    IconButton(onPressed: (){}, icon: Icon(Icons.pie_chart)),
+                    IconButton(onPressed: (){}, icon: Icon(Icons.apps)),
+                    IconButton(onPressed: (){}, icon: Icon(Icons.card_giftcard)),
+
+                  ],
+                ),
               ),
             ),
             SizedBox(
