@@ -7,6 +7,7 @@ class BankBalancePage extends StatefulWidget {
 
 class _BankBalancePageState extends State<BankBalancePage> {
   GlobalKey<ScaffoldState> scaffoldKey = GlobalKey();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -15,13 +16,17 @@ class _BankBalancePageState extends State<BankBalancePage> {
       body: SafeArea(
         child: Column(
           children: [
-            Expanded(flex: 2, child: Row(
-              children: [IconButton(onPressed: (){
-
-
-
-              }, icon: Icon(Icons.menu))],
-            )),
+            Expanded(
+                flex: 2,
+                child: Row(
+                  children: [
+                    IconButton(
+                        onPressed: () {
+                          scaffoldKey.currentState!.openDrawer();
+                        },
+                        icon: Icon(Icons.menu))
+                  ],
+                )),
             Expanded(flex: 15, child: Placeholder()),
             Expanded(flex: 2, child: Placeholder()),
           ],
