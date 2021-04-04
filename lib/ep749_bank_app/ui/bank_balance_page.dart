@@ -27,11 +27,14 @@ class _BankBalancePageState extends State<BankBalancePage> {
                     children: [
                       IconButton(
                           padding: EdgeInsets.zero,
+                          color: Colors.grey,
                           onPressed: () {
                             scaffoldKey.currentState!.openDrawer();
                           },
                           icon: Icon(Icons.menu)),
-                      CircleAvatar(),
+                      CircleAvatar(
+                        radius: 26,
+                      ),
                     ],
                   ),
                 )),
