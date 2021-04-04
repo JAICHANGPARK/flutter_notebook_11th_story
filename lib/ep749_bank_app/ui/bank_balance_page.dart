@@ -46,7 +46,10 @@ class _BankBalancePageState extends State<BankBalancePage> {
                             style: GoogleFonts.montserrat(color: Colors.grey),
                           ),
                           Spacer(),
-                          Text("July 2021"),
+                          Text(
+                            "July 2021",
+                            style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
+                          ),
                           Icon(Icons.keyboard_arrow_down_outlined),
                         ],
                       ),
