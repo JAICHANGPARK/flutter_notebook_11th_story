@@ -130,7 +130,8 @@ class _BankBalancePageState extends State<BankBalancePage> {
                                         height: 42,
                                         width: 42,
                                         decoration: BoxDecoration(
-                                          color: Colors.tealAccent,
+                                            color: Colors.tealAccent,
+                                            borderRadius: BorderRadius.circular(12)
                                         ),
                                         child: Icon(Icons.download_rounded),
                                       ),
