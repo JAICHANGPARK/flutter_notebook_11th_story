@@ -29,7 +29,6 @@ class _BankBalancePageState extends State<BankBalancePage> {
                           },
                           icon: Icon(Icons.menu)),
                       CircleAvatar(),
-
                     ],
                   ),
                 )),
