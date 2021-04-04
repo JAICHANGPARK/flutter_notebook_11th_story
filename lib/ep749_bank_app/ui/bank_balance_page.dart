@@ -106,8 +106,10 @@ class _BankBalancePageState extends State<BankBalancePage> {
                                         decoration: BoxDecoration(
                                           color: Colors.tealAccent,
                                         ),
+                                        child: Icon(Icons.download_rounded),
                                       ),
                                       Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
                                           Text("Income"),
                                           Text("\$29.568,24")
@@ -115,7 +117,25 @@ class _BankBalancePageState extends State<BankBalancePage> {
                                       )
                                     ],
                                   )),
-                                  Expanded(child: Placeholder())
+                                  Expanded(child: Row(
+                                    children: [
+                                      Container(
+                                        height: 42,
+                                        width: 42,
+                                        decoration: BoxDecoration(
+                                          color: Colors.tealAccent,
+                                        ),
+                                        child: Icon(Icons.download_rounded),
+                                      ),
+                                      Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          Text("Expense"),
+                                          Text("\$17.222,24")
+                                        ],
+                                      )
+                                    ],
+                                  )),
                                 ],
                               )),
                             ],
