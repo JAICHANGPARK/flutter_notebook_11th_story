@@ -9,3 +9,15 @@ class Ep749BankApp extends StatelessWidget {
     );
   }
 }
+
+class BankBalancePage extends StatefulWidget {
+  @override
+  _BankBalancePageState createState() => _BankBalancePageState();
+}
+
+class _BankBalancePageState extends State<BankBalancePage> {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
