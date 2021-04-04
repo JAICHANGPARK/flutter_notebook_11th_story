@@ -79,13 +79,16 @@ class _BankBalancePageState extends State<BankBalancePage> {
                                         ),
                                       )),
                                       Expanded(child: Padding(
-                                        padding: const EdgeInsets.only(top: 8,  bottom: 8, left: 8),
+                                        padding: const EdgeInsets.only(top: 16,  bottom: 16, left: 8),
                                         child: Column(
                                           mainAxisAlignment: MainAxisAlignment.spaceAround,
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
                                             Text("Balance"),
-                                            Text("\$14.938,51")
+                                            Text("\$14.938,51", style: TextStyle(
+                                              fontSize: 24,
+                                              fontWeight: FontWeight.bold,
+                                            ),)
 
                                           ],
                                         ),
