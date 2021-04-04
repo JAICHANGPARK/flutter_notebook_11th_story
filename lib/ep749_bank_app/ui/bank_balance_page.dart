@@ -14,9 +14,15 @@ class _BankBalancePageState extends State<BankBalancePage> {
 
         child: Column(
           children: [
-            Expanded(child: Placeholder()),
-            Expanded(child: Placeholder()),
-            Expanded(child: Placeholder()),
+            Expanded(
+                flex: 2,
+                child: Placeholder()),
+            Expanded(
+                flex: 15,
+                child: Placeholder()),
+            Expanded(
+                flex: 2,
+                child: Placeholder()),
           ],
         ),
       ),
