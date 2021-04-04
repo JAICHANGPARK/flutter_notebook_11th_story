@@ -18,6 +18,6 @@ class BankBalancePage extends StatefulWidget {
 class _BankBalancePageState extends State<BankBalancePage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold();
   }
 }
