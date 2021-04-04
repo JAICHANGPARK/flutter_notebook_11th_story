@@ -21,6 +21,7 @@ dependencies:
   path_provider: any
 
   flutter_swiper: any
+  fl_chart: any
 
 dev_dependencies:
   flutter_test:
