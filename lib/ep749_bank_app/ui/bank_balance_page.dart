@@ -32,6 +32,7 @@ class _BankBalancePageState extends State<BankBalancePage> {
           ],
         ),
       ),
+      drawer: Drawer(),
     );
   }
 }
