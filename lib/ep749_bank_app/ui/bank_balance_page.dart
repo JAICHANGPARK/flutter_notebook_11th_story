@@ -12,6 +12,60 @@ class _BankBalancePageState extends State<BankBalancePage> {
   GlobalKey<ScaffoldState> scaffoldKey = GlobalKey();
   int _tabIndex = 0;
 
+  final Color barBackgroundColor = const Color(0xff72d8bf);
+  final Duration animDuration = const Duration(milliseconds: 250);
+
+  int touchedIndex = 0;
+  bool isPlaying = false;
+
+  BarChartGroupData makeGroupData(
+      int x,
+      double y, {
+        bool isTouched = false,
+        Color barColor = Colors.white,
+        double width = 22,
+        List<int> showTooltips = const [],
+      }) {
+    return BarChartGroupData(
+      x: x,
+      barRods: [
+        BarChartRodData(
+          y: isTouched ? y + 1 : y,
+          colors: isTouched ? [Colors.yellow] : [barColor],
+          width: width,
+          backDrawRodData: BackgroundBarChartRodData(
+            show: true,
+            y: 20,
+            colors: [barBackgroundColor],
+          ),
+        ),
+      ],
+      showingTooltipIndicators: showTooltips,
+    );
+  }
+
+  List<BarChartGroupData?> showingGroups() => List.generate(7, (i) {
+    switch (i) {
+      case 0:
+        return makeGroupData(0, 5, isTouched: i == touchedIndex);
+      case 1:
+        return makeGroupData(1, 6.5, isTouched: i == touchedIndex);
+      case 2:
+        return makeGroupData(2, 5, isTouched: i == touchedIndex);
+      case 3:
+        return makeGroupData(3, 7.5, isTouched: i == touchedIndex);
+      case 4:
+        return makeGroupData(4, 9, isTouched: i == touchedIndex);
+      case 5:
+        return makeGroupData(5, 11.5, isTouched: i == touchedIndex);
+      case 6:
+        return makeGroupData(6, 6.5, isTouched: i == touchedIndex);
+      default:
+        return null;
+    }
+  });
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -104,7 +158,41 @@ class _BankBalancePageState extends State<BankBalancePage> {
                                     ],
                                   )),
                               Expanded(flex: 10, child: BarChart(
-                                  BarChartData(),
+
+                                  BarChartData(
+                                    titlesData: FlTitlesData(
+                                      show: true,
+                                      bottomTitles: SideTitles(
+                                        showTitles: true,
+                                        getTextStyles: (value) =>
+                                        const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 14),
+                                        margin: 16,
+                                        getTitles: (double value) {
+                                          switch (value.toInt()) {
+                                            case 0:
+                                              return 'M';
+                                            case 1:
+                                              return 'T';
+                                            case 2:
+                                              return 'W';
+                                            case 3:
+                                              return 'T';
+                                            case 4:
+                                              return 'F';
+                                            case 5:
+                                              return 'S';
+                                            case 6:
+                                              return 'S';
+                                            default:
+                                              return '';
+                                          }
+                                        },
+                                      ),
+                                      leftTitles: SideTitles(
+                                        showTitles: false,
+                                      ),
+                                    ),
+                                  ),
                               )),
                               Expanded(
                                   flex: 2,
