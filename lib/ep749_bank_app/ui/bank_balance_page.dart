@@ -158,44 +158,47 @@ class _BankBalancePageState extends State<BankBalancePage> {
                                   )),
                               Expanded(
                                   flex: 10,
-                                  child: BarChart(
-                                    BarChartData(
-                                      borderData: FlBorderData(
-                                        show: false
-                                      ),
-                                      titlesData: FlTitlesData(
-                                        show: true,
-                                        bottomTitles: SideTitles(
-                                          showTitles: true,
-                                          getTextStyles: (value) => const TextStyle(
-                                              color: Colors.white, fontWeight: FontWeight.bold, fontSize: 14),
-                                          margin: 16,
-                                          getTitles: (double value) {
-                                            switch (value.toInt()) {
-                                              case 0:
-                                                return 'M';
-                                              case 1:
-                                                return 'T';
-                                              case 2:
-                                                return 'W';
-                                              case 3:
-                                                return 'T';
-                                              case 4:
-                                                return 'F';
-                                              case 5:
-                                                return 'S';
-                                              case 6:
-                                                return 'S';
-                                              default:
-                                                return '';
-                                            }
-                                          },
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: BarChart(
+                                      BarChartData(
+                                        borderData: FlBorderData(
+                                          show: false
                                         ),
-                                        leftTitles: SideTitles(
-                                          showTitles: false,
+                                        titlesData: FlTitlesData(
+                                          show: true,
+                                          bottomTitles: SideTitles(
+                                            showTitles: true,
+                                            getTextStyles: (value) => const TextStyle(
+                                                color: Colors.grey, fontWeight: FontWeight.bold, fontSize: 14),
+                                            margin: 16,
+                                            getTitles: (double value) {
+                                              switch (value.toInt()) {
+                                                case 0:
+                                                  return '18';
+                                                case 1:
+                                                  return '19';
+                                                case 2:
+                                                  return '20';
+                                                case 3:
+                                                  return '21';
+                                                case 4:
+                                                  return '22';
+                                                case 5:
+                                                  return '23';
+                                                case 6:
+                                                  return '24';
+                                                default:
+                                                  return '';
+                                              }
+                                            },
+                                          ),
+                                          leftTitles: SideTitles(
+                                            showTitles: false,
+                                          ),
                                         ),
+                                        barGroups: showingGroups(),
                                       ),
-                                      barGroups: showingGroups(),
                                     ),
                                   )),
                               Expanded(
