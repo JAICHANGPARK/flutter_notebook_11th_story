@@ -175,6 +175,7 @@ class _BankBalancePageState extends State<BankBalancePage> {
                               });
                             },
                             child: CircleAvatar(
+                              radius: 22,
                               foregroundColor: Colors.blueGrey,
                               backgroundColor: Colors.brown[50],
                               child: Icon(Icons.credit_card),
