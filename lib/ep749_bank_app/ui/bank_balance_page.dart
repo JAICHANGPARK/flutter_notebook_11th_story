@@ -1,3 +1,4 @@
+import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -102,7 +103,9 @@ class _BankBalancePageState extends State<BankBalancePage> {
                                       )),
                                     ],
                                   )),
-                              Expanded(flex: 10, child: Placeholder()),
+                              Expanded(flex: 10, child: BarChart(
+                                  BarChartData()
+                              )),
                               Expanded(
                                   flex: 2,
                                   child: Row(
