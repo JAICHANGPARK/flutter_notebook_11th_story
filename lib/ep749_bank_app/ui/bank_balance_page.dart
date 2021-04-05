@@ -167,8 +167,18 @@ class _BankBalancePageState extends State<BankBalancePage> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    IconButton(onPressed: () {}, icon: Icon(Icons.credit_card)),
-                    IconButton(onPressed: () {}, icon: Icon(Icons.pie_chart)),
+                    IconButton(onPressed: () {
+                      setState(() {
+                        _tabIndex = 0;
+                      });
+
+                    }, icon: Icon(Icons.credit_card)),
+                    IconButton(onPressed: () {
+                      setState(() {
+                        _tabIndex = 1;
+                      });
+
+                    }, icon: Icon(Icons.pie_chart)),
                     IconButton(onPressed: () {}, icon: Icon(Icons.apps)),
                     IconButton(onPressed: () {}, icon: Icon(Icons.card_giftcard)),
                   ],
