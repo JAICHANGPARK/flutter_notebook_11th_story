@@ -22,7 +22,7 @@ class _BankBalancePageState extends State<BankBalancePage> {
     int x,
     double y, {
     bool isTouched = false,
-    Color barColor = Colors.white,
+    Color barColor = Colors.teal,
     double width = 8,
     List<int> showTooltips = const [],
   }) {
@@ -31,12 +31,12 @@ class _BankBalancePageState extends State<BankBalancePage> {
       barRods: [
         BarChartRodData(
           y: isTouched ? y + 1 : y,
-          colors: isTouched ? [Colors.yellow] : [barColor],
+          colors: isTouched ? [Colors.grey] : [barColor],
           width: width,
           backDrawRodData: BackgroundBarChartRodData(
             show: true,
             y: 20,
-            colors: [barBackgroundColor],
+            colors: [Colors.grey[300]!],
           ),
         ),
       ],
