@@ -167,13 +167,26 @@ class _BankBalancePageState extends State<BankBalancePage> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    IconButton(
-                        onPressed: () {
-                          setState(() {
-                            _tabIndex = 0;
-                          });
-                        },
-                        icon: Icon(Icons.credit_card)),
+                    _tabIndex == 0
+                        ? InkWell(
+                            onTap: () {
+                              setState(() {
+                                _tabIndex = 0;
+                              });
+                            },
+                            child: CircleAvatar(
+                              foregroundColor: Colors.blueGrey,
+                              backgroundColor: Colors.brown[50],
+                              child: Icon(Icons.credit_card),
+                            ),
+                          )
+                        : IconButton(
+                            onPressed: () {
+                              setState(() {
+                                _tabIndex = 0;
+                              });
+                            },
+                            icon: Icon(Icons.credit_card)),
                     IconButton(
                         onPressed: () {
                           setState(() {
