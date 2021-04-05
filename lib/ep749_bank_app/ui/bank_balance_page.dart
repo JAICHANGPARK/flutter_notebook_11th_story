@@ -104,7 +104,7 @@ class _BankBalancePageState extends State<BankBalancePage> {
                                     ],
                                   )),
                               Expanded(flex: 10, child: BarChart(
-                                  BarChartData()
+                                  BarChartData(),
                               )),
                               Expanded(
                                   flex: 2,
