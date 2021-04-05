@@ -162,9 +162,7 @@ class _BankBalancePageState extends State<BankBalancePage> {
                                     padding: const EdgeInsets.all(8.0),
                                     child: BarChart(
                                       BarChartData(
-                                        borderData: FlBorderData(
-                                          show: false
-                                        ),
+                                        borderData: FlBorderData(show: false),
                                         titlesData: FlTitlesData(
                                           show: true,
                                           bottomTitles: SideTitles(
