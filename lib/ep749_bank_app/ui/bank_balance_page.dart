@@ -230,25 +230,27 @@ class _BankBalancePageState extends State<BankBalancePage> {
                               });
                             },
                             icon: Icon(Icons.apps)),
-                    _tabIndex == 3? InkWell(
-                      onTap: () {
-                        setState(() {
-                          _tabIndex = 3;
-                        });
-                      },
-                      child: CircleAvatar(
-                        radius: 22,
-                        foregroundColor: Colors.blueGrey,
-                        backgroundColor: Colors.brown[50],
-                        child: Icon(Icons.card_giftcard),
-                      ),
-                    ):  IconButton(
-                        onPressed: () {
-                          setState(() {
-                            _tabIndex = 3;
-                          });
-                        },
-                        icon: Icon(Icons.card_giftcard)),
+                    _tabIndex == 3
+                        ? InkWell(
+                            onTap: () {
+                              setState(() {
+                                _tabIndex = 3;
+                              });
+                            },
+                            child: CircleAvatar(
+                              radius: 22,
+                              foregroundColor: Colors.blueGrey,
+                              backgroundColor: Colors.brown[50],
+                              child: Icon(Icons.card_giftcard),
+                            ),
+                          )
+                        : IconButton(
+                            onPressed: () {
+                              setState(() {
+                                _tabIndex = 3;
+                              });
+                            },
+                            icon: Icon(Icons.card_giftcard)),
                   ],
                 ),
               ),
