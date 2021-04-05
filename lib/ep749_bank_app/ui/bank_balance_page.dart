@@ -19,13 +19,13 @@ class _BankBalancePageState extends State<BankBalancePage> {
   bool isPlaying = false;
 
   BarChartGroupData makeGroupData(
-      int x,
-      double y, {
-        bool isTouched = false,
-        Color barColor = Colors.white,
-        double width = 22,
-        List<int> showTooltips = const [],
-      }) {
+    int x,
+    double y, {
+    bool isTouched = false,
+    Color barColor = Colors.white,
+    double width = 22,
+    List<int> showTooltips = const [],
+  }) {
     return BarChartGroupData(
       x: x,
       barRods: [
@@ -44,27 +44,26 @@ class _BankBalancePageState extends State<BankBalancePage> {
     );
   }
 
-  List<BarChartGroupData?> showingGroups() => List.generate(7, (i) {
-    switch (i) {
-      case 0:
-        return makeGroupData(0, 5, isTouched: i == touchedIndex);
-      case 1:
-        return makeGroupData(1, 6.5, isTouched: i == touchedIndex);
-      case 2:
-        return makeGroupData(2, 5, isTouched: i == touchedIndex);
-      case 3:
-        return makeGroupData(3, 7.5, isTouched: i == touchedIndex);
-      case 4:
-        return makeGroupData(4, 9, isTouched: i == touchedIndex);
-      case 5:
-        return makeGroupData(5, 11.5, isTouched: i == touchedIndex);
-      case 6:
-        return makeGroupData(6, 6.5, isTouched: i == touchedIndex);
-      default:
-        return null;
-    }
-  });
-
+  List<BarChartGroupData> showingGroups() => List.generate(7, (i) {
+        switch (i) {
+          case 0:
+            return makeGroupData(0, 5, isTouched: i == touchedIndex);
+          case 1:
+            return makeGroupData(1, 6.5, isTouched: i == touchedIndex);
+          case 2:
+            return makeGroupData(2, 5, isTouched: i == touchedIndex);
+          case 3:
+            return makeGroupData(3, 7.5, isTouched: i == touchedIndex);
+          case 4:
+            return makeGroupData(4, 9, isTouched: i == touchedIndex);
+          case 5:
+            return makeGroupData(5, 11.5, isTouched: i == touchedIndex);
+          case 6:
+            return makeGroupData(6, 6.5, isTouched: i == touchedIndex);
+          default:
+            return makeGroupData(0, 6.5, isTouched: i == touchedIndex);
+        }
+      });
 
   @override
   Widget build(BuildContext context) {
@@ -157,43 +156,45 @@ class _BankBalancePageState extends State<BankBalancePage> {
                                       )),
                                     ],
                                   )),
-                              Expanded(flex: 10, child: BarChart(
-
-                                  BarChartData(
-                                    titlesData: FlTitlesData(
-                                      show: true,
-                                      bottomTitles: SideTitles(
-                                        showTitles: true,
-                                        getTextStyles: (value) =>
-                                        const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 14),
-                                        margin: 16,
-                                        getTitles: (double value) {
-                                          switch (value.toInt()) {
-                                            case 0:
-                                              return 'M';
-                                            case 1:
-                                              return 'T';
-                                            case 2:
-                                              return 'W';
-                                            case 3:
-                                              return 'T';
-                                            case 4:
-                                              return 'F';
-                                            case 5:
-                                              return 'S';
-                                            case 6:
-                                              return 'S';
-                                            default:
-                                              return '';
-                                          }
-                                        },
+                              Expanded(
+                                  flex: 10,
+                                  child: BarChart(
+                                    BarChartData(
+                                      titlesData: FlTitlesData(
+                                        show: true,
+                                        bottomTitles: SideTitles(
+                                          showTitles: true,
+                                          getTextStyles: (value) => const TextStyle(
+                                              color: Colors.white, fontWeight: FontWeight.bold, fontSize: 14),
+                                          margin: 16,
+                                          getTitles: (double value) {
+                                            switch (value.toInt()) {
+                                              case 0:
+                                                return 'M';
+                                              case 1:
+                                                return 'T';
+                                              case 2:
+                                                return 'W';
+                                              case 3:
+                                                return 'T';
+                                              case 4:
+                                                return 'F';
+                                              case 5:
+                                                return 'S';
+                                              case 6:
+                                                return 'S';
+                                              default:
+                                                return '';
+                                            }
+                                          },
+                                        ),
+                                        leftTitles: SideTitles(
+                                          showTitles: false,
+                                        ),
                                       ),
-                                      leftTitles: SideTitles(
-                                        showTitles: false,
-                                      ),
+                                      barGroups: showingGroups(),
                                     ),
-                                  ),
-                              )),
+                                  )),
                               Expanded(
                                   flex: 2,
                                   child: Row(
