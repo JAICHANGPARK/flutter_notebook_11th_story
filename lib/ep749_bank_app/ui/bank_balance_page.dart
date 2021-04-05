@@ -23,7 +23,7 @@ class _BankBalancePageState extends State<BankBalancePage> {
     double y, {
     bool isTouched = false,
     Color barColor = Colors.white,
-    double width = 22,
+    double width = 8,
     List<int> showTooltips = const [],
   }) {
     return BarChartGroupData(
@@ -160,6 +160,9 @@ class _BankBalancePageState extends State<BankBalancePage> {
                                   flex: 10,
                                   child: BarChart(
                                     BarChartData(
+                                      borderData: FlBorderData(
+                                        show: false
+                                      ),
                                       titlesData: FlTitlesData(
                                         show: true,
                                         bottomTitles: SideTitles(
