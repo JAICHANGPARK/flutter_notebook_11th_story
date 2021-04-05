@@ -163,7 +163,10 @@ class _BankBalancePageState extends State<BankBalancePage> {
               flex: 2,
               child: Container(
                 margin: EdgeInsets.all(9),
-                decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(36)),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(36),
+                ),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
