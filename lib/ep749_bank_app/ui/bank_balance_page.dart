@@ -179,8 +179,17 @@ class _BankBalancePageState extends State<BankBalancePage> {
                       });
 
                     }, icon: Icon(Icons.pie_chart)),
-                    IconButton(onPressed: () {}, icon: Icon(Icons.apps)),
-                    IconButton(onPressed: () {}, icon: Icon(Icons.card_giftcard)),
+                    IconButton(onPressed: () {
+                      setState(() {
+                        _tabIndex = 2;
+                      });
+                    }, icon: Icon(Icons.apps)),
+                    IconButton(onPressed: () {
+                      setState(() {
+                        _tabIndex = 3;
+                      });
+
+                    }, icon: Icon(Icons.card_giftcard)),
                   ],
                 ),
               ),
