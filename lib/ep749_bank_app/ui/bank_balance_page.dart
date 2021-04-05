@@ -9,6 +9,7 @@ class BankBalancePage extends StatefulWidget {
 
 class _BankBalancePageState extends State<BankBalancePage> {
   GlobalKey<ScaffoldState> scaffoldKey = GlobalKey();
+  int _tabIndex = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -75,86 +76,82 @@ class _BankBalancePageState extends State<BankBalancePage> {
                                   flex: 3,
                                   child: Row(
                                     children: [
-                                      Expanded(child: Container(
+                                      Expanded(
+                                          child: Container(
                                         margin: EdgeInsets.only(top: 8, bottom: 8, right: 8),
-                                        decoration: BoxDecoration(
-                                          color: Colors.green,
-                                          borderRadius: BorderRadius.circular(8)
-                                        ),
+                                        decoration:
+                                            BoxDecoration(color: Colors.green, borderRadius: BorderRadius.circular(8)),
                                       )),
-                                      Expanded(child: Padding(
-                                        padding: const EdgeInsets.only(top: 16,  bottom: 16, left: 8),
+                                      Expanded(
+                                          child: Padding(
+                                        padding: const EdgeInsets.only(top: 16, bottom: 16, left: 8),
                                         child: Column(
                                           mainAxisAlignment: MainAxisAlignment.spaceAround,
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
                                             Text("Balance"),
-                                            Text("\$14.938,51", style: TextStyle(
-                                              fontSize: 24,
-                                              fontWeight: FontWeight.bold,
-                                            ),)
-
+                                            Text(
+                                              "\$14.938,51",
+                                              style: TextStyle(
+                                                fontSize: 24,
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            )
                                           ],
                                         ),
                                       )),
                                     ],
                                   )),
                               Expanded(flex: 10, child: Placeholder()),
-                              Expanded(flex: 2, child: Row(
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Expanded(child: Row(
+                              Expanded(
+                                  flex: 2,
+                                  child: Row(
                                     crossAxisAlignment: CrossAxisAlignment.center,
                                     children: [
-                                      Container(
-                                        height: 42,
-                                        width: 42,
-                                        decoration: BoxDecoration(
-                                          color: Colors.tealAccent,
-                                          borderRadius: BorderRadius.circular(12)
-                                        ),
-                                        child: Icon(Icons.download_rounded),
-                                      ),
-                                      Padding(
-                                        padding: const EdgeInsets.all(8.0),
-                                        child: Column(
-                                          crossAxisAlignment: CrossAxisAlignment.start,
-                                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                          children: [
-                                            Text("Income"),
-                                            Text("\$29.568,24")
-                                          ],
-                                        ),
-                                      )
+                                      Expanded(
+                                          child: Row(
+                                        crossAxisAlignment: CrossAxisAlignment.center,
+                                        children: [
+                                          Container(
+                                            height: 42,
+                                            width: 42,
+                                            decoration: BoxDecoration(
+                                                color: Colors.tealAccent, borderRadius: BorderRadius.circular(12)),
+                                            child: Icon(Icons.download_rounded),
+                                          ),
+                                          Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: Column(
+                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                              children: [Text("Income"), Text("\$29.568,24")],
+                                            ),
+                                          )
+                                        ],
+                                      )),
+                                      Expanded(
+                                          child: Row(
+                                        crossAxisAlignment: CrossAxisAlignment.center,
+                                        children: [
+                                          Container(
+                                            height: 42,
+                                            width: 42,
+                                            decoration: BoxDecoration(
+                                                color: Colors.orangeAccent, borderRadius: BorderRadius.circular(12)),
+                                            child: Icon(Icons.upload_rounded),
+                                          ),
+                                          Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: Column(
+                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                              children: [Text("Expense"), Text("\$17.222,24")],
+                                            ),
+                                          )
+                                        ],
+                                      )),
                                     ],
                                   )),
-                                  Expanded(child: Row(
-                                    crossAxisAlignment: CrossAxisAlignment.center,
-                                    children: [
-                                      Container(
-                                        height: 42,
-                                        width: 42,
-                                        decoration: BoxDecoration(
-                                            color: Colors.orangeAccent,
-                                            borderRadius: BorderRadius.circular(12)
-                                        ),
-                                        child: Icon(Icons.upload_rounded),
-                                      ),
-                                      Padding(
-                                        padding: const EdgeInsets.all(8.0),
-                                        child: Column(
-                                          crossAxisAlignment: CrossAxisAlignment.start,
-                                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                          children: [
-                                            Text("Expense"),
-                                            Text("\$17.222,24")
-                                          ],
-                                        ),
-                                      )
-                                    ],
-                                  )),
-                                ],
-                              )),
                             ],
                           ),
                         ),
@@ -170,11 +167,10 @@ class _BankBalancePageState extends State<BankBalancePage> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    IconButton(onPressed: (){}, icon: Icon(Icons.credit_card)),
-                    IconButton(onPressed: (){}, icon: Icon(Icons.pie_chart)),
-                    IconButton(onPressed: (){}, icon: Icon(Icons.apps)),
-                    IconButton(onPressed: (){}, icon: Icon(Icons.card_giftcard)),
-
+                    IconButton(onPressed: () {}, icon: Icon(Icons.credit_card)),
+                    IconButton(onPressed: () {}, icon: Icon(Icons.pie_chart)),
+                    IconButton(onPressed: () {}, icon: Icon(Icons.apps)),
+                    IconButton(onPressed: () {}, icon: Icon(Icons.card_giftcard)),
                   ],
                 ),
               ),
